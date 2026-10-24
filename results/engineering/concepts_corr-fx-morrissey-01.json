@@ -1,0 +1,855 @@
+{
+  "schema_version": "concept-intervention-v0.1",
+  "corridor_id": "corr-fx-morrissey-01",
+  "graph_version": "fixture-v0.1",
+  "generated_at": "2026-10-24T20:31:49+00:00",
+  "featured_intervention_id": "ci-corr-fx-morrissey-01-inspect_clean_inlets",
+  "featured_reason": "Best-grounded preview: existing-asset geometry and the most supporting evidence for its mechanism.",
+  "concepts": [
+    {
+      "intervention_id": "ci-corr-fx-morrissey-01-inspect_clean_inlets",
+      "name": "Inspect and, if blocked, clean the corridor catch basins",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "corridor_id": "corr-fx-morrissey-01",
+      "graph_version": "fixture-v0.1",
+      "intervention_type": "drainage_upgrade",
+      "target_asset_type": "catch_basin",
+      "candidate_ref": "inspect_clean_inlets",
+      "addressed_mechanism_ids": [
+        "inlet_blockage"
+      ],
+      "mechanism_status": {
+        "inlet_blockage": "possible"
+      },
+      "supporting_evidence_ids": [
+        "ev-311-loc01",
+        "ev-311-loc02",
+        "ev-311-loc03",
+        "ev-311-loc04",
+        "ev-311-loc05",
+        "ev-311note-101004859183",
+        "ev-311note-101005243252",
+        "ev-311note-101005863091",
+        "ev-311note-101006062798",
+        "ev-311note-101006107672",
+        "ev-311note-101006126240",
+        "ev-311note-101006209554",
+        "ev-311note-101006447048",
+        "ev-311note-101006571012"
+      ],
+      "conflicting_evidence_ids": [
+        "ev-311note-101002728622",
+        "ev-311note-101004516659"
+      ],
+      "confirm_with": [
+        "Field inspection finding debris/sediment in corridor basins",
+        "Owner cleaning log entries followed by ponding clearing"
+      ],
+      "refute_if": [
+        "Basins found clear and taking water while ponding persists (e.g. 311 closure note 'all are taking water')"
+      ],
+      "unresolved_checks": {
+        "physical_survey": "Basin condition inspection; connecting pipe CCTV if needed.",
+        "ownership_check": "Mapped owner codes are unverified; confirm before sending a maintenance request.",
+        "drainage_assessment": "Outfall location, invert and tide-gate status; pipe sizes (not public).",
+        "permitting": "Usually none for cleaning; capital drainage work needs owner approval and street-opening permits."
+      },
+      "status": "conceptual",
+      "implied_benefit": "none",
+      "display_caveats": [
+        "Preview only. Does not mark any road as protected and does not change flood layers or travel results."
+      ],
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -71.0496033502498,
+            42.29937286647735
+          ],
+          [
+            -71.04941602531805,
+            42.29952678330339
+          ],
+          [
+            -71.04906723875517,
+            42.297643880154844
+          ],
+          [
+            -71.04819798844036,
+            42.29598006844304
+          ],
+          [
+            -71.04800807330795,
+            42.29567379629151
+          ],
+          [
+            -71.04857217629846,
+            42.30174850824839
+          ],
+          [
+            -71.04867851721701,
+            42.30178243974563
+          ],
+          [
+            -71.04955291446115,
+            42.300432738127704
+          ],
+          [
+            -71.04891537796065,
+            42.29733076993921
+          ],
+          [
+            -71.04938109423242,
+            42.29983389889094
+          ]
+        ]
+      },
+      "geometry_status": "sourced_asset_location",
+      "geometry_source_ids": [
+        "BWSC.cb"
+      ],
+      "geometry_note": "10 nearest mapped catch basins (BWSC layer). Locations of existing assets, not new works.",
+      "display_badge": "Existing asset location (cited). Not a design.",
+      "related_road_ids": [
+        "fx-r-001",
+        "fx-r-002",
+        "fx-r-003",
+        "fx-r-004"
+      ],
+      "related_road_ids_note": "Roads near this concept. NOT roads assumed protected.",
+      "target_asset_id": null,
+      "target_asset_refs": [
+        {
+          "facility_id": "13LCB106",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "13LCB105",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "13LCB114",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "13LCB123",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "13LCB128",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "14LCB43",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "14LCB45",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "14LCB25",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "13LCB111",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        },
+        {
+          "facility_id": "13LCB103",
+          "owner_as_mapped": "DCR",
+          "owner_status": "as_mapped_unverified"
+        }
+      ],
+      "visual_parameters": null,
+      "provenance": "derived_concept",
+      "evidence_distinction": [
+        {
+          "kind": "existing_asset",
+          "text": "Catch basin locations and owner codes as mapped by BWSC.",
+          "source_id": "BWSC.cb"
+        },
+        {
+          "kind": "published_option",
+          "text": "Catch basin cleaning and CCTV are routine BWSC maintenance programs.",
+          "source_id": "BWSC.maint"
+        },
+        {
+          "kind": "illustrative_concept",
+          "text": "Inspecting these specific basins is our suggestion, not an owner work order.",
+          "source_id": null
+        }
+      ],
+      "evidence_source_ids": [
+        "BOS311",
+        "BWSC.cb",
+        "BWSC.maint"
+      ],
+      "suitability": "If inspection confirms blockage. Catch-basin reports or debris notes near the corridor.",
+      "trade_offs": [
+        "Flooding persists after cleaning, pointing to capacity or tide causes instead.",
+        "Record whether ponding recurs after cleaning",
+        "Report to the asset owner, not by default to BWSC"
+      ],
+      "missing_engineering_inputs": [
+        "Current condition of the corridor catch basins",
+        "Cleaning history from the owner",
+        "Whether reported ponding cleared after cleaning",
+        "For a quote: Number of basins, Owner's maintenance contract rates"
+      ],
+      "published_cost_precedents": [],
+      "cost_status": "cost_estimate_unavailable"
+    },
+    {
+      "intervention_id": "ci-corr-fx-morrissey-01-raised_roadway",
+      "name": "Raise the roadway profile (raised roadway barrier)",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "corridor_id": "corr-fx-morrissey-01",
+      "graph_version": "fixture-v0.1",
+      "intervention_type": "raised_roadway",
+      "target_asset_type": "road",
+      "candidate_ref": "raised_roadway",
+      "addressed_mechanism_ids": [
+        "coastal_overland"
+      ],
+      "mechanism_status": {
+        "coastal_overland": "possible"
+      },
+      "supporting_evidence_ids": [
+        "ev-flood-mcfrm-2050-1pct",
+        "ev-flood-usgs-2018-jan-event",
+        "ev-morrissey-central-section-gap",
+        "ev-morrissey-flood-pathways-present"
+      ],
+      "conflicting_evidence_ids": [],
+      "confirm_with": [
+        "Surveyed shoreline/edge elevations below the event water level along a continuous path to the road",
+        "High-water marks or photos showing overland flow from the bay side (e.g. USGS 2018 records)"
+      ],
+      "refute_if": [
+        "Surveyed edge is above the event water level with no opening",
+        "Road floods during rain at normal tide with no overland connection"
+      ],
+      "unresolved_checks": {
+        "physical_survey": "Road, sidewalk and adjacent grade elevations with vertical datum; building setbacks (>=14 ft rule).",
+        "ownership_check": "Roadway jurisdiction is a raw Road Inventory code (not decoded); adjacent property ownership unknown.",
+        "drainage_assessment": "Pumped drainage behind a raised road; outfall and tide conditions.",
+        "permitting": "Coastal/environmental permitting expected to be complex per S12."
+      },
+      "status": "conceptual",
+      "implied_benefit": "none",
+      "display_caveats": [
+        "Preview only. Does not mark any road as protected and does not change flood layers or travel results."
+      ],
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -71.04914461822956,
+              42.29805002689879
+            ],
+            [
+              -71.04929282791144,
+              42.29852495429886
+            ],
+            [
+              -71.04943495833068,
+              42.29901508756985
+            ],
+            [
+              -71.04947081937294,
+              42.29920932254903
+            ],
+            [
+              -71.04948789600031,
+              42.299343559699125
+            ],
+            [
+              -71.04948597631629,
+              42.29950254017987
+            ],
+            [
+              -71.04947239784735,
+              42.299693488267884
+            ],
+            [
+              -71.04944168059708,
+              42.29989853428888
+            ],
+            [
+              -71.04939478720085,
+              42.3000914490546
+            ],
+            [
+              -71.0493351429594,
+              42.30024810576995
+            ],
+            [
+              -71.04914795513182,
+              42.300642349903875
+            ]
+          ],
+          [
+            [
+              -71.04914795513182,
+              42.300642349903875
+            ],
+            [
+              -71.04887674378666,
+              42.301223287084554
+            ],
+            [
+              -71.04865149726527,
+              42.30171874489783
+            ],
+            [
+              -71.04854543856149,
+              42.302016648999064
+            ],
+            [
+              -71.04846071808957,
+              42.30223748222687
+            ],
+            [
+              -71.04820062400101,
+              42.302949437045974
+            ],
+            [
+              -71.04811484826864,
+              42.303122888908455
+            ]
+          ],
+          [
+            [
+              -71.04970945634201,
+              42.299735451765784
+            ],
+            [
+              -71.0496976497078,
+              42.29956644703918
+            ],
+            [
+              -71.04967290998401,
+              42.29938772999875
+            ],
+            [
+              -71.0496288502611,
+              42.29918239081522
+            ],
+            [
+              -71.04954955887507,
+              42.29890209125461
+            ],
+            [
+              -71.04943448295612,
+              42.298510321412955
+            ],
+            [
+              -71.0493800850273,
+              42.29832610861101
+            ],
+            [
+              -71.04927774670229,
+              42.29798834332004
+            ],
+            [
+              -71.0492773280937,
+              42.29798696342181
+            ],
+            [
+              -71.0491418755798,
+              42.29766344987651
+            ],
+            [
+              -71.04899308803301,
+              42.29737645599064
+            ],
+            [
+              -71.04882214811184,
+              42.297060680434626
+            ],
+            [
+              -71.04859656248749,
+              42.29670248484263
+            ],
+            [
+              -71.0484741361551,
+              42.29651310888459
+            ],
+            [
+              -71.0481204868475,
+              42.295954146862925
+            ],
+            [
+              -71.0480289051462,
+              42.29583407650275
+            ],
+            [
+              -71.04796603188767,
+              42.295729063196305
+            ],
+            [
+              -71.04789552388654,
+              42.295586373576995
+            ],
+            [
+              -71.04784762223727,
+              42.29546549771003
+            ],
+            [
+              -71.04781614129168,
+              42.29532055081937
+            ],
+            [
+              -71.04781817653057,
+              42.29519030202584
+            ],
+            [
+              -71.04784435549485,
+              42.29501170643515
+            ]
+          ],
+          [
+            [
+              -71.04954684779865,
+              42.30065444261698
+            ],
+            [
+              -71.04959668571917,
+              42.30050498896776
+            ],
+            [
+              -71.04963320614077,
+              42.30039892809918
+            ],
+            [
+              -71.0496735746376,
+              42.300208403081356
+            ],
+            [
+              -71.04969745323261,
+              42.300051601419234
+            ],
+            [
+              -71.04970945634201,
+              42.299735451765784
+            ]
+          ]
+        ]
+      },
+      "geometry_status": "sourced_asset_location",
+      "geometry_source_ids": [
+        "S10"
+      ],
+      "geometry_note": "Centerlines of the existing corridor road segments (MassDOT Road Inventory). The extent of any raised section is not designed.",
+      "display_badge": "Existing asset location (cited). Not a design.",
+      "related_road_ids": [
+        "fx-r-001",
+        "fx-r-002",
+        "fx-r-003",
+        "fx-r-004"
+      ],
+      "related_road_ids_note": "Roads near this concept. NOT roads assumed protected.",
+      "target_asset_id": null,
+      "visual_parameters": {
+        "conceptual_height_m": 1.22,
+        "basis": "Guideline SAMPLE grade change of 4 ft (S11.sec6 p.51), not a design height for this site.",
+        "source_id": "S11.sec6"
+      },
+      "provenance": "derived_concept",
+      "evidence_distinction": [
+        {
+          "kind": "existing_asset",
+          "text": "Road segment location from the MassDOT Road Inventory.",
+          "source_id": "S10"
+        },
+        {
+          "kind": "published_option",
+          "text": "Raised roadway is a sample barrier type in the 2018 Boston guidelines; DCR's 2017 redesign planned to elevate Morrissey Blvd (recorded in S12).",
+          "source_id": "S11.sec6"
+        },
+        {
+          "kind": "illustrative_concept",
+          "text": "Raising these specific segments is our concept for preview, not a published or approved design.",
+          "source_id": null
+        }
+      ],
+      "evidence_source_ids": [
+        "S11.sec6",
+        "S12"
+      ],
+      "suitability": "Only relevant if coastal_overland is confirmed; currently possible.",
+      "trade_offs": [
+        "Flanking around the ends of the raised section",
+        "Ponding behind the raised road without pumped drainage",
+        "Utility relocation conflicts",
+        "Driveway / building access grade conflicts"
+      ],
+      "missing_engineering_inputs": [
+        "Surveyed road and adjacent grade elevations with vertical datum",
+        "Building setbacks and first-floor elevations",
+        "Utility locations and depths",
+        "Drainage network and outfall/tide-gate details",
+        "Geotechnical borings"
+      ],
+      "published_cost_precedents": [
+        {
+          "precedent_id": "crdg-2018-raised-road-opt1",
+          "source_id": "S11.sec6",
+          "example_scope": "Sample raised roadway, Option 1 (retaining wall oceanside); sample length 2,000 ft",
+          "price_year": 2018,
+          "price_year_note": "Published 2018-10; dollar year not separately stated",
+          "amount_usd": 13600000,
+          "limitations": [
+            "Sample site in the 2018 Boston guidelines, not this corridor; not a quote.",
+            "Excludes: Pumps and generators (guideline cites typical pump station cost variation of $500k to $20M), Private utility relocation (gas, electric, steam, telecom), Owner's costs, Design/permitting."
+          ]
+        },
+        {
+          "precedent_id": "crdg-2018-raised-road-opt1a",
+          "source_id": "S11.sec6",
+          "example_scope": "Sample raised roadway, Option 1.A (retaining walls both sides; no built property within 14 ft of ROW); sample length 2,000 ft",
+          "price_year": 2018,
+          "price_year_note": "Published 2018-10; dollar year not separately stated",
+          "amount_usd": 15800000,
+          "limitations": [
+            "Sample site in the 2018 Boston guidelines, not this corridor; not a quote.",
+            "Excludes: Pumps and generators, Private utility relocation, Owner's costs, Design/permitting."
+          ]
+        },
+        {
+          "precedent_id": "crdg-2018-raised-road-opt2",
+          "source_id": "S11.sec6",
+          "example_scope": "Sample raised roadway, Option 2 (roadway and sidewalks raised with new development); sample length 2,000 ft",
+          "price_year": 2018,
+          "price_year_note": "Published 2018-10; dollar year not separately stated",
+          "amount_usd": 15100000,
+          "limitations": [
+            "Sample site in the 2018 Boston guidelines, not this corridor; not a quote.",
+            "Excludes: Option 2 exclusion notes were not extracted for this build; read S11.sec6 p.61 onward before citing; do not assume it includes pumps, utilities, or permitting."
+          ]
+        }
+      ],
+      "cost_status": "published_example_available"
+    },
+    {
+      "intervention_id": "ci-corr-fx-morrissey-01-vegetated_berm",
+      "name": "Vegetated berm / landscaped embankment along the flood side",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "corridor_id": "corr-fx-morrissey-01",
+      "graph_version": "fixture-v0.1",
+      "intervention_type": "berm",
+      "target_asset_type": "shoreline",
+      "candidate_ref": "vegetated_berm",
+      "addressed_mechanism_ids": [
+        "coastal_overland"
+      ],
+      "mechanism_status": {
+        "coastal_overland": "possible"
+      },
+      "supporting_evidence_ids": [
+        "ev-flood-mcfrm-2050-1pct",
+        "ev-flood-usgs-2018-jan-event",
+        "ev-morrissey-central-section-gap",
+        "ev-morrissey-flood-pathways-present"
+      ],
+      "conflicting_evidence_ids": [],
+      "confirm_with": [
+        "Surveyed shoreline/edge elevations below the event water level along a continuous path to the road",
+        "High-water marks or photos showing overland flow from the bay side (e.g. USGS 2018 records)"
+      ],
+      "refute_if": [
+        "Surveyed edge is above the event water level with no opening",
+        "Road floods during rain at normal tide with no overland connection"
+      ],
+      "unresolved_checks": {
+        "physical_survey": "Shoreline position, open-space width and topography; tie-in to high ground at both ends.",
+        "ownership_check": "Owner of the flood-side land strip not established.",
+        "drainage_assessment": "Drainage of water trapped landward of the berm.",
+        "permitting": "Wetland / resource-area permitting; nature-based design review."
+      },
+      "status": "conceptual",
+      "implied_benefit": "none",
+      "display_caveats": [
+        "Preview only. Does not mark any road as protected and does not change flood layers or travel results."
+      ],
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.0492236,
+            42.2997355
+          ],
+          [
+            -71.0492118,
+            42.2995664
+          ],
+          [
+            -71.0491871,
+            42.2993877
+          ],
+          [
+            -71.049143,
+            42.2991824
+          ],
+          [
+            -71.0490638,
+            42.2989021
+          ],
+          [
+            -71.0489487,
+            42.2985103
+          ],
+          [
+            -71.0488943,
+            42.2983261
+          ],
+          [
+            -71.0487919,
+            42.2979883
+          ],
+          [
+            -71.0487915,
+            42.297987
+          ],
+          [
+            -71.0486561,
+            42.2976634
+          ],
+          [
+            -71.0485073,
+            42.2973765
+          ],
+          [
+            -71.0483364,
+            42.2970607
+          ],
+          [
+            -71.0481108,
+            42.2967025
+          ],
+          [
+            -71.0479883,
+            42.2965131
+          ],
+          [
+            -71.0476347,
+            42.2959541
+          ],
+          [
+            -71.0475431,
+            42.2958341
+          ],
+          [
+            -71.0474802,
+            42.2957291
+          ],
+          [
+            -71.0474097,
+            42.2955864
+          ],
+          [
+            -71.0473618,
+            42.2954655
+          ],
+          [
+            -71.0473304,
+            42.2953206
+          ],
+          [
+            -71.0473324,
+            42.2951903
+          ],
+          [
+            -71.0473586,
+            42.2950117
+          ]
+        ]
+      },
+      "geometry_status": "schematic",
+      "geometry_source_ids": [],
+      "geometry_note": "Drawn 40 m east (bay side) of a corridor centerline for display only. Not a surveyed shoreline, not the Morrissey study's alignment (figures in S12 are images; no vector alignment extracted).",
+      "display_badge": "SCHEMATIC - illustrative only, not an engineered or published alignment",
+      "related_road_ids": [
+        "fx-r-001",
+        "fx-r-003",
+        "fx-r-004"
+      ],
+      "related_road_ids_note": "Roads near this concept. NOT roads assumed protected.",
+      "target_asset_id": null,
+      "visual_parameters": {
+        "conceptual_height_m": 0.61,
+        "basis": "Guideline SAMPLE grade change of ~2 ft (S11.sec4 p.27), not a design height for this site.",
+        "source_id": "S11.sec4"
+      },
+      "provenance": "illustrative",
+      "evidence_distinction": [
+        {
+          "kind": "published_option",
+          "text": "Vegetated berm is a sample barrier type in the 2018 Boston guidelines; the Morrissey study favours nature-based coastal measures.",
+          "source_id": "S11.sec4"
+        },
+        {
+          "kind": "illustrative_concept",
+          "text": "This alignment is drawn by us; no published alignment was extracted.",
+          "source_id": null
+        }
+      ],
+      "evidence_source_ids": [
+        "S11",
+        "S11.sec4",
+        "S12"
+      ],
+      "suitability": "Only relevant if coastal_overland is confirmed; currently possible.",
+      "trade_offs": [
+        "Insufficient open space for slopes",
+        "Flanking at ends",
+        "Scour/erosion on flood-side slope",
+        "Seepage through or under the embankment"
+      ],
+      "missing_engineering_inputs": [
+        "Available open space and ownership on the flood side",
+        "Topography (LiDAR is a start, survey needed)",
+        "Geotechnical and groundwater conditions",
+        "Wetland / resource-area permitting constraints",
+        "Published or surveyed alignment"
+      ],
+      "published_cost_precedents": [
+        {
+          "precedent_id": "crdg-2018-berm-2030",
+          "source_id": "S11.sec4",
+          "example_scope": "Sample vegetated berm barrier, 2030 DFE conditions; sample length 2,000 ft",
+          "price_year": 2018,
+          "price_year_note": "Published 2018-10; dollar year not separately stated",
+          "amount_usd": 2300000,
+          "limitations": [
+            "Sample site in the 2018 Boston guidelines, not this corridor; not a quote.",
+            "Excludes: Owner's costs, Design/permitting, Construction/logistical/insurance, Environmental/accidents."
+          ]
+        },
+        {
+          "precedent_id": "crdg-2018-berm-2070-incr",
+          "source_id": "S11.sec4",
+          "example_scope": "Sample vegetated berm, 2070 DFE incremental increase; sample length 5,300 ft",
+          "price_year": 2018,
+          "price_year_note": "Published 2018-10; dollar year not separately stated",
+          "amount_usd": 3200000,
+          "limitations": [
+            "Sample site in the 2018 Boston guidelines, not this corridor; not a quote.",
+            "Excludes: Owner's costs, Design/permitting, Construction/logistical/insurance, Environmental/accidents."
+          ]
+        }
+      ],
+      "cost_status": "published_example_available"
+    },
+    {
+      "intervention_id": "ci-corr-fx-morrissey-01-deployable_barrier",
+      "name": "Deployable (temporary) flood barrier",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "corridor_id": "corr-fx-morrissey-01",
+      "graph_version": "fixture-v0.1",
+      "intervention_type": "deployable_barrier",
+      "target_asset_type": "opening",
+      "candidate_ref": "deployable_barrier",
+      "addressed_mechanism_ids": [
+        "coastal_overland"
+      ],
+      "mechanism_status": {
+        "coastal_overland": "possible"
+      },
+      "supporting_evidence_ids": [
+        "ev-flood-mcfrm-2050-1pct",
+        "ev-flood-usgs-2018-jan-event",
+        "ev-morrissey-central-section-gap",
+        "ev-morrissey-flood-pathways-present"
+      ],
+      "conflicting_evidence_ids": [],
+      "confirm_with": [
+        "Surveyed shoreline/edge elevations below the event water level along a continuous path to the road",
+        "High-water marks or photos showing overland flow from the bay side (e.g. USGS 2018 records)"
+      ],
+      "refute_if": [
+        "Surveyed edge is above the event water level with no opening",
+        "Road floods during rain at normal tide with no overland connection"
+      ],
+      "unresolved_checks": {
+        "physical_survey": "Which opening admits water; anchoring surface.",
+        "ownership_check": "Agency that stores and deploys it not identified.",
+        "drainage_assessment": "Seepage and ponding behind the barrier.",
+        "permitting": "Emergency access and right-of-way use while deployed."
+      },
+      "status": "conceptual",
+      "implied_benefit": "none",
+      "display_caveats": [
+        "Preview only. Does not mark any road as protected and does not change flood layers or travel results."
+      ],
+      "geometry": null,
+      "geometry_status": "none",
+      "geometry_source_ids": [],
+      "geometry_note": "The opening that would need a gate has not been identified.",
+      "display_badge": "No location claimed",
+      "related_road_ids": [
+        "fx-r-001",
+        "fx-r-002",
+        "fx-r-003",
+        "fx-r-004"
+      ],
+      "related_road_ids_note": "Roads near this concept. NOT roads assumed protected.",
+      "target_asset_id": null,
+      "visual_parameters": null,
+      "provenance": "derived_concept",
+      "evidence_distinction": [
+        {
+          "kind": "published_option",
+          "text": "Deployable barriers are covered by Section 7.0 of the 2018 Boston guidelines.",
+          "source_id": "S11.sec7"
+        }
+      ],
+      "evidence_source_ids": [
+        "S11.sec7"
+      ],
+      "suitability": "Only relevant if coastal_overland is confirmed; currently possible.",
+      "trade_offs": [
+        "Not deployed in time",
+        "Seepage at joints or under the base",
+        "Blocks the road it is meant to protect while deployed"
+      ],
+      "missing_engineering_inputs": [
+        "Who deploys and stores it",
+        "Warning time available for the relevant flood type",
+        "Foundation / anchoring surface along alignment"
+      ],
+      "published_cost_precedents": [],
+      "cost_status": "cost_estimate_unavailable"
+    }
+  ],
+  "alternatives_not_rendered": [
+    {
+      "candidate_ref": "alternate_access",
+      "name": "Strengthen alternate access routes",
+      "intervention_type": "alternate_access",
+      "reason": "Card only; no custom geometry in this build."
+    },
+    {
+      "candidate_ref": "outfall_adaptation_review",
+      "name": "Review tide gate / backflow control, storage or pumping at the outfall",
+      "intervention_type": "drainage_upgrade",
+      "reason": "Card only; no custom geometry in this build."
+    }
+  ],
+  "notes": [
+    "Concepts carry no passability, flood, or ranking effect. To test access, create a separate NetworkAssumptionForReview.",
+    "Statuses: conceptual only. Nothing here is engineer-reviewed, implemented, or verified.",
+    "Inputs marked mock in the investigation remain mock."
+  ]
+}

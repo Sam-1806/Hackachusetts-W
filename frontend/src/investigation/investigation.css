@@ -1,0 +1,398 @@
+/* Person 3 investigation drawer. All selectors are prefixed .fr-inv to avoid clashing with app styles. */
+
+.fr-inv {
+  --fr-inv-bg: #ffffff;
+  --fr-inv-fg: #1b1f24;
+  --fr-inv-muted: #555d66;
+  --fr-inv-border: #d0d7de;
+  --fr-inv-accent: #0b5cad;
+  --fr-inv-sourced: #116329;
+  --fr-inv-hypothesis: #7a4d00;
+  --fr-inv-unknown: #8a1c1c;
+  --fr-inv-caveat: #44505c;
+  background: var(--fr-inv-bg);
+  color: var(--fr-inv-fg);
+  font: 14px/1.45 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  padding: 16px;
+  overflow-y: auto;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.fr-inv h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.fr-inv h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.fr-inv h4 {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+}
+
+.fr-inv-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.fr-inv-header-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.fr-inv-eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  color: var(--fr-inv-muted);
+}
+
+.fr-inv-muted {
+  color: var(--fr-inv-muted);
+}
+
+.fr-inv-small {
+  font-size: 0.85em;
+}
+
+.fr-inv-banner {
+  background: #fff4ce;
+  border: 1px solid #d4a72c;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin: 8px 0;
+}
+
+.fr-inv details {
+  border-top: 1px solid var(--fr-inv-border);
+  padding: 8px 0;
+}
+
+.fr-inv summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 2px 0;
+}
+
+.fr-inv button,
+.fr-inv input[type='text'],
+.fr-inv textarea {
+  font: inherit;
+  border: 1px solid var(--fr-inv-border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #fff;
+  color: inherit;
+}
+
+.fr-inv button {
+  cursor: pointer;
+  background: #f6f8fa;
+}
+
+.fr-inv button[type='submit'] {
+  background: var(--fr-inv-accent);
+  color: #fff;
+  border-color: var(--fr-inv-accent);
+}
+
+.fr-inv button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fr-inv :focus-visible {
+  outline: 3px solid var(--fr-inv-accent);
+  outline-offset: 2px;
+}
+
+.fr-inv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 6px 0;
+}
+
+.fr-inv-table th,
+.fr-inv-table td {
+  text-align: left;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--fr-inv-border);
+  vertical-align: top;
+}
+
+.fr-inv-table thead th {
+  font-size: 0.85em;
+  color: var(--fr-inv-muted);
+}
+
+.fr-inv-table th[scope='row'] {
+  font-weight: normal;
+}
+
+.fr-inv-list {
+  margin: 4px 0;
+  padding-left: 18px;
+}
+
+.fr-inv-list li {
+  margin-bottom: 6px;
+}
+
+.fr-inv-facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  margin: 4px 0;
+}
+
+.fr-inv-facts>div {
+  display: grid;
+  grid-template-columns: minmax(120px, 40%) 1fr;
+  gap: 8px;
+}
+
+.fr-inv-facts dt {
+  color: var(--fr-inv-muted);
+}
+
+.fr-inv-facts dd {
+  margin: 0;
+}
+
+.fr-inv-fact--missing dd {
+  color: var(--fr-inv-unknown);
+  font-style: italic;
+}
+
+.fr-inv-card {
+  border: 1px solid var(--fr-inv-border);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.fr-inv-pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  border: 1px solid var(--fr-inv-border);
+  background: #f6f8fa;
+}
+
+.fr-inv-pill--future_model {
+  background: #ddf4ff;
+  border-color: #54aeff;
+}
+
+.fr-inv-pill--historical_observed {
+  background: #fbefff;
+  border-color: #c297ff;
+}
+
+.fr-inv-blocks {
+  list-style: none;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.fr-inv-block {
+  padding: 4px 0 4px 8px;
+  border-left: 3px solid var(--fr-inv-border);
+  margin-bottom: 4px;
+}
+
+.fr-inv-block--sourced {
+  border-left-color: var(--fr-inv-sourced);
+}
+
+.fr-inv-block--hypothesis {
+  border-left-color: var(--fr-inv-hypothesis);
+}
+
+.fr-inv-block--unknown {
+  border-left-color: var(--fr-inv-unknown);
+}
+
+.fr-inv-block--caveat {
+  border-left-color: var(--fr-inv-caveat);
+}
+
+.fr-inv-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.fr-inv-block--sourced .fr-inv-tag {
+  color: var(--fr-inv-sourced);
+}
+
+.fr-inv-block--hypothesis .fr-inv-tag {
+  color: var(--fr-inv-hypothesis);
+}
+
+.fr-inv-block--unknown .fr-inv-tag {
+  color: var(--fr-inv-unknown);
+}
+
+.fr-inv-block--caveat .fr-inv-tag {
+  color: var(--fr-inv-caveat);
+}
+
+.fr-inv-cites {
+  white-space: nowrap;
+}
+
+.fr-inv-cite {
+  font-size: 0.8em;
+  margin-right: 3px;
+  color: var(--fr-inv-accent);
+}
+
+.fr-inv-chat,
+.fr-inv-form {
+  border-top: 1px solid var(--fr-inv-border);
+  padding: 10px 0;
+}
+
+.fr-inv-chat-log {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid var(--fr-inv-border);
+  border-radius: 6px;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+.fr-inv-chat-q {
+  font-weight: 600;
+  margin: 6px 0 2px;
+}
+
+.fr-inv-chat-turn+.fr-inv-chat-turn {
+  border-top: 1px dashed var(--fr-inv-border);
+  margin-top: 6px;
+}
+
+.fr-inv-chat-form {
+  display: flex;
+  gap: 6px;
+}
+
+.fr-inv-chat-form input {
+  flex: 1;
+}
+
+.fr-inv-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.fr-inv-chip {
+  font-size: 0.8rem !important;
+  padding: 2px 8px !important;
+  border-radius: 999px !important;
+}
+
+.fr-inv-form fieldset {
+  border: 1px solid var(--fr-inv-border);
+  border-radius: 6px;
+  margin: 6px 0;
+  padding: 6px 10px;
+}
+
+.fr-inv-form legend {
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.fr-inv-option {
+  display: block;
+  padding: 2px 0;
+}
+
+.fr-inv-option input {
+  margin-right: 6px;
+}
+
+.fr-inv-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 4px 0 6px;
+}
+
+.fr-inv-error {
+  color: var(--fr-inv-unknown);
+}
+
+.fr-inv-success {
+  color: var(--fr-inv-sourced);
+}
+
+.fr-inv-visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Cause assessment status pills (Causal Diagnosis Addendum) */
+.fr-inv-pill--status-possible {
+  background: #fff8c5;
+  border-color: #d4a72c;
+}
+
+.fr-inv-pill--status-evidence_supported {
+  background: #dafbe1;
+  border-color: #4ac26b;
+}
+
+.fr-inv-pill--status-unresolved {
+  background: #f6f8fa;
+  border-color: #8c959f;
+}
+
+/* Concept geometry provenance badges (Addendum 2) */
+.fr-inv-geo--design {
+  background: #dafbe1;
+  border-color: #4ac26b;
+}
+
+.fr-inv-geo--asset {
+  background: #ddf4ff;
+  border-color: #54aeff;
+}
+
+.fr-inv-geo--schematic {
+  background: #ffebe9;
+  border-color: #cf222e;
+  font-weight: 700;
+}
+
+.fr-inv-geo--none {
+  background: #f6f8fa;
+  border-color: #8c959f;
+}
+
+.fr-inv select {
+  font: inherit;
+  border: 1px solid var(--fr-inv-border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin: 4px 0 6px;
+  display: block;
+}

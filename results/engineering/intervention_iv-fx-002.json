@@ -1,0 +1,35 @@
+{
+  "intervention_id": "iv-fx-002",
+  "corridor_id": "corr-fx-morrissey-01",
+  "road_ids": [
+    "fx-r-001",
+    "fx-r-002",
+    "fx-r-003",
+    "fx-r-004"
+  ],
+  "graph_version": "fixture-v0.1",
+  "proposed_method": {
+    "method_id": "inspect_clean_inlets",
+    "name": "Inspect and, if blocked, clean the corridor catch basins",
+    "category": "maintenance"
+  },
+  "status": "hypothetical",
+  "assumed_passability_by_scenario": {
+    "mcfrm-2050-1pct": "unchanged",
+    "usgs-2018-jan-event": "unchanged"
+  },
+  "review_notes": "Fixture demo: fix the drain Unquantified drainage/hydraulic proposal. Road exposure, property-loss projections and network ranking stay unchanged until validated before/after flood analysis is supplied.",
+  "source_ids": [
+    "BOS311",
+    "BWSC.cb",
+    "BWSC.maint"
+  ],
+  "created_at": "2026-10-24T20:14:27+00:00",
+  "effect_claim": "hydraulic_or_drainage",
+  "mechanism": "inlet_blockage",
+  "effect_status": "unquantified_proposal",
+  "rerank_eligible": false,
+  "requested_scenarios": [
+    "mcfrm-2050-1pct"
+  ]
+}

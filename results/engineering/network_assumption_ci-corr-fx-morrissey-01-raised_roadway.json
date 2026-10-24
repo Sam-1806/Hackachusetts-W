@@ -1,0 +1,21 @@
+{
+  "schema_version": "network-assumption-v0.1",
+  "intervention_id": "ci-corr-fx-morrissey-01-raised_roadway",
+  "intervention_type": "raised_roadway",
+  "graph_version": "fixture-v0.1",
+  "scenario_ids": [
+    "mcfrm-2050-1pct"
+  ],
+  "hypothetical_preserved_road_ids": [
+    "fx-r-001",
+    "fx-r-002"
+  ],
+  "selection_status": "explicitly_selected_for_counterfactual",
+  "assumption_notes": [
+    "Hypothetical access assumption for network analysis only.",
+    "Does not imply hydraulic validation, physical protection, or changed flood extents.",
+    "Fixture demo what-if"
+  ],
+  "created_at": "2026-10-24T20:31:49+00:00",
+  "rerank_requested": true
+}

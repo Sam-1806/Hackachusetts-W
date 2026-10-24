@@ -1,0 +1,198 @@
+{
+  "library_version": "eng-evidence-v0.1",
+  "global_caveats": [
+    "These are conceptual 'opinion of probable cost' figures for sample barriers at sample sites in the City of Boston guidelines published October 2018. They are not bids, not 2026 prices, and not transferable per-foot rates for another site.",
+    "Escalation from the 2018 publication date to today is not applied here. Any escalation index and base year must be chosen by a cost estimator.",
+    "The guidelines state each opinion reflects sample design considerations and does not reflect engineering analyses prepared for design."
+  ],
+  "precedents": [
+    {
+      "precedent_id": "crdg-2018-berm-2030",
+      "method_id": "vegetated_berm",
+      "title": "Sample vegetated berm barrier, 2030 DFE conditions",
+      "source_id": "S11.sec4",
+      "printed_page": 27,
+      "pdf_page": 10,
+      "price_basis": "Published 2018-10; dollar year not separately stated",
+      "sample_dimensions": {
+        "length_ft": 2000,
+        "grade_change_ft": 2
+      },
+      "total_usd": 2300000,
+      "unit_cost": {
+        "usd": 116000,
+        "per": "100 linear ft"
+      },
+      "contingency": "30% included",
+      "line_items_per_100lf_usd": {
+        "Riprap scour protection": 17000,
+        "Berm incl. crest and access paths": 45000,
+        "Erosion control plantings": 27000,
+        "Subtotal": 89000,
+        "Contingency (30%)": 27000
+      },
+      "excluded": [
+        "Owner's costs",
+        "Design/permitting",
+        "Construction/logistical/insurance",
+        "Environmental/accidents",
+        "Adverse site conditions",
+        "Cofferdam for scour protection"
+      ],
+      "annual_om_usd_range": [
+        22000,
+        38000
+      ]
+    },
+    {
+      "precedent_id": "crdg-2018-berm-2070-incr",
+      "method_id": "vegetated_berm",
+      "title": "Sample vegetated berm, 2070 DFE incremental increase",
+      "source_id": "S11.sec4",
+      "printed_page": 27,
+      "pdf_page": 10,
+      "price_basis": "Published 2018-10; dollar year not separately stated",
+      "sample_dimensions": {
+        "length_ft": 5300,
+        "grade_change_ft": 2,
+        "note": "In addition to the 2030 berm"
+      },
+      "total_usd": 3200000,
+      "unit_cost": {
+        "usd": 61000,
+        "per": "100 linear ft"
+      },
+      "contingency": "30% included",
+      "excluded": [
+        "Owner's costs",
+        "Design/permitting",
+        "Construction/logistical/insurance",
+        "Environmental/accidents",
+        "Adverse site conditions"
+      ]
+    },
+    {
+      "precedent_id": "crdg-2018-seawall",
+      "method_id": "seawall_extension",
+      "title": "Sample Harborwalk seawall barrier",
+      "source_id": "S11.sec5",
+      "printed_page": 43,
+      "pdf_page": 10,
+      "price_basis": "Published 2018-10; dollar year not separately stated",
+      "sample_dimensions": {
+        "length_ft": 600,
+        "wall_extension_ft": 4
+      },
+      "total_usd": 500000,
+      "unit_cost": {
+        "usd": 84000,
+        "per": "100 linear ft"
+      },
+      "contingency": "30% included",
+      "excluded": [
+        "Owner's costs",
+        "Design/permitting",
+        "Stormwater infrastructure",
+        "Construction/logistical/insurance",
+        "Environmental/accidents",
+        "Adverse site conditions",
+        "Deployable barriers on the handrail",
+        "Major modifications to top of existing wall",
+        "Deep foundations / ground improvement"
+      ],
+      "annual_om_usd_range": [
+        18000,
+        32000
+      ]
+    },
+    {
+      "precedent_id": "crdg-2018-raised-road-opt1",
+      "method_id": "raised_roadway",
+      "title": "Sample raised roadway, Option 1 (retaining wall oceanside)",
+      "source_id": "S11.sec6",
+      "printed_page": 60,
+      "pdf_page": 12,
+      "price_basis": "Published 2018-10; dollar year not separately stated",
+      "sample_dimensions": {
+        "length_ft": 2000,
+        "grade_change_ft": 4
+      },
+      "total_usd": 13600000,
+      "unit_cost": {
+        "usd": 683000,
+        "per": "100 linear ft"
+      },
+      "contingency": "30% included",
+      "excluded": [
+        "Pumps and generators (guideline cites typical pump station cost variation of $500k to $20M)",
+        "Private utility relocation (gas, electric, steam, telecom)",
+        "Owner's costs",
+        "Design/permitting",
+        "Construction/logistical/insurance",
+        "Environmental/accidents",
+        "Adverse site conditions",
+        "Traffic signal systems",
+        "Neighborhood redevelopment / property acquisition",
+        "Ground improvement or deep foundations",
+        "Cofferdam for scour protection"
+      ]
+    },
+    {
+      "precedent_id": "crdg-2018-raised-road-opt1a",
+      "method_id": "raised_roadway",
+      "title": "Sample raised roadway, Option 1.A (retaining walls both sides; no built property within 14 ft of ROW)",
+      "source_id": "S11.sec6",
+      "printed_page": 61,
+      "pdf_page": 13,
+      "price_basis": "Published 2018-10; dollar year not separately stated",
+      "sample_dimensions": {
+        "length_ft": 2000,
+        "grade_change_ft": 4
+      },
+      "total_usd": 15800000,
+      "unit_cost": {
+        "usd": 788000,
+        "per": "100 linear ft"
+      },
+      "contingency": "30% included",
+      "excluded": [
+        "Pumps and generators",
+        "Private utility relocation",
+        "Owner's costs",
+        "Design/permitting",
+        "Construction/logistical/insurance",
+        "Environmental/accidents",
+        "Adverse site conditions",
+        "Traffic signal systems",
+        "Property acquisition"
+      ]
+    },
+    {
+      "precedent_id": "crdg-2018-raised-road-opt2",
+      "method_id": "raised_roadway",
+      "title": "Sample raised roadway, Option 2 (roadway and sidewalks raised with new development)",
+      "source_id": "S11.sec6",
+      "printed_page": 61,
+      "pdf_page": 13,
+      "price_basis": "Published 2018-10; dollar year not separately stated",
+      "sample_dimensions": {
+        "length_ft": 2000,
+        "grade_change_ft": 4
+      },
+      "total_usd": 15100000,
+      "unit_cost": {
+        "usd": 757000,
+        "per": "100 linear ft"
+      },
+      "contingency": "30% included",
+      "excluded": [
+        "Option 2 exclusion notes were not extracted for this build; read S11.sec6 p.61 onward before citing; do not assume it includes pumps, utilities, or permitting"
+      ]
+    }
+  ],
+  "estimating_method_guidance": [
+    "Treat the sample $/100-LF as an order-of-magnitude reference only; site length, grade change, setbacks, utilities and foundations drive the real number.",
+    "A preliminary estimate for this corridor would start from surveyed length and required grade change, quantity take-offs per line item, current local unit prices, escalation from the price base year, and explicitly priced exclusions (pumps, utilities, permitting).",
+    "Present any scaled number as 'illustrative scaling of a 2018 sample', never as a project cost."
+  ]
+}
