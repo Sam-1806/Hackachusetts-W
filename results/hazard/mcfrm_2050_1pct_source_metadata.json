@@ -1,0 +1,61 @@
+{
+  "source_id": "mcfrm-2050-1pct-extent",
+  "service_url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/ArcGIS/rest/services/MA_2050_1Perc_v11/FeatureServer",
+  "layer_url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/ArcGIS/rest/services/MA_2050_1Perc_v11/FeatureServer/1",
+  "service_item_id": "101f62d8bb8445a59c12a6a4eb118c59",
+  "layer_id": 1,
+  "layer_name": "MCFRM_1pct_2050",
+  "description": "Projected coastal flooding in Massachusetts driven by sea level rise and storm surge for the 2050 1% annual exceedance probability scenario.",
+  "copyright_text": "Woods Hole Group",
+  "source_spatial_reference": "EPSG:26986",
+  "source_units": "meters",
+  "output_spatial_reference": "EPSG:4326",
+  "geometry_type": "esriGeometryPolygon",
+  "native_extent": {
+    "xmin": 213004,
+    "ymin": 776516,
+    "xmax": 331848,
+    "ymax": 959746,
+    "spatialReference": {
+      "wkid": 26986,
+      "latestWkid": 26986
+    }
+  },
+  "source_data_last_edit_utc": "2024-09-26T16:57:55.344000+00:00",
+  "processed_at_utc": "2026-10-24T20:36:31.402577+00:00",
+  "fields": [
+    {
+      "name": "FID",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "name": "Id",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "name": "gridcode",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "name": "Shape__Area",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "name": "Shape__Length",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "study_bbox_epsg4326": [
+    -71.065,
+    42.29,
+    -71.035,
+    42.335
+  ],
+  "feature_count_in_query": 1,
+  "status": "official_published_model_extent_loaded",
+  "limitations": [
+    "The layer represents a future 2050 1% AEP scenario, not an observed event.",
+    "No depth attribute is present in this vector extent layer.",
+    "ArcGIS returns the statewide feature; this pipeline clips it locally to the study bbox."
+  ]
+}

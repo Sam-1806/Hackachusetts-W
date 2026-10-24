@@ -1,0 +1,2477 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-24T20:34:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 8646225,
+  "bounds": {
+    "minlat": 42.3202615,
+    "minlon": -71.0500043,
+    "maxlat": 42.3205054,
+    "maxlon": -71.0499994
+  },
+  "geometry": [
+    { "lat": 42.3202615, "lon": -71.0500026 },
+    { "lat": 42.3204029, "lon": -71.0499994 },
+    { "lat": 42.3204282, "lon": -71.0499996 },
+    { "lat": 42.3204350, "lon": -71.0499997 },
+    { "lat": 42.3205054, "lon": -71.0500043 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "highway": "tertiary",
+    "massgis:way_id": "35",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 8646516,
+  "bounds": {
+    "minlat": 42.2875523,
+    "minlon": -71.0478117,
+    "maxlat": 42.2934784,
+    "maxlon": -71.0425035
+  },
+  "geometry": [
+    { "lat": 42.2875523, "lon": -71.0425035 },
+    { "lat": 42.2875997, "lon": -71.0425319 },
+    { "lat": 42.2876584, "lon": -71.0425703 },
+    { "lat": 42.2877116, "lon": -71.0426128 },
+    { "lat": 42.2877556, "lon": -71.0426533 },
+    { "lat": 42.2877980, "lon": -71.0426947 },
+    { "lat": 42.2878418, "lon": -71.0427414 },
+    { "lat": 42.2886651, "lon": -71.0436132 },
+    { "lat": 42.2890944, "lon": -71.0440813 },
+    { "lat": 42.2891857, "lon": -71.0441801 },
+    { "lat": 42.2892666, "lon": -71.0442693 },
+    { "lat": 42.2893407, "lon": -71.0443491 },
+    { "lat": 42.2894205, "lon": -71.0444485 },
+    { "lat": 42.2895002, "lon": -71.0445646 },
+    { "lat": 42.2895707, "lon": -71.0446714 },
+    { "lat": 42.2897680, "lon": -71.0450156 },
+    { "lat": 42.2898616, "lon": -71.0451806 },
+    { "lat": 42.2900699, "lon": -71.0455475 },
+    { "lat": 42.2901005, "lon": -71.0455983 },
+    { "lat": 42.2902104, "lon": -71.0457808 },
+    { "lat": 42.2902783, "lon": -71.0458876 },
+    { "lat": 42.2903546, "lon": -71.0460026 },
+    { "lat": 42.2904274, "lon": -71.0461035 },
+    { "lat": 42.2905045, "lon": -71.0462087 },
+    { "lat": 42.2905874, "lon": -71.0463130 },
+    { "lat": 42.2906685, "lon": -71.0464101 },
+    { "lat": 42.2907504, "lon": -71.0465099 },
+    { "lat": 42.2908355, "lon": -71.0466061 },
+    { "lat": 42.2909199, "lon": -71.0466942 },
+    { "lat": 42.2910055, "lon": -71.0467847 },
+    { "lat": 42.2910450, "lon": -71.0468222 },
+    { "lat": 42.2910980, "lon": -71.0468725 },
+    { "lat": 42.2911832, "lon": -71.0469494 },
+    { "lat": 42.2912822, "lon": -71.0470339 },
+    { "lat": 42.2914015, "lon": -71.0471256 },
+    { "lat": 42.2915378, "lon": -71.0472289 },
+    { "lat": 42.2916563, "lon": -71.0473130 },
+    { "lat": 42.2917803, "lon": -71.0473894 },
+    { "lat": 42.2918973, "lon": -71.0474523 },
+    { "lat": 42.2919992, "lon": -71.0475030 },
+    { "lat": 42.2920543, "lon": -71.0475305 },
+    { "lat": 42.2923719, "lon": -71.0476852 },
+    { "lat": 42.2924293, "lon": -71.0477132 },
+    { "lat": 42.2925297, "lon": -71.0477558 },
+    { "lat": 42.2926356, "lon": -71.0477887 },
+    { "lat": 42.2927480, "lon": -71.0478084 },
+    { "lat": 42.2928171, "lon": -71.0478106 },
+    { "lat": 42.2928518, "lon": -71.0478117 },
+    { "lat": 42.2929658, "lon": -71.0477980 },
+    { "lat": 42.2930658, "lon": -71.0477783 },
+    { "lat": 42.2932180, "lon": -71.0477221 },
+    { "lat": 42.2933058, "lon": -71.0476709 },
+    { "lat": 42.2933235, "lon": -71.0476606 },
+    { "lat": 42.2934171, "lon": -71.0476002 },
+    { "lat": 42.2934784, "lon": -71.0475550 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 8646802,
+  "bounds": {
+    "minlat": 42.2950310,
+    "minlon": -71.0496424,
+    "maxlat": 42.2992349,
+    "maxlon": -71.0477994
+  },
+  "geometry": [
+    { "lat": 42.2992349, "lon": -71.0496424 },
+    { "lat": 42.2991200, "lon": -71.0496154 },
+    { "lat": 42.2989971, "lon": -71.0495800 },
+    { "lat": 42.2982859, "lon": -71.0493724 },
+    { "lat": 42.2981753, "lon": -71.0493382 },
+    { "lat": 42.2980587, "lon": -71.0492978 },
+    { "lat": 42.2979429, "lon": -71.0492575 },
+    { "lat": 42.2978380, "lon": -71.0492166 },
+    { "lat": 42.2977341, "lon": -71.0491724 },
+    { "lat": 42.2976299, "lon": -71.0491267 },
+    { "lat": 42.2975227, "lon": -71.0490770 },
+    { "lat": 42.2974206, "lon": -71.0490267 },
+    { "lat": 42.2973159, "lon": -71.0489716 },
+    { "lat": 42.2972158, "lon": -71.0489161 },
+    { "lat": 42.2971151, "lon": -71.0488583 },
+    { "lat": 42.2970158, "lon": -71.0487977 },
+    { "lat": 42.2969142, "lon": -71.0487340 },
+    { "lat": 42.2967184, "lon": -71.0486061 },
+    { "lat": 42.2959280, "lon": -71.0480939 },
+    { "lat": 42.2958274, "lon": -71.0480275 },
+    { "lat": 42.2957281, "lon": -71.0479645 },
+    { "lat": 42.2956292, "lon": -71.0479047 },
+    { "lat": 42.2955788, "lon": -71.0478800 },
+    { "lat": 42.2955265, "lon": -71.0478583 },
+    { "lat": 42.2954758, "lon": -71.0478404 },
+    { "lat": 42.2954227, "lon": -71.0478243 },
+    { "lat": 42.2953856, "lon": -71.0478160 },
+    { "lat": 42.2953507, "lon": -71.0478093 },
+    { "lat": 42.2953145, "lon": -71.0478042 },
+    { "lat": 42.2952757, "lon": -71.0478007 },
+    { "lat": 42.2952406, "lon": -71.0477994 },
+    { "lat": 42.2952049, "lon": -71.0477998 },
+    { "lat": 42.2951686, "lon": -71.0478008 },
+    { "lat": 42.2951352, "lon": -71.0478031 },
+    { "lat": 42.2951028, "lon": -71.0478063 },
+    { "lat": 42.2950690, "lon": -71.0478115 },
+    { "lat": 42.2950310, "lon": -71.0478195 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bicycle": "yes",
+    "bus": "no",
+    "condition": "fair",
+    "foot": "yes",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 8648137,
+  "bounds": {
+    "minlat": 42.3149823,
+    "minlon": -71.0489920,
+    "maxlat": 42.3169688,
+    "maxlon": -71.0480192
+  },
+  "geometry": [
+    { "lat": 42.3169688, "lon": -71.0489920 },
+    { "lat": 42.3159601, "lon": -71.0484390 },
+    { "lat": 42.3159101, "lon": -71.0484123 },
+    { "lat": 42.3158600, "lon": -71.0483856 },
+    { "lat": 42.3158043, "lon": -71.0483579 },
+    { "lat": 42.3157537, "lon": -71.0483337 },
+    { "lat": 42.3156918, "lon": -71.0483062 },
+    { "lat": 42.3149823, "lon": -71.0480192 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "cycleway:right": "no",
+    "highway": "tertiary",
+    "lanes": "3",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "Frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 215726052,
+  "bounds": {
+    "minlat": 42.3011483,
+    "minlon": -71.0492947,
+    "maxlat": 42.3014614,
+    "maxlon": -71.0491540
+  },
+  "geometry": [
+    { "lat": 42.3014614, "lon": -71.0491540 },
+    { "lat": 42.3011483, "lon": -71.0492947 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "4",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through|right",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215731091,
+  "bounds": {
+    "minlat": 42.3039758,
+    "minlon": -71.0478344,
+    "maxlat": 42.3044841,
+    "maxlon": -71.0476143
+  },
+  "geometry": [
+    { "lat": 42.3044841, "lon": -71.0476143 },
+    { "lat": 42.3039758, "lon": -71.0478344 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215731093,
+  "bounds": {
+    "minlat": 42.3039389,
+    "minlon": -71.0476949,
+    "maxlat": 42.3044460,
+    "maxlon": -71.0474649
+  },
+  "geometry": [
+    { "lat": 42.3039389, "lon": -71.0476949 },
+    { "lat": 42.3044460, "lon": -71.0474649 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215731094,
+  "bounds": {
+    "minlat": 42.3044460,
+    "minlon": -71.0474649,
+    "maxlat": 42.3127637,
+    "maxlon": -71.0453256
+  },
+  "geometry": [
+    { "lat": 42.3044460, "lon": -71.0474649 },
+    { "lat": 42.3044942, "lon": -71.0474448 },
+    { "lat": 42.3052597, "lon": -71.0471030 },
+    { "lat": 42.3081482, "lon": -71.0457510 },
+    { "lat": 42.3083514, "lon": -71.0456585 },
+    { "lat": 42.3085615, "lon": -71.0455712 },
+    { "lat": 42.3087676, "lon": -71.0454991 },
+    { "lat": 42.3089920, "lon": -71.0454312 },
+    { "lat": 42.3091844, "lon": -71.0453921 },
+    { "lat": 42.3092718, "lon": -71.0453768 },
+    { "lat": 42.3093592, "lon": -71.0453614 },
+    { "lat": 42.3094562, "lon": -71.0453444 },
+    { "lat": 42.3096307, "lon": -71.0453256 },
+    { "lat": 42.3097720, "lon": -71.0453290 },
+    { "lat": 42.3101580, "lon": -71.0453270 },
+    { "lat": 42.3104750, "lon": -71.0453590 },
+    { "lat": 42.3108180, "lon": -71.0454230 },
+    { "lat": 42.3111400, "lon": -71.0455140 },
+    { "lat": 42.3114800, "lon": -71.0456450 },
+    { "lat": 42.3119490, "lon": -71.0458980 },
+    { "lat": 42.3124150, "lon": -71.0461490 },
+    { "lat": 42.3125130, "lon": -71.0462040 },
+    { "lat": 42.3127637, "lon": -71.0463272 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215731096,
+  "bounds": {
+    "minlat": 42.3020607,
+    "minlon": -71.0488444,
+    "maxlat": 42.3033075,
+    "maxlon": -71.0481630
+  },
+  "geometry": [
+    { "lat": 42.3033075, "lon": -71.0481630 },
+    { "lat": 42.3029880, "lon": -71.0483282 },
+    { "lat": 42.3028814, "lon": -71.0483793 },
+    { "lat": 42.3027751, "lon": -71.0484336 },
+    { "lat": 42.3026750, "lon": -71.0484856 },
+    { "lat": 42.3025725, "lon": -71.0485422 },
+    { "lat": 42.3024700, "lon": -71.0486004 },
+    { "lat": 42.3023655, "lon": -71.0486623 },
+    { "lat": 42.3022688, "lon": -71.0487196 },
+    { "lat": 42.3021583, "lon": -71.0487872 },
+    { "lat": 42.3020607, "lon": -71.0488444 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215744466,
+  "bounds": {
+    "minlat": 42.3129052,
+    "minlon": -71.0467461,
+    "maxlat": 42.3131160,
+    "maxlon": -71.0466387
+  },
+  "geometry": [
+    { "lat": 42.3131160, "lon": -71.0467461 },
+    { "lat": 42.3129052, "lon": -71.0466387 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "maxweight:signed": "no",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215744468,
+  "bounds": {
+    "minlat": 42.3044841,
+    "minlon": -71.0476143,
+    "maxlat": 42.3129052,
+    "maxlon": -71.0455260
+  },
+  "geometry": [
+    { "lat": 42.3129052, "lon": -71.0466387 },
+    { "lat": 42.3124438, "lon": -71.0463781 },
+    { "lat": 42.3122514, "lon": -71.0462674 },
+    { "lat": 42.3120781, "lon": -71.0461708 },
+    { "lat": 42.3118717, "lon": -71.0460558 },
+    { "lat": 42.3116724, "lon": -71.0459480 },
+    { "lat": 42.3115655, "lon": -71.0458951 },
+    { "lat": 42.3114639, "lon": -71.0458467 },
+    { "lat": 42.3113619, "lon": -71.0458031 },
+    { "lat": 42.3112514, "lon": -71.0457599 },
+    { "lat": 42.3111500, "lon": -71.0457252 },
+    { "lat": 42.3110430, "lon": -71.0456900 },
+    { "lat": 42.3107310, "lon": -71.0456150 },
+    { "lat": 42.3103180, "lon": -71.0455460 },
+    { "lat": 42.3098870, "lon": -71.0455260 },
+    { "lat": 42.3096308, "lon": -71.0455420 },
+    { "lat": 42.3094648, "lon": -71.0455581 },
+    { "lat": 42.3093760, "lon": -71.0455667 },
+    { "lat": 42.3092402, "lon": -71.0455934 },
+    { "lat": 42.3091027, "lon": -71.0456210 },
+    { "lat": 42.3089000, "lon": -71.0456667 },
+    { "lat": 42.3086869, "lon": -71.0457277 },
+    { "lat": 42.3084609, "lon": -71.0458037 },
+    { "lat": 42.3082476, "lon": -71.0458803 },
+    { "lat": 42.3080563, "lon": -71.0459651 },
+    { "lat": 42.3080338, "lon": -71.0459751 },
+    { "lat": 42.3069199, "lon": -71.0464913 },
+    { "lat": 42.3052911, "lon": -71.0472462 },
+    { "lat": 42.3044841, "lon": -71.0476143 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215744470,
+  "bounds": {
+    "minlat": 42.3127637,
+    "minlon": -71.0464891,
+    "maxlat": 42.3130868,
+    "maxlon": -71.0463272
+  },
+  "geometry": [
+    { "lat": 42.3127637, "lon": -71.0463272 },
+    { "lat": 42.3130868, "lon": -71.0464891 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "maxweight:signed": "no",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215744472,
+  "bounds": {
+    "minlat": 42.3130868,
+    "minlon": -71.0466856,
+    "maxlat": 42.3136049,
+    "maxlon": -71.0464891
+  },
+  "geometry": [
+    { "lat": 42.3130868, "lon": -71.0464891 },
+    { "lat": 42.3131943, "lon": -71.0465348 },
+    { "lat": 42.3132893, "lon": -71.0465754 },
+    { "lat": 42.3134575, "lon": -71.0466359 },
+    { "lat": 42.3135004, "lon": -71.0466493 },
+    { "lat": 42.3136049, "lon": -71.0466856 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895487,
+  "bounds": {
+    "minlat": 42.3178361,
+    "minlon": -71.0507085,
+    "maxlat": 42.3206285,
+    "maxlon": -71.0491184
+  },
+  "geometry": [
+    { "lat": 42.3178361, "lon": -71.0491184 },
+    { "lat": 42.3179328, "lon": -71.0491794 },
+    { "lat": 42.3180200, "lon": -71.0492351 },
+    { "lat": 42.3182063, "lon": -71.0493553 },
+    { "lat": 42.3183047, "lon": -71.0494166 },
+    { "lat": 42.3188180, "lon": -71.0497240 },
+    { "lat": 42.3189191, "lon": -71.0497808 },
+    { "lat": 42.3206285, "lon": -71.0507085 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "destination": "Boston",
+    "destination:street": "Columbia Road",
+    "foot": "no",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895489,
+  "bounds": {
+    "minlat": 42.3147419,
+    "minlon": -71.0508485,
+    "maxlat": 42.3206917,
+    "maxlon": -71.0477479
+  },
+  "geometry": [
+    { "lat": 42.3206917, "lon": -71.0508485 },
+    { "lat": 42.3186367, "lon": -71.0497361 },
+    { "lat": 42.3181418, "lon": -71.0494906 },
+    { "lat": 42.3180445, "lon": -71.0494403 },
+    { "lat": 42.3179375, "lon": -71.0493849 },
+    { "lat": 42.3161208, "lon": -71.0483841 },
+    { "lat": 42.3160237, "lon": -71.0483314 },
+    { "lat": 42.3159288, "lon": -71.0482801 },
+    { "lat": 42.3158313, "lon": -71.0482309 },
+    { "lat": 42.3157346, "lon": -71.0481858 },
+    { "lat": 42.3156430, "lon": -71.0481469 },
+    { "lat": 42.3155369, "lon": -71.0481022 },
+    { "lat": 42.3150415, "lon": -71.0478926 },
+    { "lat": 42.3149399, "lon": -71.0478455 },
+    { "lat": 42.3148468, "lon": -71.0478006 },
+    { "lat": 42.3147419, "lon": -71.0477479 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895491,
+  "bounds": {
+    "minlat": 42.3211542,
+    "minlon": -71.0514029,
+    "maxlat": 42.3214363,
+    "maxlon": -71.0511120
+  },
+  "geometry": [
+    { "lat": 42.3214363, "lon": -71.0514029 },
+    { "lat": 42.3214241, "lon": -71.0513735 },
+    { "lat": 42.3214102, "lon": -71.0513451 },
+    { "lat": 42.3213943, "lon": -71.0513191 },
+    { "lat": 42.3213758, "lon": -71.0512940 },
+    { "lat": 42.3213528, "lon": -71.0512662 },
+    { "lat": 42.3213269, "lon": -71.0512402 },
+    { "lat": 42.3212962, "lon": -71.0512117 },
+    { "lat": 42.3212676, "lon": -71.0511869 },
+    { "lat": 42.3212439, "lon": -71.0511689 },
+    { "lat": 42.3212151, "lon": -71.0511495 },
+    { "lat": 42.3211854, "lon": -71.0511308 },
+    { "lat": 42.3211542, "lon": -71.0511120 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895494,
+  "bounds": {
+    "minlat": 42.3211177,
+    "minlon": -71.0510275,
+    "maxlat": 42.3215326,
+    "maxlon": -71.0509395
+  },
+  "geometry": [
+    { "lat": 42.3211177, "lon": -71.0509847 },
+    { "lat": 42.3211418, "lon": -71.0509976 },
+    { "lat": 42.3211678, "lon": -71.0510099 },
+    { "lat": 42.3211946, "lon": -71.0510190 },
+    { "lat": 42.3212231, "lon": -71.0510250 },
+    { "lat": 42.3212471, "lon": -71.0510273 },
+    { "lat": 42.3212723, "lon": -71.0510275 },
+    { "lat": 42.3212955, "lon": -71.0510246 },
+    { "lat": 42.3213197, "lon": -71.0510194 },
+    { "lat": 42.3213488, "lon": -71.0510111 },
+    { "lat": 42.3213754, "lon": -71.0510021 },
+    { "lat": 42.3214099, "lon": -71.0509906 },
+    { "lat": 42.3214439, "lon": -71.0509783 },
+    { "lat": 42.3214784, "lon": -71.0509646 },
+    { "lat": 42.3215047, "lon": -71.0509542 },
+    { "lat": 42.3215326, "lon": -71.0509395 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "destination": "Boston",
+    "destination:street": "Columbia Road",
+    "foot": "no",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895497,
+  "bounds": {
+    "minlat": 42.3206285,
+    "minlon": -71.0509847,
+    "maxlat": 42.3211177,
+    "maxlon": -71.0507085
+  },
+  "geometry": [
+    { "lat": 42.3206285, "lon": -71.0507085 },
+    { "lat": 42.3211177, "lon": -71.0509847 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "destination": "Boston",
+    "destination:street": "Columbia Road",
+    "foot": "no",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895500,
+  "bounds": {
+    "minlat": 42.3131160,
+    "minlon": -71.0469782,
+    "maxlat": 42.3135391,
+    "maxlon": -71.0467461
+  },
+  "geometry": [
+    { "lat": 42.3135391, "lon": -71.0469782 },
+    { "lat": 42.3134301, "lon": -71.0469057 },
+    { "lat": 42.3133982, "lon": -71.0468871 },
+    { "lat": 42.3133703, "lon": -71.0468709 },
+    { "lat": 42.3133100, "lon": -71.0468400 },
+    { "lat": 42.3132377, "lon": -71.0468050 },
+    { "lat": 42.3131774, "lon": -71.0467772 },
+    { "lat": 42.3131160, "lon": -71.0467461 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215895503,
+  "bounds": {
+    "minlat": 42.3206917,
+    "minlon": -71.0511120,
+    "maxlat": 42.3211542,
+    "maxlon": -71.0508485
+  },
+  "geometry": [
+    { "lat": 42.3211542, "lon": -71.0511120 },
+    { "lat": 42.3206917, "lon": -71.0508485 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "foot": "no",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 215896290,
+  "bounds": {
+    "minlat": 42.3194256,
+    "minlon": -71.0505729,
+    "maxlat": 42.3197575,
+    "maxlon": -71.0503692
+  },
+  "geometry": [
+    { "lat": 42.3197575, "lon": -71.0505729 },
+    { "lat": 42.3194891, "lon": -71.0504077 },
+    { "lat": 42.3194256, "lon": -71.0503692 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "3",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "no",
+    "sidewalk:both": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 215896292,
+  "bounds": {
+    "minlat": 42.3206934,
+    "minlon": -71.0511489,
+    "maxlat": 42.3208944,
+    "maxlon": -71.0510476
+  },
+  "geometry": [
+    { "lat": 42.3206934, "lon": -71.0511481 },
+    { "lat": 42.3207083, "lon": -71.0511489 },
+    { "lat": 42.3207209, "lon": -71.0511479 },
+    { "lat": 42.3207341, "lon": -71.0511454 },
+    { "lat": 42.3207478, "lon": -71.0511409 },
+    { "lat": 42.3207655, "lon": -71.0511338 },
+    { "lat": 42.3207858, "lon": -71.0511229 },
+    { "lat": 42.3208053, "lon": -71.0511112 },
+    { "lat": 42.3208241, "lon": -71.0510980 },
+    { "lat": 42.3208527, "lon": -71.0510775 },
+    { "lat": 42.3208944, "lon": -71.0510476 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 426489201,
+  "bounds": {
+    "minlat": 42.2999520,
+    "minlon": -71.0494205,
+    "maxlat": 42.3005812,
+    "maxlon": -71.0491833
+  },
+  "geometry": [
+    { "lat": 42.2999520, "lon": -71.0494205 },
+    { "lat": 42.3000068, "lon": -71.0494060 },
+    { "lat": 42.3000558, "lon": -71.0493914 },
+    { "lat": 42.3001129, "lon": -71.0493738 },
+    { "lat": 42.3001744, "lon": -71.0493513 },
+    { "lat": 42.3002359, "lon": -71.0493272 },
+    { "lat": 42.3003007, "lon": -71.0493001 },
+    { "lat": 42.3004610, "lon": -71.0492331 },
+    { "lat": 42.3005054, "lon": -71.0492156 },
+    { "lat": 42.3005812, "lon": -71.0491833 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "4",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through|through;right",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 426489204,
+  "bounds": {
+    "minlat": 42.3006379,
+    "minlon": -71.0491553,
+    "maxlat": 42.3023869,
+    "maxlon": -71.0484105
+  },
+  "geometry": [
+    { "lat": 42.3006379, "lon": -71.0491553 },
+    { "lat": 42.3007437, "lon": -71.0491027 },
+    { "lat": 42.3014178, "lon": -71.0487863 },
+    { "lat": 42.3015215, "lon": -71.0487404 },
+    { "lat": 42.3016288, "lon": -71.0486937 },
+    { "lat": 42.3017356, "lon": -71.0486473 },
+    { "lat": 42.3018415, "lon": -71.0486059 },
+    { "lat": 42.3019467, "lon": -71.0485653 },
+    { "lat": 42.3020576, "lon": -71.0485249 },
+    { "lat": 42.3023869, "lon": -71.0484105 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 426670545,
+  "bounds": {
+    "minlat": 42.3135391,
+    "minlon": -71.0473947,
+    "maxlat": 42.3141629,
+    "maxlon": -71.0469782
+  },
+  "geometry": [
+    { "lat": 42.3141629, "lon": -71.0473947 },
+    { "lat": 42.3137519, "lon": -71.0471203 },
+    { "lat": 42.3135391, "lon": -71.0469782 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "through|through|through",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 426670546,
+  "bounds": {
+    "minlat": 42.3141629,
+    "minlon": -71.0477479,
+    "maxlat": 42.3147419,
+    "maxlon": -71.0473947
+  },
+  "geometry": [
+    { "lat": 42.3147419, "lon": -71.0477479 },
+    { "lat": 42.3146518, "lon": -71.0476999 },
+    { "lat": 42.3145591, "lon": -71.0476488 },
+    { "lat": 42.3144624, "lon": -71.0475900 },
+    { "lat": 42.3143691, "lon": -71.0475304 },
+    { "lat": 42.3141629, "lon": -71.0473947 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 518417765,
+  "bounds": {
+    "minlat": 42.3202500,
+    "minlon": -71.0511481,
+    "maxlat": 42.3206934,
+    "maxlon": -71.0508765
+  },
+  "geometry": [
+    { "lat": 42.3206934, "lon": -71.0511481 },
+    { "lat": 42.3202500, "lon": -71.0508765 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "cycleway:both": "no",
+    "highway": "tertiary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 541860540,
+  "bounds": {
+    "minlat": 42.3209340,
+    "minlon": -71.0511480,
+    "maxlat": 42.3209880,
+    "maxlon": -71.0511114
+  },
+  "geometry": [
+    { "lat": 42.3209880, "lon": -71.0511114 },
+    { "lat": 42.3209340, "lon": -71.0511480 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 591217302,
+  "bounds": {
+    "minlat": 42.3197575,
+    "minlon": -71.0508765,
+    "maxlat": 42.3202500,
+    "maxlon": -71.0505729
+  },
+  "geometry": [
+    { "lat": 42.3202500, "lon": -71.0508765 },
+    { "lat": 42.3197575, "lon": -71.0505729 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "cycleway:left": "no",
+    "cycleway:right": "lane",
+    "cycleway:right:lane": "advisory",
+    "highway": "tertiary",
+    "lanes": "3",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 591691956,
+  "bounds": {
+    "minlat": 42.2927093,
+    "minlon": -71.0484913,
+    "maxlat": 42.2941566,
+    "maxlon": -71.0480442
+  },
+  "geometry": [
+    { "lat": 42.2941566, "lon": -71.0483111 },
+    { "lat": 42.2940922, "lon": -71.0483521 },
+    { "lat": 42.2939938, "lon": -71.0484119 },
+    { "lat": 42.2939609, "lon": -71.0484300 },
+    { "lat": 42.2939269, "lon": -71.0484458 },
+    { "lat": 42.2938856, "lon": -71.0484624 },
+    { "lat": 42.2938485, "lon": -71.0484739 },
+    { "lat": 42.2938099, "lon": -71.0484816 },
+    { "lat": 42.2937722, "lon": -71.0484866 },
+    { "lat": 42.2937153, "lon": -71.0484913 },
+    { "lat": 42.2936611, "lon": -71.0484890 },
+    { "lat": 42.2936055, "lon": -71.0484847 },
+    { "lat": 42.2935509, "lon": -71.0484756 },
+    { "lat": 42.2935067, "lon": -71.0484631 },
+    { "lat": 42.2934621, "lon": -71.0484470 },
+    { "lat": 42.2934216, "lon": -71.0484278 },
+    { "lat": 42.2932389, "lon": -71.0483346 },
+    { "lat": 42.2927093, "lon": -71.0480442 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 723782290,
+  "bounds": {
+    "minlat": 42.3008267,
+    "minlon": -71.0494437,
+    "maxlat": 42.3011483,
+    "maxlon": -71.0492947
+  },
+  "geometry": [
+    { "lat": 42.3011483, "lon": -71.0492947 },
+    { "lat": 42.3009472, "lon": -71.0493851 },
+    { "lat": 42.3009223, "lon": -71.0493963 },
+    { "lat": 42.3008267, "lon": -71.0494437 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 923353894,
+  "bounds": {
+    "minlat": 42.3148320,
+    "minlon": -71.0491184,
+    "maxlat": 42.3178361,
+    "maxlon": -71.0472633
+  },
+  "geometry": [
+    { "lat": 42.3148320, "lon": -71.0472633 },
+    { "lat": 42.3149313, "lon": -71.0473299 },
+    { "lat": 42.3150217, "lon": -71.0473939 },
+    { "lat": 42.3151071, "lon": -71.0474576 },
+    { "lat": 42.3151806, "lon": -71.0475139 },
+    { "lat": 42.3152720, "lon": -71.0475872 },
+    { "lat": 42.3153625, "lon": -71.0476611 },
+    { "lat": 42.3154500, "lon": -71.0477308 },
+    { "lat": 42.3155424, "lon": -71.0478018 },
+    { "lat": 42.3156322, "lon": -71.0478680 },
+    { "lat": 42.3157275, "lon": -71.0479342 },
+    { "lat": 42.3158174, "lon": -71.0479928 },
+    { "lat": 42.3159142, "lon": -71.0480528 },
+    { "lat": 42.3160095, "lon": -71.0481093 },
+    { "lat": 42.3161082, "lon": -71.0481652 },
+    { "lat": 42.3178361, "lon": -71.0491184 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "||slight_right",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 923353895,
+  "bounds": {
+    "minlat": 42.3136049,
+    "minlon": -71.0467198,
+    "maxlat": 42.3137045,
+    "maxlon": -71.0466856
+  },
+  "geometry": [
+    { "lat": 42.3136049, "lon": -71.0466856 },
+    { "lat": 42.3137045, "lon": -71.0467198 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 955897888,
+  "bounds": {
+    "minlat": 42.3141189,
+    "minlon": -71.0499095,
+    "maxlat": 42.3195930,
+    "maxlon": -71.0468725
+  },
+  "geometry": [
+    { "lat": 42.3141189, "lon": -71.0468725 },
+    { "lat": 42.3141585, "lon": -71.0468799 },
+    { "lat": 42.3141948, "lon": -71.0468842 },
+    { "lat": 42.3142404, "lon": -71.0468864 },
+    { "lat": 42.3142901, "lon": -71.0468849 },
+    { "lat": 42.3143507, "lon": -71.0468878 },
+    { "lat": 42.3143971, "lon": -71.0468940 },
+    { "lat": 42.3144388, "lon": -71.0469038 },
+    { "lat": 42.3144807, "lon": -71.0469190 },
+    { "lat": 42.3145304, "lon": -71.0469434 },
+    { "lat": 42.3145756, "lon": -71.0469677 },
+    { "lat": 42.3146452, "lon": -71.0470073 },
+    { "lat": 42.3147728, "lon": -71.0470816 },
+    { "lat": 42.3148725, "lon": -71.0471466 },
+    { "lat": 42.3149672, "lon": -71.0472124 },
+    { "lat": 42.3150637, "lon": -71.0472826 },
+    { "lat": 42.3151552, "lon": -71.0473528 },
+    { "lat": 42.3152478, "lon": -71.0474258 },
+    { "lat": 42.3153316, "lon": -71.0474928 },
+    { "lat": 42.3155276, "lon": -71.0476475 },
+    { "lat": 42.3156195, "lon": -71.0477152 },
+    { "lat": 42.3157130, "lon": -71.0477821 },
+    { "lat": 42.3158073, "lon": -71.0478468 },
+    { "lat": 42.3159010, "lon": -71.0479085 },
+    { "lat": 42.3159995, "lon": -71.0479690 },
+    { "lat": 42.3160991, "lon": -71.0480257 },
+    { "lat": 42.3175069, "lon": -71.0488010 },
+    { "lat": 42.3175854, "lon": -71.0488423 },
+    { "lat": 42.3176811, "lon": -71.0488906 },
+    { "lat": 42.3177853, "lon": -71.0489402 },
+    { "lat": 42.3181536, "lon": -71.0491129 },
+    { "lat": 42.3184859, "lon": -71.0492772 },
+    { "lat": 42.3185620, "lon": -71.0493153 },
+    { "lat": 42.3189190, "lon": -71.0495014 },
+    { "lat": 42.3189769, "lon": -71.0495353 },
+    { "lat": 42.3190343, "lon": -71.0495702 },
+    { "lat": 42.3194545, "lon": -71.0498291 },
+    { "lat": 42.3195263, "lon": -71.0498711 },
+    { "lat": 42.3195930, "lon": -71.0499095 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "128854",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt",
+    "width": "15.2"
+  }
+},
+{
+  "type": "way",
+  "id": 956937576,
+  "bounds": {
+    "minlat": 42.3141189,
+    "minlon": -71.0472633,
+    "maxlat": 42.3148320,
+    "maxlon": -71.0468725
+  },
+  "geometry": [
+    { "lat": 42.3141189, "lon": -71.0468725 },
+    { "lat": 42.3142310, "lon": -71.0469244 },
+    { "lat": 42.3143327, "lon": -71.0469753 },
+    { "lat": 42.3144356, "lon": -71.0470282 },
+    { "lat": 42.3145367, "lon": -71.0470827 },
+    { "lat": 42.3146375, "lon": -71.0471409 },
+    { "lat": 42.3147378, "lon": -71.0472024 },
+    { "lat": 42.3148320, "lon": -71.0472633 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "4",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "reverse|||",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 956943576,
+  "bounds": {
+    "minlat": 42.3169688,
+    "minlon": -71.0497599,
+    "maxlat": 42.3182997,
+    "maxlon": -71.0489920
+  },
+  "geometry": [
+    { "lat": 42.3182997, "lon": -71.0497599 },
+    { "lat": 42.3182416, "lon": -71.0497400 },
+    { "lat": 42.3182010, "lon": -71.0497239 },
+    { "lat": 42.3181540, "lon": -71.0497013 },
+    { "lat": 42.3181053, "lon": -71.0496768 },
+    { "lat": 42.3180520, "lon": -71.0496486 },
+    { "lat": 42.3179916, "lon": -71.0496151 },
+    { "lat": 42.3179109, "lon": -71.0495698 },
+    { "lat": 42.3178555, "lon": -71.0495358 },
+    { "lat": 42.3178079, "lon": -71.0495052 },
+    { "lat": 42.3177622, "lon": -71.0494719 },
+    { "lat": 42.3176768, "lon": -71.0494061 },
+    { "lat": 42.3176365, "lon": -71.0493748 },
+    { "lat": 42.3175825, "lon": -71.0493382 },
+    { "lat": 42.3173964, "lon": -71.0492299 },
+    { "lat": 42.3169688, "lon": -71.0489920 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "cycleway:right": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 956943578,
+  "bounds": {
+    "minlat": 42.3135391,
+    "minlon": -71.0480192,
+    "maxlat": 42.3149823,
+    "maxlon": -71.0469782
+  },
+  "geometry": [
+    { "lat": 42.3149823, "lon": -71.0480192 },
+    { "lat": 42.3146626, "lon": -71.0478865 },
+    { "lat": 42.3145698, "lon": -71.0478462 },
+    { "lat": 42.3144623, "lon": -71.0477962 },
+    { "lat": 42.3143683, "lon": -71.0477467 },
+    { "lat": 42.3143050, "lon": -71.0477123 },
+    { "lat": 42.3142698, "lon": -71.0476921 },
+    { "lat": 42.3142301, "lon": -71.0476687 },
+    { "lat": 42.3141902, "lon": -71.0476451 },
+    { "lat": 42.3141398, "lon": -71.0476157 },
+    { "lat": 42.3141005, "lon": -71.0475917 },
+    { "lat": 42.3140541, "lon": -71.0475643 },
+    { "lat": 42.3140057, "lon": -71.0475345 },
+    { "lat": 42.3139727, "lon": -71.0475126 },
+    { "lat": 42.3139357, "lon": -71.0474874 },
+    { "lat": 42.3139052, "lon": -71.0474660 },
+    { "lat": 42.3138681, "lon": -71.0474392 },
+    { "lat": 42.3138404, "lon": -71.0474164 },
+    { "lat": 42.3137992, "lon": -71.0473824 },
+    { "lat": 42.3137578, "lon": -71.0473461 },
+    { "lat": 42.3137278, "lon": -71.0473185 },
+    { "lat": 42.3136781, "lon": -71.0472672 },
+    { "lat": 42.3136637, "lon": -71.0472494 },
+    { "lat": 42.3136368, "lon": -71.0472109 },
+    { "lat": 42.3136094, "lon": -71.0471626 },
+    { "lat": 42.3135871, "lon": -71.0471191 },
+    { "lat": 42.3135672, "lon": -71.0470740 },
+    { "lat": 42.3135514, "lon": -71.0470280 },
+    { "lat": 42.3135391, "lon": -71.0469782 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "cycleway:right": "no",
+    "highway": "tertiary",
+    "lanes": "4",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt",
+    "turn:lanes": "left|left|left;through|through"
+  }
+},
+{
+  "type": "way",
+  "id": 1046988422,
+  "bounds": {
+    "minlat": 42.3032717,
+    "minlon": -71.0480225,
+    "maxlat": 42.3037764,
+    "maxlon": -71.0477721
+  },
+  "geometry": [
+    { "lat": 42.3032717, "lon": -71.0480225 },
+    { "lat": 42.3037764, "lon": -71.0477721 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1046988423,
+  "bounds": {
+    "minlat": 42.3037764,
+    "minlon": -71.0477721,
+    "maxlat": 42.3039389,
+    "maxlon": -71.0476949
+  },
+  "geometry": [
+    { "lat": 42.3037764, "lon": -71.0477721 },
+    { "lat": 42.3039389, "lon": -71.0476949 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "metal",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1076716684,
+  "bounds": {
+    "minlat": 42.3033075,
+    "minlon": -71.0481630,
+    "maxlat": 42.3038124,
+    "maxlon": -71.0479102
+  },
+  "geometry": [
+    { "lat": 42.3038124, "lon": -71.0479102 },
+    { "lat": 42.3033075, "lon": -71.0481630 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1076716685,
+  "bounds": {
+    "minlat": 42.3038124,
+    "minlon": -71.0479102,
+    "maxlat": 42.3039758,
+    "maxlon": -71.0478344
+  },
+  "geometry": [
+    { "lat": 42.3039758, "lon": -71.0478344 },
+    { "lat": 42.3038124, "lon": -71.0479102 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bridge": "yes",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "1",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "metal",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1124202297,
+  "bounds": {
+    "minlat": 42.3137045,
+    "minlon": -71.0468725,
+    "maxlat": 42.3141189,
+    "maxlon": -71.0467198
+  },
+  "geometry": [
+    { "lat": 42.3137045, "lon": -71.0467198 },
+    { "lat": 42.3138170, "lon": -71.0467583 },
+    { "lat": 42.3139249, "lon": -71.0467961 },
+    { "lat": 42.3140359, "lon": -71.0468382 },
+    { "lat": 42.3141189, "lon": -71.0468725 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "4",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1134430099,
+  "bounds": {
+    "minlat": 42.3014614,
+    "minlon": -71.0491540,
+    "maxlat": 42.3020607,
+    "maxlon": -71.0488444
+  },
+  "geometry": [
+    { "lat": 42.3020607, "lon": -71.0488444 },
+    { "lat": 42.3019580, "lon": -71.0489036 },
+    { "lat": 42.3018540, "lon": -71.0489601 },
+    { "lat": 42.3017516, "lon": -71.0490143 },
+    { "lat": 42.3016467, "lon": -71.0490678 },
+    { "lat": 42.3015407, "lon": -71.0491183 },
+    { "lat": 42.3014614, "lon": -71.0491540 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "shoulder": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "||right",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1137220729,
+  "bounds": {
+    "minlat": 42.2957199,
+    "minlon": -71.0494777,
+    "maxlat": 42.2999520,
+    "maxlon": -71.0478017
+  },
+  "geometry": [
+    { "lat": 42.2957199, "lon": -71.0478017 },
+    { "lat": 42.2958487, "lon": -71.0478839 },
+    { "lat": 42.2959485, "lon": -71.0479484 },
+    { "lat": 42.2963170, "lon": -71.0481866 },
+    { "lat": 42.2969310, "lon": -71.0485864 },
+    { "lat": 42.2970299, "lon": -71.0486479 },
+    { "lat": 42.2971309, "lon": -71.0487103 },
+    { "lat": 42.2972126, "lon": -71.0487578 },
+    { "lat": 42.2973299, "lon": -71.0488240 },
+    { "lat": 42.2974233, "lon": -71.0488740 },
+    { "lat": 42.2975151, "lon": -71.0489194 },
+    { "lat": 42.2976247, "lon": -71.0489724 },
+    { "lat": 42.2977223, "lon": -71.0490174 },
+    { "lat": 42.2978352, "lon": -71.0490648 },
+    { "lat": 42.2979257, "lon": -71.0491007 },
+    { "lat": 42.2980360, "lon": -71.0491409 },
+    { "lat": 42.2981343, "lon": -71.0491754 },
+    { "lat": 42.2982468, "lon": -71.0492121 },
+    { "lat": 42.2983589, "lon": -71.0492447 },
+    { "lat": 42.2986913, "lon": -71.0493433 },
+    { "lat": 42.2988874, "lon": -71.0493970 },
+    { "lat": 42.2989963, "lon": -71.0494242 },
+    { "lat": 42.2990989, "lon": -71.0494467 },
+    { "lat": 42.2992057, "lon": -71.0494636 },
+    { "lat": 42.2993152, "lon": -71.0494729 },
+    { "lat": 42.2994185, "lon": -71.0494777 },
+    { "lat": 42.2995197, "lon": -71.0494739 },
+    { "lat": 42.2996267, "lon": -71.0494677 },
+    { "lat": 42.2997384, "lon": -71.0494558 },
+    { "lat": 42.2998648, "lon": -71.0494371 },
+    { "lat": 42.2999520, "lon": -71.0494205 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bicycle": "yes",
+    "condition": "fair",
+    "destination:street": "Morrissey Boulevard",
+    "foot": "yes",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1137220730,
+  "bounds": {
+    "minlat": 42.2942525,
+    "minlon": -71.0473001,
+    "maxlat": 42.2944746,
+    "maxlon": -71.0472546
+  },
+  "geometry": [
+    { "lat": 42.2942525, "lon": -71.0472546 },
+    { "lat": 42.2943059, "lon": -71.0472630 },
+    { "lat": 42.2943730, "lon": -71.0472772 },
+    { "lat": 42.2944746, "lon": -71.0473001 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "destination:street": "Morrissey Boulevard",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "slight_left;through||",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1203868969,
+  "bounds": {
+    "minlat": 42.3182997,
+    "minlon": -71.0503692,
+    "maxlat": 42.3194256,
+    "maxlon": -71.0497599
+  },
+  "geometry": [
+    { "lat": 42.3194256, "lon": -71.0503692 },
+    { "lat": 42.3191179, "lon": -71.0501858 },
+    { "lat": 42.3190580, "lon": -71.0501516 },
+    { "lat": 42.3190019, "lon": -71.0501209 },
+    { "lat": 42.3184558, "lon": -71.0498256 },
+    { "lat": 42.3184167, "lon": -71.0498067 },
+    { "lat": 42.3183763, "lon": -71.0497893 },
+    { "lat": 42.3183332, "lon": -71.0497720 },
+    { "lat": 42.3182997, "lon": -71.0497599 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "3",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "no",
+    "sidewalk:both": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1303611199,
+  "bounds": {
+    "minlat": 42.3199306,
+    "minlon": -71.0501580,
+    "maxlat": 42.3205716,
+    "maxlon": -71.0500353
+  },
+  "geometry": [
+    { "lat": 42.3199306, "lon": -71.0500353 },
+    { "lat": 42.3201613, "lon": -71.0500933 },
+    { "lat": 42.3204415, "lon": -71.0501376 },
+    { "lat": 42.3204891, "lon": -71.0501427 },
+    { "lat": 42.3205716, "lon": -71.0501580 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "128854",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt",
+    "width": "15.2"
+  }
+},
+{
+  "type": "way",
+  "id": 1413526946,
+  "bounds": {
+    "minlat": 42.2992349,
+    "minlon": -71.0497011,
+    "maxlat": 42.3008267,
+    "maxlon": -71.0494437
+  },
+  "geometry": [
+    { "lat": 42.3008267, "lon": -71.0494437 },
+    { "lat": 42.3007088, "lon": -71.0494901 },
+    { "lat": 42.3006359, "lon": -71.0495239 },
+    { "lat": 42.3005516, "lon": -71.0495571 },
+    { "lat": 42.3004759, "lon": -71.0495854 },
+    { "lat": 42.3004030, "lon": -71.0496108 },
+    { "lat": 42.3003475, "lon": -71.0496275 },
+    { "lat": 42.3002936, "lon": -71.0496412 },
+    { "lat": 42.3002270, "lon": -71.0496571 },
+    { "lat": 42.3001338, "lon": -71.0496729 },
+    { "lat": 42.3000691, "lon": -71.0496821 },
+    { "lat": 42.2999908, "lon": -71.0496902 },
+    { "lat": 42.2998969, "lon": -71.0496974 },
+    { "lat": 42.2998086, "lon": -71.0497007 },
+    { "lat": 42.2997262, "lon": -71.0497011 },
+    { "lat": 42.2996459, "lon": -71.0496987 },
+    { "lat": 42.2995561, "lon": -71.0496933 },
+    { "lat": 42.2994487, "lon": -71.0496814 },
+    { "lat": 42.2993433, "lon": -71.0496647 },
+    { "lat": 42.2992349, "lon": -71.0496424 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bicycle": "yes",
+    "bus": "no",
+    "condition": "fair",
+    "foot": "yes",
+    "hgv": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1413526947,
+  "bounds": {
+    "minlat": 42.3023869,
+    "minlon": -71.0484105,
+    "maxlat": 42.3032717,
+    "maxlon": -71.0480225
+  },
+  "geometry": [
+    { "lat": 42.3023869, "lon": -71.0484105 },
+    { "lat": 42.3025947, "lon": -71.0483418 },
+    { "lat": 42.3027004, "lon": -71.0482981 },
+    { "lat": 42.3028013, "lon": -71.0482548 },
+    { "lat": 42.3029120, "lon": -71.0482046 },
+    { "lat": 42.3032717, "lon": -71.0480225 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1413593077,
+  "bounds": {
+    "minlat": 42.3195930,
+    "minlon": -71.0500353,
+    "maxlat": 42.3199306,
+    "maxlon": -71.0499095
+  },
+  "geometry": [
+    { "lat": 42.3195930, "lon": -71.0499095 },
+    { "lat": 42.3196552, "lon": -71.0499402 },
+    { "lat": 42.3196996, "lon": -71.0499592 },
+    { "lat": 42.3197476, "lon": -71.0499791 },
+    { "lat": 42.3197979, "lon": -71.0499980 },
+    { "lat": 42.3198365, "lon": -71.0500115 },
+    { "lat": 42.3198504, "lon": -71.0500153 },
+    { "lat": 42.3198925, "lon": -71.0500263 },
+    { "lat": 42.3199306, "lon": -71.0500353 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "128854",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt",
+    "width": "15.2"
+  }
+},
+{
+  "type": "way",
+  "id": 1413593078,
+  "bounds": {
+    "minlat": 42.3199306,
+    "minlon": -71.0500353,
+    "maxlat": 42.3202615,
+    "maxlon": -71.0500026
+  },
+  "geometry": [
+    { "lat": 42.3199306, "lon": -71.0500353 },
+    { "lat": 42.3201905, "lon": -71.0500101 },
+    { "lat": 42.3202281, "lon": -71.0500059 },
+    { "lat": 42.3202615, "lon": -71.0500026 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "highway": "tertiary",
+    "massgis:way_id": "35",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1413869327,
+  "bounds": {
+    "minlat": 42.2944746,
+    "minlon": -71.0478017,
+    "maxlat": 42.2957199,
+    "maxlon": -71.0473001
+  },
+  "geometry": [
+    { "lat": 42.2944746, "lon": -71.0473001 },
+    { "lat": 42.2945864, "lon": -71.0473276 },
+    { "lat": 42.2946960, "lon": -71.0473568 },
+    { "lat": 42.2948053, "lon": -71.0473891 },
+    { "lat": 42.2949095, "lon": -71.0474237 },
+    { "lat": 42.2950182, "lon": -71.0474645 },
+    { "lat": 42.2950982, "lon": -71.0474958 },
+    { "lat": 42.2951641, "lon": -71.0475232 },
+    { "lat": 42.2952489, "lon": -71.0475600 },
+    { "lat": 42.2953444, "lon": -71.0476039 },
+    { "lat": 42.2954394, "lon": -71.0476502 },
+    { "lat": 42.2955443, "lon": -71.0477043 },
+    { "lat": 42.2956464, "lon": -71.0477623 },
+    { "lat": 42.2957199, "lon": -71.0478017 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "bicycle": "yes",
+    "condition": "fair",
+    "destination:street": "Morrissey Boulevard",
+    "foot": "yes",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1413870255,
+  "bounds": {
+    "minlat": 42.2938124,
+    "minlon": -71.0473187,
+    "maxlat": 42.2942525,
+    "maxlon": -71.0472405
+  },
+  "geometry": [
+    { "lat": 42.2938124, "lon": -71.0473187 },
+    { "lat": 42.2938610, "lon": -71.0472931 },
+    { "lat": 42.2939140, "lon": -71.0472716 },
+    { "lat": 42.2939532, "lon": -71.0472592 },
+    { "lat": 42.2939943, "lon": -71.0472502 },
+    { "lat": 42.2940166, "lon": -71.0472465 },
+    { "lat": 42.2940302, "lon": -71.0472443 },
+    { "lat": 42.2940645, "lon": -71.0472412 },
+    { "lat": 42.2941014, "lon": -71.0472405 },
+    { "lat": 42.2941399, "lon": -71.0472429 },
+    { "lat": 42.2941917, "lon": -71.0472467 },
+    { "lat": 42.2942525, "lon": -71.0472546 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1413917003,
+  "bounds": {
+    "minlat": 42.2911321,
+    "minlon": -71.0480442,
+    "maxlat": 42.2927093,
+    "maxlon": -71.0470924
+  },
+  "geometry": [
+    { "lat": 42.2927093, "lon": -71.0480442 },
+    { "lat": 42.2920388, "lon": -71.0476802 },
+    { "lat": 42.2919812, "lon": -71.0476504 },
+    { "lat": 42.2918043, "lon": -71.0475541 },
+    { "lat": 42.2917137, "lon": -71.0475002 },
+    { "lat": 42.2916149, "lon": -71.0474481 },
+    { "lat": 42.2915155, "lon": -71.0473887 },
+    { "lat": 42.2914168, "lon": -71.0473163 },
+    { "lat": 42.2913210, "lon": -71.0472490 },
+    { "lat": 42.2911916, "lon": -71.0471426 },
+    { "lat": 42.2911321, "lon": -71.0470924 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1444137489,
+  "bounds": {
+    "minlat": 42.3005812,
+    "minlon": -71.0491833,
+    "maxlat": 42.3006379,
+    "maxlon": -71.0491553
+  },
+  "geometry": [
+    { "lat": 42.3005812, "lon": -71.0491833 },
+    { "lat": 42.3006379, "lon": -71.0491553 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "4",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through|through;right",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1444817605,
+  "bounds": {
+    "minlat": 42.3206934,
+    "minlon": -71.0512006,
+    "maxlat": 42.3209340,
+    "maxlon": -71.0511480
+  },
+  "geometry": [
+    { "lat": 42.3209340, "lon": -71.0511480 },
+    { "lat": 42.3208906, "lon": -71.0511758 },
+    { "lat": 42.3208675, "lon": -71.0511910 },
+    { "lat": 42.3208487, "lon": -71.0511973 },
+    { "lat": 42.3208273, "lon": -71.0512006 },
+    { "lat": 42.3208048, "lon": -71.0511990 },
+    { "lat": 42.3207829, "lon": -71.0511936 },
+    { "lat": 42.3207606, "lon": -71.0511851 },
+    { "lat": 42.3206934, "lon": -71.0511481 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1444817606,
+  "bounds": {
+    "minlat": 42.3208944,
+    "minlon": -71.0510476,
+    "maxlat": 42.3209497,
+    "maxlon": -71.0510098
+  },
+  "geometry": [
+    { "lat": 42.3208944, "lon": -71.0510476 },
+    { "lat": 42.3209497, "lon": -71.0510098 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "125483",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1446622793,
+  "bounds": {
+    "minlat": 42.2897251,
+    "minlon": -71.0470924,
+    "maxlat": 42.2911321,
+    "maxlon": -71.0453492
+  },
+  "geometry": [
+    { "lat": 42.2911321, "lon": -71.0470924 },
+    { "lat": 42.2910633, "lon": -71.0470326 },
+    { "lat": 42.2910338, "lon": -71.0470060 },
+    { "lat": 42.2909479, "lon": -71.0469228 },
+    { "lat": 42.2908583, "lon": -71.0468307 },
+    { "lat": 42.2907674, "lon": -71.0467337 },
+    { "lat": 42.2906858, "lon": -71.0466408 },
+    { "lat": 42.2906011, "lon": -71.0465444 },
+    { "lat": 42.2905165, "lon": -71.0464326 },
+    { "lat": 42.2904257, "lon": -71.0463074 },
+    { "lat": 42.2903604, "lon": -71.0462189 },
+    { "lat": 42.2902868, "lon": -71.0461169 },
+    { "lat": 42.2900657, "lon": -71.0457872 },
+    { "lat": 42.2900062, "lon": -71.0457002 },
+    { "lat": 42.2899757, "lon": -71.0456557 },
+    { "lat": 42.2898942, "lon": -71.0455427 },
+    { "lat": 42.2898127, "lon": -71.0454469 },
+    { "lat": 42.2897251, "lon": -71.0453492 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1505110065,
+  "bounds": {
+    "minlat": 42.2936600,
+    "minlon": -71.0474210,
+    "maxlat": 42.2938124,
+    "maxlon": -71.0473187
+  },
+  "geometry": [
+    { "lat": 42.2936600, "lon": -71.0474210 },
+    { "lat": 42.2937126, "lon": -71.0473822 },
+    { "lat": 42.2937651, "lon": -71.0473479 },
+    { "lat": 42.2938124, "lon": -71.0473187 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1505110066,
+  "bounds": {
+    "minlat": 42.2934784,
+    "minlon": -71.0475550,
+    "maxlat": 42.2936600,
+    "maxlon": -71.0474210
+  },
+  "geometry": [
+    { "lat": 42.2934784, "lon": -71.0475550 },
+    { "lat": 42.2936600, "lon": -71.0474210 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "-1",
+    "massgis:ref": "0 N118",
+    "massgis:way_id": "122591",
+    "maxheight": "13'6\"",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "tunnel": "yes",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1505110067,
+  "bounds": {
+    "minlat": 42.2943229,
+    "minlon": -71.0482051,
+    "maxlat": 42.2950310,
+    "maxlon": -71.0478195
+  },
+  "geometry": [
+    { "lat": 42.2950310, "lon": -71.0478195 },
+    { "lat": 42.2949928, "lon": -71.0478296 },
+    { "lat": 42.2949594, "lon": -71.0478399 },
+    { "lat": 42.2949221, "lon": -71.0478537 },
+    { "lat": 42.2948865, "lon": -71.0478674 },
+    { "lat": 42.2948533, "lon": -71.0478835 },
+    { "lat": 42.2948209, "lon": -71.0478993 },
+    { "lat": 42.2947875, "lon": -71.0479185 },
+    { "lat": 42.2947554, "lon": -71.0479369 },
+    { "lat": 42.2947216, "lon": -71.0479585 },
+    { "lat": 42.2946868, "lon": -71.0479795 },
+    { "lat": 42.2945857, "lon": -71.0480427 },
+    { "lat": 42.2944892, "lon": -71.0481020 },
+    { "lat": 42.2943888, "lon": -71.0481632 },
+    { "lat": 42.2943229, "lon": -71.0482051 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "massgis:way_id": "122591",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1505110068,
+  "bounds": {
+    "minlat": 42.2941566,
+    "minlon": -71.0483111,
+    "maxlat": 42.2943229,
+    "maxlon": -71.0482051
+  },
+  "geometry": [
+    { "lat": 42.2943229, "lon": -71.0482051 },
+    { "lat": 42.2941566, "lon": -71.0483111 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "primary",
+    "lanes": "3",
+    "layer": "-1",
+    "massgis:way_id": "122591",
+    "maxheight": "13'5\"",
+    "maxspeed": "35 mph",
+    "name": "William T. Morrissey Boulevard",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source": "massgis_import_v0.1_20071008193615",
+    "source:maxspeed": "massgis",
+    "surface": "asphalt",
+    "tunnel": "yes",
+    "width": "32.0"
+  }
+},
+{
+  "type": "way",
+  "id": 1516162153,
+  "bounds": {
+    "minlat": 42.3205716,
+    "minlon": -71.0502402,
+    "maxlat": 42.3206879,
+    "maxlon": -71.0501580
+  },
+  "geometry": [
+    { "lat": 42.3205716, "lon": -71.0501580 },
+    { "lat": 42.3205915, "lon": -71.0501624 },
+    { "lat": 42.3206108, "lon": -71.0501676 },
+    { "lat": 42.3206291, "lon": -71.0501743 },
+    { "lat": 42.3206457, "lon": -71.0501848 },
+    { "lat": 42.3206606, "lon": -71.0501975 },
+    { "lat": 42.3206705, "lon": -71.0502108 },
+    { "lat": 42.3206879, "lon": -71.0502402 }
+  ],
+  "tags": {
+    "attribution": "Office of Geographic and Environmental Information (MassGIS)",
+    "condition": "fair",
+    "highway": "tertiary",
+    "lanes": "2",
+    "massgis:way_id": "128854",
+    "name": "William T. Morrissey Boulevard",
+    "note": "frontage road",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source": "massgis_import_v0.1_20071008193615",
+    "surface": "asphalt",
+    "width": "15.2"
+  }
+}
+
+  ]
+}

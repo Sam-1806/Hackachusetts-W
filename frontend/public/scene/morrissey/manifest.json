@@ -1,0 +1,118 @@
+{
+  "scene_id": "bpda-morrissey-bos_i_7-bos_i_8",
+  "title": "Morrissey Boulevard / Columbia Point",
+  "frame": {
+    "description": "Local metres: x east, y up (NAVD88), z = -north. Origin is the centre of the loaded tiles.",
+    "origin_boston3d_ft": [
+      47500.0,
+      35000.0
+    ],
+    "origin_epsg2249_ft": [
+      778600.0,
+      2937900.0
+    ],
+    "source_crs": "EPSG:2249 (NAD83 / Massachusetts Mainland, US survey feet) minus Metro Boston 3D origin (731100, 2902900)",
+    "vertical_datum": "NAVD88",
+    "units": "metres",
+    "bounds_xz": [
+      -762.001524003048,
+      -1524.003048006096,
+      762.001524003048,
+      1524.003048006096
+    ],
+    "geo": {
+      "lonlat_to_xz": {
+        "x": [
+          82444.97414790247,
+          -589.4336043091874,
+          5882436.509430831
+        ],
+        "z": [
+          -437.50876362748545,
+          -111073.98128335073,
+          4668329.217957852
+        ]
+      },
+      "xz_to_lonlat": {
+        "lon": [
+          1.2128960356406449e-05,
+          -6.43644609808523e-08,
+          -71.04736593795083
+        ],
+        "lat": [
+          -4.777470287789227e-08,
+          -9.002754994639018e-06,
+          42.308855853470426
+        ]
+      },
+      "max_residual_m": 0.1684,
+      "note": "Affine fit to pyproj EPSG:2249->EPSG:4326 over the scene extent."
+    }
+  },
+  "heightfield": {
+    "file": "heightfield.bin",
+    "encoding": "uint16 little-endian, metres = value / 100 - 20",
+    "width": 763,
+    "height": 1525,
+    "resolution_m": 2.0,
+    "origin_xz": [
+      -762.001524003048,
+      -1524.003048006096
+    ],
+    "source": "Resampled from the BPDA 2011 terrain TIN."
+  },
+  "layers": {
+    "terrain": {
+      "file": "terrain.glb",
+      "textures": {
+        "BOS_I_7": "groundplan_BOS_I_7.jpg",
+        "BOS_I_8": "groundplan_BOS_I_8.jpg"
+      },
+      "status": "official"
+    },
+    "buildings": {
+      "file": "buildings.glb",
+      "records": "buildings.json",
+      "count": 2885,
+      "status": "official"
+    },
+    "streets": {
+      "file": "streets.glb",
+      "status": "official",
+      "display_offsets_m": {
+        "road": 0.05,
+        "parking": 0.045,
+        "driveway": 0.05,
+        "sidewalk": 0.17,
+        "marking": 0.065
+      }
+    },
+    "props": {
+      "file": "props.json",
+      "status": "illustrative"
+    }
+  },
+  "tiles": [
+    "BOS_I_7",
+    "BOS_I_8"
+  ],
+  "sources": [
+    {
+      "id": "bpda-3d-smart-model",
+      "name": "Boston Planning Department 3D Smart Model",
+      "url": "https://www.bostonplans.org/3d-data-maps/3d-smart-model/3d-data-download",
+      "license": "ODC Public Domain Dedication and License (PDDL)"
+    },
+    {
+      "id": "bpda-3d-documentation",
+      "name": "BPDA 3D Data Documentation",
+      "url": "https://maps.bostonplans.org/3d/3D_Data_Documentation.pdf"
+    }
+  ],
+  "limitations": [
+    "Terrain is the 2011 survey surface; post-2011 grading, seawalls or road changes may be missing.",
+    "Groundplan linework is 2011 photogrammetry (~6 in precision); building models are 2014-2025 vintages.",
+    "Road, sidewalk and marking surfaces are draped onto terrain with small display offsets; curb heights are stylised (0.17 m).",
+    "Facade windows and materials are stylised, not surveyed."
+  ]
+}

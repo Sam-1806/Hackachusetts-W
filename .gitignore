@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+
+# Downloaded BPDA 3D source tiles (large; re-fetched by analysis/scene/build_bpda_scene.py)
+analysis/scene/.cache/

@@ -1,0 +1,881 @@
+{
+  "schema_version": "historical-gauge-series/v1",
+  "series": [
+    {
+      "event_id": "usgs-2018-01-04",
+      "station_id": "8443970",
+      "station_name": "Boston",
+      "longitude": -71.0503,
+      "latitude": 42.3539,
+      "parameter": "verified hourly water level",
+      "unit": "m",
+      "datum": "NAVD88",
+      "time_zone": "GMT",
+      "source_url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "observations": [
+        {
+          "timestamp": "2018-01-03T00:00:00Z",
+          "value": -1.522,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T01:00:00Z",
+          "value": -0.799,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T02:00:00Z",
+          "value": 0.144,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T03:00:00Z",
+          "value": 0.988,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T04:00:00Z",
+          "value": 1.379,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T05:00:00Z",
+          "value": 1.311,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T06:00:00Z",
+          "value": 0.897,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T07:00:00Z",
+          "value": 0.185,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T08:00:00Z",
+          "value": -0.655,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T09:00:00Z",
+          "value": -1.516,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T10:00:00Z",
+          "value": -2.033,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T11:00:00Z",
+          "value": -1.938,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T12:00:00Z",
+          "value": -1.338,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T13:00:00Z",
+          "value": -0.573,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T14:00:00Z",
+          "value": 0.453,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T15:00:00Z",
+          "value": 1.394,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T16:00:00Z",
+          "value": 1.96,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T17:00:00Z",
+          "value": 2.004,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T18:00:00Z",
+          "value": 1.55,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T19:00:00Z",
+          "value": 0.859,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T20:00:00Z",
+          "value": -0.065,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T21:00:00Z",
+          "value": -1.074,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T22:00:00Z",
+          "value": -1.92,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-03T23:00:00Z",
+          "value": -2.297,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T00:00:00Z",
+          "value": -1.984,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T01:00:00Z",
+          "value": -1.436,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T02:00:00Z",
+          "value": -0.541,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T03:00:00Z",
+          "value": 0.468,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T04:00:00Z",
+          "value": 1.304,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T05:00:00Z",
+          "value": 1.644,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T06:00:00Z",
+          "value": 1.59,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T07:00:00Z",
+          "value": 1.121,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T08:00:00Z",
+          "value": 0.435,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T09:00:00Z",
+          "value": -0.484,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T10:00:00Z",
+          "value": -1.202,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T11:00:00Z",
+          "value": -1.694,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T12:00:00Z",
+          "value": -1.507,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T13:00:00Z",
+          "value": -0.858,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T14:00:00Z",
+          "value": 0.128,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T15:00:00Z",
+          "value": 1.109,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T16:00:00Z",
+          "value": 1.978,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T17:00:00Z",
+          "value": 2.643,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T18:00:00Z",
+          "value": 2.901,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T19:00:00Z",
+          "value": 2.364,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T20:00:00Z",
+          "value": 1.667,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T21:00:00Z",
+          "value": 0.787,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T22:00:00Z",
+          "value": -0.289,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-04T23:00:00Z",
+          "value": -1.075,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T00:00:00Z",
+          "value": -1.694,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T01:00:00Z",
+          "value": -1.566,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T02:00:00Z",
+          "value": -1.031,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T03:00:00Z",
+          "value": -0.17,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T04:00:00Z",
+          "value": 0.656,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T05:00:00Z",
+          "value": 1.44,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T06:00:00Z",
+          "value": 1.46,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T07:00:00Z",
+          "value": 1.279,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T08:00:00Z",
+          "value": 0.864,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T09:00:00Z",
+          "value": 0.184,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T10:00:00Z",
+          "value": -0.782,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T11:00:00Z",
+          "value": -1.504,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T12:00:00Z",
+          "value": -2.12,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T13:00:00Z",
+          "value": -1.998,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T14:00:00Z",
+          "value": -1.34,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T15:00:00Z",
+          "value": -0.623,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T16:00:00Z",
+          "value": 0.239,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T17:00:00Z",
+          "value": 1.007,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T18:00:00Z",
+          "value": 1.403,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T19:00:00Z",
+          "value": 1.396,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T20:00:00Z",
+          "value": 0.893,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T21:00:00Z",
+          "value": 0.111,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T22:00:00Z",
+          "value": -0.687,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-01-05T23:00:00Z",
+          "value": -1.64,
+          "quality": "verified"
+        }
+      ],
+      "limitations": [
+        "A harbor tide gauge is not a street-level water-depth sensor.",
+        "Gauge levels do not establish local flow direction or velocity."
+      ]
+    },
+    {
+      "event_id": "usgs-2018-03-02",
+      "station_id": "8443970",
+      "station_name": "Boston",
+      "longitude": -71.0503,
+      "latitude": 42.3539,
+      "parameter": "verified hourly water level",
+      "unit": "m",
+      "datum": "NAVD88",
+      "time_zone": "GMT",
+      "source_url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "observations": [
+        {
+          "timestamp": "2018-03-01T00:00:00Z",
+          "value": -0.161,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T01:00:00Z",
+          "value": 0.684,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T02:00:00Z",
+          "value": 1.366,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T03:00:00Z",
+          "value": 1.632,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T04:00:00Z",
+          "value": 1.439,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T05:00:00Z",
+          "value": 0.948,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T06:00:00Z",
+          "value": 0.22,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T07:00:00Z",
+          "value": -0.624,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T08:00:00Z",
+          "value": -1.373,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T09:00:00Z",
+          "value": -1.75,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T10:00:00Z",
+          "value": -1.508,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T11:00:00Z",
+          "value": -0.871,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T12:00:00Z",
+          "value": -0.033,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T13:00:00Z",
+          "value": 0.85,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T14:00:00Z",
+          "value": 1.654,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T15:00:00Z",
+          "value": 2.071,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T16:00:00Z",
+          "value": 1.993,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T17:00:00Z",
+          "value": 1.493,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T18:00:00Z",
+          "value": 0.737,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T19:00:00Z",
+          "value": -0.175,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T20:00:00Z",
+          "value": -1.068,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T21:00:00Z",
+          "value": -1.795,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T22:00:00Z",
+          "value": -1.949,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-01T23:00:00Z",
+          "value": -1.451,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T00:00:00Z",
+          "value": -0.723,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T01:00:00Z",
+          "value": 0.09,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T02:00:00Z",
+          "value": 0.999,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T03:00:00Z",
+          "value": 1.705,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T04:00:00Z",
+          "value": 1.953,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T05:00:00Z",
+          "value": 1.673,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T06:00:00Z",
+          "value": 1.117,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T07:00:00Z",
+          "value": 0.369,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T08:00:00Z",
+          "value": -0.488,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T09:00:00Z",
+          "value": -1.172,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T10:00:00Z",
+          "value": -1.507,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T11:00:00Z",
+          "value": -1.105,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T12:00:00Z",
+          "value": -0.342,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T13:00:00Z",
+          "value": 0.436,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T14:00:00Z",
+          "value": 1.39,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T15:00:00Z",
+          "value": 2.316,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T16:00:00Z",
+          "value": 2.755,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T17:00:00Z",
+          "value": 2.659,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T18:00:00Z",
+          "value": 2.227,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T19:00:00Z",
+          "value": 1.555,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T20:00:00Z",
+          "value": 0.643,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T21:00:00Z",
+          "value": -0.281,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T22:00:00Z",
+          "value": -0.93,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-02T23:00:00Z",
+          "value": -1.001,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T00:00:00Z",
+          "value": -0.412,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T01:00:00Z",
+          "value": 0.347,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T02:00:00Z",
+          "value": 0.958,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T03:00:00Z",
+          "value": 1.795,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T04:00:00Z",
+          "value": 2.401,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T05:00:00Z",
+          "value": 2.525,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T06:00:00Z",
+          "value": 2.158,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T07:00:00Z",
+          "value": 1.523,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T08:00:00Z",
+          "value": 0.824,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T09:00:00Z",
+          "value": -0.19,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T10:00:00Z",
+          "value": -0.854,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T11:00:00Z",
+          "value": -1.14,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T12:00:00Z",
+          "value": -0.823,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T13:00:00Z",
+          "value": -0.13,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T14:00:00Z",
+          "value": 0.666,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T15:00:00Z",
+          "value": 1.669,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T16:00:00Z",
+          "value": 2.317,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T17:00:00Z",
+          "value": 2.57,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T18:00:00Z",
+          "value": 2.351,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T19:00:00Z",
+          "value": 1.791,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T20:00:00Z",
+          "value": 1.105,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T21:00:00Z",
+          "value": 0.165,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T22:00:00Z",
+          "value": -0.691,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-03T23:00:00Z",
+          "value": -1.234,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T00:00:00Z",
+          "value": -1.262,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T01:00:00Z",
+          "value": -0.634,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T02:00:00Z",
+          "value": 0.072,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T03:00:00Z",
+          "value": 0.9,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T04:00:00Z",
+          "value": 1.753,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T05:00:00Z",
+          "value": 2.205,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T06:00:00Z",
+          "value": 2.243,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T07:00:00Z",
+          "value": 1.898,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T08:00:00Z",
+          "value": 1.257,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T09:00:00Z",
+          "value": 0.44,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T10:00:00Z",
+          "value": -0.393,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T11:00:00Z",
+          "value": -1.07,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T12:00:00Z",
+          "value": -1.235,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T13:00:00Z",
+          "value": -0.84,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T14:00:00Z",
+          "value": -0.165,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T15:00:00Z",
+          "value": 0.615,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T16:00:00Z",
+          "value": 1.402,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T17:00:00Z",
+          "value": 2.038,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T18:00:00Z",
+          "value": 2.232,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T19:00:00Z",
+          "value": 1.97,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T20:00:00Z",
+          "value": 1.408,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T21:00:00Z",
+          "value": 0.649,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T22:00:00Z",
+          "value": -0.202,
+          "quality": "verified"
+        },
+        {
+          "timestamp": "2018-03-04T23:00:00Z",
+          "value": -0.939,
+          "quality": "verified"
+        }
+      ],
+      "limitations": [
+        "A harbor tide gauge is not a street-level water-depth sensor.",
+        "Gauge levels do not establish local flow direction or velocity."
+      ]
+    }
+  ]
+}

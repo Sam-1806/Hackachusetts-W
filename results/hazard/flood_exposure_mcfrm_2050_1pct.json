@@ -1,0 +1,77 @@
+{
+  "schema_version": "flood-exposure-result/v1",
+  "scenario_id": "mcfrm-2050-1pct",
+  "graph_version": "hazard-fixture-morrissey-v2",
+  "scenario_type": "published_future_model",
+  "scenario": {
+    "horizon_year": 2050,
+    "annual_exceedance_probability": 0.01,
+    "annual_exceedance_label": "1% annual exceedance probability",
+    "is_historical_event": false,
+    "is_live_forecast": false,
+    "depth_available": false
+  },
+  "affected_roads": [
+    {
+      "road_id": "fixture:morrissey:north",
+      "corridor_id": "fixture:morrissey-boulevard",
+      "exposure": "exposed",
+      "depth_m": null,
+      "passability": "unknown",
+      "passability_basis": "Official extent geometry overlap only; road-deck elevation, local water depth, and drivability were not established.",
+      "basis": "official_extent",
+      "source_id": "mcfrm-2050-1pct-extent",
+      "provenance": "computed"
+    },
+    {
+      "road_id": "fixture:morrissey:central",
+      "corridor_id": "fixture:morrissey-boulevard",
+      "exposure": "exposed",
+      "depth_m": null,
+      "passability": "unknown",
+      "passability_basis": "Official extent geometry overlap only; road-deck elevation, local water depth, and drivability were not established.",
+      "basis": "official_extent",
+      "source_id": "mcfrm-2050-1pct-extent",
+      "provenance": "computed"
+    },
+    {
+      "road_id": "fixture:morrissey:south",
+      "corridor_id": "fixture:morrissey-boulevard",
+      "exposure": "exposed",
+      "depth_m": null,
+      "passability": "unknown",
+      "passability_basis": "Official extent geometry overlap only; road-deck elevation, local water depth, and drivability were not established.",
+      "basis": "official_extent",
+      "source_id": "mcfrm-2050-1pct-extent",
+      "provenance": "computed"
+    },
+    {
+      "road_id": "fixture:inland:control",
+      "corridor_id": "fixture:inland-control",
+      "exposure": "not_exposed",
+      "depth_m": null,
+      "passability": "unknown",
+      "passability_basis": "Official extent geometry overlap only; road-deck elevation, local water depth, and drivability were not established.",
+      "basis": "official_extent",
+      "source_id": "mcfrm-2050-1pct-extent",
+      "provenance": "computed"
+    }
+  ],
+  "extent_geojson_ref": "mcfrm_2050_1pct_morrissey.geojson",
+  "provenance": {
+    "origin": "published_model",
+    "source_id": "mcfrm-2050-1pct-extent",
+    "source_url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/ArcGIS/rest/services/MA_2050_1Perc_v11/FeatureServer/1",
+    "publisher_attribution": "Woods Hole Group; published through the Massachusetts ArcGIS service",
+    "source_crs": "EPSG:26986 (NAD83 / Massachusetts Mainland)",
+    "output_crs": "EPSG:4326",
+    "road_source": "analysis/hazard/fixtures/morrissey_roads.geojson (labeled fixture; replace with Person 1 canonical manifest)",
+    "processing": "ArcGIS envelope query, server transform to EPSG:4326, local bbox clip, line/polygon overlap",
+    "limitations": [
+      "Polygon overlap is exposure evidence, not confirmed road inundation or impassability.",
+      "This extent layer does not provide authoritative road-level depth; depth_m is null.",
+      "The 2050 horizon is a modeled future condition, not a historical date or live forecast.",
+      "The bounded browser artifact is simplified for visualization and is not a replacement for source data."
+    ]
+  }
+}
