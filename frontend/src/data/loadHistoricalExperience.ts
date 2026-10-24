@@ -7,6 +7,7 @@ import type {
   HistoricalRoadEvent,
   RoadProperties,
 } from '../domain/contracts';
+import { rankPersonOne } from './personOneRanking';
 
 const getJson = async <T,>(path: string): Promise<T> => {
   const response = await fetch(path);
@@ -41,14 +42,42 @@ export async function loadHistoricalExperience(): Promise<HistoricalExperienceDa
     },
   ];
 
+  const additionalRoads =
+    fixtures.exposure.roads_geojson.features
+      .filter((feature) =>
+        [
+          'fixture-road-day',
+          'fixture-road-mount-vernon',
+        ].includes(feature.properties.road_id)
+      )
+      .map((feature) => ({
+        ...feature,
+        properties: {
+          ...feature.properties,
+
+          corridor_id:
+            feature.properties.road_id ===
+            'fixture-road-day'
+              ? 'fixture:day-boulevard'
+              : 'fixture:mount-vernon',
+
+          data_status: 'mock' as const,
+        },
+      }));
+
   const roads: HistoricalExperienceDataset['roads'] = {
     type: 'FeatureCollection',
-    features: roadSource.features.map((feature) => ({
+
+    features: [
+      ...roadSource.features,
+      ...additionalRoads,
+    ].map((feature) => ({
       ...feature,
+
       properties: {
         ...feature.properties,
-        exposure: 'unknown',
-        passability: 'unknown',
+        exposure: 'unknown' as const,
+        passability: 'unknown' as const,
         depth_m: null,
       } satisfies RoadProperties,
     })),
@@ -75,27 +104,73 @@ export async function loadHistoricalExperience(): Promise<HistoricalExperienceDa
 
   const morrisseyRoadIds = roads.features.filter((road) => road.properties.corridor_id === 'fixture:morrissey-boulevard').map((road) => road.properties.road_id);
   const inlandRoadIds = roads.features.filter((road) => road.properties.corridor_id === 'fixture:inland-control').map((road) => road.properties.road_id);
-  const ranking = {
-    ...fixtures.ranking,
-    scenario_set_id: 'historical-events-through-2018',
-    graph_version: roadSource.graph_version,
-    ranking: [
-      {
-        ...fixtures.ranking.ranking[0],
-        corridor_id: 'fixture:morrissey-boulevard',
-        road_ids: morrisseyRoadIds,
-        label: 'Morrissey Boulevard',
-        assumptions: ['Mock priority supplied only until Person 1 connects the network-ranking output.'],
-      },
-      {
-        ...fixtures.ranking.ranking[1],
-        corridor_id: 'fixture:inland-control',
-        road_ids: inlandRoadIds,
-        label: 'Inland control corridor',
-        assumptions: ['Mock comparison corridor; no historical footprint overlap in this bounded test.'],
-      },
-    ],
-  };
+  const dayRoadIds = roads.features
+  .filter((road) => road.properties.corridor_id === 'fixture:day-boulevard')
+  .map((road) => road.properties.road_id);
+
+const mountVernonRoadIds = roads.features
+  .filter((road) => road.properties.corridor_id === 'fixture:mount-vernon')
+  .map((road) => road.properties.road_id);
+
+
+  
+const ranking = {
+  ...fixtures.ranking,
+  scenario_set_id: 'historical-events-through-2018',
+  graph_version: roadSource.graph_version,
+
+  ranking: [
+    {
+      ...fixtures.ranking.ranking[0],
+      corridor_id: 'fixture:morrissey-boulevard',
+      road_ids: morrisseyRoadIds,
+      label: 'Morrissey Boulevard',
+      assumptions: [
+        'Historical flood exposure from USGS footprints.',
+        'Critical access and property impact scores are illustrative.',
+      ],
+    },
+    {
+      ...fixtures.ranking.ranking[1],
+      corridor_id: 'fixture:day-boulevard',
+      road_ids: dayRoadIds,
+      label: 'Day Boulevard',
+      assumptions: [
+        'Historical overlap checked against loaded flood footprints.',
+        'Critical access and property impact scores are illustrative.',
+      ],
+    },
+    {
+      ...fixtures.ranking.ranking[1],
+      corridor_id: 'fixture:mount-vernon',
+      road_ids: mountVernonRoadIds,
+      label: 'Mount Vernon Street',
+      assumptions: [
+        'Historical overlap checked against loaded flood footprints.',
+        'Critical access and property impact scores are illustrative.',
+      ],
+    },
+    {
+      ...fixtures.ranking.ranking[1],
+      corridor_id: 'fixture:inland-control',
+      road_ids: inlandRoadIds,
+      label: 'Inland control corridor',
+      assumptions: [
+        'Illustrative comparison corridor.',
+      ],
+    },
+  ],
+};
+  ranking.ranking = rankPersonOne(ranking.ranking, events);
+  console.log(
+  'FLOODROUTE RANKINGS:',
+  ranking.ranking.map((road) => ({
+    name: road.label,
+    score: road.impact_value,
+    roadIds: road.road_ids,
+  }))
+);
+ranking.ranking = rankPersonOne(ranking.ranking, events);
 
   return {
     graph_version: roadSource.graph_version,

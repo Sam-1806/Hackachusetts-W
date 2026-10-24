@@ -3,6 +3,7 @@ import type { SceneObject } from './map';
 import { StreetScene3D, type CameraPreset, type StreetWater } from './street3d';
 import { loadHistoricalExperience } from './data/loadHistoricalExperience';
 import type { HistoricalExperienceDataset, HistoricalRoadEvent, RankingRow } from './domain/contracts';
+import type { ExplainedRanking } from './data/personOneRanking';
 
 // Cesium is large; load it only when the city overview is first opened.
 const CesiumScene = lazy(() => import('./map/CesiumScene'));
@@ -47,19 +48,108 @@ function Badge({ children, tone = 'muted' }: { children: React.ReactNode; tone?:
   return <span className={`simple-badge badge-${tone}`}>{children}</span>;
 }
 
-function RoadRanking({ rows, selectedId, onSelect }: { rows: RankingRow[]; selectedId?: string; onSelect: (id: string) => void }) {
+
+function RoadRanking({
+  rows,
+  selectedId,
+  onSelect,
+}: {
+  rows: ExplainedRanking[];
+  selectedId?: string;
+  onSelect: (id: string) => void;
+}) {
   return (
     <div className="simple-list">
       {rows.map((row) => (
-        <button key={row.corridor_id} className={`simple-road ${row.corridor_id === selectedId ? 'is-active' : ''}`} onClick={() => onSelect(row.corridor_id)}>
-          <span className="simple-rank">#{row.priority_rank}</span>
-          <span><strong>{row.label}</strong><small>{row.road_ids.length} linked segment{row.road_ids.length === 1 ? '' : 's'}</small></span>
-          <Badge tone="mock">mock rank</Badge>
+        <button
+          key={row.corridor_id}
+          className={`simple-road ${
+            row.corridor_id === selectedId ? 'is-active' : ''
+          }`}
+          onClick={() => onSelect(row.corridor_id)}
+        >
+          <span className="simple-rank">
+            #{row.priority_rank}
+          </span>
+
+          <span>
+            <strong>{row.label}</strong>
+            <small>
+              {row.impact_value}/100 · Priority score
+            </small>
+          </span>
+
+          <Badge tone="mock">Estimated</Badge>
         </button>
       ))}
     </div>
   );
 }
+
+
+function RankingReasoning({
+  road,
+}: {
+  road: ExplainedRanking;
+}) {
+  return (
+    <section className="event-detail">
+      <Badge tone="mock">Illustrative ranking</Badge>
+
+      <h2>Why is this road ranked #{road.priority_rank}?</h2>
+      <h3>{road.label}</h3>
+
+      <div className="replay-time">
+        <span>Priority score</span>
+        <strong>{road.impact_value}/100</strong>
+      </div>
+
+      <h3>Ranking breakdown</h3>
+
+      <dl>
+        <div>
+          <dt>Flood history</dt>
+          <dd>{road.score_breakdown.flood}/30</dd>
+        </div>
+        <div>
+          <dt>Critical access</dt>
+          <dd>{road.score_breakdown.access}/45</dd>
+        </div>
+        <div>
+          <dt>Property exposure</dt>
+          <dd>{road.score_breakdown.property}/25</dd>
+        </div>
+      </dl>
+
+      <h3>Why this priority?</h3>
+
+      <ul>
+        <li>
+          <strong>Historical flooding: </strong>
+          {road.explanation.flood}
+        </li>
+
+        <li>
+          <strong>Community and public-service access: </strong>
+          {road.explanation.access}
+        </li>
+
+        <li>
+          <strong>Property and infrastructure exposure: </strong>
+          {road.explanation.property}
+        </li>
+      </ul>
+
+      <small className="plain-warning">
+        Historical flood overlaps use USGS evidence.
+        Critical-access and property-exposure scores
+        are hardcoded planning assumptions, not
+        verified damage or travel-time estimates.
+      </small>
+    </section>
+  );
+}
+
 
 function FloodEventList({ events, selectedId, onSelect }: { events: HistoricalRoadEvent[]; selectedId?: string; onSelect: (id: string) => void }) {
   if (!events.length) return <div className="empty-evidence"><strong>No documented footprint overlap</strong><span>No loaded historical event footprint intersects this fixture road.</span></div>;
@@ -275,7 +365,11 @@ export default function App() {
           <section>
             <header><div><span>1</span><h2>Ranked roads</h2></div><Badge tone="mock">Person 1 fixture</Badge></header>
             <p>Select a road to inspect documented past flood evidence.</p>
-            <RoadRanking rows={data.ranking.ranking} selectedId={selectedRoad.corridor_id} onSelect={chooseRoad} />
+            <RoadRanking
+              rows={data.ranking.ranking as ExplainedRanking[]}
+              selectedId={selectedRoad.corridor_id}
+              onSelect={chooseRoad}
+            />          
           </section>
           <section>
             <header><div><span>2</span><h2>Past floods</h2></div><Badge tone="observed">USGS + NOAA</Badge></header>
@@ -359,46 +453,263 @@ export default function App() {
         </section>
 
         <aside className="simple-detail">
-          {!selectedEvent ? (
-            <div className="detail-empty"><span>←</span><h2>Choose a past flood</h2><p>The map stays in a simple city overview until you select an event.</p></div>
+  {!selectedEvent ? (
+    <>
+      <RankingReasoning
+        road={selectedRoad as ExplainedRanking}
+      />
+
+      <div className="detail-empty">
+        <span>←</span>
+        <h2>Choose a past flood</h2>
+        <p>Select January or March 2018 to view its flood evidence.</p>
+      </div>
+    </>
+          
           ) : viewMode === 'overview' ? (
             <section className="event-detail">
               <Badge tone="observed">Observed-event evidence</Badge>
               <h2>{selectedEvent.date_label}</h2>
               <h3>{selectedEvent.label}</h3>
               <p>{selectedEvent.summary}</p>
-              <dl><div><dt>Road overlap</dt><dd>{selectedEvent.affected_road_ids.length} fixture segments</dd></div><div><dt>Footprint</dt><dd>Estimated peak</dd></div><div><dt>Road depth</dt><dd>Unknown</dd></div></dl>
-              <a href={selectedEvent.source_url} target="_blank" rel="noreferrer">Open USGS source ↗</a>
-              <button className="replay-button" onClick={startReplay}><span>▶</span> Replay flood evidence</button>
-              <small className="plain-warning">Replay means a camera transition plus observed gauge timeline and peak-footprint reveal. It is not measured street-level flow.</small>
+
+              <dl>
+                <div>
+                  <dt>Road overlap</dt>
+                  <dd>
+                    {selectedEvent.affected_road_ids.length} fixture segments
+                  </dd>
+                </div>
+                <div>
+                  <dt>Footprint</dt>
+                  <dd>Estimated peak</dd>
+                </div>
+                <div>
+                  <dt>Road depth</dt>
+                  <dd>Unknown</dd>
+                </div>
+              </dl>
+
+              <a
+                href={selectedEvent.source_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open USGS source ↗
+              </a>
+
+              <button className="replay-button" onClick={startReplay}>
+                <span>▶</span> Replay flood evidence
+              </button>
+
+              <small className="plain-warning">
+                Replay means a camera transition plus observed gauge timeline
+                and peak-footprint reveal. It is not measured street-level flow.
+              </small>
             </section>
           ) : (
             <section className="replay-console">
-              <header><Badge tone="observed">{selectedEvent.date_label}</Badge><button onClick={() => { setViewMode('overview'); setPlaying(false); }}>Exit replay</button></header>
-              <div className="replay-time"><span>{observation ? new Date(observation.timestamp).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:'UTC'}) : '—'} UTC</span><strong>{observation?.value.toFixed(2) ?? '—'} m <small>NAVD88</small></strong></div>
-              <GaugeSparkline event={selectedEvent} index={observationIndex} />
-              <input aria-label="Replay timeline" type="range" min="0" max="1" step="0.001" value={timelineProgress} onChange={(event) => { setTimelineProgress(Number(event.target.value)); setPlaying(false); }} />
-              <div className="replay-controls"><button onClick={() => setTimelineProgress(0)}>↺</button><button className="play-toggle" onClick={() => setPlaying((value) => !value)}>{playing ? 'Pause' : timelineProgress >= 1 ? 'Replay' : 'Play'}</button><button onClick={jumpToPeak} title="Jump to the highest observed gauge reading">Peak</button><button className="speed-toggle" title="Replay speed (real seconds per observed hour)" onClick={() => setSecondsPerHour((current) => REPLAY_SPEEDS[(REPLAY_SPEEDS.indexOf(current) + 1) % REPLAY_SPEEDS.length])}>1 h = {secondsPerHour} s</button></div>
-              <small className="replay-hours">Hour {Math.round(hourPosition) + 1} of {observationCount} · water level interpolated between hourly gauge readings (display only)</small>
-              <div className="evidence-key"><div><i className="key-building"/><span><strong>Buildings</strong> Official Boston footprints</span></div><div><i className="key-water"/><span><strong>Water</strong> USGS estimated peak extent</span></div><div><i className="key-object"/><span><strong>Objects</strong> Official facility or labeled prop</span></div></div>
-              <div className="replay-limit"><strong>What this supports</strong><p>Where the estimated event peak reached and how Boston Harbor’s gauge changed. It does not support local velocity, direction, or road-depth claims.</p></div>
-              <div className="replay-camera"><button onClick={() => { setStage('street'); requestCamera('street'); }}>Street-level view</button><button onClick={() => { setStage('street'); requestCamera('corridor'); }}>Corridor view</button></div>
-              <button className="engineering-button" onClick={() => setViewMode('engineering')}>Continue to road investigation →</button>
+              <header>
+                <Badge tone="observed">
+                  {selectedEvent.date_label}
+                </Badge>
+
+                <button
+                  onClick={() => {
+                    setViewMode('overview');
+                    setPlaying(false);
+                  }}
+                >
+                  Exit replay
+                </button>
+              </header>
+
+              <div className="replay-time">
+                <span>
+                  {observation
+                    ? new Date(observation.timestamp).toLocaleString([], {
+                        month: 'short',
+                        day: 'numeric',
+                        hour: 'numeric',
+                        minute: '2-digit',
+                        timeZone: 'UTC',
+                      })
+                    : '—'}{' '}
+                  UTC
+                </span>
+
+                <strong>
+                  {observation?.value.toFixed(2) ?? '—'} m{' '}
+                  <small>NAVD88</small>
+                </strong>
+              </div>
+
+              <GaugeSparkline
+                event={selectedEvent}
+                index={observationIndex}
+              />
+
+              <input
+                aria-label="Replay timeline"
+                type="range"
+                min="0"
+                max="1"
+                step="0.001"
+                value={timelineProgress}
+                onChange={(event) => {
+                  setTimelineProgress(Number(event.target.value));
+                  setPlaying(false);
+                }}
+              />
+
+              <div className="replay-controls">
+                <button onClick={() => setTimelineProgress(0)}>
+                  ↺
+                </button>
+
+                <button
+                  className="play-toggle"
+                  onClick={() => setPlaying((value) => !value)}
+                >
+                  {playing
+                    ? 'Pause'
+                    : timelineProgress >= 1
+                    ? 'Replay'
+                    : 'Play'}
+                </button>
+
+                <button
+                  onClick={jumpToPeak}
+                  title="Jump to the highest observed gauge reading"
+                >
+                  Peak
+                </button>
+
+                <button
+                  className="speed-toggle"
+                  title="Replay speed (real seconds per observed hour)"
+                  onClick={() =>
+                    setSecondsPerHour(
+                      (current) =>
+                        REPLAY_SPEEDS[
+                          (REPLAY_SPEEDS.indexOf(current) + 1) %
+                            REPLAY_SPEEDS.length
+                        ]
+                    )
+                  }
+                >
+                  1 h = {secondsPerHour} s
+                </button>
+              </div>
+
+              <small className="replay-hours">
+                Hour {Math.round(hourPosition) + 1} of {observationCount}
+                {' '}· water level interpolated between hourly gauge
+                readings (display only)
+              </small>
+
+              <div className="evidence-key">
+                <div>
+                  <i className="key-building" />
+                  <span>
+                    <strong>Buildings</strong> Official Boston footprints
+                  </span>
+                </div>
+
+                <div>
+                  <i className="key-water" />
+                  <span>
+                    <strong>Water</strong> USGS estimated peak extent
+                  </span>
+                </div>
+
+                <div>
+                  <i className="key-object" />
+                  <span>
+                    <strong>Objects</strong> Official facility or labeled prop
+                  </span>
+                </div>
+              </div>
+
+              <div className="replay-limit">
+                <strong>What this supports</strong>
+                <p>
+                  Where the estimated event peak reached and how Boston
+                  Harbor's gauge changed. It does not support local velocity,
+                  direction, or road-depth claims.
+                </p>
+              </div>
+
+              <div className="replay-camera">
+                <button
+                  onClick={() => {
+                    setStage('street');
+                    requestCamera('street');
+                  }}
+                >
+                  Street-level view
+                </button>
+
+                <button
+                  onClick={() => {
+                    setStage('street');
+                    requestCamera('corridor');
+                  }}
+                >
+                  Corridor view
+                </button>
+              </div>
+
+              <button
+                className="engineering-button"
+                onClick={() => setViewMode('engineering')}
+              >
+                Continue to road investigation →
+              </button>
+
               {viewMode === 'engineering' ? (
                 <div className="engineering-card">
                   <Badge tone="mock">Concept fixture</Badge>
+
                   <h3>{data.concept.label}</h3>
                   <p>{data.investigation.summary}</p>
-                  <button onClick={() => {
-                    const next = !showConcept;
-                    setShowConcept(next);
-                    if (next) { setStage('street'); requestCamera('concept'); }
-                  }}>{showConcept ? 'Hide 3D concept' : 'Preview 3D concept'}</button>
-                  <small>The schematic asset does not change the historical footprint or claim protection effectiveness.</small>
+
+                  <button
+                    onClick={() => {
+                      const next = !showConcept;
+                      setShowConcept(next);
+
+                      if (next) {
+                        setStage('street');
+                        requestCamera('concept');
+                      }
+                    }}
+                  >
+                    {showConcept
+                      ? 'Hide 3D concept'
+                      : 'Preview 3D concept'}
+                  </button>
+
+                  <small>
+                    The schematic asset does not change the historical
+                    footprint or claim protection effectiveness.
+                  </small>
                 </div>
               ) : null}
             </section>
           )}
+                    {selectedEvent && (
+            <details className="ranking-reasoning-details">
+              <summary>
+                Why is {selectedRoad.label} ranked #{selectedRoad.priority_rank}?
+              </summary>
+
+              <RankingReasoning
+                road={selectedRoad as ExplainedRanking}
+              />
+            </details>
+          )}
+
         </aside>
       </main>
     </div>
