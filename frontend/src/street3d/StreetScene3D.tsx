@@ -131,13 +131,12 @@ function presetView(
   };
 }
 
-function CameraRig({ assets, lines, conceptCentre, request, colliders, levelRef, mask }: {
+function CameraRig({ assets, lines, conceptCentre, request, levelRef, mask }: {
   mask: WaterMask;
   assets: StreetSceneAssets;
   lines: Array<Array<[number, number]>>;
   conceptCentre: THREE.Vector3 | null;
   request?: { preset: CameraPreset; nonce: number };
-  colliders: THREE.Object3D[];
   levelRef: React.RefObject<number>;
 }) {
   const controls = useRef<CameraControls>(null);
@@ -157,10 +156,6 @@ function CameraRig({ assets, lines, conceptCentre, request, colliders, levelRef,
     window.addEventListener('blur', () => keys.current.clear());
     return () => { window.removeEventListener('keydown', down); window.removeEventListener('keyup', up); };
   }, []);
-
-  useEffect(() => {
-    if (controls.current) controls.current.colliderMeshes = colliders;
-  }, [colliders]);
 
   // Cinematic intro: start high over the harbour, then descend to the corridor.
   const latest = useRef({ assets, lines, conceptCentre, preset: request?.preset });
@@ -355,15 +350,13 @@ function SceneContents({ assets, props, toggles, quality, selectedBuilding, setS
 }) {
   const { roads, selectedRoadIds, water } = props;
   const pickables = useRef(new Map<string, THREE.Mesh>());
-  const [colliders, setColliders] = useState<THREE.Object3D[]>([]);
 
   const registerMesh = useCallback((mesh: THREE.Mesh | null, key: string) => {
     if (mesh) {
       if (!mesh.geometry.boundsTree) mesh.geometry.computeBoundsTree();
-      if (key.startsWith('terrain:')) {
-        setColliders((current) => (current.includes(mesh) ? current : [...current, mesh]));
-        return;
-      }
+      // Terrain is not pickable. The camera floor is enforced per frame from the heightfield (no
+      // camera-controls colliders: their near-plane rays trap the camera on low targets near slopes).
+      if (key.startsWith('terrain:')) return;
       pickables.current.set(key, mesh);
     } else {
       pickables.current.delete(key);
@@ -456,7 +449,7 @@ function SceneContents({ assets, props, toggles, quality, selectedBuilding, setS
       {toggles.concept ? (
         <Interventions assets={assets} interventions={props.interventions} selectedId={props.selectedInterventionId} registerMesh={registerMesh} />
       ) : null}
-      <CameraRig assets={assets} lines={selectedLines} conceptCentre={conceptCentre} request={props.cameraRequest} colliders={colliders} levelRef={levelRef} mask={mask} />
+      <CameraRig assets={assets} lines={selectedLines} conceptCentre={conceptCentre} request={props.cameraRequest} levelRef={levelRef} mask={mask} />
       <Picker meshes={pickables} onPick={onPick} />
       <DevHandle />
       <EffectComposer multisampling={0} enableNormalPass={false}>

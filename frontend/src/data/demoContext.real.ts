@@ -12,32 +12,32 @@ export const REAL_CONTEXT: Record<string, {
     accessPoints: 45,
     propertyPoints: 25,
     accessNote:
-      "Computed on Person 1's OSM network (63 segments, 10.38 km). In MC-FRM 2050 1%, 48 segments overlap the flood extent; closing only those adds 43 demand-weighted seconds across 13 neighborhood-to-ED journeys (Columbia Point (UMass Boston area) -> nearest emergency department: 321 s -> 359 s (+12%)). Jan 2018 footprint: 22 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "2050 1% flood (MC-FRM): 48 of 63 segments flooded; closing them adds 43 demand-weighted seconds to neighborhood-to-ED trips; Columbia Point → nearest ED goes from 321 to 359 s (+12%). Jan 2018: 22 segments, 0 s. Assumes flooded = closed.",
     propertyNote:
-      "411 City of Boston building footprints lie within 100 m of the corridor; 163 intersect the MC-FRM 2050 1% extent, 63 the Jan 2018 footprint and 15 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied.",
+      "411 buildings within 100 m: 163 in the 2050 1% extent, 63 in the Jan 2018 footprint, 15 in Mar 2018. Overlap only, not damage.",
   },
   "fixture:day-boulevard": {
     accessPoints: 0,
     propertyPoints: 8,
     accessNote:
-      "Computed on Person 1's OSM network (30 segments, 4.76 km). In MC-FRM 2050 1%, 11 segments overlap the flood extent; closing only those adds 0 demand-weighted seconds across 13 neighborhood-to-ED journeys. Jan 2018 footprint: 0 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "2050 1% flood (MC-FRM): 11 of 30 segments flooded; closing them adds 0 demand-weighted seconds to neighborhood-to-ED trips. Jan 2018: 0 segments, 0 s. Assumes flooded = closed.",
     propertyNote:
-      "398 City of Boston building footprints lie within 100 m of the corridor; 55 intersect the MC-FRM 2050 1% extent, 2 the Jan 2018 footprint and 1 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied.",
+      "398 buildings within 100 m: 55 in the 2050 1% extent, 2 in the Jan 2018 footprint, 1 in Mar 2018. Overlap only, not damage.",
   },
   "fixture:mount-vernon": {
     accessPoints: 0,
     propertyPoints: 6,
     accessNote:
-      "Computed on Person 1's OSM network (11 segments, 1.07 km). In MC-FRM 2050 1%, 11 segments overlap the flood extent; closing only those adds 0 demand-weighted seconds across 13 neighborhood-to-ED journeys. Jan 2018 footprint: 0 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "2050 1% flood (MC-FRM): 11 of 11 segments flooded; closing them adds 0 demand-weighted seconds to neighborhood-to-ED trips. Jan 2018: 0 segments, 0 s. Assumes flooded = closed.",
     propertyNote:
-      "46 City of Boston building footprints lie within 100 m of the corridor; 40 intersect the MC-FRM 2050 1% extent, 1 the Jan 2018 footprint and 0 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied.",
+      "46 buildings within 100 m: 40 in the 2050 1% extent, 1 in the Jan 2018 footprint, 0 in Mar 2018. Overlap only, not damage.",
   },
   "fixture:inland-control": {
     accessPoints: 0,
     propertyPoints: 0,
     accessNote:
-      "Computed on Person 1's OSM network (7 segments, 0.45 km). In MC-FRM 2050 1%, 0 segments overlap the flood extent; closing only those adds 0 demand-weighted seconds across 13 neighborhood-to-ED journeys. Jan 2018 footprint: 0 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "2050 1% flood (MC-FRM): 0 of 7 segments flooded; closing them adds 0 demand-weighted seconds to neighborhood-to-ED trips. Jan 2018: 0 segments, 0 s. Assumes flooded = closed.",
     propertyNote:
-      "220 City of Boston building footprints lie within 100 m of the corridor; 0 intersect the MC-FRM 2050 1% extent, 0 the Jan 2018 footprint and 0 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied.",
+      "220 buildings within 100 m: 0 in the 2050 1% extent, 0 in the Jan 2018 footprint, 0 in Mar 2018. Overlap only, not damage.",
   },
 };

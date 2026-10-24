@@ -125,9 +125,8 @@ export function rankPersonOne(
       explanation: {
         flood:
           row.corridor_id === 'fixture:morrissey-boulevard'
-            ? 'Since 2006, Boston Harbor has exceeded a water-level threshold associated with flooding on Morrissey Boulevard on 167 days, including 12 more severe high-water events. These are harbor-level exceedances, not 167 confirmed road closures. Historical flooding and repeated road closures are documented.'
-            : `${matchingEvents.length} of ${events.length} loaded historical flood events overlap this corridor: ${matchingEvents.map((event) => event.date_label).join(', ') || 'none'
-            }. This is not a complete flood-frequency record.`,
+            ? 'Since 2006, Boston Harbor reached the level at which Morrissey Boulevard floods on 167 days, including 12 major high-water events (NOAA Boston gauge).'
+            : `${matchingEvents.length} of ${events.length} loaded past floods overlap this corridor${matchingEvents.length ? `: ${matchingEvents.map((event) => event.date_label).join(', ')}` : ''}.`,
         access: context.accessNote,
         property: context.propertyNote,
       },

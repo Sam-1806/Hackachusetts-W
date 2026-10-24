@@ -367,8 +367,25 @@ export function buildIntervention(intervention: ConceptIntervention, assets: Str
     solid.push(shaft.index ? shaft.toNonIndexed() : shaft);
   }
 
-  const cx = allXZ.reduce((sum, p) => sum + p[0], 0) / allXZ.length;
-  const cz = allXZ.reduce((sum, p) => sum + p[1], 0) / allXZ.length;
+  // Length-weighted centre of the line work, so unevenly spaced vertices do not pull the camera aside.
+  let cx = 0;
+  let cz = 0;
+  let total = 0;
+  for (const line of lines) {
+    for (let i = 1; i < line.length; i += 1) {
+      const length = Math.hypot(line[i][0] - line[i - 1][0], line[i][1] - line[i - 1][1]);
+      cx += ((line[i][0] + line[i - 1][0]) / 2) * length;
+      cz += ((line[i][1] + line[i - 1][1]) / 2) * length;
+      total += length;
+    }
+  }
+  if (total > 0) {
+    cx /= total;
+    cz /= total;
+  } else {
+    cx = allXZ.reduce((sum, p) => sum + p[0], 0) / allXZ.length;
+    cz = allXZ.reduce((sum, p) => sum + p[1], 0) / allXZ.length;
+  }
   const cy = assets.heightfield.sample(cx, cz);
   const colors: Record<string, [string, string]> = {
     berm: ['#5f8a45', '#c9b98d'],

@@ -229,20 +229,19 @@ def main() -> None:
         a50, aj = c["access"]["mcfrm-2050-1pct"], c["access"]["usgs-2018-01-04"]
         p = c["property"]
         pb = p.get("by_scenario", {})
+        evidence = "; ".join(e.replace(" (UMass Boston area)", "").replace(" -> nearest emergency department: ", " → nearest ED goes from ")
+                             .replace(" s -> ", " to ") for e in a50["evidence"])
         access_note = (
-            f"Computed on Person 1's OSM network ({len(c['road_ids'])} segments, {c['length_km']} km). "
-            f"In MC-FRM 2050 1%, {a50['exposed_roads']} segments overlap the flood extent; closing only those adds "
-            f"{a50['standalone_loss_s']:.0f} demand-weighted seconds across 13 neighborhood-to-ED journeys"
-            + (f" ({'; '.join(a50['evidence'])})" if a50["evidence"] else "")
-            + f". Jan 2018 footprint: {aj['exposed_roads']} segments, {aj['standalone_loss_s']:.0f} s. "
-            "Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed)."
+            f"2050 1% flood (MC-FRM): {a50['exposed_roads']} of {len(c['road_ids'])} segments flooded; closing them adds "
+            f"{a50['standalone_loss_s']:.0f} demand-weighted seconds to neighborhood-to-ED trips"
+            + (f"; {evidence}" if evidence else "")
+            + f". Jan 2018: {aj['exposed_roads']} segments, {aj['standalone_loss_s']:.0f} s. Assumes flooded = closed."
         )
         property_note = (
-            f"{p.get('buildings_within_buffer', 0)} City of Boston building footprints lie within {BUFFER_M:.0f} m of the "
-            f"corridor; {pb.get('mcfrm-2050-1pct', {}).get('buildings_in_extent', 0)} intersect the MC-FRM 2050 1% extent, "
-            f"{pb.get('usgs-2018-01-04', {}).get('buildings_in_extent', 0)} the Jan 2018 footprint and "
-            f"{pb.get('usgs-2018-03-02', {}).get('buildings_in_extent', 0)} the Mar 2018 footprint. "
-            "Footprint overlap only: no damage, value, or occupancy is implied."
+            f"{p.get('buildings_within_buffer', 0)} buildings within {BUFFER_M:.0f} m: "
+            f"{pb.get('mcfrm-2050-1pct', {}).get('buildings_in_extent', 0)} in the 2050 1% extent, "
+            f"{pb.get('usgs-2018-01-04', {}).get('buildings_in_extent', 0)} in the Jan 2018 footprint, "
+            f"{pb.get('usgs-2018-03-02', {}).get('buildings_in_extent', 0)} in Mar 2018. Overlap only, not damage."
         )
         demo_context[cid] = {"accessPoints": acc_pts[cid], "propertyPoints": prop_pts[cid],
                              "accessNote": access_note, "propertyNote": property_note}

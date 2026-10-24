@@ -4,6 +4,7 @@ import { StreetScene3D, type CameraPreset, type StreetWater } from './street3d';
 import { loadHistoricalExperience } from './data/loadHistoricalExperience';
 import type { HistoricalExperienceDataset, HistoricalRoadEvent, RankingRow } from './domain/contracts';
 import type { ExplainedRanking } from './data/personOneRanking';
+import type { Geometry, Position } from 'geojson';
 
 // Cesium is large; load it only when the city overview is first opened.
 const CesiumScene = lazy(() => import('./map/CesiumScene'));
@@ -18,6 +19,41 @@ const NOMINAL_HARBOUR_M = 0;
 /** Replay speeds: real seconds per observed gauge hour. */
 const REPLAY_SPEEDS = [4, 1, 0.25] as const;
 const REPLAY_TICK_MS = 50;
+
+// The 3D concept preview focuses on the central shoreline stretch investigated in the original demo
+// (where the 2018 footprints cross the boulevard). Display clip only; the concept data is unchanged.
+const CONCEPT_FOCUS_LAT: [number, number] = [42.3068, 42.315];
+
+function clipLineToLat(line: Position[], [lo, hi]: [number, number]): Position[][] {
+  const out: Position[][] = [];
+  let current: Position[] = [];
+  const inside = (p: Position) => p[1] >= lo && p[1] <= hi;
+  const cross = (a: Position, b: Position, lat: number): Position => {
+    const t = (lat - a[1]) / (b[1] - a[1]);
+    return [a[0] + (b[0] - a[0]) * t, lat];
+  };
+  line.forEach((point, i) => {
+    const prev = line[i - 1];
+    if (prev && inside(prev) !== inside(point)) {
+      current.push(cross(prev, point, inside(prev) ? (point[1] > hi ? hi : lo) : (prev[1] > hi ? hi : lo)));
+      if (inside(prev)) { out.push(current); current = []; }
+    } else if (prev && !inside(prev) && !inside(point) && (prev[1] - lo) * (point[1] - lo) < 0 && (prev[1] - hi) * (point[1] - hi) < 0) {
+      out.push([cross(prev, point, lo), cross(prev, point, hi)]);
+    }
+    if (inside(point)) current.push(point);
+  });
+  if (current.length) out.push(current);
+  return out.filter((part) => part.length > 1);
+}
+
+function focusConceptGeometry<T extends { geometry?: Geometry }>(concept: T): T {
+  if (!concept.geometry) return concept;
+  const lines = concept.geometry.type === 'LineString' ? [concept.geometry.coordinates]
+    : concept.geometry.type === 'MultiLineString' ? concept.geometry.coordinates : null;
+  if (!lines) return concept;
+  const clipped = lines.flatMap((line) => clipLineToLat(line, CONCEPT_FOCUS_LAT));
+  return clipped.length ? { ...concept, geometry: { type: 'MultiLineString', coordinates: clipped } } : concept;
+}
 
 const sceneObjects: SceneObject[] = [
   {
@@ -300,7 +336,8 @@ export default function App() {
     sourceLabel: 'USGS estimated peak',
     limitations: selectedEvent.limitations,
   } : null), [selectedEvent]);
-  const conceptList = useMemo(() => (data && showConcept ? [data.concept] : []), [data, showConcept]);
+  const focusedConcept = useMemo(() => (data ? focusConceptGeometry(data.concept) : null), [data]);
+  const conceptList = useMemo(() => (focusedConcept && showConcept ? [focusedConcept] : []), [focusedConcept, showConcept]);
 
   // The 3D water surface: sourced footprint; level is the USGS reported peak WSE,
   // or during replay the observed NOAA harbour level capped at that peak (illustrative).
@@ -441,7 +478,7 @@ export default function App() {
                     sourceUrl: 'https://gisportal.boston.gov/arcgis/rest/services/Assessing/DOIT_buildings/MapServer/2',
                   }}
                   sceneObjects={inReplay ? sceneObjects : []}
-                  interventions={showConcept ? [data.concept] : []}
+                  interventions={conceptList}
                   selectedInterventionId={showConcept ? data.concept.intervention_id : null}
                   cesiumToken={import.meta.env.VITE_CESIUM_ION_TOKEN}
                 />
