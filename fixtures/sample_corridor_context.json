@@ -1,0 +1,417 @@
+{
+  "fixture_notice": "ILLUSTRATIVE FIXTURE. Geometry comes from the MassDOT Road Inventory (S10). Road IDs, flood exposure, and ranking numbers are mock placeholders, not analysis results.",
+  "data_status": "mock",
+  "graph_version": "fixture-v0.1",
+  "corridor": {
+    "corridor_id": "corr-fx-morrissey-01",
+    "name": "William T Morrissey Boulevard (fixture stretch)",
+    "road_ids": [
+      "fx-r-001",
+      "fx-r-002",
+      "fx-r-003",
+      "fx-r-004"
+    ]
+  },
+  "roads": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -71.04914461822956,
+              42.29805002689879
+            ],
+            [
+              -71.04929282791144,
+              42.29852495429886
+            ],
+            [
+              -71.04943495833068,
+              42.29901508756985
+            ],
+            [
+              -71.04947081937294,
+              42.29920932254903
+            ],
+            [
+              -71.04948789600031,
+              42.299343559699125
+            ],
+            [
+              -71.04948597631629,
+              42.29950254017987
+            ],
+            [
+              -71.04947239784735,
+              42.299693488267884
+            ],
+            [
+              -71.04944168059708,
+              42.29989853428888
+            ],
+            [
+              -71.04939478720085,
+              42.3000914490546
+            ],
+            [
+              -71.0493351429594,
+              42.30024810576995
+            ],
+            [
+              -71.04914795513182,
+              42.300642349903875
+            ]
+          ]
+        },
+        "properties": {
+          "road_id": "fx-r-001",
+          "name": "WILLIAM T MORRISSEY BOULEVARD",
+          "graph_version": "fixture-v0.1",
+          "geometry_source_id": "S10",
+          "data_status": "mock",
+          "note": "Fixture road_id; replace with Person 1 manifest IDs."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -71.04914795513182,
+              42.300642349903875
+            ],
+            [
+              -71.04887674378666,
+              42.301223287084554
+            ],
+            [
+              -71.04865149726527,
+              42.30171874489783
+            ],
+            [
+              -71.04854543856149,
+              42.302016648999064
+            ],
+            [
+              -71.04846071808957,
+              42.30223748222687
+            ],
+            [
+              -71.04820062400101,
+              42.302949437045974
+            ],
+            [
+              -71.04811484826864,
+              42.303122888908455
+            ]
+          ]
+        },
+        "properties": {
+          "road_id": "fx-r-002",
+          "name": "WILLIAM T MORRISSEY BOULEVARD",
+          "graph_version": "fixture-v0.1",
+          "geometry_source_id": "S10",
+          "data_status": "mock",
+          "note": "Fixture road_id; replace with Person 1 manifest IDs."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -71.04970945634201,
+              42.299735451765784
+            ],
+            [
+              -71.0496976497078,
+              42.29956644703918
+            ],
+            [
+              -71.04967290998401,
+              42.29938772999875
+            ],
+            [
+              -71.0496288502611,
+              42.29918239081522
+            ],
+            [
+              -71.04954955887507,
+              42.29890209125461
+            ],
+            [
+              -71.04943448295612,
+              42.298510321412955
+            ],
+            [
+              -71.0493800850273,
+              42.29832610861101
+            ],
+            [
+              -71.04927774670229,
+              42.29798834332004
+            ],
+            [
+              -71.0492773280937,
+              42.29798696342181
+            ],
+            [
+              -71.0491418755798,
+              42.29766344987651
+            ],
+            [
+              -71.04899308803301,
+              42.29737645599064
+            ],
+            [
+              -71.04882214811184,
+              42.297060680434626
+            ],
+            [
+              -71.04859656248749,
+              42.29670248484263
+            ],
+            [
+              -71.0484741361551,
+              42.29651310888459
+            ],
+            [
+              -71.0481204868475,
+              42.295954146862925
+            ],
+            [
+              -71.0480289051462,
+              42.29583407650275
+            ],
+            [
+              -71.04796603188767,
+              42.295729063196305
+            ],
+            [
+              -71.04789552388654,
+              42.295586373576995
+            ],
+            [
+              -71.04784762223727,
+              42.29546549771003
+            ],
+            [
+              -71.04781614129168,
+              42.29532055081937
+            ],
+            [
+              -71.04781817653057,
+              42.29519030202584
+            ],
+            [
+              -71.04784435549485,
+              42.29501170643515
+            ]
+          ]
+        },
+        "properties": {
+          "road_id": "fx-r-003",
+          "name": "WILLIAM T MORRISSEY BOULEVARD",
+          "graph_version": "fixture-v0.1",
+          "geometry_source_id": "S10",
+          "data_status": "mock",
+          "note": "Fixture road_id; replace with Person 1 manifest IDs."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -71.04954684779865,
+              42.30065444261698
+            ],
+            [
+              -71.04959668571917,
+              42.30050498896776
+            ],
+            [
+              -71.04963320614077,
+              42.30039892809918
+            ],
+            [
+              -71.0496735746376,
+              42.300208403081356
+            ],
+            [
+              -71.04969745323261,
+              42.300051601419234
+            ],
+            [
+              -71.04970945634201,
+              42.299735451765784
+            ]
+          ]
+        },
+        "properties": {
+          "road_id": "fx-r-004",
+          "name": "WILLIAM T MORRISSEY BOULEVARD",
+          "graph_version": "fixture-v0.1",
+          "geometry_source_id": "S10",
+          "data_status": "mock",
+          "note": "Fixture road_id; replace with Person 1 manifest IDs."
+        }
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "scenario_id": "mcfrm-2050-1pct",
+      "label": "MC-FRM 2050, 1% annual exceedance (projected)",
+      "kind": "future_model",
+      "source_id": "S06",
+      "data_status": "mock"
+    },
+    {
+      "scenario_id": "usgs-2018-jan-event",
+      "label": "January 2018 coastal flood (observed footprint)",
+      "kind": "historical_observed",
+      "source_id": "S07",
+      "data_status": "mock"
+    }
+  ],
+  "flood_exposure": [
+    {
+      "scenario_id": "mcfrm-2050-1pct",
+      "graph_version": "fixture-v0.1",
+      "affected_roads": [
+        {
+          "road_id": "fx-r-001",
+          "exposure": "exposed",
+          "depth_m": null,
+          "passability": "potentially_closed",
+          "basis": "mock",
+          "source_id": "S06"
+        },
+        {
+          "road_id": "fx-r-002",
+          "exposure": "exposed",
+          "depth_m": null,
+          "passability": "potentially_closed",
+          "basis": "mock",
+          "source_id": "S06"
+        },
+        {
+          "road_id": "fx-r-003",
+          "exposure": "exposed",
+          "depth_m": null,
+          "passability": "potentially_closed",
+          "basis": "mock",
+          "source_id": "S06"
+        },
+        {
+          "road_id": "fx-r-004",
+          "exposure": "exposed",
+          "depth_m": null,
+          "passability": "potentially_closed",
+          "basis": "mock",
+          "source_id": "S06"
+        }
+      ],
+      "extent_geojson": null,
+      "provenance": {
+        "data_status": "mock",
+        "note": "ILLUSTRATIVE FIXTURE. Geometry comes from the MassDOT Road Inventory (S10). Road IDs, flood exposure, and ranking numbers are mock placeholders, not analysis results."
+      }
+    },
+    {
+      "scenario_id": "usgs-2018-jan-event",
+      "graph_version": "fixture-v0.1",
+      "affected_roads": [
+        {
+          "road_id": "fx-r-001",
+          "exposure": "exposed",
+          "depth_m": null,
+          "passability": "unknown",
+          "basis": "mock",
+          "source_id": "S07"
+        },
+        {
+          "road_id": "fx-r-002",
+          "exposure": "unknown",
+          "depth_m": null,
+          "passability": "unknown",
+          "basis": "mock",
+          "source_id": "S07"
+        }
+      ],
+      "extent_geojson": null,
+      "provenance": {
+        "data_status": "mock",
+        "note": "ILLUSTRATIVE FIXTURE. Geometry comes from the MassDOT Road Inventory (S10). Road IDs, flood exposure, and ranking numbers are mock placeholders, not analysis results."
+      }
+    }
+  ],
+  "ranking": {
+    "scenario_set_id": "fx-set-01",
+    "graph_version": "fixture-v0.1",
+    "ranking": [
+      {
+        "corridor_id": "corr-fx-morrissey-01",
+        "road_ids": [
+          "fx-r-001",
+          "fx-r-002",
+          "fx-r-003",
+          "fx-r-004"
+        ],
+        "priority_rank": 1,
+        "impact_metric": 1840.0,
+        "metric_units": "weighted added travel seconds (mock)",
+        "affected_journeys": [
+          {
+            "journey_id": "j-fx-01",
+            "label": "Dorchester origin -> emergency department (fixture)",
+            "baseline_s": 540,
+            "flooded_s": 780,
+            "reachable": true
+          },
+          {
+            "journey_id": "j-fx-02",
+            "label": "Fire station -> Columbia Point incident point (fixture)",
+            "baseline_s": 420,
+            "flooded_s": null,
+            "reachable": false
+          },
+          {
+            "journey_id": "j-fx-03",
+            "label": "Savin Hill origin -> community center (fixture)",
+            "baseline_s": 360,
+            "flooded_s": 410,
+            "reachable": true
+          }
+        ],
+        "detour_or_disconnect_evidence": {
+          "detour_available_for": [
+            "j-fx-01",
+            "j-fx-03"
+          ],
+          "disconnected": [
+            "j-fx-02"
+          ],
+          "detour_road_names": [
+            "Dorchester Avenue (fixture)"
+          ],
+          "detour_flood_exposure": "unknown"
+        },
+        "assumptions": [
+          "Mock closure set: all corridor roads potentially closed in mcfrm-2050-1pct"
+        ],
+        "provenance": {
+          "data_status": "mock",
+          "note": "ILLUSTRATIVE FIXTURE. Geometry comes from the MassDOT Road Inventory (S10). Road IDs, flood exposure, and ranking numbers are mock placeholders, not analysis results."
+        }
+      }
+    ]
+  }
+}

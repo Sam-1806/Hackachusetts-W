@@ -1,0 +1,33 @@
+{
+  "intervention_id": "iv-fx-001",
+  "corridor_id": "corr-fx-morrissey-01",
+  "road_ids": [
+    "fx-r-001",
+    "fx-r-002",
+    "fx-r-003",
+    "fx-r-004"
+  ],
+  "graph_version": "fixture-v0.1",
+  "proposed_method": {
+    "method_id": "raised_roadway",
+    "name": "Raise the roadway profile (raised roadway barrier)",
+    "category": "permanent_barrier"
+  },
+  "status": "hypothetical",
+  "assumed_passability_by_scenario": {
+    "mcfrm-2050-1pct": "assumed_open",
+    "usgs-2018-jan-event": "unchanged"
+  },
+  "review_notes": "Fixture demo proposal Idealized assumption for network counterfactual only. Physical effectiveness has not been modelled or verified.",
+  "source_ids": [
+    "S11.sec6"
+  ],
+  "created_at": "2026-10-24T20:14:27+00:00",
+  "effect_claim": "access_only",
+  "mechanism": null,
+  "effect_status": "idealized_access_assumption",
+  "rerank_eligible": true,
+  "requested_scenarios": [
+    "mcfrm-2050-1pct"
+  ]
+}

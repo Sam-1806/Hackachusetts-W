@@ -1,0 +1,48 @@
+{
+  "library_version": "eng-evidence-v0.1",
+  "note": "Findings paraphrased from the MassDOT Morrissey Boulevard Corridor Study Final Report (June 2025). Status 'study_finding' means it is documented in the study; it does NOT mean the measure is approved, funded, permitted, or built. Check S13 for implementation status.",
+  "precedents": [
+    {
+      "precedent_id": "morrissey-flood-pathways-present",
+      "corridor_match": "MORRISSEY",
+      "status": "study_finding",
+      "text": "Present-day flood pathways into the study area were identified at Tenean Beach/Conley Street, southeast of Kosciuszko Circle, Bianculli Boulevard, Pattens Cove, and Quincy Shore Drive/Neponset Trail; in a 2030 extreme event these expand and new pathways appear from Moakley Park and the I-93 underpass.",
+      "source_id": "S12", "pdf_page": 74
+    },
+    {
+      "precedent_id": "morrissey-central-section-gap",
+      "corridor_match": "MORRISSEY",
+      "status": "study_finding",
+      "text": "The study notes flood protection is being advanced outside the central section (Bianculli Boulevard to Freeport Street), leaving that area as a key storm-surge pathway into the study area.",
+      "source_id": "S12", "pdf_page": 182
+    },
+    {
+      "precedent_id": "morrissey-dcr-2017-elevation",
+      "corridor_match": "MORRISSEY",
+      "status": "prior_design_intent",
+      "text": "The study records that DCR's 2017 Morrissey Boulevard redesign planned to elevate the roadway for coastal resiliency, with a stated target of limiting tidal-flooding closures to fewer than 3 in 2065.",
+      "source_id": "S12", "pdf_page": 108
+    },
+    {
+      "precedent_id": "morrissey-stormwater-high-tide",
+      "corridor_match": "MORRISSEY",
+      "status": "study_finding",
+      "text": "Stormwater flooding may remain a significant problem in the Central section because of limited gravity discharge at high tide; one option assumes BWSC's proposed additional stormwater infrastructure for the Northern section.",
+      "source_id": "S12", "pdf_page": 166
+    },
+    {
+      "precedent_id": "morrissey-nature-based-finding",
+      "corridor_match": "MORRISSEY",
+      "status": "study_finding",
+      "text": "Key findings state flood mitigation could be implemented along the coastline and Dorchester Bay Basin, should focus on nature-based solutions, and that environmental permitting is expected to be complex.",
+      "source_id": "S12", "pdf_page": 174
+    },
+    {
+      "precedent_id": "morrissey-multi-jurisdiction",
+      "corridor_match": "MORRISSEY",
+      "status": "study_finding",
+      "text": "Infrastructure in the area is owned by multiple jurisdictions (including MassDOT, DCR, MBTA, City of Boston, utilities, and private owners), so any project needs coordinated ownership and permitting.",
+      "source_id": "S12", "pdf_page": 174
+    }
+  ]
+}

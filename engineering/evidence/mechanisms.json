@@ -1,0 +1,390 @@
+{
+  "library_version": "eng-diagnosis-v0.1",
+  "note": "Possible flooding mechanisms and cause-matched investigative actions (Causal Diagnosis Addendum). These are hypotheses to investigate, not a hydraulic diagnosis. 'source_id' values must exist in sources.json.",
+  "mechanisms": [
+    {
+      "mechanism": "coastal_overland",
+      "label": "Coastal overtopping / overland inflow",
+      "description": "Sea water flows over the shoreline or through low openings and travels overland onto the road.",
+      "supported_by": [
+        "Modelled or observed coastal flood extent over the corridor",
+        "Documented coastal flood pathways nearby",
+        "Historical high-water evidence"
+      ],
+      "does_not_prove": "A flood polygon over the road does not show where water enters at road scale.",
+      "addressed_by_methods": [
+        "raised_roadway",
+        "vegetated_berm",
+        "seawall_extension",
+        "deployable_barrier",
+        "alternate_access"
+      ],
+      "unknowns": [
+        "Shoreline / edge elevations along the pathway (survey, vertical datum)",
+        "Which opening or low point admits the water",
+        "Whether the corridor floods before or after adjacent shoreline overtops"
+      ],
+      "actions": [
+        {
+          "action_id": "survey_coastal_pathway",
+          "name": "Survey the shoreline edge and suspected entry pathway",
+          "kind": "investigation",
+          "applicable_if": "Coastal flood extent or documented pathway reaches the corridor.",
+          "could_fail": "Survey misses a pathway that only activates at higher water levels.",
+          "downstream_checks": [
+            "Confirm pathway against historical high-water marks (USGS 2018) where available"
+          ],
+          "asset_types": [
+            "shoreline"
+          ],
+          "source_ids": [
+            "S12",
+            "S07"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Survey extent (ft of shoreline)",
+            "Required vertical accuracy and datum"
+          ]
+        },
+        {
+          "action_id": "coastal_barrier_options",
+          "name": "Evaluate continuous coastal protection (berm, wall, raised road) only where overland entry is demonstrated",
+          "kind": "capital",
+          "applicable_if": "Survey shows overland entry along a definable alignment that ties into high ground.",
+          "could_fail": "Water enters around the ends; outfalls behind the barrier still back up at high tide (see BWSC adaptation scenarios).",
+          "downstream_checks": [
+            "Check drainage behind the barrier at high tide",
+            "Check displaced water to neighbours"
+          ],
+          "asset_types": [
+            "shoreline",
+            "road"
+          ],
+          "source_ids": [
+            "S11",
+            "BWSC.adapt"
+          ],
+          "related_method_ids": [
+            "vegetated_berm",
+            "raised_roadway",
+            "seawall_extension"
+          ],
+          "cost_status": "published_example_available",
+          "precedent_ids": [
+            "crdg-2018-berm-2030",
+            "crdg-2018-raised-road-opt1",
+            "crdg-2018-seawall"
+          ]
+        }
+      ]
+    },
+    {
+      "mechanism": "tidal_outfall_backwater",
+      "label": "High tide blocking stormwater discharge / backflow",
+      "description": "When the receiving water is high, outfalls cannot drain by gravity; stormwater backs up through the drain system and ponds on the street.",
+      "supported_by": [
+        "Outfall location, invert elevation and ownership",
+        "Flooding that coincides with high tide and rain",
+        "Published modelling of tide-constrained outfalls"
+      ],
+      "does_not_prove": "High tide alone does not show that a specific outfall is failing.",
+      "addressed_by_methods": [
+        "drainage_backflow"
+      ],
+      "unknowns": [
+        "Which outfall(s) serve the corridor inlets and who owns them",
+        "Outfall invert elevations vs tide levels (datum)",
+        "Whether tide gates / check valves exist and work",
+        "Timing of past flooding vs tide and rainfall"
+      ],
+      "actions": [
+        {
+          "action_id": "identify_outfall_owner",
+          "name": "Trace corridor inlets to their outfall(s) and confirm owner",
+          "kind": "investigation",
+          "applicable_if": "Always, before any outfall or tide-gate proposal.",
+          "could_fail": "Records incomplete; non-Commission outfalls are outside the BWSC model.",
+          "downstream_checks": [
+            "Request drainage plans from the identified owner"
+          ],
+          "asset_types": [
+            "outfall",
+            "pipe"
+          ],
+          "source_ids": [
+            "BWSC.sys",
+            "BWSC.disc"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Owner records",
+            "Number of structures to trace"
+          ]
+        },
+        {
+          "action_id": "compare_flood_timing",
+          "name": "Compare reported flooding dates against tide and rainfall records",
+          "kind": "investigation",
+          "applicable_if": "Dated flood reports exist for the corridor.",
+          "could_fail": "Report dates are case-open times, not flood times; rainfall gauge may be distant.",
+          "downstream_checks": [
+            "NOAA tide gauge 8443970 for water level; NOAA Atlas 14 for rainfall frequency context"
+          ],
+          "asset_types": [
+            "catchment"
+          ],
+          "source_ids": [
+            "BOS311",
+            "S08",
+            "NOAA.A14"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "None (desk study)"
+          ]
+        },
+        {
+          "action_id": "outfall_adaptation_review",
+          "name": "Review tide gate / backflow control, storage or pumping at the outfall",
+          "kind": "capital",
+          "applicable_if": "Outfall is identified and tide-constrained discharge is shown by timing or modelling.",
+          "could_fail": "Storage or pumping undersized; gate closed during rain with no relief; power failure.",
+          "downstream_checks": [
+            "Upstream ponding when the gate is closed",
+            "Owner coordination (DCR/MassDOT/BWSC/private)"
+          ],
+          "asset_types": [
+            "outfall",
+            "pump"
+          ],
+          "source_ids": [
+            "BWSC.adapt",
+            "S12"
+          ],
+          "related_method_ids": [
+            "drainage_backflow"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Outfall diameter and invert",
+            "Design tide and storm",
+            "Required storage volume or pump rate"
+          ]
+        }
+      ]
+    },
+    {
+      "mechanism": "inlet_blockage",
+      "label": "Localized inlet obstruction / debris",
+      "description": "Catch basins or grates are blocked by debris, sediment, leaves or snow so water cannot enter the drain.",
+      "supported_by": [
+        "Repeated catch-basin reports at the same location",
+        "Maintenance or closure notes recording debris removal",
+        "Field inspection"
+      ],
+      "does_not_prove": "A 311 report is an allegation, not a confirmed blockage; the BWSC model does not represent individual clogged basins.",
+      "addressed_by_methods": [],
+      "unknowns": [
+        "Current condition of the corridor catch basins",
+        "Cleaning history from the owner",
+        "Whether reported ponding cleared after cleaning"
+      ],
+      "actions": [
+        {
+          "action_id": "inspect_clean_inlets",
+          "name": "Inspect and, if blocked, clean the corridor catch basins",
+          "kind": "maintenance",
+          "applicable_if": "Catch-basin reports or debris notes near the corridor.",
+          "could_fail": "Flooding persists after cleaning, pointing to capacity or tide causes instead.",
+          "downstream_checks": [
+            "Record whether ponding recurs after cleaning",
+            "Report to the asset owner, not by default to BWSC"
+          ],
+          "asset_types": [
+            "catch_basin"
+          ],
+          "source_ids": [
+            "BWSC.maint",
+            "BWSC.cb",
+            "BOS311"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Number of basins",
+            "Owner's maintenance contract rates"
+          ]
+        },
+        {
+          "action_id": "cctv_connecting_pipe",
+          "name": "CCTV the connecting pipe if cleaning does not restore drainage",
+          "kind": "investigation",
+          "applicable_if": "Basins clean but water still not draining.",
+          "could_fail": "Defect lies further downstream or at the outfall.",
+          "downstream_checks": [
+            "Follow to the next structure / outfall"
+          ],
+          "asset_types": [
+            "pipe"
+          ],
+          "source_ids": [
+            "BWSC.maint"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Pipe length to televise",
+            "Access / traffic management"
+          ]
+        }
+      ]
+    },
+    {
+      "mechanism": "storm_drain_capacity",
+      "label": "Insufficient storm-drain or inlet capacity",
+      "description": "Inlets or pipes cannot carry the rainfall runoff reaching them even when clear.",
+      "supported_by": [
+        "Verified pipe sizes and hydraulic calculations",
+        "Inlet spacing and condition",
+        "Repeated ponding during intense rain with clean inlets"
+      ],
+      "does_not_prove": "Road width or a flood footprint does not reveal underground capacity.",
+      "addressed_by_methods": [
+        "drainage_backflow"
+      ],
+      "unknowns": [
+        "Pipe diameters, slopes and connectivity",
+        "Contributing catchment area",
+        "Design storm used for the existing system"
+      ],
+      "actions": [
+        {
+          "action_id": "capacity_assessment",
+          "name": "Drainage capacity assessment (inlets and pipes) with the owner's records",
+          "kind": "investigation",
+          "applicable_if": "Ponding recurs with clean inlets during rainfall.",
+          "could_fail": "Records missing; tailwater (tide) controls rather than pipe size.",
+          "downstream_checks": [
+            "Use practitioner drainage guidance (MassDOT PDDG Ch. 8)",
+            "Check impacts away from the site"
+          ],
+          "asset_types": [
+            "catch_basin",
+            "pipe",
+            "catchment"
+          ],
+          "source_ids": [
+            "PDDG8",
+            "NOAA.A14"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Catchment area",
+            "Pipe inventory",
+            "Design storm"
+          ]
+        },
+        {
+          "action_id": "inlet_storage_options",
+          "name": "Added / relocated inlets, storage or green infrastructure",
+          "kind": "capital",
+          "applicable_if": "Capacity assessment shows a deficit.",
+          "could_fail": "Moves water to a downstream bottleneck.",
+          "downstream_checks": [
+            "Downstream pipe and outfall capacity"
+          ],
+          "asset_types": [
+            "catch_basin",
+            "pipe"
+          ],
+          "source_ids": [
+            "PDDG8"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Number of inlets",
+            "Storage volume",
+            "Utility conflicts"
+          ]
+        }
+      ]
+    },
+    {
+      "mechanism": "surface_grading",
+      "label": "Unfavorable street grading / ponding",
+      "description": "Surface low points or grades direct runoff to places without adequate inlets.",
+      "supported_by": [
+        "LiDAR or survey low points",
+        "Surface flow paths",
+        "Field survey of gutter grades"
+      ],
+      "does_not_prove": "A low point alone does not prove deficient drainage, and regrading can push water elsewhere.",
+      "addressed_by_methods": [],
+      "unknowns": [
+        "Validated surface elevations along the corridor (from Person 2 / survey)",
+        "Inlet positions relative to low points"
+      ],
+      "actions": [
+        {
+          "action_id": "grading_survey",
+          "name": "Topographic survey of gutters, low points and inlet positions",
+          "kind": "investigation",
+          "applicable_if": "Ponding is localized to a repeatable spot.",
+          "could_fail": "LiDAR resolution insufficient at curb scale.",
+          "downstream_checks": [
+            "Check where redirected water would go"
+          ],
+          "asset_types": [
+            "road",
+            "catch_basin"
+          ],
+          "source_ids": [
+            "S09"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Survey length",
+            "Required accuracy"
+          ]
+        }
+      ]
+    },
+    {
+      "mechanism": "multiple_or_unknown",
+      "label": "Multiple simultaneous causes / unresolved",
+      "description": "Rain, tide and coastal inflow may combine, or available evidence does not discriminate between causes.",
+      "supported_by": [
+        "Co-occurring rain and tide",
+        "More than one mechanism with supporting evidence"
+      ],
+      "does_not_prove": "Never force one causal label just to populate an answer.",
+      "addressed_by_methods": [],
+      "unknowns": [
+        "Event-by-event timing",
+        "Owner records for all drainage assets"
+      ],
+      "actions": [
+        {
+          "action_id": "owner_coordination",
+          "name": "Convene asset owners and collect drainage records before choosing a measure",
+          "kind": "investigation",
+          "applicable_if": "Two or more mechanisms are possible or ownership is split.",
+          "could_fail": "Records unavailable; responsibilities disputed.",
+          "downstream_checks": [
+            "Hydraulic modelling once records are assembled"
+          ],
+          "asset_types": [
+            "catchment"
+          ],
+          "source_ids": [
+            "BWSC.sys",
+            "S12"
+          ],
+          "cost_status": "cost_estimate_unavailable",
+          "quote_inputs": [
+            "Scope of modelling study"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "library_version": "eng-evidence-v0.1",
+  "checked_on": "2026-10-24",
+  "note": "Page references were read from the downloaded PDFs on the check date. 'printed_page' is the page number printed in the document; 'pdf_page' is the 1-based page index in the downloaded file.",
+  "sources": [
+    {
+      "source_id": "S10",
+      "title": "MassDOT Road Inventory (City of Boston GIS portal, Infrastructure/OpenData layer 14)",
+      "publisher": "MassDOT via City of Boston",
+      "url": "https://gisportal.boston.gov/arcgis/rest/services/Infrastructure/OpenData/MapServer/14",
+      "kind": "dataset",
+      "data_status": "observed",
+      "limitations": "Coded attributes; many fields blank on some records; AADT years vary (2014-2015 for Morrissey records). Does not include pavement structure, elevations, drainage, or utilities."
+    },
+    {
+      "source_id": "S10.dict",
+      "title": "MassDOT Road Inventory Data Dictionary",
+      "publisher": "MassDOT",
+      "url": "https://www.mass.gov/doc/road-inventory-data-dictionary/download",
+      "kind": "reference",
+      "data_status": "observed",
+      "limitations": "Download returned HTTP 403 during the build; code meanings are therefore not decoded in this module."
+    },
+    {
+      "source_id": "S11",
+      "title": "Climate Resilient Design Standards & Guidelines for Protection of Public Rights-of-Way (overview page)",
+      "publisher": "Boston Public Works Department",
+      "url": "https://www.boston.gov/departments/public-works/climate-resilient-design-guidelines",
+      "kind": "guidance",
+      "published": "2018-10-17",
+      "data_status": "published_model",
+      "limitations": "Sample barriers at sample sites; the City states the sample locations do not reflect intent to build."
+    },
+    {
+      "source_id": "S11.sec4",
+      "title": "Section 4.0 Sample Vegetated Berm Barrier",
+      "publisher": "Boston Public Works Department",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_4.0_sample_vegetated_berm_barrier.pdf",
+      "kind": "guidance",
+      "published": "2018-10-17",
+      "data_status": "published_model",
+      "limitations": "Conceptual opinion of probable cost for a sample site, not engineering analysis for design."
+    },
+    {
+      "source_id": "S11.sec5",
+      "title": "Section 5.0 Sample Harborwalk Seawall Barrier",
+      "publisher": "Boston Public Works Department",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_5.0_sample_harborwalk_seawall_barrier.pdf",
+      "kind": "guidance",
+      "published": "2018-10-17",
+      "data_status": "published_model",
+      "limitations": "Assumes the existing seawall can be extended without foundation modifications."
+    },
+    {
+      "source_id": "S11.sec6",
+      "title": "Section 6.0 Sample Raised Roadway Barrier",
+      "publisher": "Boston Public Works Department",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_6.0_sample_raised_roadway_barrier.pdf",
+      "kind": "guidance",
+      "published": "2018-10-17",
+      "data_status": "published_model",
+      "limitations": "Sample site is a 2,000-ft urban street; pumps/generators and private utility relocation excluded from cost."
+    },
+    {
+      "source_id": "S11.sec7",
+      "title": "Section 7.0 Deployable Flood Barrier Guidance",
+      "publisher": "Boston Public Works Department",
+      "url": "https://d8-dev2.boston.gov/sites/default/files/file/document_files/2018/10/section_7.0_deployable_flood_barrier_guidance.pdf",
+      "kind": "guidance",
+      "published": "2018-10-17",
+      "data_status": "published_model",
+      "limitations": "Comparison matrix of product types without a sample site; product mentions are not endorsements. No sample cost was extracted for this build."
+    },
+    {
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "publisher": "MassDOT",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "mirror_url": "https://malegislature.gov/Reports/28568/(64)%20Morrissey%20Report_June%202025_FINAL_compressed.pdf",
+      "kind": "study",
+      "published": "2025-06",
+      "data_status": "published_model",
+      "limitations": "Study findings and preferred alternatives; not evidence that any measure is funded, permitted, or built. mass.gov download returned HTTP 403 to scripts; the legislature mirror was read."
+    },
+    {
+      "source_id": "S13",
+      "title": "Boston Coastal Resilience Implementation",
+      "publisher": "City of Boston",
+      "url": "https://www.boston.gov/departments/climate-resilience/coastal-resilience-implementation",
+      "kind": "status_tracker",
+      "data_status": "observed",
+      "limitations": "Check current project status before citing anything as approved or built."
+    },
+    {
+      "source_id": "S06",
+      "title": "Massachusetts Coast Flood Risk Model (MC-FRM) / Sea Level Rise and Coastal Flooding Viewer",
+      "publisher": "Commonwealth of Massachusetts",
+      "url": "https://www.mass.gov/info-details/massachusetts-sea-level-rise-and-coastal-flooding-viewer",
+      "kind": "dataset",
+      "data_status": "published_model",
+      "limitations": "Future annual-exceedance scenarios, not predictions of a dated storm."
+    },
+    {
+      "source_id": "S07",
+      "title": "USGS January & March 2018 coastal flood inundation data",
+      "publisher": "USGS",
+      "url": "https://data.usgs.gov/datacatalog/data/USGS%3A60100f99d34e162231fecfa8",
+      "kind": "dataset",
+      "data_status": "observed",
+      "limitations": "Footprints and high-water marks; not a street-level flow or depth time series."
+    },
+    {
+      "source_id": "S08",
+      "title": "NOAA CO-OPS Boston tide gauge 8443970 (API)",
+      "publisher": "NOAA",
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "kind": "dataset",
+      "data_status": "observed",
+      "limitations": "Water level at the gauge (MLLW datum), not street-level water depth. No series retrieved by the engineering module."
+    },
+    {
+      "source_id": "S09",
+      "title": "MassGIS LiDAR Terrain Data",
+      "publisher": "MassGIS",
+      "url": "https://www.mass.gov/info-details/massgis-data-lidar-terrain-data",
+      "kind": "dataset",
+      "data_status": "observed",
+      "limitations": "Bare-earth terrain; not a surveyed road crown elevation. Check vertical datum."
+    },
+    {
+      "source_id": "BWSC.im",
+      "title": "BWSC Boston Inundation Model (overview)",
+      "publisher": "Boston Water and Sewer Commission",
+      "url": "https://www.bwsc.org/boston-inundation-model",
+      "kind": "model_documentation",
+      "data_status": "published_model",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "Citywide wet-weather/coastal model. Viewer only; no model layers downloaded by this build."
+    },
+    {
+      "source_id": "BWSC.disc",
+      "title": "BWSC Storm Viewer - Disclaimers",
+      "publisher": "Boston Water and Sewer Commission",
+      "url": "https://www.bwscstormviewer.com/disclaimers",
+      "kind": "model_documentation",
+      "data_status": "published_model",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "States the model focuses on coastal flooding (direct overland flow and outfalls unable to discharge at high water), does not characterise intense-rainfall or clogged-catch-basin flooding, and includes only Commission-owned outfalls. Absence of modelled flooding is not proof of no flooding."
+    },
+    {
+      "source_id": "BWSC.adapt",
+      "title": "BWSC Storm Viewer - Flood Modeling (adaptation scenarios)",
+      "publisher": "Boston Water and Sewer Commission",
+      "url": "https://www.bwscstormviewer.com/flood-modeling",
+      "kind": "model_documentation",
+      "data_status": "published_model",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "Three scenarios (No Action, Shoreline Protection Only, Shoreline Protection + Outfall Adaptation incl. tide gates on Commission-owned outfalls), all for a 2070 100-year tropical storm. Non-Commission outfalls and MassDOT pump stations are excluded. Before/after layers not downloaded; no local quantitative benefit is claimed."
+    },
+    {
+      "source_id": "BWSC.cb",
+      "title": "BWSC Catch Basin layer (FeatureServer behind the public Catch Basin Locator map)",
+      "publisher": "Boston Water and Sewer Commission",
+      "url": "https://services5.arcgis.com/ji3WHeqN0AysEK5g/arcgis/rest/services/Hydrant_Search_Map1/FeatureServer/0",
+      "viewer_url": "https://www.bwsc.org/environment-education/maproom/catch-basins-map",
+      "kind": "dataset",
+      "data_status": "observed",
+      "evidence_type": "gis_derived",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": true,
+      "crs": "Requested outSR=4326",
+      "layer_last_edit": "2024-01-27 (editingInfo.lastEditDate)",
+      "limitations": "Public item with no licence/terms text found; used for research display only. Gives location, owner code and some attributes; many attributes are unknown sentinels. Says nothing about current condition or cleaning history."
+    },
+    {
+      "source_id": "BWSC.maint",
+      "title": "BWSC Preventative Maintenance programs",
+      "publisher": "Boston Water and Sewer Commission",
+      "url": "https://www.bwsc.org/projects/preventative-maintenance",
+      "kind": "practice_documentation",
+      "data_status": "observed",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "Describes catch basin cleaning, pipe cleaning and CCTV inspection programs; no public street-level history."
+    },
+    {
+      "source_id": "BWSC.sys",
+      "title": "BWSC Stormwater System",
+      "publisher": "Boston Water and Sewer Commission",
+      "url": "https://www.bwsc.org/environment-education/water-sewer-and-stormwater/stormwater-system",
+      "kind": "practice_documentation",
+      "data_status": "observed",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "Citywide description (30,327 catch basins, ~600 miles of drain pipe, 207 outfalls). States some storm drains and outfalls are privately owned or owned by MassDOT, the Turnpike, Massport, or DCR. No public pipe network with sizes/capacity."
+    },
+    {
+      "source_id": "BOS311",
+      "title": "Boston 311 Service Requests (data.boston.gov, yearly CKAN datastore resources)",
+      "publisher": "City of Boston",
+      "url": "https://data.boston.gov/dataset/311-service-requests",
+      "kind": "dataset",
+      "data_status": "observed",
+      "evidence_type": "observed_report",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": true,
+      "limitations": "Resident complaints are allegations, not confirmed causes. Reporting bias, duplicates, free-text closure notes. Case types used: 'Catchbasin', 'Roadway Flooding'."
+    },
+    {
+      "source_id": "OPEN311",
+      "title": "Boston Open311 API",
+      "publisher": "City of Boston",
+      "url": "https://311.boston.gov/open311",
+      "kind": "api_documentation",
+      "data_status": "observed",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "Page states an API key must be requested and approved. Not used; CKAN open data used instead."
+    },
+    {
+      "source_id": "PDDG8",
+      "title": "MassDOT Project Development & Design Guide, Chapter 8: Drainage and Erosion Control",
+      "publisher": "MassDOT",
+      "url": "https://www.mass.gov/info-details/pddg-chapter-8-drainage-and-erosion-control",
+      "kind": "guidance",
+      "data_status": "published_model",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "mass.gov returned HTTP 403 to scripted requests; content not read by this build. Cited only as the practitioner reference for drainage investigation, not for specific claims."
+    },
+    {
+      "source_id": "MA.CRDS",
+      "title": "Massachusetts Climate Resilience Design Standards and Guidance",
+      "publisher": "Commonwealth of Massachusetts",
+      "url": "https://www.mass.gov/info-details/climate-resilience-design-standards-guidance",
+      "kind": "guidance",
+      "data_status": "published_model",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "mass.gov returned HTTP 403 to scripted requests; not read by this build. Tool may require registration."
+    },
+    {
+      "source_id": "NOAA.A14",
+      "title": "NOAA Atlas 14 Precipitation Frequency Data Server",
+      "publisher": "NOAA NWS HDSC",
+      "url": "https://hdsc.nws.noaa.gov/pfds/",
+      "kind": "dataset",
+      "data_status": "published_model",
+      "retrieved_at": "2026-10-24",
+      "machine_readable_obtained": false,
+      "limitations": "Reachable (HTTP 200); no point estimate retrieved. A precipitation-frequency estimate does not establish pipe capacity or a blocked drain."
+    }
+  ]
+}
