@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Run engineering tests on save",
+      "trigger": "PostFileSave",
+      "description": "Runs the Person 3 engineering test suite whenever a Python or evidence JSON file under engineering/ is saved.",
+      "matcher": "engineering[\\\\/].*\\.(py|json)$",
+      "action": {
+        "type": "command",
+        "command": "cd engineering && python -m unittest discover -s tests",
+        "timeout": 180
+      }
+    }
+  ]
+}
