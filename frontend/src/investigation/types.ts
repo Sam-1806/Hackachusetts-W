@@ -84,6 +84,9 @@ export interface NetworkImpact {
   };
   assumptions?: string[];
   note?: string;
+  candidates_total?: number;
+  evidence_text?: string[];
+  standalone_loss?: number | null;
 }
 
 export interface ScreeningCheck {
@@ -343,7 +346,13 @@ export interface ConceptIntervention {
     footprint_width_m?: number;
     basis?: string;
     source_id?: string;
+    width_basis?: string;
+    width_source_id?: string;
   } | null;
+  /** Fields Person 2's ConceptIntervention type requires. */
+  label?: string;
+  description?: string;
+  source_url?: string;
   addressed_mechanism_ids: HypothesizedMechanism[];
   mechanism_status: Partial<Record<HypothesizedMechanism, CauseHypothesis['status']>>;
   supporting_evidence_ids: string[];

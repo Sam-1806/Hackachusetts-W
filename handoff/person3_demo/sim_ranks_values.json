@@ -1,0 +1,384 @@
+{
+  "purpose": "Drop-in replacement for DEMO_CONTEXT in sim+ranks frontend/src/data/personOneRanking.ts",
+  "generated_at": "2026-10-24T23:59:46+00:00",
+  "graph_version": "osm-2026-10-24-v0.1",
+  "points_method": {
+    "accessPoints": "45 x (MC-FRM 2050 standalone accessibility loss / max among the four corridors)",
+    "propertyPoints": "25 x (buildings within 100 m intersecting the MC-FRM 2050 extent / max among the four)",
+    "floodPoints": "unchanged: the UI computes 0-30 from USGS 2018 footprint overlap",
+    "weights": "flood 30 / access 45 / property 25, as already used by the UI"
+  },
+  "DEMO_CONTEXT": {
+    "fixture:morrissey-boulevard": {
+      "accessPoints": 45,
+      "propertyPoints": 25,
+      "accessNote": "Computed on Person 1's OSM network (63 segments, 10.38 km). In MC-FRM 2050 1%, 48 segments overlap the flood extent; closing only those adds 43 demand-weighted seconds across 13 neighborhood-to-ED journeys (Columbia Point (UMass Boston area) -> nearest emergency department: 321 s -> 359 s (+12%)). Jan 2018 footprint: 22 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "propertyNote": "411 City of Boston building footprints lie within 100 m of the corridor; 163 intersect the MC-FRM 2050 1% extent, 63 the Jan 2018 footprint and 15 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied."
+    },
+    "fixture:day-boulevard": {
+      "accessPoints": 0,
+      "propertyPoints": 8,
+      "accessNote": "Computed on Person 1's OSM network (30 segments, 4.76 km). In MC-FRM 2050 1%, 11 segments overlap the flood extent; closing only those adds 0 demand-weighted seconds across 13 neighborhood-to-ED journeys. Jan 2018 footprint: 0 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "propertyNote": "398 City of Boston building footprints lie within 100 m of the corridor; 55 intersect the MC-FRM 2050 1% extent, 2 the Jan 2018 footprint and 1 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied."
+    },
+    "fixture:mount-vernon": {
+      "accessPoints": 0,
+      "propertyPoints": 6,
+      "accessNote": "Computed on Person 1's OSM network (11 segments, 1.07 km). In MC-FRM 2050 1%, 11 segments overlap the flood extent; closing only those adds 0 demand-weighted seconds across 13 neighborhood-to-ED journeys. Jan 2018 footprint: 0 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "propertyNote": "46 City of Boston building footprints lie within 100 m of the corridor; 40 intersect the MC-FRM 2050 1% extent, 1 the Jan 2018 footprint and 0 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied."
+    },
+    "fixture:inland-control": {
+      "accessPoints": 0,
+      "propertyPoints": 0,
+      "accessNote": "Computed on Person 1's OSM network (7 segments, 0.45 km). In MC-FRM 2050 1%, 0 segments overlap the flood extent; closing only those adds 0 demand-weighted seconds across 13 neighborhood-to-ED journeys. Jan 2018 footprint: 0 segments, 0 s. Journeys and demand weights are Person 1's assumed planning proxies; overlap is treated as closure (assumed).",
+      "propertyNote": "220 City of Boston building footprints lie within 100 m of the corridor; 0 intersect the MC-FRM 2050 1% extent, 0 the Jan 2018 footprint and 0 the Mar 2018 footprint. Footprint overlap only: no damage, value, or occupancy is implied."
+    }
+  },
+  "raw": {
+    "fixture:morrissey-boulevard": {
+      "label": "Morrissey Boulevard",
+      "road_ids": [
+        "rd_0545e7f18b",
+        "rd_07aa77e3b3",
+        "rd_0c87475aa6",
+        "rd_1495c06ddf",
+        "rd_1575a102a4",
+        "rd_1a8e0c744d",
+        "rd_2522fae615",
+        "rd_254694c59f",
+        "rd_26cf46062a",
+        "rd_27bfd757f9",
+        "rd_2848fdec4f",
+        "rd_29d3acde75",
+        "rd_2c71274d43",
+        "rd_2f9bb18598",
+        "rd_301bdacfcd",
+        "rd_30a44cac3d",
+        "rd_3cbbd874de",
+        "rd_3f727c902b",
+        "rd_4276379c08",
+        "rd_4506d4cc6b",
+        "rd_508c9f07a3",
+        "rd_549ebf818c",
+        "rd_5d4ab5b0ec",
+        "rd_67a140e121",
+        "rd_6e94e911c1",
+        "rd_6f209b7ae0",
+        "rd_765bf02c09",
+        "rd_7de4d64720",
+        "rd_7e032ac545",
+        "rd_861edade3d",
+        "rd_880954fa5a",
+        "rd_8a34082f87",
+        "rd_95f4669a85",
+        "rd_a08d801731",
+        "rd_a41811d698",
+        "rd_ab2bcdf237",
+        "rd_ad4faee506",
+        "rd_b6915fde24",
+        "rd_b75b1ecf5c",
+        "rd_b84833e289",
+        "rd_bdd7c91605",
+        "rd_c4a1a6fd87",
+        "rd_c4dd488599",
+        "rd_c4f2327f7c",
+        "rd_c5535e7658",
+        "rd_c7d2819fbd",
+        "rd_c87edc2d74",
+        "rd_ca0e9573ad",
+        "rd_cb3f342273",
+        "rd_cce6003ec9",
+        "rd_ced4ee91f5",
+        "rd_d17bfff920",
+        "rd_d7c3d2df3c",
+        "rd_dc7a2de0d6",
+        "rd_dcc322cf9a",
+        "rd_e223943b4b",
+        "rd_e5b743ba35",
+        "rd_ee1bfc856f",
+        "rd_f3c977c61d",
+        "rd_f709622049",
+        "rd_f8c3c70691",
+        "rd_fc530b9bd2",
+        "rd_ffd8a40796"
+      ],
+      "osm_corridor": "cor_6dece7a926 (Person 1 whole-road bundle, both carriageways)",
+      "road_names": [
+        "William T. Morrissey Boulevard"
+      ],
+      "length_km": 10.38,
+      "access": {
+        "mcfrm-2050-1pct": {
+          "exposed_roads": 48,
+          "standalone_loss_s": 42.9,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [
+            "J_columbia_point"
+          ],
+          "evidence": [
+            "Columbia Point (UMass Boston area) -> nearest emergency department: 321 s -> 359 s (+12%)"
+          ]
+        },
+        "usgs-2018-01-04": {
+          "exposed_roads": 22,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-03-02": {
+          "exposed_roads": 3,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        }
+      },
+      "property": {
+        "buildings_within_buffer": 411,
+        "buffer_m": 100.0,
+        "by_scenario": {
+          "mcfrm-2050-1pct": {
+            "buildings_in_extent": 163,
+            "label": "MC-FRM 2050 1% (projected)",
+            "zone_fully_inside_extent_window": false
+          },
+          "usgs-2018-01-04": {
+            "buildings_in_extent": 63,
+            "label": "Jan 4, 2018 (observed)",
+            "zone_fully_inside_extent_window": false
+          },
+          "usgs-2018-03-02": {
+            "buildings_in_extent": 15,
+            "label": "Mar 2, 2018 (observed)",
+            "zone_fully_inside_extent_window": false
+          }
+        }
+      }
+    },
+    "fixture:day-boulevard": {
+      "label": "Day Boulevard",
+      "road_ids": [
+        "rd_021d3d469a",
+        "rd_0811903f4a",
+        "rd_099d653238",
+        "rd_142c2e9cad",
+        "rd_1600922579",
+        "rd_1cace32435",
+        "rd_27571dfaaa",
+        "rd_276c43e63f",
+        "rd_29a4bf2192",
+        "rd_366df6dd0a",
+        "rd_44c332fff7",
+        "rd_4dfc078c5e",
+        "rd_594083af97",
+        "rd_5abde54a71",
+        "rd_615970145c",
+        "rd_64d03e03f5",
+        "rd_73612336be",
+        "rd_7ae19b1307",
+        "rd_86a319bd89",
+        "rd_94600afaad",
+        "rd_95afed9cc5",
+        "rd_9c7d41080f",
+        "rd_adca22c04e",
+        "rd_b3b0ddb087",
+        "rd_b647849c21",
+        "rd_bcf780c450",
+        "rd_de6219ee73",
+        "rd_e11ee96c14",
+        "rd_e4215d2811",
+        "rd_f5c9e58af7"
+      ],
+      "osm_corridor": "cor_5a83bdd655 (Person 1 William J. Day Boulevard)",
+      "road_names": [
+        "William J. Day Boulevard"
+      ],
+      "length_km": 4.76,
+      "access": {
+        "mcfrm-2050-1pct": {
+          "exposed_roads": 11,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-01-04": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-03-02": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        }
+      },
+      "property": {
+        "buildings_within_buffer": 398,
+        "buffer_m": 100.0,
+        "by_scenario": {
+          "mcfrm-2050-1pct": {
+            "buildings_in_extent": 55,
+            "label": "MC-FRM 2050 1% (projected)",
+            "zone_fully_inside_extent_window": false
+          },
+          "usgs-2018-01-04": {
+            "buildings_in_extent": 2,
+            "label": "Jan 4, 2018 (observed)",
+            "zone_fully_inside_extent_window": false
+          },
+          "usgs-2018-03-02": {
+            "buildings_in_extent": 1,
+            "label": "Mar 2, 2018 (observed)",
+            "zone_fully_inside_extent_window": false
+          }
+        }
+      }
+    },
+    "fixture:mount-vernon": {
+      "label": "Mount Vernon Street",
+      "road_ids": [
+        "rd_0b0f4d3867",
+        "rd_24476b14a1",
+        "rd_3ddb043b56",
+        "rd_4234e18158",
+        "rd_42c667edfd",
+        "rd_81bf73d926",
+        "rd_8f01b99f1b",
+        "rd_97df735589",
+        "rd_a17d668873",
+        "rd_e5a8e01cb7",
+        "rd_e7562b9fc1"
+      ],
+      "osm_corridor": "OSM 'Mount Vernon Street' segments within 250 m of the fixture line (fixture is a hand-drawn approximation)",
+      "road_names": [
+        "Mount Vernon Street"
+      ],
+      "length_km": 1.07,
+      "access": {
+        "mcfrm-2050-1pct": {
+          "exposed_roads": 11,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-01-04": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-03-02": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        }
+      },
+      "property": {
+        "buildings_within_buffer": 46,
+        "buffer_m": 100.0,
+        "by_scenario": {
+          "mcfrm-2050-1pct": {
+            "buildings_in_extent": 40,
+            "label": "MC-FRM 2050 1% (projected)",
+            "zone_fully_inside_extent_window": true
+          },
+          "usgs-2018-01-04": {
+            "buildings_in_extent": 1,
+            "label": "Jan 4, 2018 (observed)",
+            "zone_fully_inside_extent_window": true
+          },
+          "usgs-2018-03-02": {
+            "buildings_in_extent": 0,
+            "label": "Mar 2, 2018 (observed)",
+            "zone_fully_inside_extent_window": true
+          }
+        }
+      }
+    },
+    "fixture:inland-control": {
+      "label": "Inland control corridor (Stoughton Street)",
+      "road_ids": [
+        "rd_085cc55bda",
+        "rd_4c2e4a0b55",
+        "rd_918bd4d450",
+        "rd_eb58819f9c",
+        "rd_ed32671fd0",
+        "rd_fb858d69d9",
+        "rd_fc24dc4680"
+      ],
+      "osm_corridor": "OSM 'Stoughton Street' segments within 150 m of the fixture line (dominant street along it)",
+      "road_names": [
+        "Stoughton Street",
+        "Stoughton Street Place"
+      ],
+      "length_km": 0.45,
+      "access": {
+        "mcfrm-2050-1pct": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-01-04": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        },
+        "usgs-2018-03-02": {
+          "exposed_roads": 0,
+          "standalone_loss_s": 0.0,
+          "recovered_if_kept_open_s": 0.0,
+          "journeys_affected_alone": [],
+          "evidence": []
+        }
+      },
+      "property": {
+        "buildings_within_buffer": 220,
+        "buffer_m": 100.0,
+        "by_scenario": {
+          "mcfrm-2050-1pct": {
+            "buildings_in_extent": 0,
+            "label": "MC-FRM 2050 1% (projected)",
+            "zone_fully_inside_extent_window": false
+          },
+          "usgs-2018-01-04": {
+            "buildings_in_extent": 0,
+            "label": "Jan 4, 2018 (observed)",
+            "zone_fully_inside_extent_window": false
+          },
+          "usgs-2018-03-02": {
+            "buildings_in_extent": 0,
+            "label": "Mar 2, 2018 (observed)",
+            "zone_fully_inside_extent_window": false
+          }
+        }
+      }
+    }
+  },
+  "sources": {
+    "network": "Person 1 OSM graph osm-2026-10-24-v0.1 (build_osm_manifest.py), 13 journeys from Person 1 ranking_detail.json",
+    "flood": "Person 2 extents on simulations: MC-FRM 2050 1% (Woods Hole Group / MA ArcGIS), USGS Jan & Mar 2018",
+    "buildings": "https://gis.bostonplans.org/hosting/rest/services/Boston_Buildings/FeatureServer/9 (City of Boston / BPDA 'Boston Buildings', public)",
+    "method": "engineering/scripts/rank_corridors.py (validated against Person 1's 3 mock runs) + this script"
+  },
+  "limitations": [
+    "Access uses assumed journeys/weights and treats extent overlap as closure; not verified impassability.",
+    "Building counts are exposure proximity, not damage or loss.",
+    "Points are scaled relative to these four corridors only.",
+    "Interim computation by Person 3; replace with Person 1's engine output when available."
+  ],
+  "flag_for_ui": "The Morrissey flood explanation in personOneRanking.ts cites '167 days since 2006 ... 12 more severe high-water events'. No source for that figure is in the repo; cite it or remove it before the demo."
+}

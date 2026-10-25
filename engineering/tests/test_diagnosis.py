@@ -135,6 +135,18 @@ class FixtureDiagnosisTests(unittest.TestCase):
         st = statuses(build(drainage=only_reports))
         self.assertEqual(st["inlet_blockage"], "possible")
 
+    def test_no_issues_note_is_counter_evidence(self):
+        dr = copy.deepcopy(DRAINAGE)
+        dr["reports_311"]["records"] = [{
+            "case_enquiry_id": "TEST-2", "open_dt": "2026-01-01", "closed_dt": "2026-01-02", "case_status": "Closed",
+            "type": "Catchbasin", "location": "Test location", "queue": "test",
+            "closure_reason": "Case Resolved Checked CBs  no issues. CBs cleaned on schedule.",
+            "lon": -71.049, "lat": 42.300, "distance_to_corridor_m": 10.0}]
+        inv = build(drainage=dr)
+        c = next(c for c in inv["cause_assessment"]["possible_causes"] if c["mechanism"] == "inlet_blockage")
+        self.assertEqual(c["status"], "possible")
+        self.assertTrue(any(e.startswith("ev-311note-TEST-2") for e in c["counter_evidence_ids"]))
+
     def test_engineering_record_at_corridor_can_support(self):
         dr = copy.deepcopy(DRAINAGE)
         dr["reports_311"]["records"].append({

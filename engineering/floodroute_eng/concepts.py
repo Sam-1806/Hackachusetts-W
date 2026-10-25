@@ -115,6 +115,33 @@ def _offset_east(line: list[list[float]], meters: float) -> list[list[float]]:
     return out
 
 
+def _bayside_line(lines: list[list[list[float]]], offset_m: float, bin_m: float = 25.0) -> list[list[float]]:
+    """Schematic line following the east (bay) edge of the whole corridor, offset east.
+
+    Bins every corridor vertex by latitude (~bin_m), keeps the easternmost vertex per bin, then shifts
+    it east by offset_m. Works for a roughly north-south corridor with the water to the east.
+    """
+    pts = [p[:2] for line in lines for p in line]
+    if len(pts) < 2:
+        return []
+    step = bin_m / 111_320
+    bins: dict[int, list[float]] = {}
+    for lon, lat in pts:
+        k = int(lat // step)
+        if k not in bins or lon > bins[k][0]:
+            bins[k] = [lon, lat]
+    edge = [bins[k] for k in sorted(bins)]
+    # Smooth longitude with a centred moving window so the line doesn't zigzag between carriageways/ramps,
+    # then thin to ~every other bin. Purely cosmetic: this is a schematic line.
+    half = 3
+    smooth = []
+    for i, (_, lat) in enumerate(edge):
+        win = edge[max(0, i - half): i + half + 1]
+        smooth.append([max(p[0] for p in win) * 0.5 + sum(p[0] for p in win) / len(win) * 0.5, lat])
+    thinned = smooth[::2] + ([smooth[-1]] if (len(smooth) - 1) % 2 else [])
+    return _offset_east(thinned, offset_m)
+
+
 def _related_roads(geom: dict | None, ctx: dict, road_ids: list[str]) -> list[str]:
     if not geom:
         return list(road_ids)
@@ -201,6 +228,55 @@ def _with_geometry(c: dict, geom: dict | None, status: str, source_ids: list[str
     return c
 
 
+def _raised_road_visuals(inv: dict) -> dict:
+    """Display height = guideline sample; display width = MassDOT surface width when it is observed."""
+    vp = {"conceptual_height_m": round(4 * FT_TO_M, 2),
+          "basis": "Guideline SAMPLE grade change of 4 ft (S11.sec6 p.51), not a design height for this site.",
+          "source_id": "S11.sec6"}
+    sw = inv["road_facts"]["summary"].get("surface_width", {})
+    if sw.get("status") == "observed" and sw.get("range"):
+        w_ft = max(sw["range"])
+        vp["footprint_width_m"] = round(w_ft * FT_TO_M, 1)
+        vp["width_basis"] = (f"MassDOT Road Inventory surface width {w_ft:g} ft (units assumed feet; S10). "
+                             "Existing pavement width, not a design footprint.")
+        vp["width_source_id"] = "S10"
+    return vp
+
+
+# Short descriptions for Person 2's ConceptIntervention.description (display text).
+DESCRIPTIONS = {
+    "drainage_upgrade": "Mapped catch basins near the corridor to inspect and, if blocked, clean. Existing asset "
+                        "locations, not new works; no flood or ranking change is implied.",
+    "raised_roadway": "Existing corridor road segments shown with a guideline-sample 4 ft raise for spatial discussion. "
+                      "Not a design; only relevant if coastal overland inflow is confirmed.",
+    "berm": "Schematic bay-side berm line drawn by us for spatial discussion. Not surveyed and not a published "
+            "alignment; only relevant if coastal overland inflow is confirmed.",
+    "floodwall": "Schematic floodwall concept for spatial discussion. Not surveyed or designed.",
+    "deployable_barrier": "Deployable barrier concept. The opening it would close is not identified, so no geometry.",
+    "alternate_access": "Alternate access concept. Detour geometry not established.",
+}
+
+
+# Preferred human-facing source per type (stable public pages, not staging mirrors or raw services).
+SOURCE_PREF = {
+    "drainage_upgrade": ["BWSC.cb", "BWSC.maint"],
+    "raised_roadway": ["S11"],
+    "berm": ["S11"],
+    "floodwall": ["S11"],
+    "deployable_barrier": ["S11"],
+    "alternate_access": ["S12"],
+}
+
+
+def _person2_fields(c: dict, lib: EvidenceLibrary) -> None:
+    """Fields Person 2's ConceptIntervention type requires (label, description, source_url)."""
+    src = next((s for s in SOURCE_PREF.get(c["intervention_type"], []) + c["evidence_source_ids"]
+                if lib.sources.get(s, {}).get("url")), None)
+    c["label"] = c["name"]
+    c["description"] = DESCRIPTIONS.get(c["intervention_type"], c["geometry_note"])
+    c["source_url"] = (lib.sources[src].get("viewer_url") or lib.sources[src]["url"]) if src else ""
+
+
 def build_concepts(inv: dict, ctx: dict, lib: EvidenceLibrary, drainage: dict | None = None) -> dict:
     mechs = load_mechanisms()
     checks = load_checks()
@@ -252,9 +328,7 @@ def build_concepts(inv: dict, ctx: dict, lib: EvidenceLibrary, drainage: dict | 
                        "section is not designed.", ctx, road_ids)
         c.update({
             "target_asset_id": None,
-            "visual_parameters": {"conceptual_height_m": round(4 * FT_TO_M, 2),
-                                  "basis": "Guideline SAMPLE grade change of 4 ft (S11.sec6 p.51), not a design height for this site.",
-                                  "source_id": "S11.sec6"},
+            "visual_parameters": _raised_road_visuals(inv),
             "provenance": "derived_concept",
             "evidence_distinction": [
                 {"kind": "existing_asset", "text": "Road segment location from the MassDOT Road Inventory.", "source_id": "S10"},
@@ -273,13 +347,13 @@ def build_concepts(inv: dict, ctx: dict, lib: EvidenceLibrary, drainage: dict | 
     # 3. Berm on the flood side: no extractable alignment -> schematic.
     if "vegetated_berm" in methods:
         m = methods["vegetated_berm"]
-        lines = _corridor_lines(ctx, road_ids)
-        longest = max(lines, key=len) if lines else None
+        line = _bayside_line(_corridor_lines(ctx, road_ids), 40.0)
         c = _base(inv, "vegetated_berm", m["name"], m.get("addresses_mechanisms", ["coastal_overland"]), checks, diag)
-        _with_geometry(c, {"type": "LineString", "coordinates": _offset_east(longest, 40.0)} if longest else None,
-                       "schematic" if longest else "none", [],
-                       "Drawn 40 m east (bay side) of a corridor centerline for display only. Not a surveyed shoreline, "
-                       "not the Morrissey study's alignment (figures in S12 are images; no vector alignment extracted).",
+        _with_geometry(c, {"type": "LineString", "coordinates": line} if len(line) >= 2 else None,
+                       "schematic" if len(line) >= 2 else "none", [],
+                       "Drawn 40 m east (bay side) of the corridor's eastern edge along its full length, for display "
+                       "only. Not a surveyed shoreline, not the Morrissey study's alignment (figures in S12 are images; "
+                       "no vector alignment extracted). May cross buildings, paths or water.",
                        ctx, road_ids)
         c.update({
             "target_asset_id": None,
@@ -320,6 +394,8 @@ def build_concepts(inv: dict, ctx: dict, lib: EvidenceLibrary, drainage: dict | 
         concepts.append(c)
 
     concepts = concepts[:4]
+    for c in concepts:
+        _person2_fields(c, lib)
     rendered = {c["candidate_ref"] for c in concepts}
     alternatives = [{"candidate_ref": k, "name": (methods.get(k) or actions.get(k))["name"],
                      "intervention_type": TYPE_MAP[k][0], "reason": "Card only; no custom geometry in this build."}

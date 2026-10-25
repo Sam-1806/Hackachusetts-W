@@ -108,10 +108,14 @@ def _network_impact(ctx: dict, corridor_id: str) -> dict:
     if entry is None:
         return {"status": "not_available", "note": "No ranking record for this corridor."}
     journeys = entry.get("affected_journeys", [])
+    ev = entry.get("detour_or_disconnection_evidence")
     return {
         "status": "available",
         "data_status": entry.get("provenance", {}).get("data_status", "unknown"),
         "priority_rank": entry.get("priority_rank"),
+        "candidates_total": len(ctx.get("ranking", {}).get("ranking", [])),
+        "evidence_text": ev if isinstance(ev, list) else [],
+        "standalone_loss": entry.get("standalone_loss"),
         "impact_metric": entry.get("impact_metric"),
         "metric_units": entry.get("metric_units"),
         "journeys_total": len(journeys),
@@ -361,9 +365,11 @@ def _build_core(ctx: dict, inventory_fc: dict, lib: EvidenceLibrary, corridor_id
         "Published costs are 2018 sample figures for different sites and are not estimates for this corridor.",
         "Road Inventory code values are passed through undecoded; widths assumed to be in feet.",
     ]
-    if "mock" in str(input_status):
-        limitations.insert(0, "Some inputs are MOCK fixture data (see provenance.input_data_status). "
-                              "Do not present network or flood numbers as results.")
+    mock_inputs = [label for key, label in (("road_ids", "corridor road IDs"), ("flood_exposure", "flood exposure"),
+                                            ("network_impact", "network ranking")) if "mock" in str(input_status[key])]
+    if mock_inputs:
+        limitations.insert(0, f"MOCK inputs: {', '.join(mock_inputs)} (see provenance.input_data_status). "
+                              "Do not present those numbers as results.")
     if ctx.get("fixture_notice"):
         limitations.insert(0, ctx["fixture_notice"])
 

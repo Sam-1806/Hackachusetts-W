@@ -59,9 +59,19 @@ def classify(question: str) -> str:
     return "overview"
 
 
+MOCK_LABELS = {"road_ids": "corridor road IDs", "flood_exposure": "flood exposure", "network_impact": "network ranking"}
+
+
+def mock_parts(inv: dict) -> list[str]:
+    """Names of inputs still marked mock, in a fixed order."""
+    st = inv["provenance"]["input_data_status"]
+    return [label for key, label in MOCK_LABELS.items() if "mock" in json.dumps(st.get(key))]
+
+
 def _mock_caveat(inv: dict) -> list[dict]:
-    if "mock" in json.dumps(inv["provenance"]["input_data_status"]):
-        return [_b("caveat", "Network and flood inputs for this corridor are mock fixture values; treat numbers as placeholders.")]
+    parts = mock_parts(inv)
+    if parts:
+        return [_b("caveat", f"Mock inputs for this corridor: {', '.join(parts)}; treat those numbers as placeholders.")]
     return []
 
 
@@ -73,9 +83,11 @@ def _answer_network(inv: dict) -> list[dict]:
     n = inv["network_impact"]
     if n.get("status") != "available":
         return [_b("unknown", "No network ranking record is available for this corridor yet.")]
-    out = [_b("sourced", f"Priority rank {n['priority_rank']} with impact {n['impact_metric']:g} "
+    of = f" of {n['candidates_total']} candidates" if n.get("candidates_total") else ""
+    out = [_b("sourced", f"Priority rank {n['priority_rank']}{of} with impact {n['impact_metric']:g} "
                          f"{n['metric_units']} across {n['journeys_total']} representative journeys.",
               ["network_impact"])]
+    out += [_b("sourced", t, ["network_impact"]) for t in n.get("evidence_text", [])[:2]]
     for j in n["affected_journeys"]:
         if not j.get("reachable", True):
             out.append(_b("sourced", f"{j['label']}: unreachable in the flood scenario (baseline {j['baseline_s']} s).",

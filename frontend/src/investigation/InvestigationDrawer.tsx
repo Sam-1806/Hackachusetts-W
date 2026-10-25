@@ -4,7 +4,7 @@ import { AssistantChat } from './AssistantChat';
 import { downloadBrief } from './brief';
 import { CauseAssessment } from './CauseAssessment';
 import { CitationLinks } from './Citations';
-import { formatFactValue, isMock } from './groundedAssistant';
+import { formatFactValue, isMock, mockParts } from './groundedAssistant';
 import { InterventionForm } from './InterventionForm';
 import { ConceptInterventions } from './ConceptInterventions';
 import { NetworkAssumptionForm } from './NetworkAssumptionForm';
@@ -89,7 +89,7 @@ export function InvestigationDrawer({
 
       {isMock(inv) && (
         <p className="fr-inv-banner" role="note">
-          Mock inputs: network and flood numbers below are fixture placeholders, not results.
+          Mock inputs: {mockParts(inv).join(', ')}. Those numbers are placeholders, not results.
         </p>
       )}
 

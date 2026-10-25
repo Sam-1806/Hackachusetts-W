@@ -389,6 +389,9 @@
     "status": "available",
     "data_status": "mock",
     "priority_rank": 1,
+    "candidates_total": 1,
+    "evidence_text": [],
+    "standalone_loss": null,
     "impact_metric": 1840.0,
     "metric_units": "weighted added travel seconds (mock)",
     "journeys_total": 3,
@@ -1379,7 +1382,7 @@
   ],
   "limitations": [
     "ILLUSTRATIVE FIXTURE. Geometry comes from the MassDOT Road Inventory (S10). Road IDs, flood exposure, and ranking numbers are mock placeholders, not analysis results.",
-    "Some inputs are MOCK fixture data (see provenance.input_data_status). Do not present network or flood numbers as results.",
+    "MOCK inputs: corridor road IDs, flood exposure, network ranking (see provenance.input_data_status). Do not present those numbers as results.",
     "Candidate methods are options to investigate, not recommendations or designs. A licensed engineer must review.",
     "No hydraulic modelling was performed; nothing here shows that a measure would keep the road passable.",
     "Published costs are 2018 sample figures for different sites and are not estimates for this corridor.",
@@ -1387,7 +1390,7 @@
     "Candidate construction methods are gated on the cause assessment; the flooded road may be an impacted location rather than the asset that needs work."
   ],
   "provenance": {
-    "generated_at": "2026-10-24T20:31:48+00:00",
+    "generated_at": "2026-10-24T23:51:44+00:00",
     "evidence_library_version": "eng-evidence-v0.1",
     "input_data_status": {
       "road_facts": "observed",

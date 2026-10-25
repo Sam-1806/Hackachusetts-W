@@ -29,7 +29,9 @@ AT_CORRIDOR_M = 50.0          # evidence closer than this counts as "at the corr
 MAX_LISTED_BASINS = 10
 
 DEBRIS_RE = re.compile(r"debris|cleaned|freed|unclog|relieved flood|removed .*from cb|removed snow|clear(ed)? (cb|basin|grate)", re.I)
-WORKING_RE = re.compile(r"all are taking water|no flood on arrival|no flood(ing)? (found|observed)|no flood customer", re.I)
+WORKING_RE = re.compile(r"all are taking water|no flood on arrival|no flood(ing)? (found|observed)|no flood customer|"
+                        r"no issues?|no problems?|working (fine|properly)|draining (fine|properly)|nothing found|"
+                        r"no blockage|clear on arrival", re.I)
 REFERRAL_RE = re.compile(r"\b(DCR|Mass ?DOT|MassDOT|state)\b", re.I)
 
 
@@ -126,12 +128,13 @@ def _drainage_items(drainage: dict | None, ev: _Evidence) -> dict:
                         case_ids=[r["case_enquiry_id"]])
             lim = ["Free-text 311 closure note, not a formal inspection record.",
                    "Shows a maintenance visit at that location, not that it caused flooding on the corridor."]
-            if DEBRIS_RE.search(body):
-                res["debris_notes"].append(ev.add(f"ev-311note-{r['case_enquiry_id']}", "BOS311", "engineering_record",
-                                                  f"Closure note at {loc}: \"{body[:140]}\"", lim, **base))
-            elif WORKING_RE.search(body):
+            # "Working fine" wording wins: notes like "checked CBs, no issues ... cleaned" are not blockage evidence.
+            if WORKING_RE.search(body):
                 res["working_notes"].append(ev.add(f"ev-311note-{r['case_enquiry_id']}", "BOS311", "engineering_record",
                                                    f"Closure note at {loc}: \"{body[:140]}\"", lim, **base))
+            elif DEBRIS_RE.search(body):
+                res["debris_notes"].append(ev.add(f"ev-311note-{r['case_enquiry_id']}", "BOS311", "engineering_record",
+                                                  f"Closure note at {loc}: \"{body[:140]}\"", lim, **base))
             if REFERRAL_RE.search(note):
                 m = REFERRAL_RE.search(note)
                 snippet = note[max(0, m.start() - 80): m.end() + 60].strip()

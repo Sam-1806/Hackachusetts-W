@@ -1,0 +1,2249 @@
+{
+ "scenario_set_id": "usgs-2018-01-04",
+ "graph_version": "osm-2026-10-24-v0.1",
+ "ranking": [
+  {
+   "corridor_id": "p3b_J_columbia_point",
+   "road_ids": [
+    "rd_0dff60a897",
+    "rd_cb2f74868f"
+   ],
+   "label": "Bundle: closed roads on the baseline route of J_columbia_point (2: General Casimir Pulaski Skyway, unnamed link)",
+   "candidate_source": "bundle of closed roads on one baseline route",
+   "impact_value": 73.0,
+   "impact_metric": 73.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 64.8,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [
+    "J_columbia_point"
+   ],
+   "affected_journeys": [
+    {
+     "journey_id": "J_columbia_point",
+     "label": "Columbia Point (UMass Boston area) -> nearest emergency department",
+     "baseline_s": 320.5,
+     "flooded_s": 386.4,
+     "reachable": true,
+     "with_corridor_open_s": 320.5,
+     "weight": 1.108
+    }
+   ],
+   "detour_or_disconnection_evidence": [
+    "Columbia Point (UMass Boston area) -> nearest emergency department: 321 s baseline -> 386 s with usgs-2018-01-04 closures (+21%); 321 s if this corridor stays passable (recovers 66 s)."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [
+     "J_columbia_point"
+    ],
+    "disconnected": [],
+    "detour_road_names": [
+     "Theodore A. Glynn Way"
+    ],
+    "detour_flood_exposure": "not_exposed: router avoided all closed (exposed) roads; roads outside the flood-extent window are assumed open"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:41+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 1
+  },
+  {
+   "corridor_id": "p3c_general-casimir-pulaski-skyway",
+   "road_ids": [
+    "rd_0dff60a897",
+    "rd_1372abcb9a",
+    "rd_1be45dd7a2",
+    "rd_276d5b0a2a",
+    "rd_d80e1db1f5"
+   ],
+   "label": "General Casimir Pulaski Skyway (closed segments: 5)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 61.6,
+   "impact_metric": 61.6,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 64.8,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 5,
+   "affected_journey_ids": [
+    "J_columbia_point"
+   ],
+   "affected_journeys": [
+    {
+     "journey_id": "J_columbia_point",
+     "label": "Columbia Point (UMass Boston area) -> nearest emergency department",
+     "baseline_s": 320.5,
+     "flooded_s": 386.4,
+     "reachable": true,
+     "with_corridor_open_s": 330.8,
+     "weight": 1.108
+    }
+   ],
+   "detour_or_disconnection_evidence": [
+    "Columbia Point (UMass Boston area) -> nearest emergency department: 321 s baseline -> 386 s with usgs-2018-01-04 closures (+21%); 331 s if this corridor stays passable (recovers 56 s)."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [
+     "J_columbia_point"
+    ],
+    "disconnected": [],
+    "detour_road_names": [
+     "Theodore A. Glynn Way"
+    ],
+    "detour_flood_exposure": "not_exposed: router avoided all closed (exposed) roads; roads outside the flood-extent window are assumed open"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:38+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 2
+  },
+  {
+   "corridor_id": "p3c_southampton-street",
+   "road_ids": [
+    "rd_ac42b0994a"
+   ],
+   "label": "Southampton Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 8.3,
+   "impact_metric": 8.3,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [
+    "J_columbia_point"
+   ],
+   "affected_journeys": [
+    {
+     "journey_id": "J_columbia_point",
+     "label": "Columbia Point (UMass Boston area) -> nearest emergency department",
+     "baseline_s": 320.5,
+     "flooded_s": 386.4,
+     "reachable": true,
+     "with_corridor_open_s": 379.0,
+     "weight": 1.108
+    }
+   ],
+   "detour_or_disconnection_evidence": [
+    "Columbia Point (UMass Boston area) -> nearest emergency department: 321 s baseline -> 386 s with usgs-2018-01-04 closures (+21%); 379 s if this corridor stays passable (recovers 7 s)."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [
+     "J_columbia_point"
+    ],
+    "disconnected": [],
+    "detour_road_names": [
+     "Theodore A. Glynn Way"
+    ],
+    "detour_flood_exposure": "not_exposed: router avoided all closed (exposed) roads; roads outside the flood-extent window are assumed open"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:41+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 3
+  },
+  {
+   "corridor_id": "p3c_unnamed-rd_cb2f74868f",
+   "road_ids": [
+    "rd_cb2f74868f"
+   ],
+   "label": "Unnamed link rd_cb2f74868f",
+   "candidate_source": "closed unnamed link on a baseline route",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 11.4,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:41+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 4
+  },
+  {
+   "corridor_id": "cor_70c46ca19f",
+   "road_ids": [
+    "rd_825fd1d34e"
+   ],
+   "label": "Sumner Tunnel (1 segments, 1.8 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 0,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No road in this corridor is closed in this scenario."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 5
+  },
+  {
+   "corridor_id": "cor_d2f9fde87c",
+   "road_ids": [
+    "rd_2f08111e9c"
+   ],
+   "label": "Callahan Tunnel (1 segments, 1.8 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 0,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No road in this corridor is closed in this scenario."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 6
+  },
+  {
+   "corridor_id": "p3c_baxter-street",
+   "road_ids": [
+    "rd_967785cacf"
+   ],
+   "label": "Baxter Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:38+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 7
+  },
+  {
+   "corridor_id": "p3c_boston-street",
+   "road_ids": [
+    "rd_df93213e26"
+   ],
+   "label": "Boston Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:38+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 8
+  },
+  {
+   "corridor_id": "p3c_buttonwood-street",
+   "road_ids": [
+    "rd_53c50ac6d9"
+   ],
+   "label": "Buttonwood Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 9
+  },
+  {
+   "corridor_id": "p3c_denny-street-springdale-street",
+   "road_ids": [
+    "rd_631545dc68"
+   ],
+   "label": "Denny Street/Springdale Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 10
+  },
+  {
+   "corridor_id": "p3c_earl-street",
+   "road_ids": [
+    "rd_dbb3eb7836"
+   ],
+   "label": "Earl Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:38+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 11
+  },
+  {
+   "corridor_id": "p3c_freeport-street-tenean-street",
+   "road_ids": [
+    "rd_f832015c45"
+   ],
+   "label": "Freeport Street/Tenean Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:40+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 12
+  },
+  {
+   "corridor_id": "p3c_locust-street",
+   "road_ids": [
+    "rd_b4cb790553"
+   ],
+   "label": "Locust Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 13
+  },
+  {
+   "corridor_id": "p3c_norwood-street",
+   "road_ids": [
+    "rd_b95883b8d7"
+   ],
+   "label": "Norwood Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 14
+  },
+  {
+   "corridor_id": "p3c_old-colony-terrace",
+   "road_ids": [
+    "rd_7963da2c3e"
+   ],
+   "label": "Old Colony Terrace (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 15
+  },
+  {
+   "corridor_id": "p3c_oyster-bay-road",
+   "road_ids": [
+    "rd_f8a7770815"
+   ],
+   "label": "Oyster Bay Road (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:40+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 16
+  },
+  {
+   "corridor_id": "p3c_popes-hill-street",
+   "road_ids": [
+    "rd_72aece4e69"
+   ],
+   "label": "Popes Hill Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 17
+  },
+  {
+   "corridor_id": "p3c_springdale-street",
+   "road_ids": [
+    "rd_176fe275e3"
+   ],
+   "label": "Springdale Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:41+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 18
+  },
+  {
+   "corridor_id": "p3c_tenean-street",
+   "road_ids": [
+    "rd_8f0927912e"
+   ],
+   "label": "Tenean Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 19
+  },
+  {
+   "corridor_id": "p3c_washburn-street",
+   "road_ids": [
+    "rd_8492b8d573"
+   ],
+   "label": "Washburn Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:40+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 20
+  },
+  {
+   "corridor_id": "p3c_west-eighth-street",
+   "road_ids": [
+    "rd_d62bc718e8"
+   ],
+   "label": "West Eighth Street (closed segments: 1)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 1,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:40+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 21
+  },
+  {
+   "corridor_id": "p3c_alger-street",
+   "road_ids": [
+    "rd_54379ebb35",
+    "rd_7c9c12ecbb"
+   ],
+   "label": "Alger Street (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 22
+  },
+  {
+   "corridor_id": "p3c_conley-street",
+   "road_ids": [
+    "rd_41ff01aa72",
+    "rd_97d60758e9"
+   ],
+   "label": "Conley Street (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 23
+  },
+  {
+   "corridor_id": "p3c_damrell-street",
+   "road_ids": [
+    "rd_07ed6d0eea",
+    "rd_63755ccfe5"
+   ],
+   "label": "Damrell Street (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:37+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 24
+  },
+  {
+   "corridor_id": "p3c_ewer-street",
+   "road_ids": [
+    "rd_882d76e52a",
+    "rd_9dffb9b8aa"
+   ],
+   "label": "Ewer Street (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:40+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 25
+  },
+  {
+   "corridor_id": "p3c_ocean-view-drive",
+   "road_ids": [
+    "rd_b8d9922540",
+    "rd_e4fb5df048"
+   ],
+   "label": "Ocean View Drive (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:37+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 26
+  },
+  {
+   "corridor_id": "p3c_south-boston-bypass-road",
+   "road_ids": [
+    "rd_104875012f",
+    "rd_6b720d1f56"
+   ],
+   "label": "South Boston Bypass Road (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:40+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 27
+  },
+  {
+   "corridor_id": "p3c_von-hillern-street",
+   "road_ids": [
+    "rd_1c8753c4cd",
+    "rd_927f991dd2"
+   ],
+   "label": "Von Hillern Street (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 28
+  },
+  {
+   "corridor_id": "p3c_west-ninth-street",
+   "road_ids": [
+    "rd_71c01355c3",
+    "rd_d4d8460c3f"
+   ],
+   "label": "West Ninth Street (closed segments: 2)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 2,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:37+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 29
+  },
+  {
+   "corridor_id": "p3c_widett-circle",
+   "road_ids": [
+    "rd_1a0339b7a6",
+    "rd_75e02350e8",
+    "rd_7d46621aaa"
+   ],
+   "label": "Widett Circle (closed segments: 3)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 3,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:39+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 30
+  },
+  {
+   "corridor_id": "p3c_e-street",
+   "road_ids": [
+    "rd_18b4de5895",
+    "rd_89520666b6",
+    "rd_92de5dae98",
+    "rd_fa323069ca"
+   ],
+   "label": "E Street (closed segments: 4)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 4,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 31
+  },
+  {
+   "corridor_id": "p3c_old-colony-avenue",
+   "road_ids": [
+    "rd_43b4cfebd5",
+    "rd_8c680d572f",
+    "rd_95a3818bd7",
+    "rd_a405020275",
+    "rd_b4985c9f75"
+   ],
+   "label": "Old Colony Avenue (closed segments: 5)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 5,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:38+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 32
+  },
+  {
+   "corridor_id": "p3c_victory-road",
+   "road_ids": [
+    "rd_32dd3899f1",
+    "rd_491acc6df8",
+    "rd_b5f9d9752b",
+    "rd_beae1e940c",
+    "rd_f875496659"
+   ],
+   "label": "Victory Road (closed segments: 5)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 5,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:37+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 33
+  },
+  {
+   "corridor_id": "p3c_dorchester-avenue",
+   "road_ids": [
+    "rd_289c1bcafe",
+    "rd_2e12b88757",
+    "rd_682cc54686",
+    "rd_b622b15431",
+    "rd_d29034bb73",
+    "rd_ee5a95dcc7"
+   ],
+   "label": "Dorchester Avenue (closed segments: 6)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 6,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:37+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 34
+  },
+  {
+   "corridor_id": "p3c_freeport-street",
+   "road_ids": [
+    "rd_402767036f",
+    "rd_59e8c59b6c",
+    "rd_6b173ef993",
+    "rd_9f89ffd329",
+    "rd_bffc8cbc9a",
+    "rd_d316ab7a7e",
+    "rd_f8df3e7144"
+   ],
+   "label": "Freeport Street (closed segments: 7)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 7,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 35
+  },
+  {
+   "corridor_id": "cor_dbafe98e75",
+   "road_ids": [
+    "rd_0f37f63ca7",
+    "rd_29559aad50",
+    "rd_2a6b4afec6",
+    "rd_2f71686a27",
+    "rd_3aaf1184d6",
+    "rd_3accc471a0",
+    "rd_3d5b552d6e",
+    "rd_5a93592ff0",
+    "rd_62e796a159",
+    "rd_7d2f227591",
+    "rd_81ae32fd6b",
+    "rd_87fd4db272",
+    "rd_9da687bdde",
+    "rd_a8ddce73fc",
+    "rd_ab8676922b",
+    "rd_c3a6d9d49f",
+    "rd_ea8f1c8673",
+    "rd_ed2b7a0cae"
+   ],
+   "label": "Seaport Boulevard (18 segments, 2.1 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 0,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No road in this corridor is closed in this scenario."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 36
+  },
+  {
+   "corridor_id": "p3c_william-t-morrissey-boulevard",
+   "road_ids": [
+    "rd_26cf46062a",
+    "rd_2f9bb18598",
+    "rd_3f727c902b",
+    "rd_4506d4cc6b",
+    "rd_5d4ab5b0ec",
+    "rd_6e94e911c1",
+    "rd_6f209b7ae0",
+    "rd_765bf02c09",
+    "rd_7e032ac545",
+    "rd_880954fa5a",
+    "rd_a08d801731",
+    "rd_b6915fde24",
+    "rd_b84833e289",
+    "rd_bdd7c91605",
+    "rd_c4a1a6fd87",
+    "rd_c4dd488599",
+    "rd_c7d2819fbd",
+    "rd_c87edc2d74",
+    "rd_d7c3d2df3c",
+    "rd_f8c3c70691",
+    "rd_fc530b9bd2",
+    "rd_ffd8a40796"
+   ],
+   "label": "William T. Morrissey Boulevard (closed segments: 22)",
+   "candidate_source": "closed roads grouped by street name",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 22,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 37
+  },
+  {
+   "corridor_id": "cor_5a83bdd655",
+   "road_ids": [
+    "rd_021d3d469a",
+    "rd_0811903f4a",
+    "rd_099d653238",
+    "rd_142c2e9cad",
+    "rd_1600922579",
+    "rd_1cace32435",
+    "rd_27571dfaaa",
+    "rd_276c43e63f",
+    "rd_29a4bf2192",
+    "rd_366df6dd0a",
+    "rd_44c332fff7",
+    "rd_4dfc078c5e",
+    "rd_594083af97",
+    "rd_5abde54a71",
+    "rd_615970145c",
+    "rd_64d03e03f5",
+    "rd_73612336be",
+    "rd_7ae19b1307",
+    "rd_86a319bd89",
+    "rd_94600afaad",
+    "rd_95afed9cc5",
+    "rd_9c7d41080f",
+    "rd_adca22c04e",
+    "rd_b3b0ddb087",
+    "rd_b647849c21",
+    "rd_bcf780c450",
+    "rd_de6219ee73",
+    "rd_e11ee96c14",
+    "rd_e4215d2811",
+    "rd_f5c9e58af7"
+   ],
+   "label": "William J. Day Boulevard (30 segments, 4.8 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 0,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No road in this corridor is closed in this scenario."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 38
+  },
+  {
+   "corridor_id": "cor_dceb13cd52",
+   "road_ids": [
+    "rd_1495c06ddf",
+    "rd_1575a102a4",
+    "rd_1a8e0c744d",
+    "rd_2522fae615",
+    "rd_254694c59f",
+    "rd_26cf46062a",
+    "rd_2848fdec4f",
+    "rd_301bdacfcd",
+    "rd_30a44cac3d",
+    "rd_3f727c902b",
+    "rd_5d4ab5b0ec",
+    "rd_6f209b7ae0",
+    "rd_765bf02c09",
+    "rd_7de4d64720",
+    "rd_861edade3d",
+    "rd_880954fa5a",
+    "rd_95f4669a85",
+    "rd_a08d801731",
+    "rd_ab2bcdf237",
+    "rd_ad4faee506",
+    "rd_b75b1ecf5c",
+    "rd_c4a1a6fd87",
+    "rd_c4f2327f7c",
+    "rd_c5535e7658",
+    "rd_ca0e9573ad",
+    "rd_cce6003ec9",
+    "rd_d7c3d2df3c",
+    "rd_dc7a2de0d6",
+    "rd_e223943b4b",
+    "rd_ee1bfc856f",
+    "rd_fc530b9bd2"
+   ],
+   "label": "William T. Morrissey Boulevard (31 segments, 5.2 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 10,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 39
+  },
+  {
+   "corridor_id": "cor_87278ad9ba",
+   "road_ids": [
+    "rd_0545e7f18b",
+    "rd_07aa77e3b3",
+    "rd_0c87475aa6",
+    "rd_27bfd757f9",
+    "rd_29d3acde75",
+    "rd_2c71274d43",
+    "rd_2f9bb18598",
+    "rd_3cbbd874de",
+    "rd_4276379c08",
+    "rd_4506d4cc6b",
+    "rd_508c9f07a3",
+    "rd_549ebf818c",
+    "rd_67a140e121",
+    "rd_6e94e911c1",
+    "rd_7e032ac545",
+    "rd_8a34082f87",
+    "rd_a41811d698",
+    "rd_b6915fde24",
+    "rd_b84833e289",
+    "rd_bdd7c91605",
+    "rd_c4dd488599",
+    "rd_c7d2819fbd",
+    "rd_c87edc2d74",
+    "rd_cb3f342273",
+    "rd_ced4ee91f5",
+    "rd_d17bfff920",
+    "rd_dcc322cf9a",
+    "rd_e5b743ba35",
+    "rd_f3c977c61d",
+    "rd_f709622049",
+    "rd_f8c3c70691",
+    "rd_ffd8a40796"
+   ],
+   "label": "William T. Morrissey Boulevard (32 segments, 5.2 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 12,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 40
+  },
+  {
+   "corridor_id": "cor_6dece7a926",
+   "road_ids": [
+    "rd_0545e7f18b",
+    "rd_07aa77e3b3",
+    "rd_0c87475aa6",
+    "rd_1495c06ddf",
+    "rd_1575a102a4",
+    "rd_1a8e0c744d",
+    "rd_2522fae615",
+    "rd_254694c59f",
+    "rd_26cf46062a",
+    "rd_27bfd757f9",
+    "rd_2848fdec4f",
+    "rd_29d3acde75",
+    "rd_2c71274d43",
+    "rd_2f9bb18598",
+    "rd_301bdacfcd",
+    "rd_30a44cac3d",
+    "rd_3cbbd874de",
+    "rd_3f727c902b",
+    "rd_4276379c08",
+    "rd_4506d4cc6b",
+    "rd_508c9f07a3",
+    "rd_549ebf818c",
+    "rd_5d4ab5b0ec",
+    "rd_67a140e121",
+    "rd_6e94e911c1",
+    "rd_6f209b7ae0",
+    "rd_765bf02c09",
+    "rd_7de4d64720",
+    "rd_7e032ac545",
+    "rd_861edade3d",
+    "rd_880954fa5a",
+    "rd_8a34082f87",
+    "rd_95f4669a85",
+    "rd_a08d801731",
+    "rd_a41811d698",
+    "rd_ab2bcdf237",
+    "rd_ad4faee506",
+    "rd_b6915fde24",
+    "rd_b75b1ecf5c",
+    "rd_b84833e289",
+    "rd_bdd7c91605",
+    "rd_c4a1a6fd87",
+    "rd_c4dd488599",
+    "rd_c4f2327f7c",
+    "rd_c5535e7658",
+    "rd_c7d2819fbd",
+    "rd_c87edc2d74",
+    "rd_ca0e9573ad",
+    "rd_cb3f342273",
+    "rd_cce6003ec9",
+    "rd_ced4ee91f5",
+    "rd_d17bfff920",
+    "rd_d7c3d2df3c",
+    "rd_dc7a2de0d6",
+    "rd_dcc322cf9a",
+    "rd_e223943b4b",
+    "rd_e5b743ba35",
+    "rd_ee1bfc856f",
+    "rd_f3c977c61d",
+    "rd_f709622049",
+    "rd_f8c3c70691",
+    "rd_fc530b9bd2",
+    "rd_ffd8a40796"
+   ],
+   "label": "William T. Morrissey Boulevard (WHOLE ROAD: 2 parts merged, 63 segments, 10.4 km)",
+   "candidate_source": "Person 1 corridor",
+   "impact_value": 0.0,
+   "impact_metric": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "standalone_loss": 0.0,
+   "standalone_note": "Loss if ONLY this corridor's flooded roads were closed (not used for rank order).",
+   "closed_roads_in_corridor": 22,
+   "affected_journey_ids": [],
+   "affected_journeys": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "detour_or_disconnect_evidence": {
+    "detour_available_for": [],
+    "disconnected": [],
+    "detour_road_names": [],
+    "detour_flood_exposure": "unknown"
+   },
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+    "Closures: the 103 roads whose centerline overlaps the usgs-2018-01-04 extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+    "Travel times are posted-speed estimates, no traffic.",
+    "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+   ],
+   "provenance": {
+    "origin": "computed",
+    "data_status": "derived",
+    "source_id": "P3-INTERIM-RANKING",
+    "source_name": "Interim re-implementation of Person 1's accessibility method (Person 3)",
+    "source_url": "engineering/scripts/rank_corridors.py",
+    "retrieved_at": "2026-10-24T23:46:36+00:00",
+    "period": "usgs-2018-01-04",
+    "limitations": [
+     "Relative criticality for investigation, not a construction priority.",
+     "Overlap-based closures; no depth or verified impassability.",
+     "Replace with Person 1's engine output when available."
+    ]
+   },
+   "priority_rank": 41
+  }
+ ]
+}

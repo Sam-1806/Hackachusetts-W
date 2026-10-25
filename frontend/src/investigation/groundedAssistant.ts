@@ -59,19 +59,33 @@ const mentionedMethod = (question: string): string | null => {
 
 const fmtUsd = (v: number) => (v >= 1e6 ? `$${(v / 1e6).toFixed(1)}M` : `$${v.toLocaleString('en-US')}`);
 
+const MOCK_LABELS: [string, string][] = [
+  ['road_ids', 'corridor road IDs'],
+  ['flood_exposure', 'flood exposure'],
+  ['network_impact', 'network ranking'],
+];
+
+/** Names of inputs still marked mock, in a fixed order. */
+export function mockParts(inv: InvestigationResult): string[] {
+  const st = inv.provenance.input_data_status;
+  return MOCK_LABELS.filter(([k]) => JSON.stringify(st[k] ?? null).includes('mock')).map(([, label]) => label);
+}
+
 export function isMock(inv: InvestigationResult): boolean {
-  return JSON.stringify(inv.provenance.input_data_status).includes('mock');
+  return mockParts(inv).length > 0;
 }
 
 function network(inv: InvestigationResult): AnswerBlock[] {
   const n = inv.network_impact;
   if (n.status !== 'available') return [b('unknown', 'No network ranking record is available for this corridor yet.')];
+  const of = n.candidates_total ? ` of ${n.candidates_total} candidates` : '';
   const out = [
     b(
       'sourced',
-      `Priority rank ${n.priority_rank} with impact ${n.impact_metric} ${n.metric_units} across ${n.journeys_total} representative journeys.`,
+      `Priority rank ${n.priority_rank}${of} with impact ${n.impact_metric} ${n.metric_units} across ${n.journeys_total} representative journeys.`,
       ['network_impact'],
     ),
+    ...(n.evidence_text ?? []).slice(0, 2).map((t) => b('sourced', t, ['network_impact'])),
   ];
   for (const j of n.affected_journeys ?? []) {
     out.push(
@@ -342,8 +356,9 @@ export function answerDeterministic(inv: InvestigationResult, question: string):
     inspect: () => inspect(inv),
     overview: () => overview(inv),
   };
-  const mockCaveat = isMock(inv)
-    ? [b('caveat', 'Network and flood inputs for this corridor are mock fixture values; treat numbers as placeholders.')]
+  const parts = mockParts(inv);
+  const mockCaveat = parts.length
+    ? [b('caveat', `Mock inputs for this corridor: ${parts.join(', ')}; treat those numbers as placeholders.`)]
     : [];
   return {
     question,

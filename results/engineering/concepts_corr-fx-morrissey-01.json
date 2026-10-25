@@ -2,14 +2,14 @@
   "schema_version": "concept-intervention-v0.1",
   "corridor_id": "corr-fx-morrissey-01",
   "graph_version": "fixture-v0.1",
-  "generated_at": "2026-10-24T20:31:49+00:00",
+  "generated_at": "2026-10-24T23:51:44+00:00",
   "featured_intervention_id": "ci-corr-fx-morrissey-01-inspect_clean_inlets",
   "featured_reason": "Best-grounded preview: existing-asset geometry and the most supporting evidence for its mechanism.",
   "concepts": [
     {
       "intervention_id": "ci-corr-fx-morrissey-01-inspect_clean_inlets",
       "name": "Inspect and, if blocked, clean the corridor catch basins",
-      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T23:51:44+00:00",
       "corridor_id": "corr-fx-morrissey-01",
       "graph_version": "fixture-v0.1",
       "intervention_type": "drainage_upgrade",
@@ -207,12 +207,15 @@
         "For a quote: Number of basins, Owner's maintenance contract rates"
       ],
       "published_cost_precedents": [],
-      "cost_status": "cost_estimate_unavailable"
+      "cost_status": "cost_estimate_unavailable",
+      "label": "Inspect and, if blocked, clean the corridor catch basins",
+      "description": "Mapped catch basins near the corridor to inspect and, if blocked, clean. Existing asset locations, not new works; no flood or ranking change is implied.",
+      "source_url": "https://www.bwsc.org/environment-education/maproom/catch-basins-map"
     },
     {
       "intervention_id": "ci-corr-fx-morrissey-01-raised_roadway",
       "name": "Raise the roadway profile (raised roadway barrier)",
-      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T23:51:44+00:00",
       "corridor_id": "corr-fx-morrissey-01",
       "graph_version": "fixture-v0.1",
       "intervention_type": "raised_roadway",
@@ -464,7 +467,10 @@
       "visual_parameters": {
         "conceptual_height_m": 1.22,
         "basis": "Guideline SAMPLE grade change of 4 ft (S11.sec6 p.51), not a design height for this site.",
-        "source_id": "S11.sec6"
+        "source_id": "S11.sec6",
+        "footprint_width_m": 10.4,
+        "width_basis": "MassDOT Road Inventory surface width 34 ft (units assumed feet; S10). Existing pavement width, not a design footprint.",
+        "width_source_id": "S10"
       },
       "provenance": "derived_concept",
       "evidence_distinction": [
@@ -540,12 +546,15 @@
           ]
         }
       ],
-      "cost_status": "published_example_available"
+      "cost_status": "published_example_available",
+      "label": "Raise the roadway profile (raised roadway barrier)",
+      "description": "Existing corridor road segments shown with a guideline-sample 4 ft raise for spatial discussion. Not a design; only relevant if coastal overland inflow is confirmed.",
+      "source_url": "https://www.boston.gov/departments/public-works/climate-resilient-design-guidelines"
     },
     {
       "intervention_id": "ci-corr-fx-morrissey-01-vegetated_berm",
       "name": "Vegetated berm / landscaped embankment along the flood side",
-      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T23:51:44+00:00",
       "corridor_id": "corr-fx-morrissey-01",
       "graph_version": "fixture-v0.1",
       "intervention_type": "berm",
@@ -587,103 +596,75 @@
         "type": "LineString",
         "coordinates": [
           [
-            -71.0492236,
-            42.2997355
+            -71.0473566,
+            42.2950117
           ],
           [
-            -71.0492118,
-            42.2995664
-          ],
-          [
-            -71.0491871,
-            42.2993877
-          ],
-          [
-            -71.049143,
-            42.2991824
-          ],
-          [
-            -71.0490638,
-            42.2989021
-          ],
-          [
-            -71.0489487,
-            42.2985103
-          ],
-          [
-            -71.0488943,
-            42.2983261
-          ],
-          [
-            -71.0487919,
-            42.2979883
-          ],
-          [
-            -71.0487915,
-            42.297987
-          ],
-          [
-            -71.0486561,
-            42.2976634
-          ],
-          [
-            -71.0485073,
-            42.2973765
-          ],
-          [
-            -71.0483364,
-            42.2970607
-          ],
-          [
-            -71.0481108,
-            42.2967025
-          ],
-          [
-            -71.0479883,
-            42.2965131
-          ],
-          [
-            -71.0476347,
-            42.2959541
-          ],
-          [
-            -71.0475431,
-            42.2958341
-          ],
-          [
-            -71.0474802,
-            42.2957291
-          ],
-          [
-            -71.0474097,
-            42.2955864
-          ],
-          [
-            -71.0473618,
+            -71.047428,
             42.2954655
           ],
           [
-            -71.0473304,
-            42.2953206
+            -71.0475397,
+            42.2959541
           ],
           [
-            -71.0473324,
-            42.2951903
+            -71.0477911,
+            42.2967025
           ],
           [
-            -71.0473586,
-            42.2950117
+            -71.0482193,
+            42.2973765
+          ],
+          [
+            -71.0485199,
+            42.29805
+          ],
+          [
+            -71.0487588,
+            42.298525
+          ],
+          [
+            -71.0488801,
+            42.2990151
+          ],
+          [
+            -71.0489053,
+            42.2995025
+          ],
+          [
+            -71.0487946,
+            42.3000914
+          ],
+          [
+            -71.0484431,
+            42.300505
+          ],
+          [
+            -71.048217,
+            42.3012233
+          ],
+          [
+            -71.0478572,
+            42.3020166
+          ],
+          [
+            -71.0477689,
+            42.3029494
+          ],
+          [
+            -71.0477368,
+            42.3031229
           ]
         ]
       },
       "geometry_status": "schematic",
       "geometry_source_ids": [],
-      "geometry_note": "Drawn 40 m east (bay side) of a corridor centerline for display only. Not a surveyed shoreline, not the Morrissey study's alignment (figures in S12 are images; no vector alignment extracted).",
+      "geometry_note": "Drawn 40 m east (bay side) of the corridor's eastern edge along its full length, for display only. Not a surveyed shoreline, not the Morrissey study's alignment (figures in S12 are images; no vector alignment extracted). May cross buildings, paths or water.",
       "display_badge": "SCHEMATIC - illustrative only, not an engineered or published alignment",
       "related_road_ids": [
         "fx-r-001",
-        "fx-r-003",
-        "fx-r-004"
+        "fx-r-002",
+        "fx-r-003"
       ],
       "related_road_ids_note": "Roads near this concept. NOT roads assumed protected.",
       "target_asset_id": null,
@@ -750,12 +731,15 @@
           ]
         }
       ],
-      "cost_status": "published_example_available"
+      "cost_status": "published_example_available",
+      "label": "Vegetated berm / landscaped embankment along the flood side",
+      "description": "Schematic bay-side berm line drawn by us for spatial discussion. Not surveyed and not a published alignment; only relevant if coastal overland inflow is confirmed.",
+      "source_url": "https://www.boston.gov/departments/public-works/climate-resilient-design-guidelines"
     },
     {
       "intervention_id": "ci-corr-fx-morrissey-01-deployable_barrier",
       "name": "Deployable (temporary) flood barrier",
-      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T20:31:49+00:00",
+      "linked_investigation_id": "inv:corr-fx-morrissey-01:2026-10-24T23:51:44+00:00",
       "corridor_id": "corr-fx-morrissey-01",
       "graph_version": "fixture-v0.1",
       "intervention_type": "deployable_barrier",
@@ -830,7 +814,10 @@
         "Foundation / anchoring surface along alignment"
       ],
       "published_cost_precedents": [],
-      "cost_status": "cost_estimate_unavailable"
+      "cost_status": "cost_estimate_unavailable",
+      "label": "Deployable (temporary) flood barrier",
+      "description": "Deployable barrier concept. The opening it would close is not identified, so no geometry.",
+      "source_url": "https://www.boston.gov/departments/public-works/climate-resilient-design-guidelines"
     }
   ],
   "alternatives_not_rendered": [
