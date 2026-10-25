@@ -1,0 +1,30 @@
+{
+  "library_version": "eng-diagnosis-v0.1",
+  "note": "Records that would confirm or refute each hypothesized mechanism (Addendum 2 acceptance: 'which records would confirm/refute it'). Investigation prompts, not findings.",
+  "checks": {
+    "coastal_overland": {
+      "confirm_with": ["Surveyed shoreline/edge elevations below the event water level along a continuous path to the road", "High-water marks or photos showing overland flow from the bay side (e.g. USGS 2018 records)"],
+      "refute_if": ["Surveyed edge is above the event water level with no opening", "Road floods during rain at normal tide with no overland connection"]
+    },
+    "tidal_outfall_backwater": {
+      "confirm_with": ["Owner drainage plans tracing corridor inlets to an outfall whose invert is below high-tide levels", "Flood dates that coincide with high tide plus rainfall (NOAA gauge 8443970)"],
+      "refute_if": ["Outfall invert above relevant tide levels, or a working tide gate confirmed", "Flooding occurs at low tide"]
+    },
+    "inlet_blockage": {
+      "confirm_with": ["Field inspection finding debris/sediment in corridor basins", "Owner cleaning log entries followed by ponding clearing"],
+      "refute_if": ["Basins found clear and taking water while ponding persists (e.g. 311 closure note 'all are taking water')"]
+    },
+    "storm_drain_capacity": {
+      "confirm_with": ["Hydraulic calculation showing inlet/pipe capacity below design-storm runoff", "Repeated ponding with verified clean inlets at normal tide"],
+      "refute_if": ["Calculated capacity exceeds runoff for observed storms", "Ponding only at high tide (points to tailwater instead)"]
+    },
+    "surface_grading": {
+      "confirm_with": ["Survey showing a low point without an inlet where ponding is reported"],
+      "refute_if": ["Inlets located at surveyed low points and functioning"]
+    },
+    "multiple_or_unknown": {
+      "confirm_with": ["Event records showing different drivers on different dates"],
+      "refute_if": ["One mechanism confirmed and the others refuted by the checks above"]
+    }
+  }
+}

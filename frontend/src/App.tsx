@@ -63,9 +63,8 @@ function RoadRanking({
       {rows.map((row) => (
         <button
           key={row.corridor_id}
-          className={`simple-road ${
-            row.corridor_id === selectedId ? 'is-active' : ''
-          }`}
+          className={`simple-road ${row.corridor_id === selectedId ? 'is-active' : ''
+            }`}
           onClick={() => onSelect(row.corridor_id)}
         >
           <span className="simple-rank">
@@ -311,12 +310,12 @@ export default function App() {
   const streetWater = useMemo<StreetWater>(() => (!streetFlood
     ? { flood: null, peakSurfaceM: null, displayedLevelM: null, harbourLevelM: NOMINAL_HARBOUR_M, mode: 'none' }
     : {
-        flood: streetFlood,
-        peakSurfaceM,
-        displayedLevelM,
-        harbourLevelM: NOMINAL_HARBOUR_M,
-        mode: inReplay ? 'gauge_replay' : 'peak',
-      }), [streetFlood, peakSurfaceM, displayedLevelM, inReplay]);
+      flood: streetFlood,
+      peakSurfaceM,
+      displayedLevelM,
+      harbourLevelM: NOMINAL_HARBOUR_M,
+      mode: inReplay ? 'gauge_replay' : 'peak',
+    }), [streetFlood, peakSurfaceM, displayedLevelM, inReplay]);
 
   if (error) return <main className="simple-loading"><strong>Historical scene could not load</strong><span>{error}</span></main>;
   if (!data || !selectedRoad || !roadFeatures || !streetRoads) return <main className="simple-loading"><strong>Loading historical flood evidence…</strong></main>;
@@ -369,7 +368,7 @@ export default function App() {
               rows={data.ranking.ranking as ExplainedRanking[]}
               selectedId={selectedRoad.corridor_id}
               onSelect={chooseRoad}
-            />          
+            />
           </section>
           <section>
             <header><div><span>2</span><h2>Past floods</h2></div><Badge tone="observed">USGS + NOAA</Badge></header>
@@ -393,79 +392,79 @@ export default function App() {
           </div>
           {visited.street ? (
             <div className="stage-pane" hidden={stage !== 'street'}>
-            <StreetScene3D
-              active={stage === 'street'}
-              className="historical-street"
-              manifestUrl={STREET_SCENE_MANIFEST}
-              roads={streetRoads}
-              selectedRoadIds={selectedRoad.road_ids}
-              corridorLabel={`#${selectedRoad.priority_rank} ${selectedRoad.label}`}
-              water={streetWater}
-              interventions={conceptList}
-              selectedInterventionId={showConcept ? data.concept.intervention_id : null}
-              sceneObjects={sceneObjects}
-              cameraRequest={cameraRequest}
-              onOutsideCoverage={() => setStage('city')}
-            />
+              <StreetScene3D
+                active={stage === 'street'}
+                className="historical-street"
+                manifestUrl={STREET_SCENE_MANIFEST}
+                roads={streetRoads}
+                selectedRoadIds={selectedRoad.road_ids}
+                corridorLabel={`#${selectedRoad.priority_rank} ${selectedRoad.label}`}
+                water={streetWater}
+                interventions={conceptList}
+                selectedInterventionId={showConcept ? data.concept.intervention_id : null}
+                sceneObjects={sceneObjects}
+                cameraRequest={cameraRequest}
+                onOutsideCoverage={() => setStage('city')}
+              />
             </div>
           ) : null}
           {visited.city ? (
-          <div className="stage-pane" hidden={stage !== 'city'}>
-          <Suspense fallback={<div className="street3d-loading"><strong>Loading city overview…</strong></div>}>
-          <CesiumScene
-            className="historical-map"
-            viewMode={inReplay ? 'investigation' : 'overview'}
-            replayProgress={inReplay ? normalizedGauge : 0}
-            flood={selectedEvent ? {
-              scenarioId: selectedEvent.event_id,
-              label: selectedEvent.label,
-              data: selectedEvent.footprint,
-              status: 'observed',
-              sourceUrl: selectedEvent.source_url,
-              sourceLabel: 'U.S. Geological Survey',
-              limitations: selectedEvent.limitations,
-            } : null}
-            roads={{
-              graphVersion: data.graph_version,
-              data: roadFeatures,
-              roadIdProperty: 'road_id',
-              exposedRoadIds: selectedEvent?.affected_road_ids ?? [],
-              selectedRoadIds: selectedRoad.road_ids,
-              selectedRoadId: null,
-              focusSelected: true,
-            }}
-            buildings={{
-              data: data.buildings,
-              status: 'official',
-              heightProperty: 'BUILDING_HEIGHT_2010',
-              heightUnits: 'feet',
-              sourceUrl: 'https://gisportal.boston.gov/arcgis/rest/services/Assessing/DOIT_buildings/MapServer/2',
-            }}
-            sceneObjects={inReplay ? sceneObjects : []}
-            interventions={showConcept ? [data.concept] : []}
-            selectedInterventionId={showConcept ? data.concept.intervention_id : null}
-            cesiumToken={import.meta.env.VITE_CESIUM_ION_TOKEN}
-          />
-          </Suspense>
-          </div>
+            <div className="stage-pane" hidden={stage !== 'city'}>
+              <Suspense fallback={<div className="street3d-loading"><strong>Loading city overview…</strong></div>}>
+                <CesiumScene
+                  className="historical-map"
+                  viewMode={inReplay ? 'investigation' : 'overview'}
+                  replayProgress={inReplay ? normalizedGauge : 0}
+                  flood={selectedEvent ? {
+                    scenarioId: selectedEvent.event_id,
+                    label: selectedEvent.label,
+                    data: selectedEvent.footprint,
+                    status: 'observed',
+                    sourceUrl: selectedEvent.source_url,
+                    sourceLabel: 'U.S. Geological Survey',
+                    limitations: selectedEvent.limitations,
+                  } : null}
+                  roads={{
+                    graphVersion: data.graph_version,
+                    data: roadFeatures,
+                    roadIdProperty: 'road_id',
+                    exposedRoadIds: selectedEvent?.affected_road_ids ?? [],
+                    selectedRoadIds: selectedRoad.road_ids,
+                    selectedRoadId: null,
+                    focusSelected: true,
+                  }}
+                  buildings={{
+                    data: data.buildings,
+                    status: 'official',
+                    heightProperty: 'BUILDING_HEIGHT_2010',
+                    heightUnits: 'feet',
+                    sourceUrl: 'https://gisportal.boston.gov/arcgis/rest/services/Assessing/DOIT_buildings/MapServer/2',
+                  }}
+                  sceneObjects={inReplay ? sceneObjects : []}
+                  interventions={showConcept ? [data.concept] : []}
+                  selectedInterventionId={showConcept ? data.concept.intervention_id : null}
+                  cesiumToken={import.meta.env.VITE_CESIUM_ION_TOKEN}
+                />
+              </Suspense>
+            </div>
           ) : null}
           {inReplay ? <div className="simulation-label"><Badge tone="illustrative">Illustrative timeline</Badge><span>Water level follows the observed NOAA harbor gauge, capped at the USGS peak water-surface elevation. Inside the USGS peak footprint it spreads from the harbour only through ground below that level (connected fill); cut-off pockets appear at the reported peak. Not a hydrodynamic simulation.</span></div> : null}
         </section>
 
         <aside className="simple-detail">
-  {!selectedEvent ? (
-    <>
-      <RankingReasoning
-        road={selectedRoad as ExplainedRanking}
-      />
+          {!selectedEvent ? (
+            <>
+              <RankingReasoning
+                road={selectedRoad as ExplainedRanking}
+              />
 
-      <div className="detail-empty">
-        <span>←</span>
-        <h2>Choose a past flood</h2>
-        <p>Select January or March 2018 to view its flood evidence.</p>
-      </div>
-    </>
-          
+              <div className="detail-empty">
+                <span>←</span>
+                <h2>Choose a past flood</h2>
+                <p>Select January or March 2018 to view its flood evidence.</p>
+              </div>
+            </>
+
           ) : viewMode === 'overview' ? (
             <section className="event-detail">
               <Badge tone="observed">Observed-event evidence</Badge>
@@ -528,12 +527,12 @@ export default function App() {
                 <span>
                   {observation
                     ? new Date(observation.timestamp).toLocaleString([], {
-                        month: 'short',
-                        day: 'numeric',
-                        hour: 'numeric',
-                        minute: '2-digit',
-                        timeZone: 'UTC',
-                      })
+                      month: 'short',
+                      day: 'numeric',
+                      hour: 'numeric',
+                      minute: '2-digit',
+                      timeZone: 'UTC',
+                    })
                     : '—'}{' '}
                   UTC
                 </span>
@@ -574,8 +573,8 @@ export default function App() {
                   {playing
                     ? 'Pause'
                     : timelineProgress >= 1
-                    ? 'Replay'
-                    : 'Play'}
+                      ? 'Replay'
+                      : 'Play'}
                 </button>
 
                 <button
@@ -592,8 +591,8 @@ export default function App() {
                     setSecondsPerHour(
                       (current) =>
                         REPLAY_SPEEDS[
-                          (REPLAY_SPEEDS.indexOf(current) + 1) %
-                            REPLAY_SPEEDS.length
+                        (REPLAY_SPEEDS.indexOf(current) + 1) %
+                        REPLAY_SPEEDS.length
                         ]
                     )
                   }
@@ -669,7 +668,13 @@ export default function App() {
 
               {viewMode === 'engineering' ? (
                 <div className="engineering-card">
-                  <Badge tone="mock">Concept fixture</Badge>
+                  <Badge tone={data.concept.geometry_status === 'schematic' ? 'illustrative' : 'observed'}>
+                    {data.concept.geometry_status === 'schematic'
+                      ? 'SCHEMATIC concept'
+                      : data.concept.geometry_status === 'sourced_asset_location'
+                        ? 'Existing road location · not a design'
+                        : 'Concept'}
+                  </Badge>
 
                   <h3>{data.concept.label}</h3>
                   <p>{data.investigation.summary}</p>
@@ -698,7 +703,7 @@ export default function App() {
               ) : null}
             </section>
           )}
-                    {selectedEvent && (
+          {selectedEvent && (
             <details className="ranking-reasoning-details">
               <summary>
                 Why is {selectedRoad.label} ranked #{selectedRoad.priority_rank}?

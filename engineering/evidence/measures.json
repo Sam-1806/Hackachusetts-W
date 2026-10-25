@@ -1,0 +1,116 @@
+{
+  "library_version": "eng-evidence-v0.1",
+  "note": "Each claim is tagged. 'sourced' claims paraphrase the cited page. 'general_consideration' claims are standard engineering prompts for investigation, not findings from a source, and must be presented as hypotheses.",
+  "measures": [
+    {
+      "method_id": "raised_roadway",
+      "name": "Raise the roadway profile (raised roadway barrier)",
+      "category": "permanent_barrier",
+      "summary": "Raise the road (and usually sidewalks) so the road itself acts as a flood barrier and/or stays above design flood elevation.",
+      "claims": [
+        {"text": "The guideline sample considers raised roadways with a 4-ft grade change, and notes the approach may also apply to elevating emergency evacuation routes.", "basis": "sourced", "source_id": "S11.sec6", "printed_page": 51, "pdf_page": 3},
+        {"text": "Option 1 (retaining walls and/or slopes) may be feasible where buildings are set back at least 14 ft from the back of sidewalk.", "basis": "sourced", "source_id": "S11.sec6", "printed_page": 51, "pdf_page": 3},
+        {"text": "The guidelines do not recommend a raised roadway barrier where existing buildings sit at the back of sidewalk; raising only the roadway creates safety, drainage, ADA and access impacts.", "basis": "sourced", "source_id": "S11.sec6", "printed_page": 51, "pdf_page": 3},
+        {"text": "Once a street is raised, a stormwater pump system (pumps, generators) adds ongoing O&M cost; the guideline expects stormwater costs to be significant, citing Miami Beach raised-road projects.", "basis": "sourced", "source_id": "S11.sec6", "printed_page": 58, "pdf_page": 10},
+        {"text": "Raising one corridor does not by itself block flood pathways that enter around its ends or through adjacent low ground.", "basis": "general_consideration"}
+      ],
+      "screening": {
+        "requires": ["adjacent_setbacks", "road_surface_elevation", "subsurface_utilities", "drainage_capacity"],
+        "exclude_if": [{"fact": "adjacent_setbacks", "condition": "lt", "value_ft": 14, "reason": "Guideline does not recommend raised roadway where buildings are within ~14 ft of back of sidewalk (S11.sec6 p.51)."}]
+      },
+      "failure_modes": ["Flanking around the ends of the raised section", "Ponding behind the raised road without pumped drainage", "Utility relocation conflicts", "Driveway / building access grade conflicts"],
+      "required_data": ["Surveyed road and adjacent grade elevations with vertical datum", "Building setbacks and first-floor elevations", "Utility locations and depths", "Drainage network and outfall/tide-gate details", "Geotechnical borings"],
+      "cost_precedent_ids": ["crdg-2018-raised-road-opt1", "crdg-2018-raised-road-opt1a", "crdg-2018-raised-road-opt2"]
+    },
+    {
+      "method_id": "vegetated_berm",
+      "name": "Vegetated berm / landscaped embankment along the flood side",
+      "category": "permanent_barrier",
+      "summary": "An earthen, planted embankment with crest and access paths placed between the water and the road.",
+      "claims": [
+        {"text": "The guideline sample berm extends about 2,000 ft with an assumed grade change of about 2 ft for 2030 design flood elevation (DFE) conditions, with an incremental 2070 raise considered.", "basis": "sourced", "source_id": "S11.sec4", "printed_page": 27, "pdf_page": 10},
+        {"text": "The sample design drawings tabulate crest, slope, and access-path widths by height, so a berm needs a horizontal footprint that grows with height.", "basis": "sourced", "source_id": "S11", "source_url_override": "https://www.boston.gov/sites/default/files/document-file-10-2018/climate_resilient_design_drawings.pdf"},
+        {"text": "The Morrissey study's key findings say coastal resilience measures should focus on nature-based solutions.", "basis": "sourced", "source_id": "S12", "pdf_page": 174, "applies_to_corridor_match": "MORRISSEY"},
+        {"text": "A berm only protects the road if it ties into high ground at both ends; otherwise water can route around it.", "basis": "general_consideration"}
+      ],
+      "screening": {
+        "requires": ["open_space_flood_side", "road_surface_elevation", "geotechnical"],
+        "exclude_if": []
+      },
+      "failure_modes": ["Insufficient open space for slopes", "Flanking at ends", "Scour/erosion on flood-side slope", "Seepage through or under the embankment"],
+      "required_data": ["Available open space and ownership on the flood side", "Topography (LiDAR is a start, survey needed)", "Geotechnical and groundwater conditions", "Wetland / resource-area permitting constraints"],
+      "cost_precedent_ids": ["crdg-2018-berm-2030", "crdg-2018-berm-2070-incr"]
+    },
+    {
+      "method_id": "seawall_extension",
+      "name": "Raise / extend an existing seawall or waterfront edge",
+      "category": "permanent_barrier",
+      "summary": "Add height to an existing waterfront wall and raise grades behind it.",
+      "claims": [
+        {"text": "The guideline sample adds a 4-ft extension to an existing stone masonry seawall, raises grades about 2 ft behind it, and considers a deployable handrail barrier for later increases.", "basis": "sourced", "source_id": "S11.sec5"},
+        {"text": "The guideline states the sample Harborwalk barrier alone would not address flood pathways in the area.", "basis": "sourced", "source_id": "S11.sec5", "printed_page": 43, "pdf_page": 10},
+        {"text": "Costs assume the existing seawall can be extended without foundation modifications; a geotechnical investigation is required and may change costs significantly.", "basis": "sourced", "source_id": "S11.sec5", "printed_page": 43, "pdf_page": 10}
+      ],
+      "screening": {
+        "requires": ["existing_seawall", "geotechnical"],
+        "exclude_if": []
+      },
+      "failure_modes": ["Existing wall foundation cannot carry added height", "Flood pathways bypass the wall segment", "Overtopping during events above design level"],
+      "required_data": ["Existing seawall condition and foundation", "Survey within ~100 ft of alignment incl. utilities and resources (per S11.sec5 recommended studies)", "Permitting analysis"],
+      "cost_precedent_ids": ["crdg-2018-seawall"]
+    },
+    {
+      "method_id": "deployable_barrier",
+      "name": "Deployable (temporary) flood barrier",
+      "category": "operational_measure",
+      "summary": "Barriers deployed before or during a flood and retracted afterward; may be an interim measure.",
+      "claims": [
+        {"text": "The guideline defines deployable barriers as systems deployed before and/or during a flood event and retracted afterward, and lists types from pre-installed and passive systems to mobile units and water-filled tubes.", "basis": "sourced", "source_id": "S11.sec7", "printed_page": 71, "pdf_page": 3},
+        {"text": "The guideline presents a comparison matrix rather than a sample site; product mentions are not endorsements.", "basis": "sourced", "source_id": "S11.sec7", "printed_page": 71, "pdf_page": 3},
+        {"text": "Deployment depends on forecast lead time, trained crews, storage, and access; a barrier placed across a road closes that road while deployed.", "basis": "general_consideration"}
+      ],
+      "screening": {
+        "requires": ["forecast_lead_time", "operations_owner"],
+        "exclude_if": []
+      },
+      "failure_modes": ["Not deployed in time", "Seepage at joints or under the base", "Blocks the road it is meant to protect while deployed"],
+      "required_data": ["Who deploys and stores it", "Warning time available for the relevant flood type", "Foundation / anchoring surface along alignment"],
+      "cost_precedent_ids": []
+    },
+    {
+      "method_id": "drainage_backflow",
+      "name": "Drainage, backflow prevention, and stormwater storage",
+      "category": "site_works",
+      "summary": "Address water that enters through or ponds on the road via the drainage system (tide gates/check valves, inlet capacity, storage, pumping).",
+      "claims": [
+        {"text": "The Morrissey study notes stormwater flooding may be a significant problem in the Central section because there is limited gravity to discharge stormwater at high tide.", "basis": "sourced", "source_id": "S12", "pdf_page": 166, "applies_to_corridor_match": "MORRISSEY"},
+        {"text": "The Morrissey study evaluated tide-gate options (including No Tide Gate and Hybrid) combined with raising the basin-side beach/dune/berm and a bay-side barrier.", "basis": "sourced", "source_id": "S12", "pdf_page": 167, "applies_to_corridor_match": "MORRISSEY"},
+        {"text": "Drainage works alone do not stop coastal surge from overtopping a road; they address rainfall and backflow pathways.", "basis": "general_consideration"}
+      ],
+      "screening": {
+        "requires": ["drainage_capacity"],
+        "exclude_if": []
+      },
+      "failure_modes": ["Outfalls submerged at high tide", "Pump/power failure during the event", "Mismatch between rainfall and surge drivers"],
+      "required_data": ["Drainage network map (BWSC)", "Outfall inverts and tide-gate status", "Rainfall vs surge contribution to the documented flooding"],
+      "cost_precedent_ids": []
+    },
+    {
+      "method_id": "alternate_access",
+      "name": "Strengthen alternate access routes",
+      "category": "network_measure",
+      "summary": "Rather than protecting this corridor, investigate whether improving a detour route preserves the same journeys.",
+      "claims": [
+        {"text": "Whether a detour exists, and how long it is, comes from the network analysis for this corridor (see network impact).", "basis": "sourced", "source_id": "network_impact"},
+        {"text": "A detour is only useful if it is itself outside the flood scenario footprint and has capacity for diverted traffic.", "basis": "general_consideration"}
+      ],
+      "screening": {
+        "requires": ["detour_flood_exposure"],
+        "exclude_if": []
+      },
+      "failure_modes": ["Detour floods in the same scenario", "Detour lacks capacity or emergency-vehicle suitability"],
+      "required_data": ["Flood exposure of the detour roads", "Detour geometry and capacity"],
+      "cost_precedent_ids": []
+    }
+  ]
+}

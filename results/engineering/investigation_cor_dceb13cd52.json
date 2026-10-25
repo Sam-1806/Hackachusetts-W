@@ -1,0 +1,4153 @@
+{
+  "schema_version": "investigation-v0.1",
+  "corridor_id": "cor_dceb13cd52",
+  "corridor_name": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+  "road_ids": [
+    "rd_c4f2327f7c",
+    "rd_cce6003ec9",
+    "rd_95f4669a85",
+    "rd_2522fae615",
+    "rd_dc7a2de0d6",
+    "rd_1a8e0c744d",
+    "rd_b75b1ecf5c",
+    "rd_7de4d64720",
+    "rd_26cf46062a",
+    "rd_c4a1a6fd87",
+    "rd_765bf02c09",
+    "rd_d7c3d2df3c",
+    "rd_3f727c902b",
+    "rd_6f209b7ae0",
+    "rd_ad4faee506",
+    "rd_5d4ab5b0ec",
+    "rd_a08d801731",
+    "rd_880954fa5a",
+    "rd_fc530b9bd2",
+    "rd_861edade3d",
+    "rd_1495c06ddf",
+    "rd_ca0e9573ad",
+    "rd_2848fdec4f",
+    "rd_ee1bfc856f",
+    "rd_254694c59f",
+    "rd_1575a102a4",
+    "rd_ab2bcdf237",
+    "rd_e223943b4b",
+    "rd_30a44cac3d",
+    "rd_301bdacfcd",
+    "rd_c5535e7658"
+  ],
+  "graph_version": "osm-2026-10-24-v0.1",
+  "road_facts": {
+    "summary": {
+      "street_name": {
+        "label": "Street name",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "St_Name",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": "WILLIAM T MORRISSEY BOULEVARD",
+        "distinct_values": [
+          "WILLIAM T MORRISSEY BOULEVARD"
+        ]
+      },
+      "from_street": {
+        "label": "From street",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Fm_St_Name",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "distinct_values": [
+          "NEPONSET AVENUE",
+          "WILLIAM T MORRISSEY BOULEVARD"
+        ]
+      },
+      "to_street": {
+        "label": "To street",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "To_St_Name",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "distinct_values": [
+          "MOUNT VERNON STREET",
+          "WILLIAM T MORRISSEY BOULEVARD"
+        ]
+      },
+      "num_lanes": {
+        "label": "Number of lanes",
+        "unit": "lanes",
+        "source_id": "S10",
+        "source_field": "Num_Lanes",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "range": [
+          2.0,
+          3.0
+        ]
+      },
+      "surface_width": {
+        "label": "Surface width",
+        "unit": "ft (assumed)",
+        "source_id": "S10",
+        "source_field": "Surface_Wd",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "range": [
+          25.0,
+          50.0
+        ],
+        "unit_note": "Unit assumed; confirm in MassDOT data dictionary."
+      },
+      "right_of_way_width": {
+        "label": "Right-of-way width",
+        "unit": "ft (assumed)",
+        "source_id": "S10",
+        "source_field": "ROW_Width",
+        "segments_total": 43,
+        "segments_missing": 4,
+        "status": "observed",
+        "value": null,
+        "range": [
+          49.0,
+          105.0
+        ],
+        "unit_note": "Unit assumed; confirm in MassDOT data dictionary."
+      },
+      "median_width": {
+        "label": "Median width",
+        "unit": "ft (assumed)",
+        "source_id": "S10",
+        "source_field": "Med_Width",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "range": [
+          0.0,
+          99.0
+        ],
+        "unit_note": "Unit assumed; confirm in MassDOT data dictionary."
+      },
+      "aadt": {
+        "label": "Annual average daily traffic",
+        "unit": "vehicles/day",
+        "source_id": "S10",
+        "source_field": "AADT",
+        "segments_total": 43,
+        "segments_missing": 7,
+        "status": "observed",
+        "value": null,
+        "range": [
+          36537.0,
+          44937.0
+        ]
+      },
+      "aadt_year": {
+        "label": "AADT year",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "AADT_Year",
+        "segments_total": 43,
+        "segments_missing": 7,
+        "status": "observed",
+        "value": null,
+        "distinct_values": [
+          "2014",
+          "2015"
+        ]
+      },
+      "surface_type_code": {
+        "label": "Surface type (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Surface_Tp",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": "6",
+        "distinct_values": [
+          "6"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "functional_class_code": {
+        "label": "State functional class (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "F_Class",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "distinct_values": [
+          "0",
+          "3"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "jurisdiction_code": {
+        "label": "Jurisdiction (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Jurisdictn",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": "3",
+        "distinct_values": [
+          "3"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "structural_condition_code": {
+        "label": "Structural condition (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Struct_Cnd",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": "2",
+        "distinct_values": [
+          "2"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "curb_code": {
+        "label": "Curb (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Curb",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": "3",
+        "distinct_values": [
+          "3"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "median_type_code": {
+        "label": "Median type (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Med_Type",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "distinct_values": [
+          "0",
+          "1",
+          "2"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "operation_code": {
+        "label": "Street operation (code)",
+        "unit": null,
+        "source_id": "S10",
+        "source_field": "Operation",
+        "segments_total": 43,
+        "segments_missing": 0,
+        "status": "observed",
+        "value": null,
+        "distinct_values": [
+          "1",
+          "2"
+        ],
+        "note": "Raw MassDOT code(s); meaning not decoded in this build."
+      },
+      "pavement_structure": {
+        "label": "Pavement structure / layer thicknesses and materials",
+        "value": null,
+        "status": "not_available",
+        "note": "Not in Road Inventory; requires site survey / owner records."
+      },
+      "road_surface_elevation": {
+        "label": "Surveyed road crown / edge-of-pavement elevation (with vertical datum)",
+        "value": null,
+        "status": "not_available",
+        "note": "Not in Road Inventory; requires site survey / owner records."
+      },
+      "drainage_capacity": {
+        "label": "Storm drain inlet and pipe capacity, outfall locations and tide-gate status",
+        "value": null,
+        "status": "not_available",
+        "note": "Not in Road Inventory; requires site survey / owner records."
+      },
+      "subsurface_utilities": {
+        "label": "Underground utilities (water, sewer, gas, electric, telecom) and depths",
+        "value": null,
+        "status": "not_available",
+        "note": "Not in Road Inventory; requires site survey / owner records."
+      },
+      "geotechnical": {
+        "label": "Soil / groundwater conditions and foundation suitability",
+        "value": null,
+        "status": "not_available",
+        "note": "Not in Road Inventory; requires site survey / owner records."
+      },
+      "adjacent_setbacks": {
+        "label": "Building setbacks and first-floor elevations adjacent to the right-of-way",
+        "value": null,
+        "status": "not_available",
+        "note": "Not in Road Inventory; requires site survey / owner records."
+      }
+    },
+    "matched_inventory_segment_ids": [
+      "51115",
+      "51117",
+      "51118",
+      "51119",
+      "51287",
+      "53347",
+      "58285",
+      "58598",
+      "62908",
+      "63137",
+      "63138",
+      "63139",
+      "63140",
+      "63144",
+      "63147",
+      "63148",
+      "63149",
+      "63150",
+      "63152",
+      "63156",
+      "63157"
+    ],
+    "per_road_match": {
+      "rd_c4f2327f7c": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 2.15,
+        "matched_count": 3,
+        "data_status": "derived"
+      },
+      "rd_cce6003ec9": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 4.08,
+        "matched_count": 3,
+        "data_status": "derived"
+      },
+      "rd_95f4669a85": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 4.66,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_2522fae615": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 4.5,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_dc7a2de0d6": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 3.83,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_1a8e0c744d": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 4.58,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_b75b1ecf5c": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 5.46,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_7de4d64720": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 6.31,
+        "matched_count": 3,
+        "data_status": "derived"
+      },
+      "rd_26cf46062a": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.44,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_c4a1a6fd87": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 4.59,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_765bf02c09": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.4,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_d7c3d2df3c": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 9.94,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_3f727c902b": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 6.29,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_6f209b7ae0": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 9.8,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_ad4faee506": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.89,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_5d4ab5b0ec": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 10.43,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_a08d801731": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 8.21,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_880954fa5a": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 18.16,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_fc530b9bd2": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 14.96,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_861edade3d": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.19,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_1495c06ddf": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 17.56,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_ca0e9573ad": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 5.72,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_2848fdec4f": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 5.46,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_ee1bfc856f": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": null,
+        "matched_count": 0,
+        "data_status": "derived"
+      },
+      "rd_254694c59f": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.05,
+        "matched_count": 2,
+        "data_status": "derived"
+      },
+      "rd_1575a102a4": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.62,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_ab2bcdf237": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 9.0,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_e223943b4b": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 7.96,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_30a44cac3d": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 11.69,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_301bdacfcd": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": 16.79,
+        "matched_count": 1,
+        "data_status": "derived"
+      },
+      "rd_c5535e7658": {
+        "method": "vertex-distance + street-name tokens",
+        "max_distance_m": 25.0,
+        "best_mean_distance_m": null,
+        "matched_count": 0,
+        "data_status": "derived"
+      }
+    },
+    "unmatched_road_ids": [
+      "rd_ee1bfc856f",
+      "rd_c5535e7658"
+    ],
+    "citation_ids": [
+      "S10"
+    ],
+    "snapshot": {
+      "source_url": "https://gisportal.boston.gov/arcgis/rest/services/Infrastructure/OpenData/MapServer/14",
+      "query_where": "St_Name LIKE '%MORRISSEY%'",
+      "retrieved_at": "2026-10-24",
+      "record_count": 76
+    }
+  },
+  "flood_evidence": [
+    {
+      "scenario_id": "mcfrm-2050-1pct",
+      "label": "MC-FRM 2050, 1% annual exceedance (projected)",
+      "kind": "future_model",
+      "data_status": "published_model",
+      "roads_exposed": [
+        "rd_1495c06ddf",
+        "rd_1575a102a4",
+        "rd_254694c59f",
+        "rd_26cf46062a",
+        "rd_2848fdec4f",
+        "rd_301bdacfcd",
+        "rd_30a44cac3d",
+        "rd_3f727c902b",
+        "rd_5d4ab5b0ec",
+        "rd_6f209b7ae0",
+        "rd_765bf02c09",
+        "rd_861edade3d",
+        "rd_880954fa5a",
+        "rd_a08d801731",
+        "rd_ab2bcdf237",
+        "rd_ad4faee506",
+        "rd_c4a1a6fd87",
+        "rd_c5535e7658",
+        "rd_ca0e9573ad",
+        "rd_d7c3d2df3c",
+        "rd_e223943b4b",
+        "rd_ee1bfc856f",
+        "rd_fc530b9bd2"
+      ],
+      "roads_not_exposed": [],
+      "roads_unknown": [
+        "rd_1a8e0c744d",
+        "rd_2522fae615",
+        "rd_7de4d64720",
+        "rd_95f4669a85",
+        "rd_b75b1ecf5c",
+        "rd_c4f2327f7c",
+        "rd_cce6003ec9",
+        "rd_dc7a2de0d6"
+      ],
+      "passability": {
+        "potentially_closed": 0,
+        "unknown": 31,
+        "assumed_open": 0
+      },
+      "depth_m": {
+        "min": null,
+        "max": null,
+        "status": "not available / requires site survey"
+      },
+      "basis": [
+        "official_extent"
+      ],
+      "citation_ids": [
+        "S06"
+      ],
+      "caveat": "Projected annual-exceedance scenario; not a prediction of a dated storm. Extent overlap does not prove the road was impassable."
+    },
+    {
+      "scenario_id": "usgs-2018-01-04",
+      "label": "January 4, 2018 nor'easter (USGS observed peak footprint)",
+      "kind": "historical_observed",
+      "data_status": "observed",
+      "roads_exposed": [
+        "rd_26cf46062a",
+        "rd_3f727c902b",
+        "rd_5d4ab5b0ec",
+        "rd_6f209b7ae0",
+        "rd_765bf02c09",
+        "rd_880954fa5a",
+        "rd_a08d801731",
+        "rd_c4a1a6fd87",
+        "rd_d7c3d2df3c",
+        "rd_fc530b9bd2"
+      ],
+      "roads_not_exposed": [
+        "rd_1495c06ddf",
+        "rd_1575a102a4",
+        "rd_254694c59f",
+        "rd_2848fdec4f",
+        "rd_301bdacfcd",
+        "rd_30a44cac3d",
+        "rd_861edade3d",
+        "rd_ab2bcdf237",
+        "rd_ad4faee506",
+        "rd_c5535e7658",
+        "rd_ca0e9573ad",
+        "rd_e223943b4b",
+        "rd_ee1bfc856f"
+      ],
+      "roads_unknown": [
+        "rd_1a8e0c744d",
+        "rd_2522fae615",
+        "rd_7de4d64720",
+        "rd_95f4669a85",
+        "rd_b75b1ecf5c",
+        "rd_c4f2327f7c",
+        "rd_cce6003ec9",
+        "rd_dc7a2de0d6"
+      ],
+      "passability": {
+        "potentially_closed": 0,
+        "unknown": 31,
+        "assumed_open": 0
+      },
+      "depth_m": {
+        "min": null,
+        "max": null,
+        "status": "not available / requires site survey"
+      },
+      "basis": [
+        "historical_footprint"
+      ],
+      "citation_ids": [
+        "S07"
+      ],
+      "caveat": "Observed footprint; does not show street-level depth, velocity, or timing. Extent overlap does not prove the road was impassable."
+    },
+    {
+      "scenario_id": "usgs-2018-03-02",
+      "label": "March 2, 2018 nor'easter (USGS observed peak footprint)",
+      "kind": "historical_observed",
+      "data_status": "observed",
+      "roads_exposed": [
+        "rd_880954fa5a",
+        "rd_fc530b9bd2"
+      ],
+      "roads_not_exposed": [
+        "rd_1495c06ddf",
+        "rd_1575a102a4",
+        "rd_254694c59f",
+        "rd_26cf46062a",
+        "rd_2848fdec4f",
+        "rd_301bdacfcd",
+        "rd_30a44cac3d",
+        "rd_3f727c902b",
+        "rd_5d4ab5b0ec",
+        "rd_6f209b7ae0",
+        "rd_765bf02c09",
+        "rd_861edade3d",
+        "rd_a08d801731",
+        "rd_ab2bcdf237",
+        "rd_ad4faee506",
+        "rd_c4a1a6fd87",
+        "rd_c5535e7658",
+        "rd_ca0e9573ad",
+        "rd_d7c3d2df3c",
+        "rd_e223943b4b",
+        "rd_ee1bfc856f"
+      ],
+      "roads_unknown": [
+        "rd_1a8e0c744d",
+        "rd_2522fae615",
+        "rd_7de4d64720",
+        "rd_95f4669a85",
+        "rd_b75b1ecf5c",
+        "rd_c4f2327f7c",
+        "rd_cce6003ec9",
+        "rd_dc7a2de0d6"
+      ],
+      "passability": {
+        "potentially_closed": 0,
+        "unknown": 31,
+        "assumed_open": 0
+      },
+      "depth_m": {
+        "min": null,
+        "max": null,
+        "status": "not available / requires site survey"
+      },
+      "basis": [
+        "historical_footprint"
+      ],
+      "citation_ids": [
+        "S07"
+      ],
+      "caveat": "Observed footprint; does not show street-level depth, velocity, or timing. Extent overlap does not prove the road was impassable."
+    }
+  ],
+  "network_impact": {
+    "status": "available",
+    "data_status": "derived",
+    "priority_rank": 6,
+    "candidates_total": 93,
+    "evidence_text": [
+      "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+    ],
+    "standalone_loss": 42.9,
+    "impact_metric": 0.0,
+    "metric_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+    "journeys_total": 0,
+    "journeys_unreachable": [],
+    "affected_journeys": [],
+    "detour_or_disconnect_evidence": {
+      "detour_available_for": [],
+      "disconnected": [],
+      "detour_road_names": [],
+      "detour_flood_exposure": "unknown"
+    },
+    "assumptions": [
+      "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+      "Journeys are Person 1's assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness; equal-per-neighborhood demand weights.",
+      "Closures: the 354 roads whose centerline overlaps the mcfrm-2050-1pct extent are treated as closed (ASSUMED; overlap is not verified impassability). Roads outside the extent's study window are treated as open.",
+      "Travel times are posted-speed estimates, no traffic.",
+      "Interim re-implementation of Person 1's method by Person 3 (validated against Person 1's mock run)."
+    ],
+    "scenario_set_id": "mcfrm-2050-1pct"
+  },
+  "candidate_methods": [
+    {
+      "method_id": "raised_roadway",
+      "name": "Raise the roadway profile (raised roadway barrier)",
+      "category": "permanent_barrier",
+      "summary": "Raise the road (and usually sidewalks) so the road itself acts as a flood barrier and/or stays above design flood elevation.",
+      "relevance": "candidate",
+      "screened_out_reason": null,
+      "screening": [
+        {
+          "check": "Building setbacks from back of sidewalk",
+          "fact": "adjacent_setbacks",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        },
+        {
+          "check": "Surveyed road elevation with vertical datum",
+          "fact": "road_surface_elevation",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        },
+        {
+          "check": "Underground utilities",
+          "fact": "subsurface_utilities",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        },
+        {
+          "check": "Drainage capacity, outfalls, tide gates",
+          "fact": "drainage_capacity",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        }
+      ],
+      "sourced_points": [
+        {
+          "text": "The guideline sample considers raised roadways with a 4-ft grade change, and notes the approach may also apply to elevating emergency evacuation routes.",
+          "citation_ids": [
+            "S11.sec6#p3"
+          ]
+        },
+        {
+          "text": "Option 1 (retaining walls and/or slopes) may be feasible where buildings are set back at least 14 ft from the back of sidewalk.",
+          "citation_ids": [
+            "S11.sec6#p3"
+          ]
+        },
+        {
+          "text": "The guidelines do not recommend a raised roadway barrier where existing buildings sit at the back of sidewalk; raising only the roadway creates safety, drainage, ADA and access impacts.",
+          "citation_ids": [
+            "S11.sec6#p3"
+          ]
+        },
+        {
+          "text": "Once a street is raised, a stormwater pump system (pumps, generators) adds ongoing O&M cost; the guideline expects stormwater costs to be significant, citing Miami Beach raised-road projects.",
+          "citation_ids": [
+            "S11.sec6#p10"
+          ]
+        }
+      ],
+      "hypotheses": [
+        "Raising one corridor does not by itself block flood pathways that enter around its ends or through adjacent low ground."
+      ],
+      "failure_modes": [
+        "Flanking around the ends of the raised section",
+        "Ponding behind the raised road without pumped drainage",
+        "Utility relocation conflicts",
+        "Driveway / building access grade conflicts"
+      ],
+      "required_data": [
+        "Surveyed road and adjacent grade elevations with vertical datum",
+        "Building setbacks and first-floor elevations",
+        "Utility locations and depths",
+        "Drainage network and outfall/tide-gate details",
+        "Geotechnical borings"
+      ],
+      "cost_precedent_ids": [
+        "crdg-2018-raised-road-opt1",
+        "crdg-2018-raised-road-opt1a",
+        "crdg-2018-raised-road-opt2"
+      ],
+      "status": "to_investigate",
+      "addresses_mechanisms": [
+        "coastal_overland"
+      ],
+      "cause_gate": "Only relevant if coastal_overland is confirmed; currently possible.",
+      "cause_relevance": "cause_possible"
+    },
+    {
+      "method_id": "vegetated_berm",
+      "name": "Vegetated berm / landscaped embankment along the flood side",
+      "category": "permanent_barrier",
+      "summary": "An earthen, planted embankment with crest and access paths placed between the water and the road.",
+      "relevance": "candidate",
+      "screened_out_reason": null,
+      "screening": [
+        {
+          "check": "Open space between road and water for a berm footprint",
+          "fact": "open_space_flood_side",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        },
+        {
+          "check": "Surveyed road elevation with vertical datum",
+          "fact": "road_surface_elevation",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        },
+        {
+          "check": "Geotechnical / groundwater conditions",
+          "fact": "geotechnical",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        }
+      ],
+      "sourced_points": [
+        {
+          "text": "The guideline sample berm extends about 2,000 ft with an assumed grade change of about 2 ft for 2030 design flood elevation (DFE) conditions, with an incremental 2070 raise considered.",
+          "citation_ids": [
+            "S11.sec4#p10"
+          ]
+        },
+        {
+          "text": "The sample design drawings tabulate crest, slope, and access-path widths by height, so a berm needs a horizontal footprint that grows with height.",
+          "citation_ids": [
+            "S11"
+          ]
+        },
+        {
+          "text": "The Morrissey study's key findings say coastal resilience measures should focus on nature-based solutions.",
+          "citation_ids": [
+            "S12#p174"
+          ]
+        }
+      ],
+      "hypotheses": [
+        "A berm only protects the road if it ties into high ground at both ends; otherwise water can route around it."
+      ],
+      "failure_modes": [
+        "Insufficient open space for slopes",
+        "Flanking at ends",
+        "Scour/erosion on flood-side slope",
+        "Seepage through or under the embankment"
+      ],
+      "required_data": [
+        "Available open space and ownership on the flood side",
+        "Topography (LiDAR is a start, survey needed)",
+        "Geotechnical and groundwater conditions",
+        "Wetland / resource-area permitting constraints"
+      ],
+      "cost_precedent_ids": [
+        "crdg-2018-berm-2030",
+        "crdg-2018-berm-2070-incr"
+      ],
+      "status": "to_investigate",
+      "addresses_mechanisms": [
+        "coastal_overland"
+      ],
+      "cause_gate": "Only relevant if coastal_overland is confirmed; currently possible.",
+      "cause_relevance": "cause_possible"
+    },
+    {
+      "method_id": "deployable_barrier",
+      "name": "Deployable (temporary) flood barrier",
+      "category": "operational_measure",
+      "summary": "Barriers deployed before or during a flood and retracted afterward; may be an interim measure.",
+      "relevance": "candidate",
+      "screened_out_reason": null,
+      "screening": [
+        {
+          "check": "Forecast lead time for deployment",
+          "fact": "forecast_lead_time",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        },
+        {
+          "check": "Agency that would store and deploy the barrier",
+          "fact": "operations_owner",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        }
+      ],
+      "sourced_points": [
+        {
+          "text": "The guideline defines deployable barriers as systems deployed before and/or during a flood event and retracted afterward, and lists types from pre-installed and passive systems to mobile units and water-filled tubes.",
+          "citation_ids": [
+            "S11.sec7#p3"
+          ]
+        },
+        {
+          "text": "The guideline presents a comparison matrix rather than a sample site; product mentions are not endorsements.",
+          "citation_ids": [
+            "S11.sec7#p3"
+          ]
+        }
+      ],
+      "hypotheses": [
+        "Deployment depends on forecast lead time, trained crews, storage, and access; a barrier placed across a road closes that road while deployed."
+      ],
+      "failure_modes": [
+        "Not deployed in time",
+        "Seepage at joints or under the base",
+        "Blocks the road it is meant to protect while deployed"
+      ],
+      "required_data": [
+        "Who deploys and stores it",
+        "Warning time available for the relevant flood type",
+        "Foundation / anchoring surface along alignment"
+      ],
+      "cost_precedent_ids": [],
+      "status": "to_investigate",
+      "addresses_mechanisms": [
+        "coastal_overland"
+      ],
+      "cause_gate": "Only relevant if coastal_overland is confirmed; currently possible.",
+      "cause_relevance": "cause_possible"
+    },
+    {
+      "method_id": "drainage_backflow",
+      "name": "Drainage, backflow prevention, and stormwater storage",
+      "category": "site_works",
+      "summary": "Address water that enters through or ponds on the road via the drainage system (tide gates/check valves, inlet capacity, storage, pumping).",
+      "relevance": "candidate",
+      "screened_out_reason": null,
+      "screening": [
+        {
+          "check": "Drainage capacity, outfalls, tide gates",
+          "fact": "drainage_capacity",
+          "status": "unknown",
+          "value": null,
+          "note": "not available / requires site survey"
+        }
+      ],
+      "sourced_points": [
+        {
+          "text": "The Morrissey study notes stormwater flooding may be a significant problem in the Central section because there is limited gravity to discharge stormwater at high tide.",
+          "citation_ids": [
+            "S12#p166"
+          ]
+        },
+        {
+          "text": "The Morrissey study evaluated tide-gate options (including No Tide Gate and Hybrid) combined with raising the basin-side beach/dune/berm and a bay-side barrier.",
+          "citation_ids": [
+            "S12#p167"
+          ]
+        }
+      ],
+      "hypotheses": [
+        "Drainage works alone do not stop coastal surge from overtopping a road; they address rainfall and backflow pathways."
+      ],
+      "failure_modes": [
+        "Outfalls submerged at high tide",
+        "Pump/power failure during the event",
+        "Mismatch between rainfall and surge drivers"
+      ],
+      "required_data": [
+        "Drainage network map (BWSC)",
+        "Outfall inverts and tide-gate status",
+        "Rainfall vs surge contribution to the documented flooding"
+      ],
+      "cost_precedent_ids": [],
+      "status": "to_investigate",
+      "addresses_mechanisms": [
+        "tidal_outfall_backwater",
+        "storm_drain_capacity"
+      ],
+      "cause_gate": "Only relevant if tidal_outfall_backwater or storm_drain_capacity is confirmed; currently possible, unresolved.",
+      "cause_relevance": "cause_possible"
+    }
+  ],
+  "other_methods_considered": [
+    {
+      "method_id": "alternate_access",
+      "name": "Strengthen alternate access routes",
+      "relevance": "screened_out",
+      "reason": "Network results show no detour for affected journeys."
+    },
+    {
+      "method_id": "seawall_extension",
+      "name": "Raise / extend an existing seawall or waterfront edge",
+      "relevance": "screened_out",
+      "reason": "No evidence of an existing seawall at this corridor's flood edge."
+    }
+  ],
+  "published_cost_examples": {
+    "examples": [
+      {
+        "precedent_id": "crdg-2018-raised-road-opt1",
+        "method_id": "raised_roadway",
+        "title": "Sample raised roadway, Option 1 (retaining wall oceanside)",
+        "source_id": "S11.sec6",
+        "printed_page": 60,
+        "pdf_page": 12,
+        "price_basis": "Published 2018-10; dollar year not separately stated",
+        "sample_dimensions": {
+          "length_ft": 2000,
+          "grade_change_ft": 4
+        },
+        "total_usd": 13600000,
+        "unit_cost": {
+          "usd": 683000,
+          "per": "100 linear ft"
+        },
+        "contingency": "30% included",
+        "excluded": [
+          "Pumps and generators (guideline cites typical pump station cost variation of $500k to $20M)",
+          "Private utility relocation (gas, electric, steam, telecom)",
+          "Owner's costs",
+          "Design/permitting",
+          "Construction/logistical/insurance",
+          "Environmental/accidents",
+          "Adverse site conditions",
+          "Traffic signal systems",
+          "Neighborhood redevelopment / property acquisition",
+          "Ground improvement or deep foundations",
+          "Cofferdam for scour protection"
+        ],
+        "citation_ids": [
+          "S11.sec6#p12"
+        ],
+        "transferable": false,
+        "label": "Published 2018 sample cost (not an estimate for this corridor)"
+      },
+      {
+        "precedent_id": "crdg-2018-raised-road-opt1a",
+        "method_id": "raised_roadway",
+        "title": "Sample raised roadway, Option 1.A (retaining walls both sides; no built property within 14 ft of ROW)",
+        "source_id": "S11.sec6",
+        "printed_page": 61,
+        "pdf_page": 13,
+        "price_basis": "Published 2018-10; dollar year not separately stated",
+        "sample_dimensions": {
+          "length_ft": 2000,
+          "grade_change_ft": 4
+        },
+        "total_usd": 15800000,
+        "unit_cost": {
+          "usd": 788000,
+          "per": "100 linear ft"
+        },
+        "contingency": "30% included",
+        "excluded": [
+          "Pumps and generators",
+          "Private utility relocation",
+          "Owner's costs",
+          "Design/permitting",
+          "Construction/logistical/insurance",
+          "Environmental/accidents",
+          "Adverse site conditions",
+          "Traffic signal systems",
+          "Property acquisition"
+        ],
+        "citation_ids": [
+          "S11.sec6#p13"
+        ],
+        "transferable": false,
+        "label": "Published 2018 sample cost (not an estimate for this corridor)"
+      },
+      {
+        "precedent_id": "crdg-2018-raised-road-opt2",
+        "method_id": "raised_roadway",
+        "title": "Sample raised roadway, Option 2 (roadway and sidewalks raised with new development)",
+        "source_id": "S11.sec6",
+        "printed_page": 61,
+        "pdf_page": 13,
+        "price_basis": "Published 2018-10; dollar year not separately stated",
+        "sample_dimensions": {
+          "length_ft": 2000,
+          "grade_change_ft": 4
+        },
+        "total_usd": 15100000,
+        "unit_cost": {
+          "usd": 757000,
+          "per": "100 linear ft"
+        },
+        "contingency": "30% included",
+        "excluded": [
+          "Option 2 exclusion notes were not extracted for this build; read S11.sec6 p.61 onward before citing; do not assume it includes pumps, utilities, or permitting"
+        ],
+        "citation_ids": [
+          "S11.sec6#p13"
+        ],
+        "transferable": false,
+        "label": "Published 2018 sample cost (not an estimate for this corridor)"
+      },
+      {
+        "precedent_id": "crdg-2018-berm-2030",
+        "method_id": "vegetated_berm",
+        "title": "Sample vegetated berm barrier, 2030 DFE conditions",
+        "source_id": "S11.sec4",
+        "printed_page": 27,
+        "pdf_page": 10,
+        "price_basis": "Published 2018-10; dollar year not separately stated",
+        "sample_dimensions": {
+          "length_ft": 2000,
+          "grade_change_ft": 2
+        },
+        "total_usd": 2300000,
+        "unit_cost": {
+          "usd": 116000,
+          "per": "100 linear ft"
+        },
+        "contingency": "30% included",
+        "line_items_per_100lf_usd": {
+          "Riprap scour protection": 17000,
+          "Berm incl. crest and access paths": 45000,
+          "Erosion control plantings": 27000,
+          "Subtotal": 89000,
+          "Contingency (30%)": 27000
+        },
+        "excluded": [
+          "Owner's costs",
+          "Design/permitting",
+          "Construction/logistical/insurance",
+          "Environmental/accidents",
+          "Adverse site conditions",
+          "Cofferdam for scour protection"
+        ],
+        "annual_om_usd_range": [
+          22000,
+          38000
+        ],
+        "citation_ids": [
+          "S11.sec4#p10"
+        ],
+        "transferable": false,
+        "label": "Published 2018 sample cost (not an estimate for this corridor)"
+      },
+      {
+        "precedent_id": "crdg-2018-berm-2070-incr",
+        "method_id": "vegetated_berm",
+        "title": "Sample vegetated berm, 2070 DFE incremental increase",
+        "source_id": "S11.sec4",
+        "printed_page": 27,
+        "pdf_page": 10,
+        "price_basis": "Published 2018-10; dollar year not separately stated",
+        "sample_dimensions": {
+          "length_ft": 5300,
+          "grade_change_ft": 2,
+          "note": "In addition to the 2030 berm"
+        },
+        "total_usd": 3200000,
+        "unit_cost": {
+          "usd": 61000,
+          "per": "100 linear ft"
+        },
+        "contingency": "30% included",
+        "excluded": [
+          "Owner's costs",
+          "Design/permitting",
+          "Construction/logistical/insurance",
+          "Environmental/accidents",
+          "Adverse site conditions"
+        ],
+        "citation_ids": [
+          "S11.sec4#p10"
+        ],
+        "transferable": false,
+        "label": "Published 2018 sample cost (not an estimate for this corridor)"
+      }
+    ],
+    "methods_without_cost_precedent": [
+      "deployable_barrier",
+      "drainage_backflow"
+    ],
+    "caveats": [
+      "These are conceptual 'opinion of probable cost' figures for sample barriers at sample sites in the City of Boston guidelines published October 2018. They are not bids, not 2026 prices, and not transferable per-foot rates for another site.",
+      "Escalation from the 2018 publication date to today is not applied here. Any escalation index and base year must be chosen by a cost estimator.",
+      "The guidelines state each opinion reflects sample design considerations and does not reflect engineering analyses prepared for design."
+    ],
+    "estimating_method_guidance": [
+      "Treat the sample $/100-LF as an order-of-magnitude reference only; site length, grade change, setbacks, utilities and foundations drive the real number.",
+      "A preliminary estimate for this corridor would start from surveyed length and required grade change, quantity take-offs per line item, current local unit prices, escalation from the price base year, and explicitly priced exclusions (pumps, utilities, permitting).",
+      "Present any scaled number as 'illustrative scaling of a 2018 sample', never as a project cost."
+    ],
+    "site_specific_estimate": {
+      "value": null,
+      "status": "not_estimated",
+      "note": "Site cost estimation is a separate engineering task."
+    }
+  },
+  "local_precedents": [
+    {
+      "precedent_id": "morrissey-flood-pathways-present",
+      "status": "study_finding",
+      "text": "Present-day flood pathways into the study area were identified at Tenean Beach/Conley Street, southeast of Kosciuszko Circle, Bianculli Boulevard, Pattens Cove, and Quincy Shore Drive/Neponset Trail; in a 2030 extreme event these expand and new pathways appear from Moakley Park and the I-93 underpass.",
+      "citation_ids": [
+        "S12#p74"
+      ]
+    },
+    {
+      "precedent_id": "morrissey-central-section-gap",
+      "status": "study_finding",
+      "text": "The study notes flood protection is being advanced outside the central section (Bianculli Boulevard to Freeport Street), leaving that area as a key storm-surge pathway into the study area.",
+      "citation_ids": [
+        "S12#p182"
+      ]
+    },
+    {
+      "precedent_id": "morrissey-dcr-2017-elevation",
+      "status": "prior_design_intent",
+      "text": "The study records that DCR's 2017 Morrissey Boulevard redesign planned to elevate the roadway for coastal resiliency, with a stated target of limiting tidal-flooding closures to fewer than 3 in 2065.",
+      "citation_ids": [
+        "S12#p108"
+      ]
+    },
+    {
+      "precedent_id": "morrissey-stormwater-high-tide",
+      "status": "study_finding",
+      "text": "Stormwater flooding may remain a significant problem in the Central section because of limited gravity discharge at high tide; one option assumes BWSC's proposed additional stormwater infrastructure for the Northern section.",
+      "citation_ids": [
+        "S12#p166"
+      ]
+    },
+    {
+      "precedent_id": "morrissey-nature-based-finding",
+      "status": "study_finding",
+      "text": "Key findings state flood mitigation could be implemented along the coastline and Dorchester Bay Basin, should focus on nature-based solutions, and that environmental permitting is expected to be complex.",
+      "citation_ids": [
+        "S12#p174"
+      ]
+    },
+    {
+      "precedent_id": "morrissey-multi-jurisdiction",
+      "status": "study_finding",
+      "text": "Infrastructure in the area is owned by multiple jurisdictions (including MassDOT, DCR, MBTA, City of Boston, utilities, and private owners), so any project needs coordinated ownership and permitting.",
+      "citation_ids": [
+        "S12#p174"
+      ]
+    }
+  ],
+  "missing_site_information": [
+    {
+      "item": "Right-of-way width",
+      "status": "partially available (4 of 43 segments missing)",
+      "why_needed": "Inventory field blank on some matched segments."
+    },
+    {
+      "item": "Annual average daily traffic",
+      "status": "partially available (7 of 43 segments missing)",
+      "why_needed": "Inventory field blank on some matched segments."
+    },
+    {
+      "item": "AADT year",
+      "status": "partially available (7 of 43 segments missing)",
+      "why_needed": "Inventory field blank on some matched segments."
+    },
+    {
+      "item": "Pavement structure / layer thicknesses and materials",
+      "status": "not available / requires site survey",
+      "why_needed": "Road fact not present in the Road Inventory for this corridor."
+    },
+    {
+      "item": "Surveyed road crown / edge-of-pavement elevation (with vertical datum)",
+      "status": "not available / requires site survey",
+      "why_needed": "Road fact not present in the Road Inventory for this corridor."
+    },
+    {
+      "item": "Storm drain inlet and pipe capacity, outfall locations and tide-gate status",
+      "status": "not available / requires site survey",
+      "why_needed": "Road fact not present in the Road Inventory for this corridor."
+    },
+    {
+      "item": "Underground utilities (water, sewer, gas, electric, telecom) and depths",
+      "status": "not available / requires site survey",
+      "why_needed": "Road fact not present in the Road Inventory for this corridor."
+    },
+    {
+      "item": "Soil / groundwater conditions and foundation suitability",
+      "status": "not available / requires site survey",
+      "why_needed": "Road fact not present in the Road Inventory for this corridor."
+    },
+    {
+      "item": "Building setbacks and first-floor elevations adjacent to the right-of-way",
+      "status": "not available / requires site survey",
+      "why_needed": "Road fact not present in the Road Inventory for this corridor."
+    },
+    {
+      "item": "Flood depth at the road surface (with datum)",
+      "status": "not available / requires site survey",
+      "why_needed": "Passability depends on depth vs road elevation, not extent overlap."
+    },
+    {
+      "item": "Open space between road and water for a berm footprint",
+      "status": "not available / requires site survey",
+      "why_needed": "Needed to screen: Vegetated berm / landscaped embankment along the flood side."
+    },
+    {
+      "item": "Forecast lead time for deployment",
+      "status": "not available / requires site survey",
+      "why_needed": "Needed to screen: Deployable (temporary) flood barrier."
+    },
+    {
+      "item": "Agency that would store and deploy the barrier",
+      "status": "not available / requires site survey",
+      "why_needed": "Needed to screen: Deployable (temporary) flood barrier."
+    },
+    {
+      "item": "Outfall(s) serving the corridor and their owner",
+      "status": "not available / requires site survey",
+      "why_needed": "Needed to test tide-constrained drainage."
+    },
+    {
+      "item": "Storm drain pipe sizes and connectivity",
+      "status": "not available / requires site survey",
+      "why_needed": "Needed to test drainage capacity; not public."
+    },
+    {
+      "item": "Catch basin condition and cleaning history from the owner",
+      "status": "not available / requires site survey",
+      "why_needed": "Needed to test inlet blockage."
+    }
+  ],
+  "citations": [
+    {
+      "citation_id": "BOS311",
+      "source_id": "BOS311",
+      "title": "Boston 311 Service Requests (data.boston.gov, yearly CKAN datastore resources)",
+      "url": "https://data.boston.gov/dataset/311-service-requests",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "BWSC.adapt",
+      "source_id": "BWSC.adapt",
+      "title": "BWSC Storm Viewer - Flood Modeling (adaptation scenarios)",
+      "url": "https://www.bwscstormviewer.com/flood-modeling",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "BWSC.cb",
+      "source_id": "BWSC.cb",
+      "title": "BWSC Catch Basin layer (FeatureServer behind the public Catch Basin Locator map)",
+      "url": "https://services5.arcgis.com/ji3WHeqN0AysEK5g/arcgis/rest/services/Hydrant_Search_Map1/FeatureServer/0",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "BWSC.disc",
+      "source_id": "BWSC.disc",
+      "title": "BWSC Storm Viewer - Disclaimers",
+      "url": "https://www.bwscstormviewer.com/disclaimers",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "BWSC.maint",
+      "source_id": "BWSC.maint",
+      "title": "BWSC Preventative Maintenance programs",
+      "url": "https://www.bwsc.org/projects/preventative-maintenance",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "BWSC.sys",
+      "source_id": "BWSC.sys",
+      "title": "BWSC Stormwater System",
+      "url": "https://www.bwsc.org/environment-education/water-sewer-and-stormwater/stormwater-system",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "NOAA.A14",
+      "source_id": "NOAA.A14",
+      "title": "NOAA Atlas 14 Precipitation Frequency Data Server",
+      "url": "https://hdsc.nws.noaa.gov/pfds/",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "PDDG8",
+      "source_id": "PDDG8",
+      "title": "MassDOT Project Development & Design Guide, Chapter 8: Drainage and Erosion Control",
+      "url": "https://www.mass.gov/info-details/pddg-chapter-8-drainage-and-erosion-control",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "S06",
+      "source_id": "S06",
+      "title": "Massachusetts Coast Flood Risk Model (MC-FRM) / Sea Level Rise and Coastal Flooding Viewer",
+      "url": "https://www.mass.gov/info-details/massachusetts-sea-level-rise-and-coastal-flooding-viewer",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "S07",
+      "source_id": "S07",
+      "title": "USGS January & March 2018 coastal flood inundation data",
+      "url": "https://data.usgs.gov/datacatalog/data/USGS%3A60100f99d34e162231fecfa8",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "S08",
+      "source_id": "S08",
+      "title": "NOAA CO-OPS Boston tide gauge 8443970 (API)",
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "S09",
+      "source_id": "S09",
+      "title": "MassGIS LiDAR Terrain Data",
+      "url": "https://www.mass.gov/info-details/massgis-data-lidar-terrain-data",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "S10",
+      "source_id": "S10",
+      "title": "MassDOT Road Inventory (City of Boston GIS portal, Infrastructure/OpenData layer 14)",
+      "url": "https://gisportal.boston.gov/arcgis/rest/services/Infrastructure/OpenData/MapServer/14",
+      "page": null,
+      "published": null
+    },
+    {
+      "citation_id": "S11",
+      "source_id": "S11",
+      "title": "Climate Resilient Design Standards & Guidelines for Protection of Public Rights-of-Way (overview page)",
+      "url": "https://www.boston.gov/sites/default/files/document-file-10-2018/climate_resilient_design_drawings.pdf",
+      "page": null,
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec4#p10",
+      "source_id": "S11.sec4",
+      "title": "Section 4.0 Sample Vegetated Berm Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_4.0_sample_vegetated_berm_barrier.pdf",
+      "page": {
+        "printed_page": 27,
+        "pdf_page": 10
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec5",
+      "source_id": "S11.sec5",
+      "title": "Section 5.0 Sample Harborwalk Seawall Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_5.0_sample_harborwalk_seawall_barrier.pdf",
+      "page": null,
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec5#p10",
+      "source_id": "S11.sec5",
+      "title": "Section 5.0 Sample Harborwalk Seawall Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_5.0_sample_harborwalk_seawall_barrier.pdf",
+      "page": {
+        "printed_page": 43,
+        "pdf_page": 10
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec6#p10",
+      "source_id": "S11.sec6",
+      "title": "Section 6.0 Sample Raised Roadway Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_6.0_sample_raised_roadway_barrier.pdf",
+      "page": {
+        "printed_page": 58,
+        "pdf_page": 10
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec6#p12",
+      "source_id": "S11.sec6",
+      "title": "Section 6.0 Sample Raised Roadway Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_6.0_sample_raised_roadway_barrier.pdf",
+      "page": {
+        "printed_page": 60,
+        "pdf_page": 12
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec6#p13",
+      "source_id": "S11.sec6",
+      "title": "Section 6.0 Sample Raised Roadway Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_6.0_sample_raised_roadway_barrier.pdf",
+      "page": {
+        "printed_page": 61,
+        "pdf_page": 13
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec6#p3",
+      "source_id": "S11.sec6",
+      "title": "Section 6.0 Sample Raised Roadway Barrier",
+      "url": "https://www.boston.gov/sites/default/files/file/document_files/2018/10/section_6.0_sample_raised_roadway_barrier.pdf",
+      "page": {
+        "printed_page": 51,
+        "pdf_page": 3
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S11.sec7#p3",
+      "source_id": "S11.sec7",
+      "title": "Section 7.0 Deployable Flood Barrier Guidance",
+      "url": "https://d8-dev2.boston.gov/sites/default/files/file/document_files/2018/10/section_7.0_deployable_flood_barrier_guidance.pdf",
+      "page": {
+        "printed_page": 71,
+        "pdf_page": 3
+      },
+      "published": "2018-10-17"
+    },
+    {
+      "citation_id": "S12",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": null,
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "S12#p108",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": {
+        "printed_page": null,
+        "pdf_page": 108
+      },
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "S12#p166",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": {
+        "printed_page": null,
+        "pdf_page": 166
+      },
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "S12#p167",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": {
+        "printed_page": null,
+        "pdf_page": 167
+      },
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "S12#p174",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": {
+        "printed_page": null,
+        "pdf_page": 174
+      },
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "S12#p182",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": {
+        "printed_page": null,
+        "pdf_page": 182
+      },
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "S12#p74",
+      "source_id": "S12",
+      "title": "Morrissey Boulevard Corridor Study Final Report (June 2025)",
+      "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+      "page": {
+        "printed_page": null,
+        "pdf_page": 74
+      },
+      "published": "2025-06"
+    },
+    {
+      "citation_id": "network_impact",
+      "source_id": "network_impact",
+      "title": "Network impact record for this corridor (ranking input)",
+      "url": null,
+      "page": null
+    }
+  ],
+  "limitations": [
+    "Candidate methods are options to investigate, not recommendations or designs. A licensed engineer must review.",
+    "No hydraulic modelling was performed; nothing here shows that a measure would keep the road passable.",
+    "Published costs are 2018 sample figures for different sites and are not estimates for this corridor.",
+    "Road Inventory code values are passed through undecoded; widths assumed to be in feet.",
+    "Candidate construction methods are gated on the cause assessment; the flooded road may be an impacted location rather than the asset that needs work."
+  ],
+  "provenance": {
+    "generated_at": "2026-10-24T23:51:42+00:00",
+    "evidence_library_version": "eng-evidence-v0.1",
+    "input_data_status": {
+      "road_facts": "observed",
+      "flood_exposure": [
+        "observed",
+        "published_model"
+      ],
+      "network_impact": "derived",
+      "road_ids": "canonical"
+    },
+    "generator": "engineering/floodroute_eng/investigation.py"
+  },
+  "cause_assessment": {
+    "schema_version": "diagnosis-v0.1",
+    "road_ids": [
+      "rd_c4f2327f7c",
+      "rd_cce6003ec9",
+      "rd_95f4669a85",
+      "rd_2522fae615",
+      "rd_dc7a2de0d6",
+      "rd_1a8e0c744d",
+      "rd_b75b1ecf5c",
+      "rd_7de4d64720",
+      "rd_26cf46062a",
+      "rd_c4a1a6fd87",
+      "rd_765bf02c09",
+      "rd_d7c3d2df3c",
+      "rd_3f727c902b",
+      "rd_6f209b7ae0",
+      "rd_ad4faee506",
+      "rd_5d4ab5b0ec",
+      "rd_a08d801731",
+      "rd_880954fa5a",
+      "rd_fc530b9bd2",
+      "rd_861edade3d",
+      "rd_1495c06ddf",
+      "rd_ca0e9573ad",
+      "rd_2848fdec4f",
+      "rd_ee1bfc856f",
+      "rd_254694c59f",
+      "rd_1575a102a4",
+      "rd_ab2bcdf237",
+      "rd_e223943b4b",
+      "rd_30a44cac3d",
+      "rd_301bdacfcd",
+      "rd_c5535e7658"
+    ],
+    "hotspot_id": null,
+    "scenario_ids": [
+      "mcfrm-2050-1pct",
+      "usgs-2018-01-04",
+      "usgs-2018-03-02"
+    ],
+    "finding": "Flooding on this corridor is documented or modelled, and drainage complaints are reported nearby. The cause is not established. Possible explanations: coastal overtopping / overland inflow, high tide blocking stormwater discharge / backflow, localized inlet obstruction / debris.",
+    "impacted_location_note": "The road is where flooding is seen. The asset that needs work may be an inlet, pipe, outfall, or shoreline opening elsewhere in the system.",
+    "evidence": [
+      {
+        "evidence_id": "ev-flood-mcfrm-2050-1pct",
+        "source_id": "S06",
+        "url": "https://www.mass.gov/info-details/massachusetts-sea-level-rise-and-coastal-flooding-viewer",
+        "evidence_type": "published_model",
+        "summary": "MC-FRM 2050, 1% annual exceedance (projected): 23 of 31 corridor roads exposed; depth not available / requires site survey.",
+        "limitations": [
+          "Projected annual-exceedance scenario; not a prediction of a dated storm. Extent overlap does not prove the road was impassable.",
+          "Extent overlap does not identify where water enters or which asset fails."
+        ],
+        "data_status": "published_model",
+        "scenario_id": "mcfrm-2050-1pct",
+        "exposed": true
+      },
+      {
+        "evidence_id": "ev-flood-usgs-2018-01-04",
+        "source_id": "S07",
+        "url": "https://data.usgs.gov/datacatalog/data/USGS%3A60100f99d34e162231fecfa8",
+        "evidence_type": "observed_measurement",
+        "summary": "January 4, 2018 nor'easter (USGS observed peak footprint): 10 of 31 corridor roads exposed; depth not available / requires site survey.",
+        "limitations": [
+          "Observed footprint; does not show street-level depth, velocity, or timing. Extent overlap does not prove the road was impassable.",
+          "Extent overlap does not identify where water enters or which asset fails."
+        ],
+        "data_status": "observed",
+        "scenario_id": "usgs-2018-01-04",
+        "exposed": true
+      },
+      {
+        "evidence_id": "ev-flood-usgs-2018-03-02",
+        "source_id": "S07",
+        "url": "https://data.usgs.gov/datacatalog/data/USGS%3A60100f99d34e162231fecfa8",
+        "evidence_type": "observed_measurement",
+        "summary": "March 2, 2018 nor'easter (USGS observed peak footprint): 2 of 31 corridor roads exposed; depth not available / requires site survey.",
+        "limitations": [
+          "Observed footprint; does not show street-level depth, velocity, or timing. Extent overlap does not prove the road was impassable.",
+          "Extent overlap does not identify where water enters or which asset fails."
+        ],
+        "data_status": "observed",
+        "scenario_id": "usgs-2018-03-02",
+        "exposed": true
+      },
+      {
+        "evidence_id": "ev-morrissey-flood-pathways-present",
+        "source_id": "S12",
+        "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+        "evidence_type": "published_model",
+        "summary": "Present-day flood pathways into the study area were identified at Tenean Beach/Conley Street, southeast of Kosciuszko Circle, Bianculli Boulevard, Pattens Cove, and Quincy Shore Drive/Neponset Trail; in a 2030 extreme event these expand and new pathways appear from Moakley Park and the I-93 underpass.",
+        "limitations": [
+          "Corridor-study finding at study-area scale; not a site inspection of this road segment."
+        ],
+        "pdf_page": 74,
+        "role": "coastal"
+      },
+      {
+        "evidence_id": "ev-morrissey-central-section-gap",
+        "source_id": "S12",
+        "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+        "evidence_type": "published_model",
+        "summary": "The study notes flood protection is being advanced outside the central section (Bianculli Boulevard to Freeport Street), leaving that area as a key storm-surge pathway into the study area.",
+        "limitations": [
+          "Corridor-study finding at study-area scale; not a site inspection of this road segment."
+        ],
+        "pdf_page": 182,
+        "role": "coastal"
+      },
+      {
+        "evidence_id": "ev-morrissey-stormwater-high-tide",
+        "source_id": "S12",
+        "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+        "evidence_type": "published_model",
+        "summary": "Stormwater flooding may remain a significant problem in the Central section because of limited gravity discharge at high tide; one option assumes BWSC's proposed additional stormwater infrastructure for the Northern section.",
+        "limitations": [
+          "Corridor-study finding at study-area scale; not a site inspection of this road segment."
+        ],
+        "pdf_page": 166,
+        "role": "tidal"
+      },
+      {
+        "evidence_id": "ev-morrissey-multi-jurisdiction",
+        "source_id": "S12",
+        "url": "https://www.mass.gov/doc/morrissey-boulevard-corridor-study-final-report/download",
+        "evidence_type": "published_model",
+        "summary": "Infrastructure in the area is owned by multiple jurisdictions (including MassDOT, DCR, MBTA, City of Boston, utilities, and private owners), so any project needs coordinated ownership and permitting.",
+        "limitations": [
+          "Corridor-study finding at study-area scale; not a site inspection of this road segment."
+        ],
+        "pdf_page": 174,
+        "role": "owner"
+      },
+      {
+        "evidence_id": "ev-311-loc01",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "3 311 report(s) at INTERSECTION of Freeport St & William T Morrissey Blvd  Dorchester  MA (Catchbasin: 3), 2021-04-28 to 2021-04-29, 3 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-04-29",
+        "distance_to_corridor_m": 2.6,
+        "report_count": 3,
+        "case_ids": [
+          "101003726082",
+          "101003726828",
+          "101003727998"
+        ]
+      },
+      {
+        "evidence_id": "ev-311ref-101003726082",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Freeport St & William T Morrissey Blvd  Dorchester  MA mentions another agency: \"...ed date : 2021-04-28 11:41:33.407 Case Referred to External Agency Sent this to DCR staff for the area as well as our storm water management te...\"",
+        "limitations": [
+          "Referral text only; does not establish legal ownership."
+        ],
+        "observed_at": "2021-04-28",
+        "distance_to_corridor_m": 21.2,
+        "case_ids": [
+          "101003726082"
+        ]
+      },
+      {
+        "evidence_id": "ev-311ref-101003726828",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Freeport St & William T Morrissey Blvd  Dorchester  MA mentions another agency: \"...1-04-28 16:39:14.317 Duplicate of Existing Case location previously referred to DCR...\"",
+        "limitations": [
+          "Referral text only; does not establish legal ownership."
+        ],
+        "observed_at": "2021-04-28",
+        "distance_to_corridor_m": 33.4,
+        "case_ids": [
+          "101003726828"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc02",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Norwood St & William T Morrissey Blvd  Dorchester  MA (Catchbasin: 1), 2018-01-12 to 2018-01-12, 3 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2018-01-12",
+        "distance_to_corridor_m": 3.1,
+        "report_count": 1,
+        "case_ids": [
+          "101002326210"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc03",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Old Colony Ter & William T Morrissey Blvd  Dorchester  MA (Catchbasin: 1), 2024-03-23 to 2024-03-23, 17 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-03-23",
+        "distance_to_corridor_m": 16.8,
+        "report_count": 1,
+        "case_ids": [
+          "101005372768"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc04",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of William T Morrissey Blvd & Mount Vernon St  Dorchester  MA (Catchbasin: 1), 2025-10-22 to 2025-10-22, 30 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-10-22",
+        "distance_to_corridor_m": 29.5,
+        "report_count": 1,
+        "case_ids": [
+          "101006331941"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006331941",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of William T Morrissey Blvd & Mount Vernon St  Dorchester  MA: \"Removed leaves and debris from catch basin. 10/23\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2025-10-30",
+        "distance_to_corridor_m": 29.5,
+        "case_ids": [
+          "101006331941"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc05",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Lorenzo St & Walnut St  Dorchester  MA (Catchbasin: 1), 2018-01-04 to 2018-01-04, 40 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2018-01-04",
+        "distance_to_corridor_m": 39.8,
+        "report_count": 1,
+        "case_ids": [
+          "101002299554"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc06",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 285 William T Morrissey Blvd  Dorchester  MA  02125 (Catchbasin: 1), 2024-03-23 to 2024-03-23, 52 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-03-23",
+        "distance_to_corridor_m": 52.2,
+        "report_count": 1,
+        "case_ids": [
+          "101005372735"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc07",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at 8 Lorenzo St  Dorchester  MA  02122 (Catchbasin: 2), 2018-03-02 to 2023-09-15, 58 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2023-09-15",
+        "distance_to_corridor_m": 57.5,
+        "report_count": 2,
+        "case_ids": [
+          "101002384176",
+          "101005054598"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101005054598",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 8 Lorenzo St  Dorchester  MA  02122: \"Checked CBs  no issues. 9/15    CBs were cleaned by contractor earlier this month.\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2023-09-15",
+        "distance_to_corridor_m": 57.5,
+        "case_ids": [
+          "101005054598"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc08",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "3 311 report(s) at INTERSECTION of Norwood St & Conley St  Dorchester  MA (Catchbasin: 2, Roadway Flooding: 1), 2019-10-30 to 2025-02-14, 59 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-02-14",
+        "distance_to_corridor_m": 58.6,
+        "report_count": 3,
+        "case_ids": [
+          "101003088593",
+          "101003252172",
+          "101005910774"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc09",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 12 Lorenzo St  Dorchester  MA  02122 (Catchbasin: 1), 2021-11-02 to 2021-11-02, 62 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-11-02",
+        "distance_to_corridor_m": 62.0,
+        "report_count": 1,
+        "case_ids": [
+          "101004034916"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc10",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "3 311 report(s) at INTERSECTION of Freeport St & Victory Rd  Dorchester  MA (Catchbasin: 3), 2021-05-04 to 2022-10-05, 72 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2022-10-05",
+        "distance_to_corridor_m": 72.3,
+        "report_count": 3,
+        "case_ids": [
+          "101003733108",
+          "101003942237",
+          "101004516659"
+        ]
+      },
+      {
+        "evidence_id": "ev-311ref-101003733108",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Freeport St & Victory Rd  Dorchester  MA mentions another agency: \"...41:40.873 Duplicate of Existing Case duplicate of case already reported to Mass DCR...\"",
+        "limitations": [
+          "Referral text only; does not establish legal ownership."
+        ],
+        "observed_at": "2021-05-04",
+        "distance_to_corridor_m": 103.0,
+        "case_ids": [
+          "101003733108"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101004516659",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Freeport St & Victory Rd  Dorchester  MA: \"BWSC states checked all catch basins and all are taking water. 10/06\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2022-10-18",
+        "distance_to_corridor_m": 72.3,
+        "case_ids": [
+          "101004516659"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc11",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 10 Bloomington St  Dorchester  MA  02122 (Catchbasin: 1), 2024-12-15 to 2024-12-15, 77 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-12-15",
+        "distance_to_corridor_m": 76.9,
+        "report_count": 1,
+        "case_ids": [
+          "101005821183"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc12",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Blanche St & Victory Rd  Dorchester  MA (Catchbasin: 1), 2026-03-16 to 2026-03-16, 85 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2026-03-16",
+        "distance_to_corridor_m": 85.0,
+        "report_count": 1,
+        "case_ids": [
+          "101006571012"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006571012",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Blanche St & Victory Rd  Dorchester  MA: \"REMOVED DEBRIS FROM CB  WATER NOW DRAINING. 3/20\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2026-03-26",
+        "distance_to_corridor_m": 85.0,
+        "case_ids": [
+          "101006571012"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc13",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at 25 William T Morrissey Blvd  Dorchester  MA  02125 (Catchbasin: 2), 2021-02-12 to 2021-02-12, 92 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-02-12",
+        "distance_to_corridor_m": 91.8,
+        "report_count": 2,
+        "case_ids": [
+          "101003627583",
+          "101003627585"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc14",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 4 Oakman St  Dorchester  MA  02122 (Catchbasin: 1), 2024-12-06 to 2024-12-06, 102 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-12-06",
+        "distance_to_corridor_m": 101.7,
+        "report_count": 1,
+        "case_ids": [
+          "101005812433"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc15",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 300 Savin Hill Ave  Dorchester  MA  02125 (Catchbasin: 1), 2023-05-27 to 2023-05-27, 108 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2023-05-27",
+        "distance_to_corridor_m": 107.9,
+        "report_count": 1,
+        "case_ids": [
+          "101004854390"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc16",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 20 Everdean St  Dorchester  MA  02122 (Catchbasin: 1), 2021-10-31 to 2021-10-31, 120 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-10-31",
+        "distance_to_corridor_m": 119.8,
+        "report_count": 1,
+        "case_ids": [
+          "101004031005"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc17",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "3 311 report(s) at INTERSECTION of Everdean St & Green Hill St  Dorchester  MA (Catchbasin: 3), 2025-05-10 to 2025-06-23, 120 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-06-23",
+        "distance_to_corridor_m": 120.0,
+        "report_count": 3,
+        "case_ids": [
+          "101006062798",
+          "101006107672",
+          "101006126240"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006062798",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Everdean St & Green Hill St  Dorchester  MA: \"Cleaned around cb  taking water. 5/10\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2025-05-12",
+        "distance_to_corridor_m": 120.0,
+        "case_ids": [
+          "101006062798"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006107672",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Everdean St & Green Hill St  Dorchester  MA: \"Freed cb  relieved flood. 6/7\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2025-06-10",
+        "distance_to_corridor_m": 120.0,
+        "case_ids": [
+          "101006107672"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006126240",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Everdean St & Green Hill St  Dorchester  MA: \"Cleaned and removed debris from 2 cb\u2019s. 6/26\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2025-07-09",
+        "distance_to_corridor_m": 120.0,
+        "case_ids": [
+          "101006126240"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc18",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Oakman St & Taylor St  Dorchester  MA (Catchbasin: 1), 2024-11-28 to 2024-11-28, 122 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-11-28",
+        "distance_to_corridor_m": 121.7,
+        "report_count": 1,
+        "case_ids": [
+          "101005794864"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc19",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 17 Tolman St  Dorchester  MA  02122 (Catchbasin: 1), 2021-07-27 to 2021-07-27, 128 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-07-27",
+        "distance_to_corridor_m": 128.1,
+        "report_count": 1,
+        "case_ids": [
+          "101003880233"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc20",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at INTERSECTION of Everdean St & Ashland St  Dorchester  MA (Catchbasin: 2), 2024-01-10 to 2025-09-07, 135 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-09-07",
+        "distance_to_corridor_m": 135.2,
+        "report_count": 2,
+        "case_ids": [
+          "101005243252",
+          "101006277335"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101005243252",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Everdean St & Ashland St  Dorchester  MA: \"RELIEVED FLOOD  CB\u2019S TAKING WATER NOW. 1/10\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2024-01-10",
+        "distance_to_corridor_m": 135.2,
+        "case_ids": [
+          "101005243252"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc21",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Conley St & Tenean St  Dorchester  MA (Catchbasin: 1), 2019-06-09 to 2019-06-09, 152 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2019-06-09",
+        "distance_to_corridor_m": 152.0,
+        "report_count": 1,
+        "case_ids": [
+          "101002929398"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc22",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Evandale Ter & Grampian Way  Dorchester  MA (Catchbasin: 1), 2021-10-30 to 2021-10-30, 153 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-10-30",
+        "distance_to_corridor_m": 152.9,
+        "report_count": 1,
+        "case_ids": [
+          "101004030554"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc23",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at 1 Worrell St  Dorchester  MA  02122 (Catchbasin: 2), 2018-11-16 to 2019-09-10, 158 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2019-09-10",
+        "distance_to_corridor_m": 157.8,
+        "report_count": 2,
+        "case_ids": [
+          "101002728622",
+          "101003021490"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101002728622",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 1 Worrell St  Dorchester  MA  02122: \"BWSC reports no flood on arrival.\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2018-11-19",
+        "distance_to_corridor_m": 157.8,
+        "case_ids": [
+          "101002728622"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc24",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Houghton St & Popes Hill St  Dorchester  MA (Catchbasin: 1), 2023-05-31 to 2023-05-31, 178 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2023-05-31",
+        "distance_to_corridor_m": 178.2,
+        "report_count": 1,
+        "case_ids": [
+          "101004859183"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101004859183",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Houghton St & Popes Hill St  Dorchester  MA: \"RETRIEVED GLASSES FROM CB. CLEANED AND DISINFECTED CB. 5/31\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2023-06-05",
+        "distance_to_corridor_m": 178.2,
+        "case_ids": [
+          "101004859183"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc25",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Coffey St & Neponset Ave  Dorchester  MA (Catchbasin: 1), 2020-08-24 to 2020-08-24, 191 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2020-08-24",
+        "distance_to_corridor_m": 190.6,
+        "report_count": 1,
+        "case_ids": [
+          "101003417345"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc26",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 96 Victory Rd  Dorchester  MA  02122 (Catchbasin: 1), 2020-01-28 to 2020-01-28, 202 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2020-01-28",
+        "distance_to_corridor_m": 201.9,
+        "report_count": 1,
+        "case_ids": [
+          "101003180401"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc27",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Mill St & Victory Rd  Dorchester  MA (Catchbasin: 1), 2025-10-09 to 2025-10-09, 203 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-10-09",
+        "distance_to_corridor_m": 202.7,
+        "report_count": 1,
+        "case_ids": [
+          "101006318983"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc28",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 756 Gallivan Blvd  Dorchester  MA  02122 (Catchbasin: 1), 2021-04-05 to 2021-04-05, 204 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-04-05",
+        "distance_to_corridor_m": 204.1,
+        "report_count": 1,
+        "case_ids": [
+          "101003700234"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc29",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at INTERSECTION of Tolman St & Neponset Ave  Dorchester  MA (Catchbasin: 2), 2020-07-13 to 2020-08-06, 211 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2020-08-06",
+        "distance_to_corridor_m": 211.3,
+        "report_count": 2,
+        "case_ids": [
+          "101003346440",
+          "101003379991"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc30",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 27-29 Lawley St  Dorchester  MA  02122 (Roadway Flooding: 1), 2025-09-28 to 2025-09-28, 217 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-09-28",
+        "distance_to_corridor_m": 216.6,
+        "report_count": 1,
+        "case_ids": [
+          "101006305155"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc31",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 13 Clover St  Dorchester  MA  02122 (Roadway Flooding: 1), 2024-12-11 to 2024-12-11, 232 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-12-11",
+        "distance_to_corridor_m": 231.9,
+        "report_count": 1,
+        "case_ids": [
+          "101005817361"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc32",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at 11 Minot St  Dorchester  MA  02122 (Catchbasin: 2), 2018-11-27 to 2018-11-27, 232 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2018-11-27",
+        "distance_to_corridor_m": 232.2,
+        "report_count": 2,
+        "case_ids": [
+          "101002735737",
+          "101002735741"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101002735741",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 11 Minot St  Dorchester  MA  02122: \"Case Closed. Closed date : 2019-10-27 15:26:08.977 Case Referred to External Agency BWSC STATED NO FLOOD ON ARRIVAL  CLEARED DEBRIS FROM CB \"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2019-10-27",
+        "distance_to_corridor_m": 232.2,
+        "case_ids": [
+          "101002735741"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc33",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Carson St & Sydney St  Dorchester  MA (Catchbasin: 1), 2024-11-25 to 2024-11-25, 234 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-11-25",
+        "distance_to_corridor_m": 233.6,
+        "report_count": 1,
+        "case_ids": [
+          "101005792255"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc34",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Clover St & Minot St  Dorchester  MA (Catchbasin: 1), 2022-08-11 to 2022-08-11, 249 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2022-08-11",
+        "distance_to_corridor_m": 249.3,
+        "report_count": 1,
+        "case_ids": [
+          "101004423319"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc35",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of N Munroe Ter & Neponset Ave  Dorchester  MA (Catchbasin: 1), 2022-12-12 to 2022-12-12, 254 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2022-12-12",
+        "distance_to_corridor_m": 254.5,
+        "report_count": 1,
+        "case_ids": [
+          "101004598740"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc36",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 45 Coffey St  Dorchester  MA  02122 (Catchbasin: 1), 2018-08-08 to 2018-08-08, 271 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2018-08-08",
+        "distance_to_corridor_m": 271.0,
+        "report_count": 1,
+        "case_ids": [
+          "101002604828"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc37",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 9 S Munroe Ter  Dorchester  MA  02122 (Catchbasin: 1), 2023-05-11 to 2023-05-11, 275 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2023-05-11",
+        "distance_to_corridor_m": 274.7,
+        "report_count": 1,
+        "case_ids": [
+          "101004821384"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc38",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Everett St & Elm St  Dorchester  MA (Catchbasin: 1), 2020-10-22 to 2020-10-22, 285 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2020-10-22",
+        "distance_to_corridor_m": 285.1,
+        "report_count": 1,
+        "case_ids": [
+          "101003480235"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc39",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 20 Spring Garden St  Dorchester  MA  02125 (Catchbasin: 1), 2021-10-01 to 2021-10-01, 287 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-10-01",
+        "distance_to_corridor_m": 287.3,
+        "report_count": 1,
+        "case_ids": [
+          "101003983774"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc40",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 202 Savin Hill Ave  Dorchester  MA  02125 (Catchbasin: 1), 2021-05-10 to 2021-05-10, 294 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-05-10",
+        "distance_to_corridor_m": 294.1,
+        "report_count": 1,
+        "case_ids": [
+          "101003740230"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc41",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at 3 Spring Garden St  Dorchester  MA  02125 (Catchbasin: 2), 2021-03-03 to 2022-11-09, 298 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2022-11-09",
+        "distance_to_corridor_m": 297.8,
+        "report_count": 2,
+        "case_ids": [
+          "101003655765",
+          "101004555986"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc42",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 38 Houghton St  Dorchester  MA  02122 (Catchbasin: 1), 2022-12-08 to 2022-12-08, 312 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2022-12-08",
+        "distance_to_corridor_m": 311.8,
+        "report_count": 1,
+        "case_ids": [
+          "101004595484"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc43",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "2 311 report(s) at 164 Tenean St  Dorchester  MA  02122 (Catchbasin: 1, Roadway Flooding: 1), 2023-01-21 to 2025-09-28, 312 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-09-28",
+        "distance_to_corridor_m": 311.9,
+        "report_count": 2,
+        "case_ids": [
+          "101004638410",
+          "101006305163"
+        ]
+      },
+      {
+        "evidence_id": "ev-311ref-101004638410",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 164 Tenean St  Dorchester  MA  02122 mentions another agency: \"...Case Closed. Closed date : 2023-01-24 09:56:02.48 Per Mass DCR: Our staff took care of this yesterday afternoon....\"",
+        "limitations": [
+          "Referral text only; does not establish legal ownership."
+        ],
+        "observed_at": "2023-01-24",
+        "distance_to_corridor_m": 311.9,
+        "case_ids": [
+          "101004638410"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc44",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 70-86 Victory Rd  Dorchester  MA  02122 (Catchbasin: 1), 2019-02-18 to 2019-02-18, 312 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2019-02-18",
+        "distance_to_corridor_m": 312.5,
+        "report_count": 1,
+        "case_ids": [
+          "101002802627"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc45",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Water St & Taylor St  Dorchester  MA (Catchbasin: 1), 2021-08-02 to 2021-08-02, 320 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-08-02",
+        "distance_to_corridor_m": 319.8,
+        "report_count": 1,
+        "case_ids": [
+          "101003887793"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc46",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Old Colony Ave & Monsignor Dennis F O'Callaghan Way  South Boston  MA (Catchbasin: 1), 2024-02-05 to 2024-02-05, 336 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2024-02-05",
+        "distance_to_corridor_m": 336.4,
+        "report_count": 1,
+        "case_ids": [
+          "101005285409"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc47",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Ashland St & Elm St  Dorchester  MA (Catchbasin: 1), 2026-01-15 to 2026-01-15, 339 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2026-01-15",
+        "distance_to_corridor_m": 339.3,
+        "report_count": 1,
+        "case_ids": [
+          "101006447048"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006447048",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at INTERSECTION of Ashland St & Elm St  Dorchester  MA: \"CLEANED AND REMOVED SNOW AND ASPHALT FROM CB COVER. 2/9\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2026-02-13",
+        "distance_to_corridor_m": 339.3,
+        "case_ids": [
+          "101006447048"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc48",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 119-121 Sydney St  Dorchester  MA  02125 (Catchbasin: 1), 2019-02-06 to 2019-02-06, 349 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2019-02-06",
+        "distance_to_corridor_m": 349.1,
+        "report_count": 1,
+        "case_ids": [
+          "101002795089"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc49",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 70 Victory Rd  Dorchester  MA  02122 (Catchbasin: 1), 2025-10-20 to 2025-10-20, 349 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-10-20",
+        "distance_to_corridor_m": 349.2,
+        "report_count": 1,
+        "case_ids": [
+          "101006330407"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc50",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 240 Mount Vernon St  Dorchester  MA  02125 (Catchbasin: 1), 2025-11-27 to 2025-11-27, 351 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-11-27",
+        "distance_to_corridor_m": 351.2,
+        "report_count": 1,
+        "case_ids": [
+          "101006377805"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc51",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 3 Ericsson St  Dorchester  MA  02122 (Roadway Flooding: 1), 2025-09-13 to 2025-09-13, 353 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-09-13",
+        "distance_to_corridor_m": 352.7,
+        "report_count": 1,
+        "case_ids": [
+          "101006286346"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc52",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 20 Bowman St  Dorchester  MA  02122 (Catchbasin: 1), 2021-08-09 to 2021-08-09, 356 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2021-08-09",
+        "distance_to_corridor_m": 356.1,
+        "report_count": 1,
+        "case_ids": [
+          "101003896526"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc53",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "6 311 report(s) at 9 Ashland St  Dorchester  MA  02122 (Catchbasin: 6), 2025-01-16 to 2026-04-20, 364 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2026-04-20",
+        "distance_to_corridor_m": 364.2,
+        "report_count": 6,
+        "case_ids": [
+          "101005863091",
+          "101006209554",
+          "101006595559",
+          "101006610307",
+          "101006613669",
+          "101006617841"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101005863091",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 9 Ashland St  Dorchester  MA  02122: \"Cleaned and removed debris from cb. Cb taking water. 4/22\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2026-04-03",
+        "distance_to_corridor_m": 364.2,
+        "case_ids": [
+          "101005863091"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101006209554",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 9 Ashland St  Dorchester  MA  02122: \"CLEANED AND REMOVED DEBRIS FROM CB\u2019S. FLUSHED AND DISINFECTED CB\u2019S. 8/11\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2025-09-12",
+        "distance_to_corridor_m": 364.2,
+        "case_ids": [
+          "101006209554"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc54",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at INTERSECTION of Caspian Way & Rockmere St  Dorchester  MA (Catchbasin: 1), 2023-06-11 to 2023-06-11, 373 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2023-06-11",
+        "distance_to_corridor_m": 373.1,
+        "report_count": 1,
+        "case_ids": [
+          "101004875512"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc55",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 39 Crescent Ave  Dorchester  MA  02125 (Catchbasin: 1), 2025-03-19 to 2025-03-19, 382 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2025-03-19",
+        "distance_to_corridor_m": 381.5,
+        "report_count": 1,
+        "case_ids": [
+          "101005976888"
+        ]
+      },
+      {
+        "evidence_id": "ev-311note-101005976888",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "engineering_record",
+        "summary": "Closure note at 39 Crescent Ave  Dorchester  MA  02125: \"Cleaned cb. 3/24\"",
+        "limitations": [
+          "Free-text 311 closure note, not a formal inspection record.",
+          "Shows a maintenance visit at that location, not that it caused flooding on the corridor."
+        ],
+        "observed_at": "2025-04-24",
+        "distance_to_corridor_m": 381.5,
+        "case_ids": [
+          "101005976888"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc56",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 129 Neponset Ave  Dorchester  MA  02122 (Catchbasin: 1), 2019-04-22 to 2019-04-22, 387 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2019-04-22",
+        "distance_to_corridor_m": 387.2,
+        "report_count": 1,
+        "case_ids": [
+          "101002887384"
+        ]
+      },
+      {
+        "evidence_id": "ev-311-loc57",
+        "source_id": "BOS311",
+        "url": "https://data.boston.gov/dataset/311-service-requests",
+        "evidence_type": "observed_report",
+        "summary": "1 311 report(s) at 11 Monsignor Dennis F. O'Callaghan Way  South Boston  MA  02127 (Catchbasin: 1), 2022-05-21 to 2022-05-21, 391 m from corridor.",
+        "limitations": [
+          "Resident report; an allegation, not a confirmed blockage or cause.",
+          "Case open time is not necessarily the flood time."
+        ],
+        "observed_at": "2022-05-21",
+        "distance_to_corridor_m": 390.7,
+        "report_count": 1,
+        "case_ids": [
+          "101004311192"
+        ]
+      },
+      {
+        "evidence_id": "ev-cb-mapped",
+        "source_id": "BWSC.cb",
+        "url": "https://services5.arcgis.com/ji3WHeqN0AysEK5g/arcgis/rest/services/Hydrant_Search_Map1/FeatureServer/0",
+        "evidence_type": "gis_derived",
+        "summary": "230 catch basins mapped within 40 m of the corridor; owner codes as mapped: DCR 168, PRIV 44, BWSC 11, DOT 7.",
+        "limitations": [
+          "Mapped location and owner code only; not condition, cleaning history, or verified ownership."
+        ],
+        "observed_at": "2026-10-24",
+        "owner_counts": {
+          "DCR": 168,
+          "BWSC": 11,
+          "PRIV": 44,
+          "DOT": 7
+        }
+      },
+      {
+        "evidence_id": "ev-bwsc-model-scope",
+        "source_id": "BWSC.disc",
+        "url": "https://www.bwscstormviewer.com/disclaimers",
+        "evidence_type": "published_model",
+        "summary": "BWSC Inundation Model focuses on coastal flooding (overland flow and outfalls unable to discharge at high water); it does not characterise intense-rainfall or clogged-catch-basin flooding and includes only Commission-owned outfalls.",
+        "limitations": [
+          "Absence of modelled flooding is not proof of no flooding."
+        ]
+      },
+      {
+        "evidence_id": "ev-bwsc-adaptation",
+        "source_id": "BWSC.adapt",
+        "url": "https://www.bwscstormviewer.com/flood-modeling",
+        "evidence_type": "published_model",
+        "summary": "BWSC compares No Action, Shoreline Protection Only, and Shoreline Protection + Outfall Adaptation for a 2070 100-year tropical storm, separating barrier effects from outfall/tide-gate effects.",
+        "limitations": [
+          "Regional scenario set; non-Commission outfalls and MassDOT pump stations excluded; no corridor-specific benefit is claimed."
+        ]
+      }
+    ],
+    "possible_causes": [
+      {
+        "mechanism": "coastal_overland",
+        "label": "Coastal overtopping / overland inflow",
+        "description": "Sea water flows over the shoreline or through low openings and travels overland onto the road.",
+        "supporting_evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02",
+          "ev-morrissey-flood-pathways-present",
+          "ev-morrissey-central-section-gap"
+        ],
+        "counter_evidence_ids": [],
+        "unknowns": [
+          "Shoreline / edge elevations along the pathway (survey, vertical datum)",
+          "Which opening or low point admits the water",
+          "Whether the corridor floods before or after adjacent shoreline overtops"
+        ],
+        "status": "possible",
+        "does_not_prove": "A flood polygon over the road does not show where water enters at road scale.",
+        "status_basis": "Evidence is consistent with this cause but does not establish it.",
+        "context_evidence_ids": [
+          "ev-bwsc-adaptation",
+          "ev-bwsc-model-scope"
+        ]
+      },
+      {
+        "mechanism": "tidal_outfall_backwater",
+        "label": "High tide blocking stormwater discharge / backflow",
+        "description": "When the receiving water is high, outfalls cannot drain by gravity; stormwater backs up through the drain system and ponds on the street.",
+        "supporting_evidence_ids": [
+          "ev-morrissey-stormwater-high-tide"
+        ],
+        "counter_evidence_ids": [],
+        "unknowns": [
+          "Which outfall(s) serve the corridor inlets and who owns them",
+          "Outfall invert elevations vs tide levels (datum)",
+          "Whether tide gates / check valves exist and work",
+          "Timing of past flooding vs tide and rainfall"
+        ],
+        "status": "possible",
+        "does_not_prove": "High tide alone does not show that a specific outfall is failing.",
+        "status_basis": "Evidence is consistent with this cause but does not establish it.",
+        "context_evidence_ids": [
+          "ev-bwsc-adaptation",
+          "ev-bwsc-model-scope"
+        ]
+      },
+      {
+        "mechanism": "inlet_blockage",
+        "label": "Localized inlet obstruction / debris",
+        "description": "Catch basins or grates are blocked by debris, sediment, leaves or snow so water cannot enter the drain.",
+        "supporting_evidence_ids": [
+          "ev-311-loc01",
+          "ev-311-loc02",
+          "ev-311-loc03",
+          "ev-311-loc04",
+          "ev-311-loc05",
+          "ev-311note-101006331941",
+          "ev-311note-101006571012",
+          "ev-311note-101006062798",
+          "ev-311note-101006107672",
+          "ev-311note-101006126240",
+          "ev-311note-101005243252",
+          "ev-311note-101004859183",
+          "ev-311note-101006447048",
+          "ev-311note-101005863091",
+          "ev-311note-101006209554",
+          "ev-311note-101005976888"
+        ],
+        "counter_evidence_ids": [
+          "ev-311note-101005054598",
+          "ev-311note-101004516659",
+          "ev-311note-101002728622",
+          "ev-311note-101002735741"
+        ],
+        "unknowns": [
+          "Current condition of the corridor catch basins",
+          "Cleaning history from the owner",
+          "Whether reported ponding cleared after cleaning",
+          "Not represented in the BWSC Inundation Model (see ev-bwsc-model-scope)."
+        ],
+        "status": "evidence_supported",
+        "does_not_prove": "A 311 report is an allegation, not a confirmed blockage; the BWSC model does not represent individual clogged basins.",
+        "status_basis": "Site record or measurement at the corridor.",
+        "context_evidence_ids": [
+          "ev-bwsc-model-scope"
+        ]
+      },
+      {
+        "mechanism": "storm_drain_capacity",
+        "label": "Insufficient storm-drain or inlet capacity",
+        "description": "Inlets or pipes cannot carry the rainfall runoff reaching them even when clear.",
+        "supporting_evidence_ids": [],
+        "counter_evidence_ids": [],
+        "unknowns": [
+          "Pipe diameters, slopes and connectivity",
+          "Contributing catchment area",
+          "Design storm used for the existing system",
+          "Not represented in the BWSC Inundation Model (see ev-bwsc-model-scope)."
+        ],
+        "status": "unresolved",
+        "does_not_prove": "Road width or a flood footprint does not reveal underground capacity.",
+        "status_basis": "No discriminating evidence yet.",
+        "context_evidence_ids": [
+          "ev-bwsc-model-scope"
+        ]
+      },
+      {
+        "mechanism": "surface_grading",
+        "label": "Unfavorable street grading / ponding",
+        "description": "Surface low points or grades direct runoff to places without adequate inlets.",
+        "supporting_evidence_ids": [],
+        "counter_evidence_ids": [],
+        "unknowns": [
+          "Validated surface elevations along the corridor (from Person 2 / survey)",
+          "Inlet positions relative to low points"
+        ],
+        "status": "unresolved",
+        "does_not_prove": "A low point alone does not prove deficient drainage, and regrading can push water elsewhere.",
+        "status_basis": "No discriminating evidence yet.",
+        "context_evidence_ids": []
+      },
+      {
+        "mechanism": "multiple_or_unknown",
+        "label": "Multiple simultaneous causes / unresolved",
+        "description": "Rain, tide and coastal inflow may combine, or available evidence does not discriminate between causes.",
+        "supporting_evidence_ids": [],
+        "counter_evidence_ids": [],
+        "unknowns": [
+          "Event-by-event timing",
+          "Owner records for all drainage assets"
+        ],
+        "status": "possible",
+        "does_not_prove": "Never force one causal label just to populate an answer.",
+        "status_basis": "3 mechanisms have some supporting evidence; the evidence does not discriminate between them.",
+        "context_evidence_ids": []
+      }
+    ],
+    "assets_to_investigate": [
+      {
+        "asset_type": "road",
+        "asset_id": "rd_c4f2327f7c",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_cce6003ec9",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_95f4669a85",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_2522fae615",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_dc7a2de0d6",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_1a8e0c744d",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_b75b1ecf5c",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_7de4d64720",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_26cf46062a",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_c4a1a6fd87",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_765bf02c09",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_d7c3d2df3c",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_3f727c902b",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_6f209b7ae0",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_ad4faee506",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_5d4ab5b0ec",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_a08d801731",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_880954fa5a",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_fc530b9bd2",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_861edade3d",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_1495c06ddf",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_ca0e9573ad",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_2848fdec4f",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_ee1bfc856f",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_254694c59f",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_1575a102a4",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_ab2bcdf237",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_e223943b4b",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_30a44cac3d",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_301bdacfcd",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "road",
+        "asset_id": "rd_c5535e7658",
+        "role": "impacted_location",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "William T. Morrissey Boulevard (Person 1 corridor cor_dceb13cd52)",
+        "evidence_ids": [
+          "ev-flood-mcfrm-2050-1pct",
+          "ev-flood-usgs-2018-01-04",
+          "ev-flood-usgs-2018-03-02"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "16LCB107",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.314210,-71.046861 (2 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "17LCB207",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.321310,-71.050988 (3 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "17LCB284",
+        "role": "possible_cause_asset",
+        "owner": "BWSC",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.320668,-71.050277 (4 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "14LCB36",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.304422,-71.047433 (4 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "13LCB199",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.294576,-71.047282 (4 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "14LCB42",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.303269,-71.047974 (4 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "17LCB55",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.318545,-71.049365 (4 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "12LCB97",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.294081,-71.047292 (5 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "17LCB43",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.319717,-71.049905 (5 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "catch_basin",
+        "asset_id": "17LCB280",
+        "role": "possible_cause_asset",
+        "owner": "DCR",
+        "owner_status": "as_mapped_unverified",
+        "location_ref": "42.318930,-71.049558 (5 m from corridor)",
+        "evidence_ids": [
+          "ev-cb-mapped"
+        ]
+      },
+      {
+        "asset_type": "pipe",
+        "asset_id": null,
+        "role": "possible_cause_asset",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "Pipes connecting corridor inlets to their outfall (not public)",
+        "evidence_ids": [
+          "ev-bwsc-model-scope"
+        ]
+      },
+      {
+        "asset_type": "outfall",
+        "asset_id": null,
+        "role": "possible_cause_asset",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "Outfall(s) serving the corridor inlets: not identified",
+        "evidence_ids": [
+          "ev-bwsc-model-scope",
+          "ev-morrissey-stormwater-high-tide"
+        ]
+      },
+      {
+        "asset_type": "shoreline",
+        "asset_id": null,
+        "role": "possible_cause_asset",
+        "owner": null,
+        "owner_status": "unknown",
+        "location_ref": "Central section shoreline pathway, Bianculli Blvd to Freeport St (per S12)",
+        "evidence_ids": [
+          "ev-morrissey-central-section-gap"
+        ]
+      }
+    ],
+    "assets_note": "10 nearest of 230 mapped catch basins listed.",
+    "owner_note": "Owner codes for nearby mapped catch basins: DCR 168, BWSC 11, PRIV 44, DOT 7. Send maintenance requests to the confirmed owner; do not assume BWSC.",
+    "cause_matched_actions": [
+      {
+        "action_id": "survey_coastal_pathway",
+        "name": "Survey the shoreline edge and suspected entry pathway",
+        "kind": "investigation",
+        "applicable_if": "Coastal flood extent or documented pathway reaches the corridor.",
+        "could_fail": "Survey misses a pathway that only activates at higher water levels.",
+        "downstream_checks": [
+          "Confirm pathway against historical high-water marks (USGS 2018) where available"
+        ],
+        "asset_types": [
+          "shoreline"
+        ],
+        "source_ids": [
+          "S12",
+          "S07"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Survey extent (ft of shoreline)",
+          "Required vertical accuracy and datum"
+        ],
+        "mechanism": "coastal_overland",
+        "mechanism_status": "possible",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "identify_outfall_owner",
+        "name": "Trace corridor inlets to their outfall(s) and confirm owner",
+        "kind": "investigation",
+        "applicable_if": "Always, before any outfall or tide-gate proposal.",
+        "could_fail": "Records incomplete; non-Commission outfalls are outside the BWSC model.",
+        "downstream_checks": [
+          "Request drainage plans from the identified owner"
+        ],
+        "asset_types": [
+          "outfall",
+          "pipe"
+        ],
+        "source_ids": [
+          "BWSC.sys",
+          "BWSC.disc"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Owner records",
+          "Number of structures to trace"
+        ],
+        "mechanism": "tidal_outfall_backwater",
+        "mechanism_status": "possible",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "compare_flood_timing",
+        "name": "Compare reported flooding dates against tide and rainfall records",
+        "kind": "investigation",
+        "applicable_if": "Dated flood reports exist for the corridor.",
+        "could_fail": "Report dates are case-open times, not flood times; rainfall gauge may be distant.",
+        "downstream_checks": [
+          "NOAA tide gauge 8443970 for water level; NOAA Atlas 14 for rainfall frequency context"
+        ],
+        "asset_types": [
+          "catchment"
+        ],
+        "source_ids": [
+          "BOS311",
+          "S08",
+          "NOAA.A14"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "None (desk study)"
+        ],
+        "mechanism": "tidal_outfall_backwater",
+        "mechanism_status": "possible",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "inspect_clean_inlets",
+        "name": "Inspect and, if blocked, clean the corridor catch basins",
+        "kind": "maintenance",
+        "applicable_if": "Catch-basin reports or debris notes near the corridor.",
+        "could_fail": "Flooding persists after cleaning, pointing to capacity or tide causes instead.",
+        "downstream_checks": [
+          "Record whether ponding recurs after cleaning",
+          "Report to the asset owner, not by default to BWSC"
+        ],
+        "asset_types": [
+          "catch_basin"
+        ],
+        "source_ids": [
+          "BWSC.maint",
+          "BWSC.cb",
+          "BOS311"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Number of basins",
+          "Owner's maintenance contract rates"
+        ],
+        "mechanism": "inlet_blockage",
+        "mechanism_status": "evidence_supported",
+        "gate": "If inspection confirms blockage."
+      },
+      {
+        "action_id": "cctv_connecting_pipe",
+        "name": "CCTV the connecting pipe if cleaning does not restore drainage",
+        "kind": "investigation",
+        "applicable_if": "Basins clean but water still not draining.",
+        "could_fail": "Defect lies further downstream or at the outfall.",
+        "downstream_checks": [
+          "Follow to the next structure / outfall"
+        ],
+        "asset_types": [
+          "pipe"
+        ],
+        "source_ids": [
+          "BWSC.maint"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Pipe length to televise",
+          "Access / traffic management"
+        ],
+        "mechanism": "inlet_blockage",
+        "mechanism_status": "evidence_supported",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "owner_coordination",
+        "name": "Convene asset owners and collect drainage records before choosing a measure",
+        "kind": "investigation",
+        "applicable_if": "Two or more mechanisms are possible or ownership is split.",
+        "could_fail": "Records unavailable; responsibilities disputed.",
+        "downstream_checks": [
+          "Hydraulic modelling once records are assembled"
+        ],
+        "asset_types": [
+          "catchment"
+        ],
+        "source_ids": [
+          "BWSC.sys",
+          "S12"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Scope of modelling study"
+        ],
+        "mechanism": "multiple_or_unknown",
+        "mechanism_status": "possible",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "capacity_assessment",
+        "name": "Drainage capacity assessment (inlets and pipes) with the owner's records",
+        "kind": "investigation",
+        "applicable_if": "Ponding recurs with clean inlets during rainfall.",
+        "could_fail": "Records missing; tailwater (tide) controls rather than pipe size.",
+        "downstream_checks": [
+          "Use practitioner drainage guidance (MassDOT PDDG Ch. 8)",
+          "Check impacts away from the site"
+        ],
+        "asset_types": [
+          "catch_basin",
+          "pipe",
+          "catchment"
+        ],
+        "source_ids": [
+          "PDDG8",
+          "NOAA.A14"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Catchment area",
+          "Pipe inventory",
+          "Design storm"
+        ],
+        "mechanism": "storm_drain_capacity",
+        "mechanism_status": "unresolved",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "grading_survey",
+        "name": "Topographic survey of gutters, low points and inlet positions",
+        "kind": "investigation",
+        "applicable_if": "Ponding is localized to a repeatable spot.",
+        "could_fail": "LiDAR resolution insufficient at curb scale.",
+        "downstream_checks": [
+          "Check where redirected water would go"
+        ],
+        "asset_types": [
+          "road",
+          "catch_basin"
+        ],
+        "source_ids": [
+          "S09"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Survey length",
+          "Required accuracy"
+        ],
+        "mechanism": "surface_grading",
+        "mechanism_status": "unresolved",
+        "gate": "First-line investigation."
+      },
+      {
+        "action_id": "coastal_barrier_options",
+        "name": "Evaluate continuous coastal protection (berm, wall, raised road) only where overland entry is demonstrated",
+        "kind": "capital",
+        "applicable_if": "Survey shows overland entry along a definable alignment that ties into high ground.",
+        "could_fail": "Water enters around the ends; outfalls behind the barrier still back up at high tide (see BWSC adaptation scenarios).",
+        "downstream_checks": [
+          "Check drainage behind the barrier at high tide",
+          "Check displaced water to neighbours"
+        ],
+        "asset_types": [
+          "shoreline",
+          "road"
+        ],
+        "source_ids": [
+          "S11",
+          "BWSC.adapt"
+        ],
+        "related_method_ids": [
+          "vegetated_berm",
+          "raised_roadway",
+          "seawall_extension"
+        ],
+        "cost_status": "published_example_available",
+        "precedent_ids": [
+          "crdg-2018-berm-2030",
+          "crdg-2018-raised-road-opt1",
+          "crdg-2018-seawall"
+        ],
+        "mechanism": "coastal_overland",
+        "mechanism_status": "possible",
+        "gate": "Only after checks confirm this mechanism."
+      },
+      {
+        "action_id": "outfall_adaptation_review",
+        "name": "Review tide gate / backflow control, storage or pumping at the outfall",
+        "kind": "capital",
+        "applicable_if": "Outfall is identified and tide-constrained discharge is shown by timing or modelling.",
+        "could_fail": "Storage or pumping undersized; gate closed during rain with no relief; power failure.",
+        "downstream_checks": [
+          "Upstream ponding when the gate is closed",
+          "Owner coordination (DCR/MassDOT/BWSC/private)"
+        ],
+        "asset_types": [
+          "outfall",
+          "pump"
+        ],
+        "source_ids": [
+          "BWSC.adapt",
+          "S12"
+        ],
+        "related_method_ids": [
+          "drainage_backflow"
+        ],
+        "cost_status": "cost_estimate_unavailable",
+        "quote_inputs": [
+          "Outfall diameter and invert",
+          "Design tide and storm",
+          "Required storage volume or pump rate"
+        ],
+        "mechanism": "tidal_outfall_backwater",
+        "mechanism_status": "possible",
+        "gate": "Only after checks confirm this mechanism."
+      }
+    ],
+    "recommended_next_checks": [
+      "Survey the shoreline edge and suspected entry pathway",
+      "Trace corridor inlets to their outfall(s) and confirm owner",
+      "Compare reported flooding dates against tide and rainfall records",
+      "Inspect and, if blocked, clean the corridor catch basins",
+      "CCTV the connecting pipe if cleaning does not restore drainage",
+      "Convene asset owners and collect drainage records before choosing a measure",
+      "Drainage capacity assessment (inlets and pipes) with the owner's records",
+      "Topographic survey of gutters, low points and inlet positions"
+    ],
+    "intervention_caveats": [
+      "Do not choose road elevation from flood exposure or network priority alone; it addresses coastal overland inflow only.",
+      "Drainage or maintenance actions have no published cost example here: cost_estimate_unavailable until quoted.",
+      "2018 barrier/raised-road sample costs apply only to coastal capital options, never to catch-basin cleaning or drainage retrofits.",
+      "A drainage fix does not change road exposure, property-loss projections, or network ranking without validated before/after flood analysis.",
+      "No avoided property damage is claimed."
+    ],
+    "limitations": [
+      "Hypotheses to investigate, not a hydraulic diagnosis.",
+      "Statuses are evidence categories, not probabilities.",
+      "311 data are resident reports with closure notes; catch basin data are mapped attributes, not condition.",
+      "Pipe network, outfall locations, inverts and maintenance logs were not publicly available as data."
+    ],
+    "engineer_review_required": true,
+    "data_access": {
+      "catch_basins": "obtained (BWSC FeatureServer)",
+      "reports_311": "obtained (data.boston.gov CKAN)",
+      "pipes_outfalls": "not_available",
+      "maintenance_logs": "not_available",
+      "bwsc_model_layers": "not_available (viewer only)",
+      "retrieved_at": "2026-10-24"
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+ "scenario_id": "usgs-2018-01-04",
+ "closed_roads": 103,
+ "loss": 73.02983013684741,
+ "journeys_disrupted": [
+  "J_columbia_point"
+ ],
+ "unreachable": [],
+ "baseline_times_s": {
+  "J_savin_hill": 341.74000283849676,
+  "J_fields_corner": 429.7130976455169,
+  "J_south_boston": 284.298011821356,
+  "J_seaport": 186.357572332499,
+  "J_east_boston": 299.0895116515449,
+  "J_charlestown": 213.76965342441991,
+  "J_roxbury": 99.16603196544368,
+  "J_jamaica_plain": 351.1669598441247,
+  "J_mattapan": 738.8122874736733,
+  "J_hyde_park": 828.0523838002323,
+  "J_roslindale": 611.1829534435145,
+  "J_brighton": 473.9301526866788,
+  "J_columbia_point": 320.51057585793825
+ },
+ "times_s": {
+  "J_savin_hill": 341.74000283849676,
+  "J_fields_corner": 429.7130976455169,
+  "J_south_boston": 284.298011821356,
+  "J_seaport": 186.357572332499,
+  "J_east_boston": 299.0895116515449,
+  "J_charlestown": 213.76965342441991,
+  "J_roxbury": 99.16603196544368,
+  "J_jamaica_plain": 351.1669598441247,
+  "J_mattapan": 738.8122874736733,
+  "J_hyde_park": 828.0523838002323,
+  "J_roslindale": 611.1829534435145,
+  "J_brighton": 473.9301526866788,
+  "J_columbia_point": 386.42197489841425
+ },
+ "corridors": {
+  "cor_6dece7a926": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 22,
+   "improved_journeys": []
+  },
+  "cor_dceb13cd52": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 10,
+   "improved_journeys": []
+  },
+  "cor_87278ad9ba": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 12,
+   "improved_journeys": []
+  },
+  "cor_dbafe98e75": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "cor_5a83bdd655": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "cor_70c46ca19f": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "cor_d2f9fde87c": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "p3c_freeport-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 7,
+   "improved_journeys": []
+  },
+  "p3c_william-t-morrissey-boulevard": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 22,
+   "improved_journeys": []
+  },
+  "p3c_e-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_von-hillern-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_conley-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_victory-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 5,
+   "improved_journeys": []
+  },
+  "p3c_dorchester-avenue": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 6,
+   "improved_journeys": []
+  },
+  "p3c_damrell-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_west-ninth-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_ocean-view-drive": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_general-casimir-pulaski-skyway": {
+   "marginal_loss_recovered": 61.599693915485574,
+   "standalone_loss": 64.76051391312345,
+   "closed_roads_in_corridor": 5,
+   "improved_journeys": [
+    "J_columbia_point"
+   ]
+  },
+  "p3c_baxter-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_old-colony-avenue": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 5,
+   "improved_journeys": []
+  },
+  "p3c_earl-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_boston-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_widett-circle": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_denny-street-springdale-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_buttonwood-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_popes-hill-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_locust-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_norwood-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_alger-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_old-colony-terrace": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_tenean-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_west-eighth-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_freeport-street-tenean-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_south-boston-bypass-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_ewer-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_washburn-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_oyster-bay-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_southampton-street": {
+   "marginal_loss_recovered": 8.269316223723962,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": [
+    "J_columbia_point"
+   ]
+  },
+  "p3c_springdale-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_unnamed-rd_cb2f74868f": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 11.430136221361833,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3b_J_columbia_point": {
+   "marginal_loss_recovered": 73.02983013684741,
+   "standalone_loss": 64.76051391312345,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": [
+    "J_columbia_point"
+   ]
+  }
+ }
+}

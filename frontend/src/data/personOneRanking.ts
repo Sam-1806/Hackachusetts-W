@@ -3,6 +3,7 @@ import type {
   HistoricalRoadEvent,
   RankingRow,
 } from '../domain/contracts';
+import { REAL_CONTEXT } from './demoContext.real';
 
 export type ExplainedRanking = RankingRow & {
   score_breakdown: {
@@ -85,7 +86,8 @@ export function rankPersonOne(
   events: HistoricalRoadEvent[]
 ): ExplainedRanking[] {
   const scored = rows.map((row) => {
-    const context = DEMO_CONTEXT[row.corridor_id] ?? {
+    // Computed values (Person 3) replace the illustrative DEMO_CONTEXT; DEMO_CONTEXT stays as a fallback.
+    const context = REAL_CONTEXT[row.corridor_id] ?? DEMO_CONTEXT[row.corridor_id] ?? {
       accessPoints: 0,
       propertyPoints: 0,
       accessNote: 'Critical-access assessment unavailable.',
@@ -102,8 +104,8 @@ export function rankPersonOne(
     const floodPoints =
       events.length > 0
         ? Math.round(
-            (matchingEvents.length / events.length) * 30
-          )
+          (matchingEvents.length / events.length) * 30
+        )
         : 0;
 
     const total =
@@ -122,17 +124,18 @@ export function rankPersonOne(
       },
       explanation: {
         flood:
-  row.corridor_id === 'fixture:morrissey-boulevard'
-    ? 'Since 2006, Boston Harbor has exceeded a water-level threshold associated with flooding on Morrissey Boulevard on 167 days, including 12 more severe high-water events. These are harbor-level exceedances, not 167 confirmed road closures. Historical flooding and repeated road closures are documented.'
-    : `${matchingEvents.length} of ${events.length} loaded historical flood events overlap this corridor: ${
-        matchingEvents.map((event) => event.date_label).join(', ') || 'none'
-      }. This is not a complete flood-frequency record.`,
+          row.corridor_id === 'fixture:morrissey-boulevard'
+            ? 'Since 2006, Boston Harbor has exceeded a water-level threshold associated with flooding on Morrissey Boulevard on 167 days, including 12 more severe high-water events. These are harbor-level exceedances, not 167 confirmed road closures. Historical flooding and repeated road closures are documented.'
+            : `${matchingEvents.length} of ${events.length} loaded historical flood events overlap this corridor: ${matchingEvents.map((event) => event.date_label).join(', ') || 'none'
+            }. This is not a complete flood-frequency record.`,
         access: context.accessNote,
         property: context.propertyNote,
       },
       assumptions: [
-        'Demo weighting: flood 30%, critical access 45%, property exposure 25%.',
-        'Critical-access and property scores are illustrative inputs.',
+        'Weighting: flood 30%, critical access 45%, property exposure 25%.',
+        REAL_CONTEXT[row.corridor_id]
+          ? 'Access = network accessibility loss on the OSM graph (assumed journeys, extent overlap treated as closure); property = building footprints near the corridor inside the MC-FRM 2050 extent. Both scaled to the max among ranked corridors.'
+          : 'Critical-access and property scores are illustrative inputs.',
         'Flood exposure does not establish road closure or damage.',
       ],
     };

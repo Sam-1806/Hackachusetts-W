@@ -1,0 +1,536 @@
+{
+ "graph_version": "osm-2026-10-24-v0.1",
+ "penalty_s": 3600.0,
+ "threshold_s": 600.0,
+ "threshold_note": "ASSUMED planning threshold, not an official standard",
+ "journeys": [
+  {
+   "journey_id": "J_savin_hill",
+   "label": "Savin Hill / Dorchester Bay -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.053,
+    "lat": 42.311,
+    "name": "Savin Hill / Dorchester Bay"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.108,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Dorchester (123056) from civic neighborhoods CSV, split equally across 3 origins in that neighborhood (ASSUMED); rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 29.0,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_fields_corner",
+   "label": "Dorchester (Fields Corner) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0618,
+    "lat": 42.3005,
+    "name": "Dorchester (Fields Corner)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.108,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Dorchester (123056) from civic neighborhoods CSV, split equally across 3 origins in that neighborhood (ASSUMED); rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 61.4,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_south_boston",
+   "label": "South Boston (Broadway) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0394,
+    "lat": 42.3374,
+    "name": "South Boston (Broadway)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.1049,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of South Boston (40904) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 18.9,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_seaport",
+   "label": "Seaport / Fort Point -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.044,
+    "lat": 42.352,
+    "name": "Seaport / Fort Point"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 0.2239,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of South Boston Waterfront (8289) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 23.4,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_east_boston",
+   "label": "East Boston (Maverick Sq) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0395,
+    "lat": 42.3691,
+    "name": "East Boston (Maverick Sq)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.2667,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of East Boston (46892) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 16.0,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_charlestown",
+   "label": "Charlestown (City Sq) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0613,
+    "lat": 42.3744,
+    "name": "Charlestown (City Sq)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 0.5195,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Charlestown (19232) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 43.5,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_roxbury",
+   "label": "Roxbury (Dudley Sq) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0836,
+    "lat": 42.3294,
+    "name": "Roxbury (Dudley Sq)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.5343,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Roxbury (56800) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 20.0,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_jamaica_plain",
+   "label": "Jamaica Plain (Centre St) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.114,
+    "lat": 42.31,
+    "name": "Jamaica Plain (Centre St)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.1602,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Jamaica Plain (42949) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 39.3,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_mattapan",
+   "label": "Mattapan Sq -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0924,
+    "lat": 42.2677,
+    "name": "Mattapan Sq"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 0.6597,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Mattapan (24424) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 69.5,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_hyde_park",
+   "label": "Hyde Park (Logan Sq) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.124,
+    "lat": 42.2552,
+    "name": "Hyde Park (Logan Sq)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 0.9041,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Hyde Park (33469) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 22.5,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_roslindale",
+   "label": "Roslindale Sq -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.1295,
+    "lat": 42.2866,
+    "name": "Roslindale Sq"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 0.7936,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Roslindale (29378) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 52.3,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_brighton",
+   "label": "Brighton Center -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.164,
+    "lat": 42.3484,
+    "name": "Brighton Center"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.5092,
+   "data_status": "assumed",
+   "note": "Assumed neighborhood point and EQUAL demand weight. Replace with population-weighted origins (civic ZIP + polygons).",
+   "weight_basis": "2025 population of Brighton (55869) from civic neighborhoods CSV; rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 95.9,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  },
+  {
+   "journey_id": "J_columbia_point",
+   "label": "Columbia Point (UMass Boston area) -> nearest emergency department",
+   "kind": "community_to_emergency_department",
+   "origin": {
+    "lon": -71.0386,
+    "lat": 42.3134,
+    "name": "Columbia Point (UMass Boston area)"
+   },
+   "destination_ids": [
+    "H_BMC",
+    "H_MGH",
+    "H_BWH",
+    "H_BIDMC",
+    "H_TUFTS"
+   ],
+   "weight": 1.108,
+   "data_status": "assumed",
+   "note": "Assumed point, equal weight.",
+   "weight_basis": "2025 population of Dorchester (123056) from civic neighborhoods CSV, split equally across 3 origins in that neighborhood (ASSUMED); rescaled so mean weight over origins = 1. Origin point is one assumed location per neighborhood.",
+   "origin_snap_m": 284.0,
+   "dest_snap_m": [
+    102.0,
+    22.4,
+    80.4,
+    34.7,
+    33.5
+   ]
+  }
+ ],
+ "baseline_times_s": {
+  "J_savin_hill": 338.1504222357554,
+  "J_fields_corner": 429.7130976455169,
+  "J_south_boston": 281.3962665185922,
+  "J_seaport": 186.35757233249896,
+  "J_east_boston": 298.21735196916615,
+  "J_charlestown": 213.17145890368093,
+  "J_roxbury": 99.16603196544368,
+  "J_jamaica_plain": 351.37073968390007,
+  "J_mattapan": 737.7039174221104,
+  "J_hyde_park": 828.2561636400077,
+  "J_roslindale": 611.38673328329,
+  "J_brighton": 470.3842493687652,
+  "J_columbia_point": 316.50130542410756
+ },
+ "scenarios": {
+  "mock-dayboulevard-seaportboulevard-closure": {
+   "loss": 2.6177277219494464,
+   "delay": 2.6177277219494464,
+   "unreachable_weight": 0.0,
+   "closed_roads": 48,
+   "journeys_disrupted": [
+    "J_seaport"
+   ],
+   "weight": 1.0,
+   "journeys_crossing_threshold": [],
+   "threshold_s": 600.0,
+   "max_pct_increase": 6.3,
+   "times_s": {
+    "J_savin_hill": 338.1504222357554,
+    "J_fields_corner": 429.7130976455169,
+    "J_south_boston": 281.3962665185922,
+    "J_seaport": 198.04907622686898,
+    "J_east_boston": 298.21735196916615,
+    "J_charlestown": 213.17145890368093,
+    "J_roxbury": 99.16603196544368,
+    "J_jamaica_plain": 351.37073968390007,
+    "J_mattapan": 737.7039174221104,
+    "J_hyde_park": 828.2561636400077,
+    "J_roslindale": 611.38673328329,
+    "J_brighton": 470.3842493687652,
+    "J_columbia_point": 316.50130542410756
+   }
+  }
+ },
+ "scenario_id_join": {
+  "mock-dayboulevard-seaportboulevard-closure": {
+   "affected_in_file": 48,
+   "ids_not_in_network": 0,
+   "file_graph_version": "osm-2026-10-24-v0.1",
+   "network_graph_version": "osm-2026-10-24-v0.1"
+  }
+ },
+ "corridors": {
+  "cor_dbafe98e75": {
+   "corridor_id": "cor_dbafe98e75",
+   "road_ids": [
+    "rd_0f37f63ca7",
+    "rd_29559aad50",
+    "rd_2a6b4afec6",
+    "rd_2f71686a27",
+    "rd_3aaf1184d6",
+    "rd_3accc471a0",
+    "rd_3d5b552d6e",
+    "rd_5a93592ff0",
+    "rd_62e796a159",
+    "rd_7d2f227591",
+    "rd_81ae32fd6b",
+    "rd_87fd4db272",
+    "rd_9da687bdde",
+    "rd_a8ddce73fc",
+    "rd_ab8676922b",
+    "rd_c3a6d9d49f",
+    "rd_ea8f1c8673",
+    "rd_ed2b7a0cae"
+   ],
+   "name": "Seaport Boulevard",
+   "n_segments": 18,
+   "length_km": 2.15,
+   "kind": "connected",
+   "label": "Seaport Boulevard (18 segments, 2.1 km)",
+   "per_scenario": {
+    "mock-dayboulevard-seaportboulevard-closure": {
+     "marginal_loss_recovered": 2.6177277219494464,
+     "standalone_loss": 2.6177277219494464,
+     "standalone_unreachable_weight": 0.0,
+     "closed_roads_in_corridor": 18,
+     "improved_journeys": [
+      "J_seaport"
+     ],
+     "threshold_crossings_recovered": [],
+     "max_pct_increase_recovered": 6.3,
+     "evidence": [
+      "Seaport / Fort Point -> nearest emergency department: 186 s baseline -> 198 s with mock-dayboulevard-seaportboulevard-closure closures (+6%); 186 s if this corridor stays passable (recovers 12 s)."
+     ]
+    }
+   }
+  },
+  "cor_5a83bdd655": {
+   "corridor_id": "cor_5a83bdd655",
+   "road_ids": [
+    "rd_021d3d469a",
+    "rd_0811903f4a",
+    "rd_099d653238",
+    "rd_142c2e9cad",
+    "rd_1600922579",
+    "rd_1cace32435",
+    "rd_27571dfaaa",
+    "rd_276c43e63f",
+    "rd_29a4bf2192",
+    "rd_366df6dd0a",
+    "rd_44c332fff7",
+    "rd_4dfc078c5e",
+    "rd_594083af97",
+    "rd_5abde54a71",
+    "rd_615970145c",
+    "rd_64d03e03f5",
+    "rd_73612336be",
+    "rd_7ae19b1307",
+    "rd_86a319bd89",
+    "rd_94600afaad",
+    "rd_95afed9cc5",
+    "rd_9c7d41080f",
+    "rd_adca22c04e",
+    "rd_b3b0ddb087",
+    "rd_b647849c21",
+    "rd_bcf780c450",
+    "rd_de6219ee73",
+    "rd_e11ee96c14",
+    "rd_e4215d2811",
+    "rd_f5c9e58af7"
+   ],
+   "name": "William J. Day Boulevard",
+   "n_segments": 30,
+   "length_km": 4.76,
+   "kind": "connected",
+   "label": "William J. Day Boulevard (30 segments, 4.8 km)",
+   "per_scenario": {
+    "mock-dayboulevard-seaportboulevard-closure": {
+     "marginal_loss_recovered": 0.0,
+     "standalone_loss": 0.0,
+     "standalone_unreachable_weight": 0.0,
+     "closed_roads_in_corridor": 30,
+     "improved_journeys": [],
+     "threshold_crossings_recovered": [],
+     "max_pct_increase_recovered": 0.0,
+     "evidence": []
+    }
+   }
+  }
+ }
+}

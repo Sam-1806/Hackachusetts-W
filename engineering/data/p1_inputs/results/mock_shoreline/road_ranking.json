@@ -1,0 +1,122 @@
+{
+ "scenario_set_id": "mock-dayboulevard-seaportboulevard-closure",
+ "graph_version": "osm-2026-10-24-v0.1",
+ "ranking": [
+  {
+   "corridor_id": "cor_dbafe98e75",
+   "road_ids": [
+    "rd_0f37f63ca7",
+    "rd_29559aad50",
+    "rd_2a6b4afec6",
+    "rd_2f71686a27",
+    "rd_3aaf1184d6",
+    "rd_3accc471a0",
+    "rd_3d5b552d6e",
+    "rd_5a93592ff0",
+    "rd_62e796a159",
+    "rd_7d2f227591",
+    "rd_81ae32fd6b",
+    "rd_87fd4db272",
+    "rd_9da687bdde",
+    "rd_a8ddce73fc",
+    "rd_ab8676922b",
+    "rd_c3a6d9d49f",
+    "rd_ea8f1c8673",
+    "rd_ed2b7a0cae"
+   ],
+   "label": "Seaport Boulevard (18 segments, 2.1 km)",
+   "priority_rank": 1,
+   "impact_value": 2.6,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "affected_journey_ids": [
+    "J_seaport"
+   ],
+   "detour_or_disconnection_evidence": [
+    "Seaport / Fort Point -> nearest emergency department: 186 s baseline -> 198 s with mock-dayboulevard-seaportboulevard-closure closures (+6%); 186 s if this corridor stays passable (recovers 12 s)."
+   ],
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness.",
+    "Scenario closures mean 'potentially closed', not verified impassable. Travel times are posted-speed estimates, no traffic.",
+    "Threshold crossings use an ASSUMED 600 s (10 min) planning threshold, not an official standard."
+   ],
+   "provenance": {
+    "origin": "mock",
+    "source_id": "P1-NETWORK-ENGINE",
+    "source_name": "FloodRoute network accessibility engine (Person 1)",
+    "source_url": "analysis/network/engine.py",
+    "retrieved_at": "2026-10-24T22:08:57Z",
+    "period": "mock-dayboulevard-seaportboulevard-closure",
+    "limitations": [
+     "Closure set is MOCK, not a flood map.",
+     "Relative criticality for investigation, not a construction priority.",
+     "Assumed origins/destinations and equal demand weights unless replaced with sourced data.",
+     "Property damage, hardship and hydraulic effects are not part of this metric."
+    ]
+   }
+  },
+  {
+   "corridor_id": "cor_5a83bdd655",
+   "road_ids": [
+    "rd_021d3d469a",
+    "rd_0811903f4a",
+    "rd_099d653238",
+    "rd_142c2e9cad",
+    "rd_1600922579",
+    "rd_1cace32435",
+    "rd_27571dfaaa",
+    "rd_276c43e63f",
+    "rd_29a4bf2192",
+    "rd_366df6dd0a",
+    "rd_44c332fff7",
+    "rd_4dfc078c5e",
+    "rd_594083af97",
+    "rd_5abde54a71",
+    "rd_615970145c",
+    "rd_64d03e03f5",
+    "rd_73612336be",
+    "rd_7ae19b1307",
+    "rd_86a319bd89",
+    "rd_94600afaad",
+    "rd_95afed9cc5",
+    "rd_9c7d41080f",
+    "rd_adca22c04e",
+    "rd_b3b0ddb087",
+    "rd_b647849c21",
+    "rd_bcf780c450",
+    "rd_de6219ee73",
+    "rd_e11ee96c14",
+    "rd_e4215d2811",
+    "rd_f5c9e58af7"
+   ],
+   "label": "William J. Day Boulevard (30 segments, 4.8 km)",
+   "priority_rank": 2,
+   "impact_value": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "affected_journey_ids": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness.",
+    "Scenario closures mean 'potentially closed', not verified impassable. Travel times are posted-speed estimates, no traffic.",
+    "Threshold crossings use an ASSUMED 600 s (10 min) planning threshold, not an official standard."
+   ],
+   "provenance": {
+    "origin": "mock",
+    "source_id": "P1-NETWORK-ENGINE",
+    "source_name": "FloodRoute network accessibility engine (Person 1)",
+    "source_url": "analysis/network/engine.py",
+    "retrieved_at": "2026-10-24T22:08:57Z",
+    "period": "mock-dayboulevard-seaportboulevard-closure",
+    "limitations": [
+     "Closure set is MOCK, not a flood map.",
+     "Relative criticality for investigation, not a construction priority.",
+     "Assumed origins/destinations and equal demand weights unless replaced with sourced data.",
+     "Property damage, hardship and hydraulic effects are not part of this metric."
+    ]
+   }
+  }
+ ]
+}

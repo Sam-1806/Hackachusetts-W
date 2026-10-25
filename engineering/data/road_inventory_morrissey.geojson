@@ -1,0 +1,3906 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "MOUNT VERNON STREET",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "25",
+    "ROW_Width": "52",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.01389738
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04728029930635,
+      42.313679812497085
+     ],
+     [
+      -71.04702531512366,
+      42.313611042946214
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "MOUNT VERNON STREET",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "1",
+    "Surface_Wd": "0",
+    "ROW_Width": "52",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": " ",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.05016867
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04924843080381,
+      42.317433358365044
+     ],
+     [
+      -71.04952197295007,
+      42.3178817675963
+     ],
+     [
+      -71.04964694693025,
+      42.318097317418896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "MOUNT VERNON STREET",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "3",
+    "Surface_Wd": "25",
+    "ROW_Width": "52",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.21552807
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04964694693025,
+      42.318097317418896
+     ],
+     [
+      -71.04986240755225,
+      42.31846893152073
+     ],
+     [
+      -71.05004752356534,
+      42.318797629190264
+     ],
+     [
+      -71.05013187036913,
+      42.318974315440514
+     ],
+     [
+      -71.05030855777814,
+      42.31930341294837
+     ],
+     [
+      -71.05060793946808,
+      42.3197390506429
+     ],
+     [
+      -71.05089727167673,
+      42.320240868745344
+     ],
+     [
+      -71.0509169665495,
+      42.320277812721464
+     ],
+     [
+      -71.05121074292279,
+      42.320783399479666
+     ],
+     [
+      -71.05120043494179,
+      42.32084694308042
+     ],
+     [
+      -71.05118195789123,
+      42.32091326659344
+     ],
+     [
+      -71.05115535455589,
+      42.32094917696098
+     ],
+     [
+      -71.05113552045444,
+      42.32096597960149
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "MOUNT VERNON STREET",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "25",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.03167222
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04694310493505,
+      42.31419242407179
+     ],
+     [
+      -71.04702014083128,
+      42.31464773858216
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "MOUNT VERNON STREET",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "25",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 2.43e-06
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04702014083128,
+      42.31464773858216
+     ],
+     [
+      -71.04702014678617,
+      42.314647774329494
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "MOUNT VERNON STREET",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "25",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.05239236
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04702014678617,
+      42.314647774329494
+     ],
+     [
+      -71.04702186884906,
+      42.314657955516886
+     ],
+     [
+      -71.04702411980729,
+      42.31467125483553
+     ],
+     [
+      -71.04707289779833,
+      42.31474697894829
+     ],
+     [
+      -71.04744280273921,
+      42.31528692678669
+     ],
+     [
+      -71.04746967679762,
+      42.31531910575831
+     ],
+     [
+      -71.04747540209645,
+      42.31532577525256
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "MOUNT VERNON STREET",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "25",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.17053635
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04747540209645,
+      42.31532577525256
+     ],
+     [
+      -71.04763613266725,
+      42.315513043507714
+     ],
+     [
+      -71.0477714138158,
+      42.31569701698139
+     ],
+     [
+      -71.04790664400262,
+      42.31588823627446
+     ],
+     [
+      -71.04801590374622,
+      42.3160721070767
+     ],
+     [
+      -71.04809296094615,
+      42.31621240628197
+     ],
+     [
+      -71.04840119175981,
+      42.31677118714349
+     ],
+     [
+      -71.04882270272401,
+      42.31754028851231
+     ],
+     [
+      -71.04883978430632,
+      42.31757476458101
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "MOUNT VERNON STREET",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "25",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.10220112
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04883978430632,
+      42.31757476458101
+     ],
+     [
+      -71.04898359076479,
+      42.31786502548154
+     ],
+     [
+      -71.04931315379359,
+      42.318565178734104
+     ],
+     [
+      -71.04953881704732,
+      42.318961076094325
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "MOUNT VERNON STREET",
+    "Rd_Seg_ID": " ",
+    "Num_Lanes": "2",
+    "Surface_Wd": "50",
+    "ROW_Width": "60",
+    "Med_Width": "0",
+    "AADT": " ",
+    "AADT_Year": " ",
+    "Surface_Tp": "6",
+    "F_Class": "0",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.11357593
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04953881704732,
+      42.318961076094325
+     ],
+     [
+      -71.04958512422301,
+      42.31904231273515
+     ],
+     [
+      -71.04995098388976,
+      42.31973406470922
+     ],
+     [
+      -71.05000801356663,
+      42.3199466951837
+     ],
+     [
+      -71.0500358625157,
+      42.320147143632155
+     ],
+     [
+      -71.05002601733644,
+      42.32054299920905
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63144",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "99",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.14199161
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0423090948349,
+      42.286872818175304
+     ],
+     [
+      -71.04240970260558,
+      42.28731960916735
+     ],
+     [
+      -71.04244443897586,
+      42.28742931225228
+     ],
+     [
+      -71.04250354521523,
+      42.28756955393826
+     ],
+     [
+      -71.04259818831393,
+      42.28770790427316
+     ],
+     [
+      -71.04270723178392,
+      42.28783032588359
+     ],
+     [
+      -71.04283916557111,
+      42.2879518289873
+     ],
+     [
+      -71.0431063664619,
+      42.28820371678162
+     ],
+     [
+      -71.04329031117653,
+      42.28836607793237
+     ],
+     [
+      -71.0435797321777,
+      42.28863900799711
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63140",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.05455243
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0435797321777,
+      42.28863900799711
+     ],
+     [
+      -71.04359553391323,
+      42.28865426389491
+     ],
+     [
+      -71.04377859484187,
+      42.28883280029073
+     ],
+     [
+      -71.04407919919865,
+      42.28911721439897
+     ],
+     [
+      -71.04423404171007,
+      42.2892592732168
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63139",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.05420446
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04423404171007,
+      42.2892592732168
+     ],
+     [
+      -71.0443957946761,
+      42.28940393136098
+     ],
+     [
+      -71.04458881187507,
+      42.28953585714699
+     ],
+     [
+      -71.0448232825422,
+      42.289683375056526
+     ],
+     [
+      -71.0450180842115,
+      42.28977628263506
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63138",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.03493845
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0450180842115,
+      42.28977628263506
+     ],
+     [
+      -71.04552830599533,
+      42.290067524496145
+     ],
+     [
+      -71.0455573714202,
+      42.29008339495346
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "53347",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "105",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.17328411
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0455573714202,
+      42.29008339495346
+     ],
+     [
+      -71.04576382678576,
+      42.29019731623925
+     ],
+     [
+      -71.04608533547847,
+      42.290410156611486
+     ],
+     [
+      -71.0461839908705,
+      42.29048844332454
+     ],
+     [
+      -71.04641672502814,
+      42.29067311794465
+     ],
+     [
+      -71.04671626436354,
+      42.29096520950508
+     ],
+     [
+      -71.04695923289604,
+      42.29121938021079
+     ],
+     [
+      -71.04703751486065,
+      42.29132277245422
+     ],
+     [
+      -71.04719723463647,
+      42.29153373625118
+     ],
+     [
+      -71.04738687413325,
+      42.291801197200556
+     ],
+     [
+      -71.04751355025957,
+      42.292050967277234
+     ],
+     [
+      -71.04752590116135,
+      42.2920723996618
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63157",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.07952324
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04752590116135,
+      42.2920723996618
+     ],
+     [
+      -71.04759764913011,
+      42.292227706261656
+     ],
+     [
+      -71.0476514334045,
+      42.29234600108628
+     ],
+     [
+      -71.04774359167845,
+      42.29253666949882
+     ],
+     [
+      -71.04778071950145,
+      42.292673120263146
+     ],
+     [
+      -71.04780071576027,
+      42.2927837822518
+     ],
+     [
+      -71.04779642509209,
+      42.29289949290688
+     ],
+     [
+      -71.04778529754914,
+      42.29300232059346
+     ],
+     [
+      -71.04774035391122,
+      42.29318651673866
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63156",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.05957676
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04774035391122,
+      42.29318651673866
+     ],
+     [
+      -71.04773230304038,
+      42.29320365564497
+     ],
+     [
+      -71.04763177801443,
+      42.29336712039714
+     ],
+     [
+      -71.04736239594853,
+      42.293757083470936
+     ],
+     [
+      -71.04729331576877,
+      42.29387025708025
+     ],
+     [
+      -71.04725686423268,
+      42.29396666059817
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63152",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.03601231
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04725686423268,
+      42.29396666059817
+     ],
+     [
+      -71.04723768347625,
+      42.29408156117242
+     ],
+     [
+      -71.04727388222359,
+      42.294381813579086
+     ],
+     [
+      -71.0472930465716,
+      42.29448373262306
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "58598",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.26549907
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0472930465716,
+      42.29448373262306
+     ],
+     [
+      -71.04733975841428,
+      42.294650072721986
+     ],
+     [
+      -71.0474223742463,
+      42.294918323999845
+     ],
+     [
+      -71.04758339440633,
+      42.295323285311454
+     ],
+     [
+      -71.04768534472619,
+      42.295533568976566
+     ],
+     [
+      -71.04780581627499,
+      42.295736988058124
+     ],
+     [
+      -71.04795763016402,
+      42.2959779691223
+     ],
+     [
+      -71.04804241544831,
+      42.29610554481163
+     ],
+     [
+      -71.04840609574156,
+      42.29665446999972
+     ],
+     [
+      -71.04862074663647,
+      42.29697773330844
+     ],
+     [
+      -71.04882559035401,
+      42.29734879100358
+     ],
+     [
+      -71.04901263921559,
+      42.29774453174454
+     ],
+     [
+      -71.04914461822956,
+      42.29805002689879
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51287",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.18369051
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04914461822956,
+      42.29805002689879
+     ],
+     [
+      -71.04929282791144,
+      42.29852495429886
+     ],
+     [
+      -71.04943495833068,
+      42.29901508756985
+     ],
+     [
+      -71.04947081937294,
+      42.29920932254903
+     ],
+     [
+      -71.04948789600031,
+      42.299343559699125
+     ],
+     [
+      -71.04948597631629,
+      42.29950254017987
+     ],
+     [
+      -71.04947239784735,
+      42.299693488267884
+     ],
+     [
+      -71.04944168059708,
+      42.29989853428888
+     ],
+     [
+      -71.04939478720085,
+      42.3000914490546
+     ],
+     [
+      -71.0493351429594,
+      42.30024810576995
+     ],
+     [
+      -71.04914795513182,
+      42.300642349903875
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "58285",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.17987069
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04914795513182,
+      42.300642349903875
+     ],
+     [
+      -71.04887674378666,
+      42.301223287084554
+     ],
+     [
+      -71.04865149726527,
+      42.30171874489783
+     ],
+     [
+      -71.04854543856149,
+      42.302016648999064
+     ],
+     [
+      -71.04846071808957,
+      42.30223748222687
+     ],
+     [
+      -71.04820062400101,
+      42.302949437045974
+     ],
+     [
+      -71.04811484826864,
+      42.303122888908455
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.01131069
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04811484826864,
+      42.303122888908455
+     ],
+     [
+      -71.04804164221144,
+      42.303276950530325
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.00070732
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04804164221144,
+      42.303276950530325
+     ],
+     [
+      -71.04803706522928,
+      42.30328658491961
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.00553221
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04803706522928,
+      42.30328658491961
+     ],
+     [
+      -71.0480012595545,
+      42.303361938090546
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.04104466
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0480012595545,
+      42.303361938090546
+     ],
+     [
+      -71.0479728929946,
+      42.303421633072986
+     ],
+     [
+      -71.04774089978558,
+      42.30392236913524
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.03992051
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04774089978558,
+      42.30392236913524
+     ],
+     [
+      -71.04748828199476,
+      42.30446760931
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.00076757
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04748828199476,
+      42.30446760931
+     ],
+     [
+      -71.0474834239891,
+      42.304478093030085
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.61105076
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0474834239891,
+      42.304478093030085
+     ],
+     [
+      -71.04733550203812,
+      42.30479735990158
+     ],
+     [
+      -71.04663216085665,
+      42.30629592062805
+     ],
+     [
+      -71.04629782191228,
+      42.307005835336575
+     ],
+     [
+      -71.04575246295575,
+      42.30815887861311
+     ],
+     [
+      -71.04563386868759,
+      42.308427030888026
+     ],
+     [
+      -71.04557513977771,
+      42.308589607721906
+     ],
+     [
+      -71.04551200496894,
+      42.3087776302106
+     ],
+     [
+      -71.04544535580341,
+      42.30900184210526
+     ],
+     [
+      -71.0453851970041,
+      42.30922849041973
+     ],
+     [
+      -71.04535445516196,
+      42.30942841832544
+     ],
+     [
+      -71.04535325079623,
+      42.309446519842275
+     ],
+     [
+      -71.04533326221721,
+      42.30966758354094
+     ],
+     [
+      -71.04532213674827,
+      42.30985822244213
+     ],
+     [
+      -71.04532842794438,
+      42.31017556357081
+     ],
+     [
+      -71.04534832947955,
+      42.31037482520243
+     ],
+     [
+      -71.04538492912151,
+      42.310623622475006
+     ],
+     [
+      -71.04542394976563,
+      42.310835414685734
+     ],
+     [
+      -71.04547644738236,
+      42.31101259182198
+     ],
+     [
+      -71.0455463953538,
+      42.31123493306975
+     ],
+     [
+      -71.04564625478378,
+      42.31149688706589
+     ],
+     [
+      -71.04576392210372,
+      42.31173784574932
+     ],
+     [
+      -71.04620542250895,
+      42.31253019972833
+     ],
+     [
+      -71.04634814806518,
+      42.312800531870444
+     ],
+     [
+      -71.04640301107291,
+      42.31291665642676
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.0062846
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04640301107291,
+      42.31291665642676
+     ],
+     [
+      -71.04644348053506,
+      42.31300231387122
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51115",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.04650016
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04644348053506,
+      42.31300231387122
+     ],
+     [
+      -71.04650882685586,
+      42.31314062627062
+     ],
+     [
+      -71.04656477731518,
+      42.313269974033446
+     ],
+     [
+      -71.04660415702455,
+      42.31337690935068
+     ],
+     [
+      -71.04670261043947,
+      42.31364548524934
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51118",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.03983354
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04670261043947,
+      42.31364548524934
+     ],
+     [
+      -71.04694310493505,
+      42.31419242407179
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51117",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.0530914
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04694310493505,
+      42.31419242407179
+     ],
+     [
+      -71.04700070675788,
+      42.31432299040496
+     ],
+     [
+      -71.04705196795403,
+      42.31443181157718
+     ],
+     [
+      -71.04715447848673,
+      42.31464944918729
+     ],
+     [
+      -71.04726941855937,
+      42.314830466795335
+     ],
+     [
+      -71.04732024925998,
+      42.3149049404818
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51119",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "22",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.22531154
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04732024925998,
+      42.3149049404818
+     ],
+     [
+      -71.04749749927554,
+      42.315165602520025
+     ],
+     [
+      -71.04773738178167,
+      42.31545309855518
+     ],
+     [
+      -71.04784513466811,
+      42.31560254881954
+     ],
+     [
+      -71.04795962535587,
+      42.31575569005829
+     ],
+     [
+      -71.0480721911407,
+      42.315932332236024
+     ],
+     [
+      -71.04823607390894,
+      42.31621055352418
+     ],
+     [
+      -71.04851514548905,
+      42.31673274881855
+     ],
+     [
+      -71.04904000633186,
+      42.317688001087234
+     ],
+     [
+      -71.04913820631677,
+      42.317860252794674
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "51120",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "5",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "5",
+    "Operation": "2",
+    "Length": 0.09941491
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04913820631677,
+      42.317860252794674
+     ],
+     [
+      -71.04936161575488,
+      42.318201870250455
+     ],
+     [
+      -71.04972353027489,
+      42.3187783555062
+     ],
+     [
+      -71.04991683405832,
+      42.3191732737039
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "KOSCIUSZKO CIRCLE",
+    "Rd_Seg_ID": "56286",
+    "Num_Lanes": "2",
+    "Surface_Wd": "22",
+    "ROW_Width": "56",
+    "Med_Width": "5",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "5",
+    "Operation": "2",
+    "Length": 0.14383608
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04991683405832,
+      42.3191732737039
+     ],
+     [
+      -71.0506011521647,
+      42.32040024280463
+     ],
+     [
+      -71.0508763356583,
+      42.320898861857486
+     ],
+     [
+      -71.05098040794202,
+      42.32109492917149
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "KOSCIUSZKO CIRCLE",
+    "Rd_Seg_ID": "46480",
+    "Num_Lanes": "1",
+    "Surface_Wd": "22",
+    "ROW_Width": "56",
+    "Med_Width": "10",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.03240994
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.05098040794202,
+      42.32109492917149
+     ],
+     [
+      -71.05102923220193,
+      42.321211906931794
+     ],
+     [
+      -71.05102887731483,
+      42.321303100469905
+     ],
+     [
+      -71.05101037911425,
+      42.32138286986379
+     ],
+     [
+      -71.05092440485903,
+      42.321544222434206
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "KOSCIUSZKO CIRCLE",
+    "Rd_Seg_ID": "46480",
+    "Num_Lanes": "1",
+    "Surface_Wd": "22",
+    "ROW_Width": "56",
+    "Med_Width": "10",
+    "AADT": "37558",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 2.464e-05
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.05092440485903,
+      42.321544222434206
+     ],
+     [
+      -71.05092422858881,
+      42.321544553631526
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "KOSCIUSZKO CIRCLE",
+    "Rd_Seg_ID": "62201",
+    "Num_Lanes": "2",
+    "Surface_Wd": "22",
+    "ROW_Width": "56",
+    "Med_Width": "5",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "5",
+    "Operation": "2",
+    "Length": 0.2025704
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.05136900520611,
+      42.32142716649672
+     ],
+     [
+      -71.05119747592381,
+      42.32129144226243
+     ],
+     [
+      -71.0498115948409,
+      42.31875355087722
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62200",
+    "Num_Lanes": "2",
+    "Surface_Wd": "24",
+    "ROW_Width": "100",
+    "Med_Width": "5",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.29082208
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0498115948409,
+      42.31875355087722
+     ],
+     [
+      -71.04935278679513,
+      42.3178707467241
+     ],
+     [
+      -71.04920394937153,
+      42.31761099204098
+     ],
+     [
+      -71.04886477772907,
+      42.316980584328554
+     ],
+     [
+      -71.04848482932267,
+      42.31630611410733
+     ],
+     [
+      -71.04830615843437,
+      42.31595980293786
+     ],
+     [
+      -71.0482099205043,
+      42.315773568203525
+     ],
+     [
+      -71.04810115418393,
+      42.315519699108286
+     ],
+     [
+      -71.04793487018415,
+      42.315123196660174
+     ],
+     [
+      -71.04778834295213,
+      42.31483475927887
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62107",
+    "Num_Lanes": "2",
+    "Surface_Wd": "24",
+    "ROW_Width": "100",
+    "Med_Width": "5",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.09351984
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04778834295213,
+      42.31483475927887
+     ],
+     [
+      -71.04775219096102,
+      42.3147459387624
+     ],
+     [
+      -71.04766878903233,
+      42.31458388955803
+     ],
+     [
+      -71.04754189079347,
+      42.31439095570732
+     ],
+     [
+      -71.04727960732086,
+      42.31397893187306
+     ],
+     [
+      -71.04702531512366,
+      42.313611042946214
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62199",
+    "Num_Lanes": "2",
+    "Surface_Wd": "24",
+    "ROW_Width": "100",
+    "Med_Width": "5",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.03982155
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04702531512366,
+      42.313611042946214
+     ],
+     [
+      -71.04672659732628,
+      42.31308062104978
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62198",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.00543562
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04672659732628,
+      42.31308062104978
+     ],
+     [
+      -71.04668748941208,
+      42.313007714452425
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62198",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.03459881
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0466442890795,
+      42.31292718019596
+     ],
+     [
+      -71.04659174554378,
+      42.312829228794676
+     ],
+     [
+      -71.04647373047436,
+      42.31260921540626
+     ],
+     [
+      -71.04639516977092,
+      42.312463170167575
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62584",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.57559471
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04639516977092,
+      42.312463170167575
+     ],
+     [
+      -71.0459337843937,
+      42.31163231322301
+     ],
+     [
+      -71.04582497124909,
+      42.311388098491165
+     ],
+     [
+      -71.04574504065472,
+      42.31119709971679
+     ],
+     [
+      -71.04567493612916,
+      42.31099648273665
+     ],
+     [
+      -71.04561637629931,
+      42.31074839620435
+     ],
+     [
+      -71.0455771398363,
+      42.31057610697082
+     ],
+     [
+      -71.04554731704576,
+      42.3103356706103
+     ],
+     [
+      -71.04552802165895,
+      42.310170406779434
+     ],
+     [
+      -71.0455230790099,
+      42.30995315336791
+     ],
+     [
+      -71.04553115771498,
+      42.309733536043225
+     ],
+     [
+      -71.04555334664562,
+      42.30946971829542
+     ],
+     [
+      -71.04558980099416,
+      42.30926550761707
+     ],
+     [
+      -71.04563692062224,
+      42.30904363383647
+     ],
+     [
+      -71.04568387785324,
+      42.3088434795506
+     ],
+     [
+      -71.04574374705214,
+      42.30865785946338
+     ],
+     [
+      -71.04580347116948,
+      42.3084915481414
+     ],
+     [
+      -71.04588634161992,
+      42.308272226317776
+     ],
+     [
+      -71.04598234248749,
+      42.30803606232844
+     ],
+     [
+      -71.04607818070977,
+      42.30782161777692
+     ],
+     [
+      -71.04627954791144,
+      42.30740242828037
+     ],
+     [
+      -71.0465668016394,
+      42.306795300501655
+     ],
+     [
+      -71.04689383203254,
+      42.306082129495955
+     ],
+     [
+      -71.04725760434242,
+      42.305307394266045
+     ],
+     [
+      -71.0475047048722,
+      42.304781127732504
+     ],
+     [
+      -71.04763499482726,
+      42.304502929129576
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62584",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.03712826
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04763499482726,
+      42.304502929129576
+     ],
+     [
+      -71.04787210556148,
+      42.303996639371405
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62584",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.00671654
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04815056728995,
+      42.303402045271824
+     ],
+     [
+      -71.04819346055197,
+      42.30331045744159
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62584",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.13779457
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04819346055197,
+      42.30331045744159
+     ],
+     [
+      -71.04826745665754,
+      42.303152450753956
+     ],
+     [
+      -71.04838969327625,
+      42.302882595115165
+     ],
+     [
+      -71.04864991442781,
+      42.30241294126083
+     ],
+     [
+      -71.04893616607994,
+      42.30194097818177
+     ],
+     [
+      -71.04910441033303,
+      42.301601301731004
+     ],
+     [
+      -71.04917066701736,
+      42.30145960374959
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62584",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "105",
+    "Med_Width": "8",
+    "AADT": "37149",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "2",
+    "Length": 0.04551625
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04917066701736,
+      42.30145960374959
+     ],
+     [
+      -71.04946092655642,
+      42.30083882881977
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62775",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.01351455
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04946092655642,
+      42.30083882881977
+     ],
+     [
+      -71.04954684779865,
+      42.30065444261698
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62774",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.0644452
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04954684779865,
+      42.30065444261698
+     ],
+     [
+      -71.04959668571917,
+      42.30050498896776
+     ],
+     [
+      -71.04963320614077,
+      42.30039892809918
+     ],
+     [
+      -71.0496735746376,
+      42.300208403081356
+     ],
+     [
+      -71.04969745323261,
+      42.300051601419234
+     ],
+     [
+      -71.04970945634201,
+      42.299735451765784
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62908",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.34479135
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04970945634201,
+      42.299735451765784
+     ],
+     [
+      -71.0496976497078,
+      42.29956644703918
+     ],
+     [
+      -71.04967290998401,
+      42.29938772999875
+     ],
+     [
+      -71.0496288502611,
+      42.29918239081522
+     ],
+     [
+      -71.04954955887507,
+      42.29890209125461
+     ],
+     [
+      -71.04943448295612,
+      42.298510321412955
+     ],
+     [
+      -71.0493800850273,
+      42.29832610861101
+     ],
+     [
+      -71.04927774670229,
+      42.29798834332004
+     ],
+     [
+      -71.0492773280937,
+      42.29798696342181
+     ],
+     [
+      -71.0491418755798,
+      42.29766344987651
+     ],
+     [
+      -71.04899308803301,
+      42.29737645599064
+     ],
+     [
+      -71.04882214811184,
+      42.297060680434626
+     ],
+     [
+      -71.04859656248749,
+      42.29670248484263
+     ],
+     [
+      -71.0484741361551,
+      42.29651310888459
+     ],
+     [
+      -71.0481204868475,
+      42.295954146862925
+     ],
+     [
+      -71.0480289051462,
+      42.29583407650275
+     ],
+     [
+      -71.04796603188767,
+      42.295729063196305
+     ],
+     [
+      -71.04789552388654,
+      42.295586373576995
+     ],
+     [
+      -71.04784762223727,
+      42.29546549771003
+     ],
+     [
+      -71.04781614129168,
+      42.29532055081937
+     ],
+     [
+      -71.04781817653057,
+      42.29519030202584
+     ],
+     [
+      -71.04784435549485,
+      42.29501170643515
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63151",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.02850398
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04784435549485,
+      42.29501170643515
+     ],
+     [
+      -71.04787707583537,
+      42.2949169567283
+     ],
+     [
+      -71.04793690333287,
+      42.294799662319036
+     ],
+     [
+      -71.04803567536878,
+      42.29462626146301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63153",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.08825721
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04803567536878,
+      42.29462626146301
+     ],
+     [
+      -71.04807193662155,
+      42.294556408005576
+     ],
+     [
+      -71.04819676744388,
+      42.29437586789565
+     ],
+     [
+      -71.04836771522224,
+      42.29411102961382
+     ],
+     [
+      -71.04844682898812,
+      42.29395927594683
+     ],
+     [
+      -71.04847697866411,
+      42.29383388084108
+     ],
+     [
+      -71.04849421977428,
+      42.2936963671769
+     ],
+     [
+      -71.04846284149444,
+      42.293536937590964
+     ],
+     [
+      -71.04841791788142,
+      42.293428616217106
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63154",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.01514937
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04841791788142,
+      42.293428616217106
+     ],
+     [
+      -71.04832855871476,
+      42.293220212604425
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63155",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.04398833
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04832855871476,
+      42.293220212604425
+     ],
+     [
+      -71.04800277747377,
+      42.29263302898841
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63158",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "100",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.04546949
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04800277747377,
+      42.29263302898841
+     ],
+     [
+      -71.04779316839449,
+      42.29226699348996
+     ],
+     [
+      -71.04766378369064,
+      42.29202680095474
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62516",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "105",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.05840772
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04766378369064,
+      42.29202680095474
+     ],
+     [
+      -71.04742936510351,
+      42.291608362386185
+     ],
+     [
+      -71.04717678952566,
+      42.29126637501289
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62515",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "105",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.07597286
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04717678952566,
+      42.29126637501289
+     ],
+     [
+      -71.04694510131293,
+      42.29099649839608
+     ],
+     [
+      -71.04669913725618,
+      42.290763699572246
+     ],
+     [
+      -71.04643824323917,
+      42.29052577535396
+     ],
+     [
+      -71.04626762868966,
+      42.2904063731949
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63136",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "105",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "2",
+    "Length": 0.04287123
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04626762868966,
+      42.2904063731949
+     ],
+     [
+      -71.04605761458589,
+      42.2902603700541
+     ],
+     [
+      -71.04565316681996,
+      42.289988157745455
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63137",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "1",
+    "Length": 0.02767333
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04565316681996,
+      42.289988157745455
+     ],
+     [
+      -71.04529646526818,
+      42.28968904258746
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63142",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "8",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "2",
+    "Operation": "1",
+    "Length": 0.10187584
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04529646526818,
+      42.28968904258746
+     ],
+     [
+      -71.04483241554271,
+      42.28911663802582
+     ],
+     [
+      -71.04424070942682,
+      42.28844489148135
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63143",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": " ",
+    "Med_Width": "99",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.11508579
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04424070942682,
+      42.28844489148135
+     ],
+     [
+      -71.04407451326907,
+      42.28822964765254
+     ],
+     [
+      -71.04381972109437,
+      42.287936034934496
+     ],
+     [
+      -71.04355117730834,
+      42.28760579470963
+     ],
+     [
+      -71.04343943215599,
+      42.28738863202261
+     ],
+     [
+      -71.04335340638204,
+      42.287191475551516
+     ],
+     [
+      -71.04331598724255,
+      42.28707566823328
+     ],
+     [
+      -71.04329061530197,
+      42.28695766393851
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63145",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": " ",
+    "Med_Width": "99",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.04415971
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04329061530197,
+      42.28695766393851
+     ],
+     [
+      -71.0432953127213,
+      42.28653180497823
+     ],
+     [
+      -71.04329824187661,
+      42.28632016386061
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63146",
+    "Num_Lanes": "4",
+    "Surface_Wd": "0",
+    "ROW_Width": " ",
+    "Med_Width": "99",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": " ",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.01561167
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04329824187661,
+      42.28632016386061
+     ],
+     [
+      -71.04331577542244,
+      42.28609515774248
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63150",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": " ",
+    "Med_Width": "99",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.0005447
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04294408219786,
+      42.28590376077481
+     ],
+     [
+      -71.04293366459585,
+      42.28590234567461
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63150",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": " ",
+    "Med_Width": "99",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.03510988
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04293366459585,
+      42.28590234567461
+     ],
+     [
+      -71.0427073567043,
+      42.28587160267637
+     ],
+     [
+      -71.04260601601943,
+      42.28586758992049
+     ],
+     [
+      -71.0425157246277,
+      42.285883465257974
+     ],
+     [
+      -71.04240060345364,
+      42.285931702175695
+     ],
+     [
+      -71.04231275333696,
+      42.28599888692984
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63148",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "99",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.02652883
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04231275333696,
+      42.28599888692984
+     ],
+     [
+      -71.04227653995889,
+      42.286083388084826
+     ],
+     [
+      -71.04225102082802,
+      42.286211114247315
+     ],
+     [
+      -71.04224201201049,
+      42.286376169916046
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "MORRISSEY SERVICE ROAD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "52386",
+    "Num_Lanes": "2",
+    "Surface_Wd": "34",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "781",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "5",
+    "Jurisdictn": "2",
+    "Struct_Cnd": "1",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.11566547
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04970945634201,
+      42.299735451765784
+     ],
+     [
+      -71.04971216824914,
+      42.29935409585394
+     ],
+     [
+      -71.04965798836521,
+      42.29876271783301
+     ],
+     [
+      -71.04964882835266,
+      42.298611880462396
+     ],
+     [
+      -71.04952055715377,
+      42.29807794648239
+     ],
+     [
+      -71.04948120698162,
+      42.297881978427775
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "MORRISSEY SERVICE ROAD",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63090",
+    "Num_Lanes": "2",
+    "Surface_Wd": "34",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "781",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "5",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "1",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.19433457
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04948120698162,
+      42.297881978427775
+     ],
+     [
+      -71.04945321425558,
+      42.297741756716604
+     ],
+     [
+      -71.0493357275232,
+      42.297503281714675
+     ],
+     [
+      -71.04921172658283,
+      42.29727377886588
+     ],
+     [
+      -71.04906839856679,
+      42.29701887974221
+     ],
+     [
+      -71.04891999947154,
+      42.29681010214009
+     ],
+     [
+      -71.04811436085706,
+      42.29560841080063
+     ],
+     [
+      -71.04797956277505,
+      42.29540699614649
+     ],
+     [
+      -71.04787646488543,
+      42.295224282581906
+     ],
+     [
+      -71.04784435549485,
+      42.29501170643515
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "62716",
+    "Num_Lanes": "1",
+    "Surface_Wd": "0",
+    "ROW_Width": "49",
+    "Med_Width": "0",
+    "AADT": "44937",
+    "AADT_Year": "2014",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": " ",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.07870005
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0423090948349,
+      42.286872818175304
+     ],
+     [
+      -71.04236005832475,
+      42.28700490545899
+     ],
+     [
+      -71.04242767246254,
+      42.287102570281135
+     ],
+     [
+      -71.04249003750971,
+      42.287169777204376
+     ],
+     [
+      -71.04255250526609,
+      42.28722278243476
+     ],
+     [
+      -71.04260147070102,
+      42.287253414360606
+     ],
+     [
+      -71.04267774880435,
+      42.28728617859907
+     ],
+     [
+      -71.04275132475561,
+      42.28731488022427
+     ],
+     [
+      -71.04284956977892,
+      42.287333534325576
+     ],
+     [
+      -71.042942506785,
+      42.28732984310645
+     ],
+     [
+      -71.04302529184613,
+      42.28731348122377
+     ],
+     [
+      -71.04308209403722,
+      42.28729566994521
+     ],
+     [
+      -71.0431552588538,
+      42.2872548805023
+     ],
+     [
+      -71.04321636043346,
+      42.287203016969585
+     ],
+     [
+      -71.04324376428517,
+      42.287146013437486
+     ],
+     [
+      -71.0432628257578,
+      42.28708021855855
+     ],
+     [
+      -71.04329061530197,
+      42.28695766393851
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "RAMP-RTS 93 NB/3 NB TO MORRISSEY BLVD",
+    "Fm_St_Name": "GENERAL CASIMIR PULASKI SKYWAY",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "47783",
+    "Num_Lanes": "1",
+    "Surface_Wd": "20",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "5266",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "1",
+    "Curb": "0",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.00131093
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0481413566795,
+      42.29995654649273
+     ],
+     [
+      -71.04814901983518,
+      42.29997796494294
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "RAMP-RTS 93 NB/3 NB TO MORRISSEY BLVD",
+    "Fm_St_Name": "GENERAL CASIMIR PULASKI SKYWAY",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "47783",
+    "Num_Lanes": "1",
+    "Surface_Wd": "20",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "5266",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": " ",
+    "Struct_Cnd": "1",
+    "Curb": "0",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.18868909
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04814901983518,
+      42.29997796494294
+     ],
+     [
+      -71.04836203877997,
+      42.30057342980882
+     ],
+     [
+      -71.04842531358842,
+      42.30076134249146
+     ],
+     [
+      -71.04844945356365,
+      42.3009027108355
+     ],
+     [
+      -71.0484586741423,
+      42.3010673402502
+     ],
+     [
+      -71.04844692273359,
+      42.30125759930716
+     ],
+     [
+      -71.04841800018818,
+      42.301427223064515
+     ],
+     [
+      -71.04835316383235,
+      42.301774150226414
+     ],
+     [
+      -71.04829480397932,
+      42.30218539677
+     ],
+     [
+      -71.0482715263292,
+      42.30240271920814
+     ],
+     [
+      -71.04819742066334,
+      42.302743073439686
+     ],
+     [
+      -71.04811484826864,
+      42.303122888908455
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "RAMP-MORRISSEY BLVD TO RTS 93 SB/3 SB",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "GENERAL CASIMIR PULASKI SKYWAY",
+    "Rd_Seg_ID": "63141",
+    "Num_Lanes": "1",
+    "Surface_Wd": "20",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "5324",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "1",
+    "Curb": "0",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.00012823
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04298714454033,
+      42.28616475050586
+     ],
+     [
+      -71.04298718666988,
+      42.28616751525998
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "RAMP-MORRISSEY BLVD TO RTS 93 SB/3 SB",
+    "Fm_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "To_St_Name": "GENERAL CASIMIR PULASKI SKYWAY",
+    "Rd_Seg_ID": "63141",
+    "Num_Lanes": "1",
+    "Surface_Wd": "20",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "5324",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": " ",
+    "Struct_Cnd": "1",
+    "Curb": "0",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.18987179
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04298718666988,
+      42.28616751525998
+     ],
+     [
+      -71.04299305472973,
+      42.28655359540555
+     ],
+     [
+      -71.0430004740611,
+      42.286916558965814
+     ],
+     [
+      -71.04303401864738,
+      42.28717778272274
+     ],
+     [
+      -71.04304371339364,
+      42.28725209518929
+     ],
+     [
+      -71.04304887693165,
+      42.28727124541852
+     ],
+     [
+      -71.04310978531969,
+      42.287494876356575
+     ],
+     [
+      -71.04317354379296,
+      42.28769094878605
+     ],
+     [
+      -71.04325781328708,
+      42.287854462406266
+     ],
+     [
+      -71.04336116981285,
+      42.28799779741056
+     ],
+     [
+      -71.0435505928932,
+      42.28818648670231
+     ],
+     [
+      -71.04355567583009,
+      42.2881910104414
+     ],
+     [
+      -71.04472259799005,
+      42.289212422848244
+     ],
+     [
+      -71.04529646526818,
+      42.28968904258746
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63149",
+    "Num_Lanes": "3",
+    "Surface_Wd": "37",
+    "ROW_Width": " ",
+    "Med_Width": "99",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.01974559
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0425112228794,
+      42.28574953023907
+     ],
+     [
+      -71.04246444772653,
+      42.28579398297537
+     ],
+     [
+      -71.04239018463966,
+      42.285860645709676
+     ],
+     [
+      -71.04234323338831,
+      42.28592944541834
+     ],
+     [
+      -71.04231275333696,
+      42.28599888692984
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "63147",
+    "Num_Lanes": "3",
+    "Surface_Wd": "34",
+    "ROW_Width": "49",
+    "Med_Width": "99",
+    "AADT": "36537",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "3",
+    "Struct_Cnd": "2",
+    "Curb": "3",
+    "Med_Type": "1",
+    "Operation": "1",
+    "Length": 0.03458905
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04224201356244,
+      42.28637616992229
+     ],
+     [
+      -71.04230910102625,
+      42.2868728205048
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Fm_St_Name": "NEPONSET AVENUE",
+    "To_St_Name": "WILLIAM T MORRISSEY BOULEVARD",
+    "Rd_Seg_ID": "52103",
+    "Num_Lanes": "2",
+    "Surface_Wd": "24",
+    "ROW_Width": "50",
+    "Med_Width": "0",
+    "AADT": "35208",
+    "AADT_Year": "2015",
+    "Surface_Tp": "6",
+    "F_Class": "3",
+    "Jurisdictn": "1",
+    "Struct_Cnd": "1",
+    "Curb": "3",
+    "Med_Type": "0",
+    "Operation": "1",
+    "Length": 0.0423207
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.04230910102625,
+      42.2868728205048
+     ],
+     [
+      -71.04235676431918,
+      42.28742317800496
+     ],
+     [
+      -71.0423618904276,
+      42.28748227690086
+     ]
+    ]
+   }
+  }
+ ],
+ "metadata": {
+  "source_id": "S10",
+  "source_url": "https://gisportal.boston.gov/arcgis/rest/services/Infrastructure/OpenData/MapServer/14",
+  "query_where": "St_Name LIKE '%MORRISSEY%'",
+  "crs": "EPSG:4326 (reprojected by server from EPSG:2249)",
+  "data_status": "observed",
+  "record_count": 76,
+  "retrieved_at": "2026-10-24"
+ }
+}

@@ -1,0 +1,603 @@
+{
+ "scenario_id": "mcfrm-2050-1pct",
+ "closed_roads": 354,
+ "loss": 3988.8,
+ "journeys_disrupted": [
+  "J_columbia_point"
+ ],
+ "unreachable": [
+  "J_columbia_point"
+ ],
+ "baseline_times_s": {
+  "J_savin_hill": 341.74000283849676,
+  "J_fields_corner": 429.7130976455169,
+  "J_south_boston": 284.298011821356,
+  "J_seaport": 186.357572332499,
+  "J_east_boston": 299.0895116515449,
+  "J_charlestown": 213.76965342441991,
+  "J_roxbury": 99.16603196544368,
+  "J_jamaica_plain": 351.1669598441247,
+  "J_mattapan": 738.8122874736733,
+  "J_hyde_park": 828.0523838002323,
+  "J_roslindale": 611.1829534435145,
+  "J_brighton": 473.9301526866788,
+  "J_columbia_point": 320.51057585793825
+ },
+ "times_s": {
+  "J_savin_hill": 341.74000283849676,
+  "J_fields_corner": 429.7130976455169,
+  "J_south_boston": 284.298011821356,
+  "J_seaport": 186.357572332499,
+  "J_east_boston": 299.0895116515449,
+  "J_charlestown": 213.76965342441991,
+  "J_roxbury": 99.16603196544368,
+  "J_jamaica_plain": 351.1669598441247,
+  "J_mattapan": 738.8122874736733,
+  "J_hyde_park": 828.0523838002323,
+  "J_roslindale": 611.1829534435145,
+  "J_brighton": 473.9301526866788,
+  "J_columbia_point": null
+ },
+ "corridors": {
+  "cor_6dece7a926": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 42.913378529589416,
+   "closed_roads_in_corridor": 48,
+   "improved_journeys": []
+  },
+  "cor_dceb13cd52": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 42.913378529589416,
+   "closed_roads_in_corridor": 23,
+   "improved_journeys": []
+  },
+  "cor_87278ad9ba": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 25,
+   "improved_journeys": []
+  },
+  "cor_dbafe98e75": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "cor_5a83bdd655": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 11,
+   "improved_journeys": []
+  },
+  "cor_70c46ca19f": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "cor_d2f9fde87c": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 0,
+   "improved_journeys": []
+  },
+  "p3c_mount-vernon-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 20,
+   "improved_journeys": []
+  },
+  "p3c_old-colony-avenue": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 19,
+   "improved_journeys": []
+  },
+  "p3c_beach-point-place": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_general-lawrence-j-logan-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 5,
+   "improved_journeys": []
+  },
+  "p3c_william-j-day-boulevard": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 11,
+   "improved_journeys": []
+  },
+  "p3c_william-t-morrissey-boulevard": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 42.913378529589416,
+   "closed_roads_in_corridor": 48,
+   "improved_journeys": []
+  },
+  "p3c_freeport-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 10,
+   "improved_journeys": []
+  },
+  "p3c_monsignor-dennis-f-o-callaghan-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_pacuska-circle": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 8,
+   "improved_journeys": []
+  },
+  "p3c_university-drive-east-university-drive-s": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_dominic-j-bianculli-boulevard": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 42.913378529589416,
+   "closed_roads_in_corridor": 6,
+   "improved_journeys": []
+  },
+  "p3c_dr-michael-gavin-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_columbia-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 85.22978119003359,
+   "closed_roads_in_corridor": 22,
+   "improved_journeys": []
+  },
+  "p3c_victory-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 8,
+   "improved_journeys": []
+  },
+  "p3c_ashland-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_north-point-drive": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 7,
+   "improved_journeys": []
+  },
+  "p3c_davitt-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_tolman-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_dorchester-avenue": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_widett-circle": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_peninsula-place": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_ward-court": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_preble-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 11,
+   "improved_journeys": []
+  },
+  "p3c_general-casimir-pulaski-skyway": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 64.76051391312345,
+   "closed_roads_in_corridor": 7,
+   "improved_journeys": []
+  },
+  "p3c_harbor-point-boulevard": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 8,
+   "improved_journeys": []
+  },
+  "p3c_locust-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_south-boston-bypass-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_ocean-view-drive": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_denny-street-springdale-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_vinton-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_jfk-umass-busway": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_crescent-avenue": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_university-drive-west": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_sydney-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_mary-boyle-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_westwind-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 4,
+   "improved_journeys": []
+  },
+  "p3c_cottrell-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_ward-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_island-view-place": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_mercer-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_h-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_major-michael-j-o-connor-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_carpenter-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_playstead-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_spring-garden-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_norwood-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_evandale-terrace": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_babe-ruth-park-drive": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_south-point-drive": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 6,
+   "improved_journeys": []
+  },
+  "p3c_tenean-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_east-ninth-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_frances-j-murray-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_patterson-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 3,
+   "improved_journeys": []
+  },
+  "p3c_i-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_moseley-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_buttonwood-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_freeport-street-tenean-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_general-william-h-devine-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 5,
+   "improved_journeys": []
+  },
+  "p3c_james-o-neill-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_general-jozef-pilsudski-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_henry-sterling-square": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_old-harbor-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_ticknor-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_rogers-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_oyster-bay-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_mohawk-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_l-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_southview-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_ocean-view-drive-westwind-road": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_von-hillern-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_harbor-crest-court": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_wendeller-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_jenkins-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_wendell-place": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_blanche-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_conley-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_old-colony-terrace": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_carson-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_savin-hill-avenue": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_colonel-michael-j-mcdonough-way": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_reverend-burke-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 2,
+   "improved_journeys": []
+  },
+  "p3c_liberty-place": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_springdale-street": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 0.0,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_unnamed-rd_f9cf1c025f": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 1.863866649284563,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3c_unnamed-rd_f831a05afc": {
+   "marginal_loss_recovered": 0.0,
+   "standalone_loss": 64.76051391312345,
+   "closed_roads_in_corridor": 1,
+   "improved_journeys": []
+  },
+  "p3b_J_columbia_point": {
+   "marginal_loss_recovered": 3988.8,
+   "standalone_loss": 106.81409610164319,
+   "closed_roads_in_corridor": 10,
+   "improved_journeys": [
+    "J_columbia_point"
+   ]
+  }
+ }
+}

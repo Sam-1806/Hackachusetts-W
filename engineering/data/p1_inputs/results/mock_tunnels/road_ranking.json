@@ -1,0 +1,76 @@
+{
+ "scenario_set_id": "mock-callahan-sumnertunnel-closure",
+ "graph_version": "osm-2026-10-24-v0.1",
+ "ranking": [
+  {
+   "corridor_id": "cor_70c46ca19f",
+   "road_ids": [
+    "rd_825fd1d34e"
+   ],
+   "label": "Sumner Tunnel (1 segments, 1.8 km)",
+   "priority_rank": 1,
+   "impact_value": 264.5,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "affected_journey_ids": [
+    "J_east_boston"
+   ],
+   "detour_or_disconnection_evidence": [
+    "East Boston (Maverick Sq) -> nearest emergency department: 298 s baseline -> 507 s with mock-callahan-sumnertunnel-closure closures (+70%); 298 s if this corridor stays passable (recovers 209 s)."
+   ],
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness.",
+    "Scenario closures mean 'potentially closed', not verified impassable. Travel times are posted-speed estimates, no traffic.",
+    "Threshold crossings use an ASSUMED 600 s (10 min) planning threshold, not an official standard."
+   ],
+   "provenance": {
+    "origin": "mock",
+    "source_id": "P1-NETWORK-ENGINE",
+    "source_name": "FloodRoute network accessibility engine (Person 1)",
+    "source_url": "analysis/network/engine.py",
+    "retrieved_at": "2026-10-24T22:08:37Z",
+    "period": "mock-callahan-sumnertunnel-closure",
+    "limitations": [
+     "Closure set is MOCK, not a flood map.",
+     "Relative criticality for investigation, not a construction priority.",
+     "Assumed origins/destinations and equal demand weights unless replaced with sourced data.",
+     "Property damage, hardship and hydraulic effects are not part of this metric."
+    ]
+   }
+  },
+  {
+   "corridor_id": "cor_d2f9fde87c",
+   "road_ids": [
+    "rd_2f08111e9c"
+   ],
+   "label": "Callahan Tunnel (1 segments, 1.8 km)",
+   "priority_rank": 2,
+   "impact_value": 0.0,
+   "impact_units": "demand-weighted seconds recovered (unreachable = +3600 s)",
+   "affected_journey_ids": [],
+   "detour_or_disconnection_evidence": [
+    "No modeled journey changes: either alternatives exist or no representative journey uses this corridor."
+   ],
+   "assumptions": [
+    "Impact = demand-weighted seconds recovered by keeping this corridor passable, conditional on all other closures in the scenario; unreachable journeys count as 3600 extra seconds.",
+    "Journeys are assumed planning proxies (neighborhood to emergency department), not ambulance dispatch or clinical appropriateness.",
+    "Scenario closures mean 'potentially closed', not verified impassable. Travel times are posted-speed estimates, no traffic.",
+    "Threshold crossings use an ASSUMED 600 s (10 min) planning threshold, not an official standard."
+   ],
+   "provenance": {
+    "origin": "mock",
+    "source_id": "P1-NETWORK-ENGINE",
+    "source_name": "FloodRoute network accessibility engine (Person 1)",
+    "source_url": "analysis/network/engine.py",
+    "retrieved_at": "2026-10-24T22:08:37Z",
+    "period": "mock-callahan-sumnertunnel-closure",
+    "limitations": [
+     "Closure set is MOCK, not a flood map.",
+     "Relative criticality for investigation, not a construction priority.",
+     "Assumed origins/destinations and equal demand weights unless replaced with sourced data.",
+     "Property damage, hardship and hydraulic effects are not part of this metric."
+    ]
+   }
+  }
+ ]
+}
