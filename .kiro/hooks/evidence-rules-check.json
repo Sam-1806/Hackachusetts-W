@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Evidence rules reminder for engineering edits",
+      "trigger": "PreToolUse",
+      "description": "Reminds the agent of the evidence and honesty rules before writing engineering files.",
+      "matcher": "fs_write|str_replace|fs_append",
+      "action": {
+        "type": "agent",
+        "prompt": "If this edit touches engineering/, frontend/src/investigation/ or handoff/, check it against .kiro/steering/evidence-rules.md: cite registered source IDs, keep missing data null, never upgrade a cause from polygons or complaints alone, never attach 2018 barrier costs to drainage work, and keep mock data labelled."
+      }
+    }
+  ]
+}
